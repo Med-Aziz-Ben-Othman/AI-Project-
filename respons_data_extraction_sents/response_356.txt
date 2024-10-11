@@ -1,0 +1,25 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Element** - Refers to a component or aspect of risk analysis.
+2. **Quantitative Risk Analysis** - A specific method used to evaluate risks numerically.
+3. **Figure** - Likely refers to a visual representation (e.g., graph, chart) associated with the analysis.
+
+### Relationships:
+1. **Illustrates** - The relationship indicating that the "quantitative risk analysis" demonstrates or presents information visually in the "figure."
+2. **Is a Component of** - The relationship indicating that the "element" is part of the "quantitative risk analysis."
+
+### Attributes:
+- **Element**
+  - Type: Component
+  - Purpose: To contribute to the understanding of risk analysis.
+  
+- **Quantitative Risk Analysis**
+  - Type: Methodology
+  - Purpose: To provide numerical evaluation of risks.
+  
+- **Figure**
+  - Type: Visual Representation
+  - Purpose: To illustrate findings or data derived from the risk analysis.
+
+This structured representation reflects key concepts in project management related to risk analysis and their interconnections.

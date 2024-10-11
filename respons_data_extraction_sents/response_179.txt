@@ -1,0 +1,26 @@
+Based on the provided text related to project management risks, I will extract nodes, their relationships, and relevant attributes. 
+
+### Nodes:
+1. **Risk Identification**
+2. **Project Lifecycle**
+3. **Uncertainty**
+4. **Initial Stage**
+5. **Information Base**
+6. **Paradox**
+
+### Relationships:
+1. **Risk Identification** *is associated with* **Project Lifecycle** - Indicates that risk identification is an important part of the project lifecycle.
+2. **Project Lifecycle** *includes* **Initial Stage** - The project lifecycle consists of various stages, one of which is the initial stage.
+3. **Initial Stage** *is characterized by* **Uncertainty** - Highlights that the initial stage of projects tends to have a high level of uncertainty.
+4. **Uncertainty** *leads to* **Paradox** - Suggests that uncertainty can create paradoxical situations in project management.
+5. **Initial Stage** *has a* **less Information Base** - Indicates that during the initial stage, there is typically less information available for effective risk identification.
+6. **Risk Identification** *should be performed* **Early** - Suggests that risk identification should occur as early as possible in the project lifecycle.
+
+### Attributes:
+- **Risk Identification**: Early, Possible
+- **Project Lifecycle**: Various stages
+- **Initial Stage**: High uncertainty, Less information
+- **Uncertainty**: High levels of unpredictability
+- **Paradox**: Situational contradictions arising from uncertainty
+
+This structured extraction provides a clear understanding of the key concepts and relationships related to project management risks as described in the text.

@@ -1,0 +1,24 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Risk Owner**
+   - **Attributes**: Responsible, accountable for risk management.
+
+2. **Action**
+   - **Attributes**: Steps or measures taken to manage risks.
+
+3. **Strategy**
+   - **Attributes**: Plan or method chosen to address risks.
+
+### Relationships:
+1. **Risk Owner** **(is responsible for)** **Action**
+   - Indicates that the risk owner has the responsibility to define and implement actions related to risk management.
+
+2. **Action** **(is part of)** **Strategy**
+   - Suggests that actions are components or measures that contribute to a broader strategy to mitigate risks.
+
+3. **Risk Owner** **(chooses)** **Strategy**
+   - Implies that the risk owner is involved in selecting or determining the appropriate strategy to manage the identified risks.
+
+### Summary:
+The analysis reveals a clear connection between the risk owner, the actions they take, and the strategies they choose, emphasizing the role of the risk owner in the project management process related to managing risks.

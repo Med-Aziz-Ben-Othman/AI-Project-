@@ -1,0 +1,36 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management and project risks:
+
+### Nodes:
+1. **Project Management**
+2. **Project Risk Management**
+3. **Critical Success Factor**
+4. **Project Success**
+
+### Relationships:
+1. **is an integral part of**:
+   - **Source Node:** Project Management
+   - **Target Node:** Project Risk Management
+
+2. **is a critical success factor for**:
+   - **Source Node:** Project Risk Management
+   - **Target Node:** Project Success
+
+3. **is essential for**:
+   - **Source Node:** Project Management
+   - **Target Node:** Project Success
+
+### Attributes:
+- **Project Management**: 
+  - Domain: Project Management
+  - Focus: Overall management of projects.
+
+- **Project Risk Management**: 
+  - Function: Identifying, assessing, and mitigating risks in projects.
+
+- **Critical Success Factor**: 
+  - Definition: Elements that are vital for a project’s success.
+  
+- **Project Success**: 
+  - Outcome: Achieving project objectives and meeting stakeholder expectations.
+
+This structured representation reflects the semantic relationships and key concepts related to project management risks as indicated in the original sentence.

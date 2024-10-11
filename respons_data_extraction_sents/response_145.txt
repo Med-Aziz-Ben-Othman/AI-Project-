@@ -1,0 +1,29 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk Management Plan**
+2. **Project Risk Management**
+3. **Project**
+4. **Value**
+
+### Relationships:
+1. **"delivers"**: between **Risk Management Plan** and **Value**
+   - This indicates that the risk management plan is expected to deliver value.
+   
+2. **"is an integral part of"**: between **Project Risk Management** and **Project**
+   - This signifies that project risk management is a crucial component of the overall project.
+
+3. **"carries"**: between **Project Risk Management** and **Integral Part**
+   - This suggests that project risk management carries the characteristic of being an integral part of the project.
+
+### Attributes:
+- **Risk Management Plan**: 
+  - **Purpose**: Deliver value
+- **Project Risk Management**: 
+  - **Characteristic**: Integral part of the project
+- **Project**: 
+  - **Context**: Refers to the overall project environment in which risks are managed.
+- **Value**: 
+  - **Outcome**: Result of effective risk management.
+
+This structured analysis reflects the semantic relationships and highlights the importance of risk management in delivering value within the context of project management.

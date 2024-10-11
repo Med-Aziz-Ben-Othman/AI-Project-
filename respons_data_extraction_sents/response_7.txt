@@ -1,0 +1,23 @@
+Based on the provided sentence, here is a structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Responsibility**
+2. **Risk**
+3. **Lesson**
+4. **Future Use**
+
+### Relationships:
+1. **Allocate**: The action of distributing or assigning responsibility.
+   - **Relationship**: Responsibility → Allocate → Risk
+2. **Ensure**: The action of making certain or guaranteeing.
+   - **Relationship**: Responsibility → Ensure → Lesson
+3. **Capture**: The action of recording or taking note of something for future reference.
+   - **Relationship**: Lesson → Capture → Future Use
+
+### Attributes:
+- **Responsibility**: Can be characterized by who is accountable for managing risks.
+- **Risk**: Can include various types (e.g., financial, operational, project-specific risks).
+- **Lesson**: Implies insights or knowledge gained from past experiences or mistakes.
+- **Future Use**: Indicates that the lessons captured are intended for application in upcoming projects or scenarios.
+
+This structured approach highlights the key components and their interconnections in the context of project management risks.

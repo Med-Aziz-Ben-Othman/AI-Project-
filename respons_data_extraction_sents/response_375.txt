@@ -1,0 +1,44 @@
+Based on the provided sentence, we can identify the following key concepts (nodes), relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities):
+1. **Plan**
+2. **Action**
+3. **Change**
+4. **Budget**
+5. **Schedule**
+6. **Resource**
+7. **Scope**
+8. **Risk**
+
+### Relationships:
+1. **Plan** - **entail** - **Action**
+   - A plan entails actions that need to be taken.
+   
+2. **Action** - **take** - **Potential Change**
+   - Actions taken may lead to potential changes.
+
+3. **Change** - **impact** - **Budget**
+   - Changes might impact the budget.
+
+4. **Change** - **impact** - **Schedule**
+   - Changes might impact the schedule.
+
+5. **Change** - **impact** - **Resource**
+   - Changes might impact the resources.
+
+6. **Change** - **impact** - **Scope**
+   - Changes might impact the scope.
+
+7. **Action** - **might cause** - **Risk**
+   - Actions taken could cause risks.
+
+### Attributes:
+- **Action**: Represents the specific steps or tasks that can be undertaken within the project.
+- **Change**: Indicates potential alterations based on the actions taken.
+- **Budget**: Refers to the financial resources allocated for the project.
+- **Schedule**: Denotes the timeline for project completion.
+- **Resource**: Encompasses the materials, personnel, and tools required for the project.
+- **Scope**: Defines the boundaries and deliverables of the project.
+
+### Summary of Extraction:
+- The primary focus of the analysis is the relationship between planning, actions, and potential changes that could lead to risks impacting various project dimensions such as budget, schedule, resources, and scope. Each node represents a critical component of project management, and the relationships elucidate how these components interact and affect project risks.

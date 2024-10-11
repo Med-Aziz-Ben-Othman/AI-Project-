@@ -1,0 +1,26 @@
+Based on the provided sentence, I will extract the relevant entities (nodes), their attributes, and the relationships between them as follows:
+
+### Nodes:
+1. **Project Team**
+   - Attributes: None specified in the sentence.
+
+2. **Contingency Reserve**
+   - Attributes: None specified in the sentence.
+
+3. **Decision**
+   - Attributes: The nature of the decision (to go and establish the reserve).
+
+### Relationships:
+1. **Examines** 
+   - Relationship: The Project Team examines the situation regarding project risks.
+
+2. **Decides**
+   - Relationship: The Project Team decides to take action.
+
+3. **Establishes**
+   - Relationship: The Project Team establishes a Contingency Reserve.
+
+### Summary of Extraction:
+- The **Project Team** is a central entity that is involved in both examining risks and making decisions.
+- The action of **deciding** leads to the establishment of a **Contingency Reserve**, which is a strategy used to mitigate project risks.
+- The relationships indicate the process of risk management within project management, showing how a team may proactively prepare for uncertainties by allocating resources (contingency reserve).

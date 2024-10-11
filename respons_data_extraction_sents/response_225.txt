@@ -1,0 +1,45 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Cause**
+2. **Risk**
+3. **Effect**
+4. **Document**
+5. **Result**
+6. **Identify Risk**
+7. **Process**
+8. **Record**
+9. **Order**
+10. **Capture**
+11. **Relevant Information**
+12. **Available**
+13. **Identified Risk**
+
+### Relationships:
+1. **Cause** → **Risk** (Causes a risk)
+2. **Risk** → **Effect** (Risk has an effect)
+3. **Document** → **Result** (Document produces a result)
+4. **Identify Risk** → **Process** (Identifying risk is part of a process)
+5. **Process** → **Result** (Process yields a result)
+6. **Identify Risk** → **Record** (Identifying risk involves recording)
+7. **Order** → **Capture** (Order is related to capturing information)
+8. **Capture** → **Relevant Information** (Capturing is about relevant information)
+9. **Relevant Information** → **Available** (Relevant information needs to be available)
+10. **Identified Risk** → **Process** (Identified risks are linked to a process)
+
+### Attributes:
+- **Cause**: The factor that may lead to a risk.
+- **Risk**: The potential negative outcome.
+- **Effect**: The consequence of the risk materializing.
+- **Document**: Written record of the risk management process.
+- **Result**: The outcome of the risk management actions.
+- **Identify Risk**: Activity aimed at recognizing risks.
+- **Process**: A series of actions taken to manage risks.
+- **Record**: The act of documenting risks and outcomes.
+- **Order**: The sequence or organization of actions.
+- **Capture**: The act of gathering information.
+- **Relevant Information**: Data pertinent to risk management.
+- **Available**: Accessibility of the information.
+- **Identified Risk**: Risks that have been recognized and documented.
+
+This structured extraction provides insight into the interactions and attributes related to project management risks, which can be utilized in graph-based learning models.

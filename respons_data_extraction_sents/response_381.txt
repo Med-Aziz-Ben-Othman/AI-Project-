@@ -1,0 +1,19 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Role**
+2. **Risk Owner**
+3. **Risk Action Owner**
+4. **Person**
+
+### Relationships:
+1. **Assigns** - The relationship between the "Risk Owner" and the "Risk Action Owner".
+2. **May Assign** - Indicates the potential action of the "Risk Owner" towards the "Person".
+
+### Attributes:
+- **Risk Owner**: A designated individual responsible for managing and mitigating risks.
+- **Risk Action Owner**: The individual assigned by the Risk Owner to take specific actions regarding risk management.
+- **Single Person**: Indicates that the assignment can be made to one individual.
+
+### Summary:
+- The **Risk Owner** has the ability to **assign** a **Risk Action Owner**, which may be a **single person**. This highlights the delegation of responsibility in managing project risks.

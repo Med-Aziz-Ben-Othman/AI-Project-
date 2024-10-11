@@ -1,0 +1,20 @@
+Based on the provided sentence, the following entities (nodes), relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Project Management**
+2. **Risk Management**
+3. **Organization**
+4. **Governance**
+
+### Relationships:
+1. **General Scope of** - Project Management is associated with General Risk Management.
+2. **Specific Contribution to** - General Risk Management contributes to Effective Governance.
+3. **Influences** - Effective Governance influences the Organization.
+
+### Attributes:
+- **Project Management**: Encompasses strategies and methodologies.
+- **Risk Management**: Focuses on identifying, assessing, and mitigating risks.
+- **Organization**: Can refer to the structure or entity implementing project management practices.
+- **Governance**: Refers to the framework of rules and practices by which an organization is directed and controlled.
+
+This structured extraction reflects the interconnections and attributes relevant to project management risks as indicated in the sentence.

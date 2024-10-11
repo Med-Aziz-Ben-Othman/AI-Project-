@@ -1,0 +1,25 @@
+Based on the provided text "identified risk record," here are the extracted elements relevant to project management risks:
+
+### Nodes
+1. **Identified Risk** 
+   - This node represents a risk that has been recognized and documented within the project management context.
+
+2. **Risk Record**
+   - This node refers to the documentation or log that contains details about the identified risks, including their nature, impact, and mitigation strategies.
+
+### Relationships
+1. **Has Record** 
+   - This relationship connects the **Identified Risk** node to the **Risk Record** node, indicating that an identified risk is associated with a formal record.
+
+### Attributes
+- **Identified Risk**
+  - **Nature**: The type of risk (e.g., financial, technical, operational).
+  - **Impact Level**: The severity of the risk (e.g., low, medium, high).
+  - **Probability**: The likelihood of the risk occurring (e.g., unlikely, likely, very likely).
+
+- **Risk Record**
+  - **Date Identified**: The date when the risk was recognized.
+  - **Status**: Current status of the risk (e.g., active, mitigated, resolved).
+  - **Mitigation Strategies**: Actions proposed or taken to address the risk.
+
+This structured extraction reflects the essential components and their interrelations within the context of project management risks.

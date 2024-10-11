@@ -1,0 +1,28 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Combination Risk**
+2. **Risk Analysis**
+3. **Information**
+4. **Work Breakdown Structure (WBS)**
+5. **Project**
+6. **Risk Exhibit**
+7. **Area**
+
+### Relationships:
+1. **Combination Risk** - *is a type of* - **Risk Analysis**
+2. **Risk Analysis** - *utilizes* - **Information**
+3. **Work Breakdown Structure** - *is part of* - **Project**
+4. **Project** - *includes* - **Risk Exhibit**
+5. **Area** - *is associated with* - **Project**
+
+### Attributes:
+- **Combination Risk**: Can be characterized by its complexity and potential impact on the project.
+- **Risk Analysis**: Involves methods and tools to assess project risks.
+- **Information**: Refers to data used in the analysis process.
+- **Work Breakdown Structure (WBS)**: A hierarchical decomposition of the total scope of work in a project.
+- **Project**: Has a defined scope, objectives, and timeline.
+- **Risk Exhibit**: Typically presents visual information regarding identified risks.
+- **Area**: Could refer to a specific domain or sector related to the project.
+
+These elements collectively represent the semantic structure of the project management risks discussed in the sentence.

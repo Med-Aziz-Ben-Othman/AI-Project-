@@ -1,0 +1,52 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Qualitative Technique**
+2. **Individual Risk**
+3. **Characteristic**
+4. **Probability of Occurrence**
+5. **Degree of Impact**
+6. **Project Objectives**
+7. **Manageability**
+8. **Time**
+9. **Possible Impact**
+10. **Common Cause**
+11. **Effect**
+
+### Relationships:
+1. **Qualitative Technique** - **used to gain** - **Individual Risk**
+2. **Individual Risk** - **has** - **Characteristic**
+3. **Individual Risk** - **has** - **Probability of Occurrence**
+4. **Individual Risk** - **has** - **Degree of Impact**
+5. **Degree of Impact** - **affects** - **Project Objectives**
+6. **Individual Risk** - **is associated with** - **Manageability**
+7. **Time** - **is a factor in** - **Possible Impact**
+8. **Common Cause** - **can lead to** - **Effect**
+9. **Individual Risk** - **may have** - **Common Cause**
+10. **Possible Impact** - **derives from** - **Degree of Impact**
+
+### Attributes:
+- **Qualitative Technique**
+  - Purpose: Gain understanding
+- **Individual Risk**
+  - Nature: Considered
+- **Characteristic**
+  - Type: Range
+- **Probability of Occurrence**
+  - Measurement: Likelihood
+- **Degree of Impact**
+  - Measurement: Severity
+- **Project Objectives**
+  - Focus: Achievements
+- **Manageability**
+  - Level: Control
+- **Time**
+  - Aspect: Duration
+- **Possible Impact**
+  - Degree: Consequence
+- **Common Cause**
+  - Nature: Origin of multiple risks
+- **Effect**
+  - Outcome: Result of risks
+
+This structured extraction captures the essential components of project management risks as discussed in the provided text, facilitating understanding of how these elements interact in a project management context.

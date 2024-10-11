@@ -1,0 +1,28 @@
+Based on the provided sentence, we can identify the following components relevant to project management risks:
+
+### Nodes (Entities)
+1. **Generic Risk**
+2. **Broader Effect**
+3. **Individual Project**
+4. **Element**
+
+### Relationships
+1. **Has Effect**: 
+   - **Generic Risk** → **Broader Effect**
+   - This indicates that a generic risk can have a broader impact on the project environment or context.
+
+2. **Affects**:
+   - **Broader Effect** → **Individual Project**
+   - This signifies that the broader effect stemming from a generic risk influences individual projects.
+
+3. **Composed Of**:
+   - **Individual Project** → **Element**
+   - This denotes that an individual project consists of various elements which could be affected by the broader effect of risks.
+
+### Attributes/Characteristics
+- **Generic Risk**: Represents risks that are not specific to any one project but are applicable across multiple projects.
+- **Broader Effect**: Refers to the extensive impact that a risk can have, potentially affecting multiple aspects or stakeholders involved in a project.
+- **Individual Project**: Denotes a specific project that may be affected by risks and their broader effects.
+- **Element**: Indicates specific components or parts of the individual project that could be impacted by the identified risks.
+
+This structured extraction reflects the relationships and attributes relevant to understanding project management risks as described in the sentence.

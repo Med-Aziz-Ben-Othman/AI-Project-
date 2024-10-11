@@ -1,0 +1,24 @@
+Based on the provided sentence, we can extract the following key concepts (nodes), relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk Management**
+2. **Input**
+3. **Project Management Process**
+
+### Relationships
+1. **Requires**: The relationship between "Project Risk Management" and "Input" indicates that effective project risk management requires certain inputs.
+2. **Is Part Of**: The relationship between "Input" and "Project Management Process" suggests that the input is a component of the overall project management process.
+
+### Attributes
+- **Effective**: This attribute describes the quality of the "Project Risk Management," indicating that it is not just any risk management but one that achieves desired outcomes.
+
+### Structured Summary
+- **Node 1**: Project Risk Management
+  - **Attribute**: Effective
+- **Node 2**: Input
+- **Node 3**: Project Management Process
+
+- **Relationship 1**: Project Risk Management Requires Input
+- **Relationship 2**: Input Is Part Of Project Management Process
+
+This structured extraction reflects the semantic relationships and key concepts related to project management risks as mentioned in the sentence.

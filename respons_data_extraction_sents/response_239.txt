@@ -1,0 +1,32 @@
+Based on the provided sentence, the analysis reveals the following key concepts, entities, and relationships relevant to project management risks:
+
+### Nodes (Entities)
+1. **Critical Success Factor**
+2. **Qualitative Risk Analysis Process**
+3. **Several Factors**
+4. **Successful Qualitative Risk Analysis**
+5. **Description Section**
+6. **Summarized Figure**
+
+### Relationships
+1. **Involves**: 
+   - "Critical Success Factor" **involves** "Qualitative Risk Analysis Process"
+  
+2. **Leads To**: 
+   - "Several Factors" **lead to** "Successful Qualitative Risk Analysis"
+  
+3. **Describes**: 
+   - "Description Section" **describes** "Successful Qualitative Risk Analysis"
+  
+4. **Summarizes**: 
+   - "Summarized Figure" **summarizes** "Qualitative Risk Analysis Process"
+
+### Attributes
+- **Critical Success Factor**: Attributes may include importance, relevance to project success, etc.
+- **Qualitative Risk Analysis Process**: Attributes may include methodologies used, tools, or techniques applied.
+- **Several Factors**: Could include specific elements such as stakeholder involvement, data quality, or team expertise.
+- **Successful Qualitative Risk Analysis**: Attributes may include effectiveness, impact on project outcomes, or alignment with project goals.
+- **Description Section**: May refer to a specific part of a document that outlines methodologies or processes.
+- **Summarized Figure**: Could represent visual data or statistics relevant to the qualitative risk analysis.
+
+This structured extraction highlights the interconnectedness of various components involved in the qualitative risk analysis process within project management, specifically focusing on how different factors contribute to success and what documentation supports these analyses.

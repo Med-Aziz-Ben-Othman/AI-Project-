@@ -1,0 +1,20 @@
+Based on the provided text, the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Project Model** 
+2. **Quantitative Risk Analysis**
+3. **Appropriate Model**
+4. **Project Use**
+
+### Relationships:
+1. **is a type of**: Project Model → Appropriate Model
+2. **supports**: Appropriate Model → Quantitative Risk Analysis
+3. **is used in**: Appropriate Model → Project Use
+4. **is based on**: Quantitative Risk Analysis → Project Model
+
+### Attributes:
+- **Appropriateness**: Indicates that the model is suitable for the project context.
+- **Basis**: Refers to the foundation of the Quantitative Risk Analysis being the appropriate model.
+- **Quantitative Nature**: Suggests that the risk analysis employs quantitative methods.
+
+This structured extraction reflects the semantic relationships in the provided text, focusing on project management and associated risks.

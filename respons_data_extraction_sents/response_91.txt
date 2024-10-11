@@ -1,0 +1,25 @@
+Based on the provided sentence, I will extract the relevant nodes (entities), relationships, and attributes related to project management risks.
+
+### Nodes (Entities)
+1. **Quantitative Risk Analysis**
+2. **Chapter**
+3. **Effect**
+4. **Risk**
+5. **Overall Project Outcome**
+6. **Project**
+
+### Relationships
+1. **Evaluates** - *Quantitative Risk Analysis* evaluates *Effect*.
+2. **Combines** - *Effect* combines with *Risk*.
+3. **Influences** - *Risk* influences *Overall Project Outcome*.
+4. **Pertains to** - *Overall Project Outcome* pertains to *Project*.
+
+### Attributes
+- **Quantitative Risk Analysis**: refers to a method used to numerically evaluate risks.
+- **Effect**: the impact or change resulting from risks.
+- **Risk**: potential events that may negatively affect the project.
+- **Overall Project Outcome**: the final result or success level of the project.
+- **Project**: the overall endeavor or initiative being managed.
+
+### Summary
+The sentence can be structured to reflect that a chapter on *Quantitative Risk Analysis* evaluates the *Effect* of *Risk*, which in turn combines to influence the *Overall Project Outcome* of a *Project*. Each node has specific attributes that define its role within the context of project management and risk analysis.

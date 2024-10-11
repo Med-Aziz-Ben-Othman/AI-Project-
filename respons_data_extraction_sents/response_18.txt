@@ -1,0 +1,21 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Project** 
+2. **Contingency Fund**
+3. **Risk**
+4. **Identification**
+
+### Relationships:
+1. **Apply** - connects **Project** and **Contingency Fund** (indicates the action of utilizing the fund within the project)
+2. **Deal with** - connects **Contingency Fund** and **Identified Risk** (indicates that the fund is allocated to manage the risk)
+3. **Occur** - connects **Identified Risk** and **Project** (indicates that the risk can manifest during the course of the project)
+
+### Attributes:
+- **Contingency Fund**: 
+  - Purpose: To manage unforeseen circumstances or risks
+  - Relation: Specific to the **Project** 
+- **Risk**:
+  - State: Identified (suggesting that it has been recognized and documented)
+  
+This structured representation highlights the key components of project management risks as described in the sentence.

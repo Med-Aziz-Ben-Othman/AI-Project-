@@ -1,0 +1,26 @@
+Based on the provided sentence, here is the analysis structured into nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Role**
+2. **Responsibility**
+3. **Project Risk Management**
+4. **Individual**
+5. **Result**
+6. **Accountability**
+
+### Relationships
+1. **Defines**: Role → Responsibility
+2. **Communicates**: Responsibility → Project Risk Management
+3. **Holds Responsible**: Individual → Responsibility
+4. **Is Accountable For**: Individual → Result
+5. **Affects**: Project Risk Management → Result
+
+### Attributes/Characteristics
+- **Role**: Defines specific duties within a project.
+- **Responsibility**: Tasks or obligations assigned to individuals.
+- **Project Risk Management**: The process of identifying, assessing, and controlling risks in a project.
+- **Individual**: The person or entity tasked with fulfilling responsibilities.
+- **Result**: The outcome or impact of the responsibilities undertaken.
+- **Accountability**: The obligation an individual has to report and justify outcomes.
+
+This structured extraction reflects the semantic relationships and elements involved in project management risks as described in the sentence.

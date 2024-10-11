@@ -1,0 +1,20 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Secondary Risk**
+2. **Risk Analysis**
+3. **Planned Way**
+4. **Identified Risk**
+
+### Relationships:
+1. **has**: Secondary Risk **has** Identified Risk
+2. **involves**: Risk Analysis **involves** Planned Way
+3. **relates to**: Secondary Risk **relates to** Risk Analysis
+
+### Attributes:
+- **Secondary Risk**: Represents risks that arise as a consequence of implementing a risk response.
+- **Risk Analysis**: The process of identifying and analyzing potential issues that could negatively impact key business initiatives or projects.
+- **Planned Way**: Refers to a systematic approach or strategy for managing risks.
+- **Identified Risk**: Risks that have been recognized and documented as part of the project management process.
+
+This structured extraction captures the key elements of project management risks as they relate to the concepts presented in the original sentence.

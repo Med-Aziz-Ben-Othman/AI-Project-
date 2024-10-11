@@ -1,0 +1,35 @@
+Based on the provided sentence, we can extract the following nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Information**
+   - Attributes: Available, Historic
+2. **Database**
+   - Attributes: Gather
+3. **Interview**
+   - Attributes: Workshop
+4. **Expert Judgment**
+   - Attributes: Use
+
+### Relationships:
+- **Information** is stored in a **Database**.
+- **Database** is used to **Gather** **Information**.
+- **Interview** and **Workshop** are methods or tools used to gather **Information**.
+- **Expert Judgment** is a technique that can be employed to **Use** the gathered **Information**.
+
+### Structured Representation:
+- **Node: Information**
+  - Attributes: Available, Historic
+- **Node: Database**
+  - Attributes: Gather
+- **Node: Interview**
+  - Attributes: Workshop
+- **Node: Expert Judgment**
+  - Attributes: Use
+
+- **Relationship: Information -> Database** (Information is stored in Database)
+- **Relationship: Database -> Gather** (Database is used to Gather Information)
+- **Relationship: Interview -> Information** (Interview is a method to gather Information)
+- **Relationship: Workshop -> Information** (Workshop is a method to gather Information)
+- **Relationship: Expert Judgment -> Use** (Expert Judgment is a technique to Use Information)
+
+This structured extraction provides a clear understanding of the entities involved in project management risks and their relationships.

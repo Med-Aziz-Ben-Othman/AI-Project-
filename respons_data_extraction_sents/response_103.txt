@@ -1,0 +1,55 @@
+Based on the provided sentence, here is the analysis of key concepts, entities, and relationships related to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk Management Process**
+   - Type: Process
+   - Attributes: Integral part, specific activity
+
+2. **Overall Project Management Plan**
+   - Type: Plan
+   - Attributes: Budget, resource, cost, time
+
+3. **Risk Management Activity**
+   - Type: Activity
+   - Attributes: Establish order, track control
+
+4. **Expenditure**
+   - Type: Financial Aspect
+   - Attributes: Corresponding to risk management
+
+5. **Project**
+   - Type: Project
+   - Attributes: None specified
+
+### Relationships
+1. **Is Part Of** 
+   - **Project Risk Management Process** → **Overall Project Management Plan**
+   - Description: The project risk management process is an integral component of the overall project management plan.
+
+2. **Involves** 
+   - **Overall Project Management Plan** → **Risk Management Activity**
+   - Description: The overall project management plan involves specific risk management activities.
+
+3. **Establishes** 
+   - **Risk Management Activity** → **Order**
+   - Description: The risk management activity establishes an order for managing risks.
+
+4. **Tracks** 
+   - **Risk Management Activity** → **Control**
+   - Description: The risk management activity tracks control measures for risks.
+
+5. **Defends** 
+   - **Risk Management Activity** → **Expenditure**
+   - Description: The risk management activity defends the corresponding expenditure necessary for managing risks throughout the project.
+
+6. **Affects** 
+   - **Overall Project Management Plan** → **Expenditure**
+   - Description: The overall project management plan affects the expenditure related to risk management.
+
+### Summary of Attributes
+- The **Project Risk Management Process** is described as integral, indicating its importance in ensuring that risks are managed effectively within the project.
+- The **Overall Project Management Plan** includes attributes such as budget, resource allocation, cost considerations, and time management.
+- The **Risk Management Activity** focuses on establishing order and tracking control, which are critical for efficient risk management.
+- **Expenditure** relates directly to risk management efforts, emphasizing the need for financial justification and oversight within the project.
+
+This structured extraction helps in understanding the interconnected nature of project management risks and their management processes.

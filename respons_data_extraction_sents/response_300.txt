@@ -1,0 +1,51 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk Management**
+   - Type: Process/Practice
+2. **Quantitative Risk Analysis**
+   - Type: Process
+3. **Risk**
+   - Type: Concept
+4. **Objective**
+   - Type: Concept
+5. **Numerical Estimate**
+   - Type: Output/Result
+6. **Overall Effect**
+   - Type: Concept/Outcome
+7. **Current Plan Information**
+   - Type: Data/Resource
+8. **Standard**
+   - Type: Guideline/Framework
+
+### Relationships
+1. **Standard** → **Project Risk Management**
+   - Relationship: Guides/Defines
+2. **Project Risk Management** → **Quantitative Risk Analysis**
+   - Relationship: Includes/Comprises
+3. **Quantitative Risk Analysis** → **Objective**
+   - Relationship: Aims to Achieve
+4. **Quantitative Risk Analysis** → **Numerical Estimate**
+   - Relationship: Produces/Generates
+5. **Numerical Estimate** → **Overall Effect**
+   - Relationship: Represents/Indicates
+6. **Current Plan Information** → **Risk**
+   - Relationship: Informs/Considers
+7. **Objective** → **Risk**
+   - Relationship: Relates to/Addresses
+
+### Attributes
+- **Project Risk Management**
+  - Attribute: Standardized practice
+- **Quantitative Risk Analysis**
+  - Attribute: Process-based analysis
+- **Objective**
+  - Attribute: Purpose-driven
+- **Numerical Estimate**
+  - Attribute: Quantitative measure
+- **Overall Effect**
+  - Attribute: Impact assessment
+- **Current Plan Information**
+  - Attribute: Contextual data
+
+This structured representation captures the essential components and their interconnections concerning project management risks, thereby facilitating the understanding and analysis necessary for graph-based learning models.

@@ -1,0 +1,28 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk**
+2. **Uncertain Event**
+3. **Condition**
+4. **Effect**
+5. **Project Objective**
+6. **Positive Effect**
+7. **Negative Effect**
+
+### Relationships:
+- **Defines**: (Risk) → (Uncertain Event, Condition)
+- **Affects**: (Uncertain Event, Condition) → (Effect)
+- **Has**: (Effect) → (Project Objective)
+- **Can Result In**: (Effect) → (Positive Effect)
+- **Can Result In**: (Effect) → (Negative Effect)
+
+### Attributes:
+- **Risk**: 
+  - Type: (Uncertain Event, Condition)
+  - Nature: (Positive, Negative)
+- **Effect**: 
+  - Nature: (Positive, Negative)
+- **Project Objective**: 
+  - Related to the outcome of the effects
+
+This structured extraction captures the essence of the relationships and attributes associated with project management risks as described in the sentence.

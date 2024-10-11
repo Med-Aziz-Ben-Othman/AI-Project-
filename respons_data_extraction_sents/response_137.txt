@@ -1,0 +1,18 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Critical Success Factor**
+2. **Plan**
+3. **Risk Management Process**
+
+### Relationships:
+1. **Involves**: The relationship between the "Plan" and "Risk Management Process" can be characterized as "the plan involves the risk management process."
+2. **Affects**: The relationship between "Critical Success Factor" and "Risk Management Process" can be seen as "the critical success factor affects the risk management process."
+3. **Details**: The phrase "detail below" suggests a relationship where the "Risk Management Process" is elaborated or explained in detail.
+
+### Attributes:
+- **Critical Success Factor**: Represents elements that are vital for the success of risk management.
+- **Plan**: Indicates a structured approach or strategy for managing risks.
+- **Risk Management Process**: Implies a systematic procedure for identifying, analyzing, and responding to project risks. 
+
+This structure highlights the key elements involved in project risk management and their interconnections, which can be useful for graph-based learning models.

@@ -1,0 +1,51 @@
+Based on the provided sentence, here are the extracted entities (nodes), relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk Management**
+   - Type: Concept
+2. **Quantitative Risk Analysis**
+   - Type: Process
+3. **Qualitative Risk Analysis**
+   - Type: Process
+4. **Risk Identification**
+   - Type: Process
+5. **Risk**
+   - Type: Entity
+6. **Analysis**
+   - Type: Process
+
+### Relationships
+1. **practice** 
+   - Between: **Project Risk Management** and **Quantitative Risk Analysis**
+   - Description: Project risk management practices involve quantitative risk analysis.
+   
+2. **precedes**
+   - Between: **Quantitative Risk Analysis** and **Risk Identification**
+   - Description: Quantitative risk analysis is performed prior to risk identification.
+   
+3. **involves**
+   - Between: **Risk Identification** and **Qualitative Risk Analysis**
+   - Description: Risk identification involves qualitative risk analysis.
+   
+4. **occurs**
+   - Between: **Risk Identification** and **Risk**
+   - Description: Risk identification occurs to identify risks.
+   
+5. **completes**
+   - Between: **Qualitative Risk Analysis** and **Risk Identification**
+   - Description: The qualitative risk analysis process is completed after risk identification.
+
+### Attributes
+1. **Quantitative Risk Analysis**
+   - Attribute: Type of analysis that uses numerical methods to assess risks.
+   
+2. **Qualitative Risk Analysis**
+   - Attribute: Type of analysis that assesses risks based on subjective judgment and non-numerical factors.
+   
+3. **Risk Identification**
+   - Attribute: Process aimed at identifying potential risks in a project.
+
+4. **Risk**
+   - Attribute: Uncertain event or condition that, if it occurs, can affect project objectives.
+
+This structured analysis reflects the relationships and processes involved in project risk management as described in the original text.

@@ -1,0 +1,29 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk**
+2. **Level**
+3. **Detail**
+4. **Risk Owner**
+5. **Responsibility**
+6. **Accountability**
+7. **Management**
+
+### Relationships:
+1. **Describes**: Risk → Level
+2. **Describes**: Risk → Detail
+3. **Assigned To**: Risk → Risk Owner
+4. **Defines**: Risk Owner → Responsibility
+5. **Defines**: Risk Owner → Accountability
+6. **Involves**: Risk → Management
+
+### Attributes:
+- **Risk**: Can have multiple characteristics (level, detail).
+- **Level**: Represents the severity or magnitude of the risk.
+- **Detail**: Provides specific information about the risk.
+- **Risk Owner**: A single individual responsible for managing the risk.
+- **Responsibility**: The obligations associated with managing the risk.
+- **Accountability**: The answerability for the outcomes related to the risk.
+- **Management**: The process of overseeing risks in a project context.
+
+This structured extraction reflects the key elements and their interconnections within the context of project management risks.

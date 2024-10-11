@@ -1,0 +1,26 @@
+Based on the provided text "processrelated criterion," we can extract the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Process**
+   - Definition: A series of actions or steps taken to achieve a particular end in project management.
+   
+2. **Criterion**
+   - Definition: A standard or principle by which something is judged or decided, particularly in assessing project risks.
+
+### Relationships:
+1. **is_assessed_by**
+   - Relationship: The "Process" can be assessed by the "Criterion" to evaluate risks associated with the process.
+
+### Attributes:
+- **Process**
+  - Attributes: 
+    - Type: (e.g., Planning, Execution, Monitoring)
+    - Importance: (e.g., High, Medium, Low)
+  
+- **Criterion**
+  - Attributes:
+    - Type: (e.g., Qualitative, Quantitative)
+    - Relevance: (e.g., Specific to process, General)
+
+### Summary:
+In summary, we have identified two key nodes—Process and Criterion—along with a relationship indicating how the criterion is used to assess risks related to processes in project management, along with relevant attributes for each node.

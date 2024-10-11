@@ -1,0 +1,51 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes
+1. **Project Risk**
+2. **Analysis**
+3. **Quantitative Risk Analysis**
+4. **Process**
+5. **Overall Risk**
+6. **Discussion**
+
+### Relationships
+1. **Analyzes**: 
+   - Between **may** and **analysis**
+   - Relationship: "may analyze" indicates the potential action regarding the **Analysis** of **Project Risk**.
+
+2. **Discusses**: 
+   - Between **analysis** and **overall project risk**
+   - Relationship: "discuss" suggests that the **Analysis** involves a conversation or examination of **Overall Project Risk**.
+
+3. **Performs**: 
+   - Between **perform** and **quantitative risk analysis**
+   - Relationship: "perform" indicates the execution of the **Quantitative Risk Analysis** process.
+
+4. **Involves**: 
+   - Between **quantitative risk analysis** and **process**
+   - Relationship: The **Quantitative Risk Analysis** is part of a broader **Process**.
+
+### Attributes
+- **Overall Project Risk**: Refers to the comprehensive risk assessment of the project.
+- **Quantitative Risk Analysis**: A method that uses numerical techniques to quantify the risks.
+
+### Summary Structure
+- **Node**: Project Risk 
+  - **Relationships**: 
+    - Analyzed via Analysis
+    - Discussed in context of Overall Risk
+
+- **Node**: Analysis 
+  - **Relationships**: 
+    - Discusses Overall Project Risk
+    - Leads to Quantitative Risk Analysis
+
+- **Node**: Quantitative Risk Analysis 
+  - **Relationships**: 
+    - Performed as part of the Process
+
+- **Node**: Process 
+  - **Relationships**: 
+    - Encompasses Quantitative Risk Analysis
+
+This structure reflects key concepts in project management risks and their interrelations, suitable for graph-based learning models.

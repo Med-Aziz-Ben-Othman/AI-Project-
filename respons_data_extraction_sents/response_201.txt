@@ -1,0 +1,24 @@
+Based on the provided sentence, the analysis reveals the following key concepts, entities, and relationships that are relevant to project management risks:
+
+### Nodes (Entities)
+1. **Motivational Bias**
+2. **Cognitive Bias**
+3. **Judgment**
+4. **Heuristic**
+5. **People**
+
+### Relationships
+1. **Motivational Bias** *influences* **Cognitive Bias** 
+2. **Cognitive Bias** *affects* **Judgment**
+3. **People** *experience* **Cognitive Bias** 
+4. **Heuristic** *is used by* **People** 
+5. **Judgment** *is based on* **Heuristic**
+
+### Attributes/Characteristics
+- **Motivational Bias**: A type of bias that can skew decision-making in a specific direction.
+- **Cognitive Bias**: A systematic pattern of deviation from norm or rationality in judgment.
+- **Judgment**: The process of forming an opinion or evaluation by discerning and comparing.
+- **Heuristic**: A mental shortcut that allows people to solve problems and make judgments quickly and efficiently.
+- **People**: The individuals involved in decision-making processes within project management.
+
+This structured extraction highlights the interrelated concepts surrounding project management risks and the biases that can affect decision-making.

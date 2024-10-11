@@ -1,0 +1,34 @@
+Based on the provided sentence, here are the extracted entities (nodes), relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Risk Analysis**
+   - Type: Process
+   - Attributes: Overall, Quantitative
+
+2. **Quantitative Technique**
+   - Type: Methodology
+   - Attributes: Estimation, Implication
+
+3. **Quantified Risk**
+   - Type: Output
+   - Attributes: Implication, Measurement
+
+4. **Project Objective**
+   - Type: Goal
+   - Attributes: Related to project success
+
+### Relationships
+1. **Risk Analysis** *uses* **Quantitative Technique**
+   - Description: The process of risk analysis employs quantitative techniques to evaluate risks.
+
+2. **Quantitative Technique** *estimates* **Quantified Risk**
+   - Description: The quantitative techniques are applied to estimate the implications of risks, leading to quantified risk.
+
+3. **Quantified Risk** *affects* **Project Objective**
+   - Description: The quantified risks have implications that can impact the achievement of project objectives.
+
+4. **Overall Risk Analysis** *involves* **Quantitative Technique**
+   - Description: The overall evaluation of risks incorporates quantitative methods to assess them effectively.
+
+### Summary
+The sentence describes the process of performing an overall risk analysis using quantitative techniques to estimate the implications of quantified risks, which in turn relate to achieving the project's objectives. The relationships emphasize the methodology's role in risk estimation and its impact on project goals.

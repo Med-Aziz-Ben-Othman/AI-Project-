@@ -1,0 +1,33 @@
+Based on the provided sentence, the following elements can be extracted:
+
+### Nodes (Entities)
+1. **Initial Step Document**
+2. **Review**
+3. **Stakeholder**
+4. **Scope**
+5. **Objective**
+6. **Project Risk Management Process**
+7. **Common Understanding**
+
+### Relationships
+1. **Communicates**: 
+   - **Initial Step Document** → **Review**
+   - **Initial Step Document** → **Stakeholder**
+   
+2. **Ensures**: 
+   - **Common Understanding** → **Scope**
+   - **Common Understanding** → **Objective**
+   - **Common Understanding** → **Project Risk Management Process**
+   
+3. **Defines**:
+   - **Scope** ↔ **Objective** (Scope defines the boundaries for the Objective)
+
+### Attributes
+- **Initial Step Document**: Represents the foundational document for the project.
+- **Stakeholder**: Individuals or groups involved in or affected by the project.
+- **Scope**: The extent of the project, outlining what is included and excluded.
+- **Objective**: The goals or desired outcomes of the project.
+- **Project Risk Management Process**: A systematic approach to identifying and managing project risks.
+
+### Summary of Extraction
+The sentence illustrates the importance of an initial step document that communicates the review and engages stakeholders to ensure a common understanding of the project's scope, objectives, and the risk management process. The relationships highlight how these elements interact to facilitate effective project management and risk assessment.

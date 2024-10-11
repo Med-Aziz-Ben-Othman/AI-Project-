@@ -1,0 +1,39 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Order**: Refers to the sequence or arrangement of processes.
+2. **Project Risk Management Process**: A systematic approach to identifying, analyzing, and responding to project risks.
+3. **Project Team**: The group of individuals responsible for executing the project.
+4. **Stakeholder**: Any individual or group with an interest in the project's outcome.
+5. **Need**: Indicates a requirement or necessity.
+6. **Expect**: Refers to the anticipated outcomes or behaviors.
+7. **Participate**: Involvement of individuals or groups in the process.
+8. **Criterion**: A standard or principle by which something is judged.
+9. **Success Level**: The degree to which the project meets its objectives.
+10. **Authority**: The power or right to make decisions and take actions.
+11. **Action**: Steps taken to address risks.
+12. **Decision**: The choice made in response to risks.
+13. **Relative Action**: Actions taken in relation to the identified risks.
+14. **Beyond Level**: Indicates actions or decisions that exceed a certain threshold.
+
+### Relationships:
+- **Order** → **Project Risk Management Process**: The order defines how the risk management process is carried out.
+- **Project Team** ↔ **Stakeholder**: The project team needs to engage stakeholders.
+- **Stakeholder** → **Need**: Stakeholders have needs that must be addressed in the project.
+- **Project Team** → **Expect**: The project team has expectations about stakeholder participation.
+- **Stakeholder** → **Participate**: Stakeholders are expected to participate in the project risk management process.
+- **Criterion** → **Determine**: Criteria are used to determine the success level of the project.
+- **Success Level** → **Authority**: The level of success may define the authority granted to take actions.
+- **Action** → **Decision**: Actions are based on decisions made regarding risks.
+- **Relative Action** → **Decision**: Actions taken are relative to the decisions made about risks.
+- **Action** ↔ **Beyond Level**: Certain actions may be required that go beyond a defined level of authority or risk threshold.
+
+### Attributes:
+- **Need**: Specifies the requirements of stakeholders.
+- **Expect**: Clarifies what the project team anticipates from stakeholders.
+- **Criterion**: Establishes the measures used to evaluate success.
+- **Success Level**: Defines the standard by which the project is judged.
+- **Authority**: Describes the extent of power given to take actions.
+- **Action**: Can be proactive or reactive based on the identified risks.
+
+This structured extraction captures essential elements related to project management risks and their interconnections.

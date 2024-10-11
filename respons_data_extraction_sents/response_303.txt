@@ -1,0 +1,19 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Quantitative Risk Analysis**
+2. **Project**
+
+### Relationships:
+1. **Requires** - This relationship connects "Quantitative Risk Analysis" to "Project," indicating that quantitative risk analysis is necessary for effective project management.
+
+### Attributes:
+- **Quantitative Risk Analysis**: 
+  - Type: Risk Management Technique
+  - Focus: Numerical data and statistical methods
+- **Project**: 
+  - Context: A temporary endeavor undertaken to create a unique product, service, or result.
+  - Requirement: Must be appropriate for risk analysis to be effective.
+
+### Summary:
+The sentence highlights the necessity of conducting a quantitative risk analysis as a vital aspect of managing risks in a project. The analysis requires that the project be appropriate in nature for the methodology to be effectively applied.

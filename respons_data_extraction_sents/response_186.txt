@@ -1,0 +1,25 @@
+Based on the provided text, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk**
+2. **Source of Risk**
+3. **Uncertainty**
+4. **Objective**
+5. **Identification**
+6. **Consideration**
+
+### Relationships:
+1. **Identification** - relates to **Risk** (Identification of risks)
+2. **Source of Risk** - relates to **Risk** (Source from which risks arise)
+3. **Uncertainty** - relates to **Risk** (Uncertainty related to risks)
+4. **Affects** - (Risk) **might affect** (Objective) (The potential impact of risks on objectives)
+5. **Consideration** - relates to **Risk** (Consideration of risks during project management)
+
+### Attributes:
+- **Comprehensive** - (modifying **Identification**)
+- **Broad Range** - (modifying **Source of Risk**)
+- **Many** - (modifying **Uncertainty**)
+- **Possible** - (modifying **Risk**)
+- **Identified** - (modifying **Objective**, suggesting that objectives should be clearly defined)
+
+This structured extraction reflects the interconnections and essential elements in the context of project management risks as presented in the sentence.

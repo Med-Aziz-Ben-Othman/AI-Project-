@@ -1,0 +1,49 @@
+Based on the provided sentence, the analysis yields the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Risk Management Plan**
+   - Type: Document/Plan
+   - Attributes: Specifies processes and guidelines for managing risks.
+
+2. **Project Risk Management Role**
+   - Type: Role
+   - Attributes: Defines responsibilities related to risk management.
+
+3. **Responsibility**
+   - Type: Concept
+   - Attributes: Tasks and duties assigned to individuals or groups.
+
+4. **Senior Management**
+   - Type: Entity/Stakeholder
+   - Attributes: Higher-level executives or leaders in the project.
+
+5. **Project Personnel**
+   - Type: Entity/Stakeholder
+   - Attributes: Individuals involved in the execution of the project.
+
+6. **Expectation**
+   - Type: Concept
+   - Attributes: Anticipated outcomes or standards set by stakeholders.
+
+### Relationships:
+1. **Specifies**
+   - Between: Risk Management Plan → Project Risk Management Role
+   - Description: The risk management plan outlines or details the role responsible for managing project risks.
+
+2. **Defines**
+   - Between: Project Risk Management Role → Responsibility
+   - Description: The role in project risk management is responsible for delineating specific duties.
+
+3. **Corresponds to**
+   - Between: Responsibility → Expectation
+   - Description: The responsibilities assigned are aligned with the expectations set by stakeholders.
+
+4. **Involves**
+   - Between: Senior Management → Project Personnel
+   - Description: Senior management is involved in defining expectations for the project personnel.
+
+5. **Aligns with**
+   - Between: Expectation → Senior Management
+   - Description: Expectations are established by senior management regarding the roles and responsibilities in the project.
+
+This structured extraction captures the essential entities, their attributes, and the relationships among them, which are pivotal in the context of project management and risk management.

@@ -1,0 +1,19 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Project Risk Management**
+2. **Project Process**
+
+### Relationships:
+1. **Includes**: Project Risk Management includes an integral part of the Project Process.
+
+### Attributes:
+- **Integral Part**: This attribute describes the significance of Project Risk Management within the context of the Project Process.
+
+### Structured Representation:
+- **Node 1**: Project Risk Management
+  - **Attribute**: Integral Part
+- **Node 2**: Project Process
+  - **Relationship**: Includes (Project Risk Management includes an integral part of the Project Process) 
+
+This analysis highlights the importance of project risk management as a critical component of the overall project management process.

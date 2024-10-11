@@ -1,0 +1,26 @@
+Based on the provided phrase, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Resource**
+2. **Logistics**
+3. **Risk**
+4. **Communication**
+5. **Nature**
+
+### Relationships:
+1. **Inadequate** 
+   - Relationship between **Resource** and **Logistics**: Indicates that resources are insufficient in the context of logistics.
+2. **Influences** 
+   - Relationship between **Logistics** and **Risk**: Poor logistics management can lead to increased project risks.
+3. **Affects** 
+   - Relationship between **Nature** and **Risk**: The nature of the risk can influence its impact on the project.
+4. **Communication** 
+   - Relationship to **Resource**: Effective communication is essential for managing resources properly.
+
+### Attributes:
+- **Resource**: Can be described as inadequate when it comes to logistics.
+- **Logistics**: Represents a critical aspect of project management that can lead to risks if not managed properly.
+- **Risk**: Refers to potential negative impacts on the project, influenced by logistics and resource management.
+- **Communication**: The effectiveness of communication can directly affect the management of resources and logistics.
+
+This structured extraction reflects the semantic understanding of the key concepts and their interrelations within the context of project management risks.

@@ -1,0 +1,21 @@
+Based on the provided sentence, we can extract the following nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Approach**
+2. **Realism**
+3. **Usefulness**
+4. **Qualitative Risk Analysis**
+
+### Relationships:
+1. **Approach** → **Contributes to** → **Realism**
+2. **Approach** → **Contributes to** → **Usefulness**
+3. **Qualitative Risk Analysis** → **Involves** → **Realism**
+4. **Qualitative Risk Analysis** → **Involves** → **Usefulness**
+
+### Attributes:
+- **Approach**: Methodological framework or strategy used in risk analysis.
+- **Realism**: Degree to which the risk analysis reflects actual project conditions and uncertainties.
+- **Usefulness**: Practical applicability and relevance of the risk analysis findings to decision-making.
+- **Qualitative Risk Analysis**: A type of risk analysis that assesses risks based on qualitative data rather than quantitative measures.
+
+This structured extraction captures the key elements and their interconnections relevant to project management risks as indicated in the original sentence.

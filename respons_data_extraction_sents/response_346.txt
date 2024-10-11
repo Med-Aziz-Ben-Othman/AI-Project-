@@ -1,0 +1,33 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Quantitative Method**
+   - Attributes: 
+     - Type: Analysis Technique
+     - Purpose: Address uncertainty
+
+2. **Uncertainty**
+   - Attributes:
+     - Nature: Risk Factor
+     - Context: Project Management
+
+3. **Probability Model**
+   - Attributes:
+     - Type: Statistical Model
+     - Purpose: Analyze uncertainty
+
+### Relationships:
+1. **Uses**
+   - **Quantitative Method** → **Probability Model**
+   - Description: The quantitative method is used to develop or implement the probability model.
+
+2. **Addresses**
+   - **Quantitative Method** → **Uncertainty**
+   - Description: The quantitative method is employed to address or manage uncertainty in project management.
+
+3. **Analyzes**
+   - **Probability Model** → **Uncertainty**
+   - Description: The probability model is utilized to analyze the uncertainty present in project management contexts.
+
+### Summary:
+The analysis indicates that a quantitative method is a key technique used to address uncertainty in project management, employing a probability model to analyze the risks associated with that uncertainty.

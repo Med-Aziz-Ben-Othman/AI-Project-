@@ -1,0 +1,29 @@
+Based on the provided sentence, we can extract the following components relevant to project management risks:
+
+### Nodes (Entities)
+1. **Risk Analysis Process**
+2. **Quantitative Analysis**
+3. **Qualitative Analysis**
+4. **Comparison**
+5. **Figure** (may refer to a visual representation or diagram)
+
+### Relationships
+1. **Comparison** - A relationship that connects the **Quantitative Analysis** and **Qualitative Analysis** as they are being compared in the context of the **Risk Analysis Process**.
+2. **Involves** - The **Risk Analysis Process** involves both **Quantitative Analysis** and **Qualitative Analysis**.
+3. **Represents** - The **Figure** represents the results or findings of the **Risk Analysis Process**.
+
+### Attributes
+- **Quantitative Analysis**: 
+  - Type: Numerical
+  - Purpose: Measures risks using statistical methods.
+  
+- **Qualitative Analysis**: 
+  - Type: Descriptive
+  - Purpose: Assesses risks based on subjective judgment and experience.
+  
+- **Figure**: 
+  - Type: Visual representation
+  - Purpose: Illustrates the comparison between quantitative and qualitative analyses.
+
+### Summary
+The sentence emphasizes the relationship between different methods of risk analysis (quantitative and qualitative) and their comparison within the broader context of a risk analysis process, which is visually represented in a figure. The attributes of each analysis type further clarify their distinct approaches to assessing project management risks.

@@ -1,0 +1,47 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes
+1. **Data**
+   - Type: Information
+   - Role: Input for analysis
+
+2. **Assessment**
+   - Type: Process
+   - Role: Evaluation of risks
+
+3. **Individual Risk**
+   - Type: Risk Entity
+   - Role: Specific potential risk identified for assessment
+
+4. **Information**
+   - Type: Knowledge
+   - Role: Basis for risk analysis
+
+### Relationships
+1. **Collects** 
+   - From: Data
+   - To: Information
+   - Description: Data is collected to form a base of information.
+
+2. **Analyzes**
+   - From: Information
+   - To: Assessment
+   - Description: Information is analyzed to assess risks.
+
+3. **Assesses**
+   - From: Assessment
+   - To: Individual Risk
+   - Description: The assessment process evaluates individual risks.
+
+4. **Bases on**
+   - From: Assessment
+   - To: Information
+   - Description: The assessment is based on the collected information.
+
+### Attributes
+- **Data**: May include quantitative or qualitative measures relevant to risks.
+- **Assessment**: Can have attributes like methodology, scope, and criteria for evaluation.
+- **Individual Risk**: Each risk can have attributes such as likelihood, impact, and mitigation strategies.
+- **Information**: Could include historical data, stakeholder input, and contextual knowledge.
+
+This structured extraction emphasizes the key elements and their interconnections within the context of project management risks.

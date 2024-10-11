@@ -1,0 +1,30 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Information Response**
+2. **Planning**
+3. **Overall Project**
+4. **Contingency Reserve**
+5. **Time**
+6. **Cost**
+7. **Project Schedule**
+8. **Budget**
+
+### Relationships
+1. **Has**: Overall Project **has** Information Response
+2. **Includes**: Overall Project **includes** Planning
+3. **Affects**: Planning **affects** Contingency Reserve
+4. **Impacts**: Contingency Reserve **impacts** Time
+5. **Impacts**: Contingency Reserve **impacts** Cost
+6. **Informs**: Information Response **informs** Project Schedule
+7. **Informs**: Information Response **informs** Budget
+
+### Attributes/Characteristics
+- **Overall Project**: Represents the totality of the project with specific objectives and deliverables.
+- **Contingency Reserve**: Represents a budget allocation or time allowance for unforeseen risks.
+- **Time**: Refers to the duration required to complete project tasks.
+- **Cost**: Refers to the financial resources allocated and expended during the project.
+- **Project Schedule**: Represents the timeline for project tasks and milestones.
+- **Budget**: Represents the financial plan for the overall project.
+
+These extracted elements provide a structured representation of the project management context related to risks, which can be utilized in graph-based learning models.

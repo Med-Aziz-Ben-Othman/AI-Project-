@@ -1,0 +1,38 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes
+1. **Audit**
+2. **Risk**
+3. **Response**
+4. **Effectiveness**
+5. **Document**
+6. **Lesson Learned**
+
+### Relationships
+1. **Audit** - assesses → **Risk** 
+2. **Risk** - requires → **Response**
+3. **Response** - evaluated by → **Effectiveness**
+4. **Effectiveness** - documented in → **Document**
+5. **Document** - contains → **Lesson Learned**
+
+### Attributes
+- **Audit**
+  - Type: Evaluation
+  - Purpose: Identify risks
+- **Risk**
+  - Type: Project Risk
+  - Nature: Potential threat to project objectives
+- **Response**
+  - Type: Mitigation Strategy
+  - Purpose: Address identified risks
+- **Effectiveness**
+  - Type: Measurement
+  - Criteria: Success in mitigating risks
+- **Document**
+  - Type: Record
+  - Purpose: Capture findings and lessons
+- **Lesson Learned**
+  - Type: Knowledge
+  - Purpose: Improve future project practices
+
+This structured extraction captures the essential components of project management risks as identified in the sentence.

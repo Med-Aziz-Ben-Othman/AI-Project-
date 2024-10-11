@@ -1,0 +1,38 @@
+Based on the provided text, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes
+1. **Practice Standard**
+   - Type: Concept
+2. **Project Risk Management**
+   - Type: Concept
+3. **Chapter**
+   - Type: Entity
+4. **Qualitative Risk Analysis (Qualitative SK Analysis)**
+   - Type: Method/Process
+5. **Figure**
+   - Type: Reference/Visual Aid
+
+### Relationships
+- **Practice Standard** **is related to** **Project Risk Management**
+  - (Describes a standard that pertains to managing project risks)
+  
+- **Project Risk Management** **includes** **Qualitative Risk Analysis**
+  - (Indicates that qualitative risk analysis is a component of project risk management)
+
+- **Qualitative Risk Analysis** **is detailed in** **Chapter**
+  - (Suggests that there is a specific chapter that discusses qualitative risk analysis)
+
+- **Chapter** **contains** **Figure**
+  - (Indicates that there is a figure in the chapter related to the analysis)
+
+### Attributes
+- **Practice Standard**
+  - Attribute: May refer to established guidelines or frameworks in project management
+- **Project Risk Management**
+  - Attribute: Focuses on identifying, assessing, and responding to project risks
+- **Qualitative Risk Analysis**
+  - Attribute: Involves subjective assessment of risks based on qualitative data
+- **Figure**
+  - Attribute: Likely visual representation or illustration supporting the analysis
+
+This structured extraction highlights the key components and their interrelations within the context of project management risks.

@@ -1,0 +1,31 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Tool** 
+2. **Risk Importance**
+3. **Combination**
+4. **Probability**
+5. **Occurrence**
+6. **Degree**
+7. **Impact**
+8. **Objective**
+
+### Relationships:
+1. **Tool** - **assesses** - **Risk Importance**
+2. **Combination** - **affects** - **Probability**
+3. **Probability** - **influences** - **Occurrence**
+4. **Occurrence** - **leads to** - **Degree**
+5. **Degree** - **determines** - **Impact**
+6. **Impact** - **relates to** - **Objective**
+
+### Attributes:
+- **Tool**: Method or software used for assessment.
+- **Risk Importance**: Significance or priority level of the risk.
+- **Combination**: Interaction or integration of different risk factors.
+- **Probability**: Likelihood of the risk occurring.
+- **Occurrence**: Actual happening of the risk event.
+- **Degree**: Level or extent of the risk's effect.
+- **Impact**: Consequences or effects of the risk on the project.
+- **Objective**: Goals or aims that the project seeks to achieve.
+
+This structured representation captures the essential components of project management risks as described in the sentence.

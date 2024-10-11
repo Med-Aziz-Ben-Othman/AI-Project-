@@ -1,0 +1,31 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk** 
+   - Attributes: Common, Root Cause
+2. **Risk Register**
+   - Attributes: List of Risks
+3. **Project Element**
+   - Sub-nodes:
+     - **Schedule Activity**
+     - **Cost Element**
+
+### Relationships:
+1. **Represent** 
+   - Between: Risk and Risk Register
+   - Description: A risk can be represented through a risk register.
+  
+2. **Attach**
+   - Between: Risk Root Cause and Project Element
+   - Description: The root cause of a risk can be attached to several project elements.
+
+3. **Includes**
+   - Between: Risk Register and Risk
+   - Description: A risk register includes a list of risks.
+
+4. **Associated With**
+   - Between: Project Element and Schedule Activity, Cost Element
+   - Description: Project elements can be associated with schedule activities and cost elements.
+
+### Summary:
+The sentence conveys that risks can be represented in a risk register, which lists risks and includes their root causes. These root causes can be linked to various project elements, such as schedule activities and cost elements.

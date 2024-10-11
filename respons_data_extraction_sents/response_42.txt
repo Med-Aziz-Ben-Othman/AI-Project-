@@ -1,0 +1,31 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Project Risk**
+2. **Uncertain Event**
+3. **Condition**
+4. **Positive Effect**
+5. **Negative Effect**
+6. **Project Objective**
+
+### Relationships:
+1. **Defines**: 
+   - Project Risk **defines** Uncertain Event
+2. **Characterizes**:
+   - Uncertain Event **characterizes** Condition
+3. **Affects**:
+   - Condition **affects** Project Objective
+4. **Has Effect**:
+   - Uncertain Event **has effect** on Project Objective
+   - Uncertain Event **can lead to** Positive Effect
+   - Uncertain Event **can lead to** Negative Effect
+
+### Attributes:
+- **Project Risk**: Concept related to the uncertainty in achieving project objectives.
+- **Uncertain Event**: An event that can occur or not, introducing risk.
+- **Condition**: The state under which the uncertain event occurs.
+- **Positive Effect**: A beneficial outcome that may arise from an uncertain event.
+- **Negative Effect**: A detrimental outcome that may arise from an uncertain event.
+- **Project Objective**: The goals and outcomes that the project aims to achieve.
+
+This structured extraction highlights key components and their interconnections within the context of project management risks, laying a foundation for further analysis in a graph-based learning model.

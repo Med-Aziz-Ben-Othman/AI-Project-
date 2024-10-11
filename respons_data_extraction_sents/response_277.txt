@@ -1,0 +1,25 @@
+Based on the given sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Capability**
+2. **Risk**
+3. **Objective**
+4. **Interest**
+5. **Management**
+
+### Relationships:
+1. **Capability has Risk**
+   - Indicates that the capability can lead to or influence the identification of risks.
+  
+2. **Risk is Important for Objective**
+   - Suggests that understanding or managing risks is crucial for achieving specific project objectives.
+
+3. **Interest of Management**
+   - Implies that management has a vested interest in understanding and mitigating risks.
+
+### Attributes:
+- **Risk**: Important, Specific (implying that risks are not just general but need to be tailored to specific contexts).
+- **Objective**: Related to project goals that need to be achieved.
+- **Interest**: Represents a focus or concern that management has regarding risks.
+
+This structured extraction reflects the semantic relationships and domain knowledge relevant to project management risks based on the provided text.

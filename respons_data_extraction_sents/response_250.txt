@@ -1,0 +1,29 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Manageability Risk**
+2. **Resource**
+3. **Attempt**
+4. **Address**
+
+### Relationships:
+1. **has**: Manageability Risk **has** a potential impact on Resource.
+2. **causes**: Manageability Risk **causes** waste of Resource.
+3. **involves**: Attempt **involves** addressing Manageability Risk.
+4. **aims to**: Attempt **aims to** address Manageability Risk.
+
+### Attributes:
+- **Manageability Risk**: 
+  - Description: A type of risk related to the ease of managing a project.
+  - Impact: Can lead to resource waste.
+  
+- **Resource**: 
+  - Type: Can refer to time, money, personnel, etc.
+  - State: Wasted or utilized based on manageability risk.
+
+- **Attempt**: 
+  - Purpose: To mitigate or address risks.
+  - Action: Involves strategies or methods to handle risk.
+
+### Summary:
+The sentence conveys that manageability risks can lead to wasted resources and that there is an attempt to address these risks effectively. The relationships indicate a causal link between the manageability risk and the waste of resources, as well as the proactive efforts involved in addressing these risks.

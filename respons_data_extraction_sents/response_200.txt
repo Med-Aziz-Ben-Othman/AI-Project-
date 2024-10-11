@@ -1,0 +1,38 @@
+Based on the provided sentence, we can extract the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Objectivity**
+   - Type: Quality/Concept
+   - Attributes: Essential for decision-making, reduces bias
+
+2. **Human Activity**
+   - Type: Process/Entity
+   - Attributes: Involves decision-making, can be influenced by various factors
+
+3. **Bias**
+   - Type: Concept/Challenge
+   - Attributes: Affects judgment, leads to potential misalignment with project goals
+
+4. **Uncertainty**
+   - Type: Concept/Risk Factor
+   - Attributes: Inherent in project management, impacts planning and outcomes
+
+### Relationships:
+1. **Human Activity → Bias**
+   - Relationship: Influences
+   - Description: Human activity is influenced by bias, which can distort decision-making.
+
+2. **Bias → Objectivity**
+   - Relationship: Reduces
+   - Description: Bias reduces objectivity in assessments and evaluations.
+
+3. **Objectivity → Uncertainty**
+   - Relationship: Mitigates
+   - Description: Maintaining objectivity helps to mitigate uncertainty in project management.
+
+4. **Human Activity → Uncertainty**
+   - Relationship: Contributes to
+   - Description: Human activity can contribute to uncertainty due to unpredictable behaviors and decisions.
+
+### Summary
+In this analysis, the focus is on how human activity can lead to bias, affecting the objectivity of decisions within project management, ultimately contributing to uncertainty, which is a significant risk factor in project management. Each node represents a critical concept, and the relationships illustrate how they interact and impact project management risks.

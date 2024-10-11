@@ -1,0 +1,41 @@
+Based on the provided sentence, I will extract the key concepts (nodes), their relationships, and any relevant attributes.
+
+### Nodes:
+1. **Risk**
+2. **Time**
+3. **Cost**
+4. **Adjustment**
+5. **Scope**
+6. **Change**
+7. **Agreement**
+8. **Documentation**
+9. **Quantitative Risk Analysis**
+10. **Aspect**
+11. **Project**
+
+### Relationships:
+1. **Risk** *influences* **Time**
+2. **Risk** *influences* **Cost**
+3. **Scope** *requires* **Adjustment**
+4. **Adjustment** *indicates* **Change**
+5. **Change** *needs* **Agreement**
+6. **Agreement** *is documented in* **Documentation**
+7. **Quantitative Risk Analysis** *is part of* **New Aspect**
+8. **New Aspect** *relates to* **Project**
+9. **Scope** *is associated with* **Project**
+10. **Time** *is associated with* **Cost**
+
+### Attributes:
+- **Risk**: Overall risk
+- **Time**: Indicates a temporal aspect of the project
+- **Cost**: Indicates financial implications
+- **Adjustment**: Implies a need for modification
+- **Scope**: Indicates the boundaries and deliverables of the project
+- **Change**: Implies a shift in project parameters
+- **Agreement**: Implies consensus among stakeholders
+- **Documentation**: Implies formal recording of agreements and changes
+- **Quantitative Risk Analysis**: Implies a methodical approach to assessing risks quantitatively
+- **Aspect**: New aspect implies something newly introduced or considered in the project context
+- **Project**: Overall entity being managed
+
+This structured extraction reflects the semantic relationships and key components relevant to project management risks in the provided text.

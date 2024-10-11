@@ -1,0 +1,45 @@
+Based on the provided sentence "agreement project stakeholder fundamental criterion common theme," I will extract the relevant nodes, relationships, and attributes as follows:
+
+### Extracted Nodes:
+1. **Agreement**
+2. **Project**
+3. **Stakeholder**
+4. **Criterion**
+5. **Theme** (or "Common Theme")
+
+### Extracted Relationships:
+1. **Involves**: 
+   - Relationship between **Agreement** and **Project** (An agreement is often related to the project context).
+   
+2. **Concerns**: 
+   - Relationship between **Stakeholder** and **Project** (Stakeholders are concerned with the project's outcomes and processes).
+   
+3. **Determines**: 
+   - Relationship between **Stakeholder** and **Criterion** (Stakeholders may define or influence the criteria for success or evaluation).
+   
+4. **Defines**: 
+   - Relationship between **Criterion** and **Theme** (Criteria may define or relate to themes that are common across projects).
+
+### Attributes:
+- **Agreement**: 
+  - Type (e.g., legal, informal)
+  - Status (e.g., pending, finalized)
+
+- **Project**: 
+  - Scope (e.g., size, complexity)
+  - Duration (e.g., short-term, long-term)
+
+- **Stakeholder**: 
+  - Role (e.g., sponsor, team member)
+  - Influence (e.g., high, medium, low)
+
+- **Criterion**: 
+  - Type (e.g., performance, quality)
+  - Importance (e.g., critical, non-critical)
+
+- **Theme**: 
+  - Relevance (e.g., risk management, communication)
+  - Commonality (e.g., frequently encountered, unique)
+
+### Summary:
+The analysis reveals a network of entities related to project management risks, focusing on how agreements and stakeholders define the criteria and themes relevant to projects. The relationships highlight the interconnectedness of these concepts, reflecting the complexities of managing risks in project environments.

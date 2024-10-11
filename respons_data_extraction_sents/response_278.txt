@@ -1,0 +1,26 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk**
+2. **Impact**
+3. **Project**
+4. **Objective**
+
+### Relationships:
+1. **HasUnevenImpact**: Risk → Impact
+2. **Affects**: Risk → Project
+3. **Influences**: Impact → Objective
+
+### Attributes:
+- **Common** (describing the type of risk)
+- **Various** (describing the nature of impact on project objectives)
+
+### Structured Summary:
+- **Risk**: This node represents the potential issues that could affect the project.
+  - **Attributes**: Common (indicating the frequency or typicality of the risk).
+- **Impact**: This node reflects the effect that the risk has on the project.
+  - **Attributes**: Uneven (indicating that the effect varies).
+- **Project**: This is the entity that is being affected by the risk.
+- **Objective**: This node represents the goals or outcomes that the project aims to achieve, which may be influenced by the impact of the risk.
+
+This structure captures the semantic relationships and characteristics of project management risks as described in the sentence.

@@ -1,0 +1,22 @@
+Based on the provided sentence "example representation include project schedule cost estimate," the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Project Schedule**
+2. **Cost Estimate**
+
+### Relationships:
+1. **Includes** - This relationship connects the concept of "example representation" to the nodes.
+   - Relationship: `example representation -> Includes -> Project Schedule`
+   - Relationship: `example representation -> Includes -> Cost Estimate`
+
+### Attributes:
+- **Project Schedule**: 
+  - Represents the timeline of project activities and milestones.
+  - Attribute: Duration, Milestones, Dependencies.
+
+- **Cost Estimate**: 
+  - Represents the projected financial resources required for the project.
+  - Attribute: Budget, Resource Allocation, Cost Variance.
+
+### Summary:
+- The main entity is "example representation," which has a relationship that includes "Project Schedule" and "Cost Estimate." Each node has associated attributes that define their characteristics within the context of project management risks.

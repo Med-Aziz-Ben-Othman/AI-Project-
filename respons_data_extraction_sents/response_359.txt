@@ -1,0 +1,49 @@
+Based on the provided text, here’s a structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Practice Standard** 
+   - Attributes: None specified.
+  
+2. **Project Risk Management**
+   - Attributes: None specified.
+
+3. **Chapter**
+   - Attributes: None specified.
+
+4. **Quantitative Risk Analysis (QRA)**
+   - Attributes: 
+     - Type: Iterative
+     - Purpose: Success
+
+5. **Process**
+   - Attributes: 
+     - Type: Enhance
+     - Application: Throughout Project
+
+### Relationships:
+1. **Practice Standard** → **Project Risk Management**
+   - Relationship: Implements
+   - Description: The practice standard is related to the implementation of project risk management.
+
+2. **Project Risk Management** → **Chapter**
+   - Relationship: Contains
+   - Description: The project risk management is discussed in the chapter.
+
+3. **Chapter** → **Quantitative Risk Analysis**
+   - Relationship: Covers
+   - Description: The chapter includes discussions on quantitative risk analysis.
+
+4. **Quantitative Risk Analysis** → **Process**
+   - Relationship: Utilizes
+   - Description: Quantitative risk analysis utilizes a process.
+
+5. **Process** → **Project**
+   - Relationship: Applies To
+   - Description: The process is applied throughout the project.
+
+6. **Quantitative Risk Analysis** → **Success**
+   - Relationship: Aims For
+   - Description: The goal of performing quantitative risk analysis is to achieve success.
+
+### Summary:
+The analysis reveals a network of concepts surrounding project risk management, specifically emphasizing the importance of quantitative risk analysis and its iterative nature, as well as its application throughout the project. The relationships highlight how these concepts are interconnected and contribute to effective project management practices.

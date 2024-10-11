@@ -1,0 +1,40 @@
+Based on the analysis of the provided sentence, here are the extracted components structured into nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Cost**  
+   - Attribute: Related to financial aspects of the project.
+
+2. **Risk**  
+   - Attribute: Potential events that can affect project objectives.
+
+3. **Project Budget**  
+   - Attribute: Total financial resources allocated for the project.
+
+4. **Risk Management Plan**  
+   - Attribute: Document outlining strategies for identifying, assessing, and managing risks.
+
+5. **Project**  
+   - Attribute: Temporary endeavor undertaken to create a unique product or service.
+
+### Relationships:
+1. **Includes**  
+   - Relationship: Cost includes risk treatment methods.
+
+2. **Describes**  
+   - Relationship: Risk management plan describes how to handle risks related to the project budget.
+
+3. **Evaluates**  
+   - Relationship: Project budget evaluates risks that may impact financial resources.
+
+4. **Allocates**  
+   - Relationship: Project budget allocates resources for risk management.
+
+5. **Manages**  
+   - Relationship: Risk management plan manages identified risks.
+
+### Summary:
+- The **Cost** is a significant factor in the **Risk** associated with the **Project Budget**.
+- The **Risk Management Plan** is crucial as it **describes** the approach to handle risks linked to the **Project Budget**.
+- The **Project Budget** serves to **evaluate**, **allocate**, and **manage** financial resources in relation to risks. 
+
+This structured extraction captures the essential components and their interrelations in the context of project management and risks.

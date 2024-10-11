@@ -1,0 +1,29 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes
+1. **Practice Standard**
+2. **Project Risk Management**
+3. **Chapter**
+4. **Identify Issues**
+5. **Purpose**
+6. **Objective**
+7. **Identify Risk**
+8. **Process Risk**
+9. **Management**
+10. **Risk**
+
+### Relationships
+- **Practice Standard** **defines** → **Project Risk Management**
+- **Project Risk Management** **includes** → **Chapter**
+- **Chapter** **focuses on** → **Identify Issues**
+- **Purpose** **is part of** → **Project Risk Management**
+- **Objective** **is to** → **Identify Risk**
+- **Identify Risk** **is a step in** → **Process Risk**
+- **Risk** **cannot be managed unless** → **identified**
+
+### Attributes
+- **Purpose**: Related to the goals of project risk management.
+- **Objective**: Related to the steps taken to identify risks in the project.
+- **Process Risk**: Refers to the procedures involved in managing risks.
+
+This structured extraction reflects a clear understanding of the relationships and roles that different concepts play in the domain of project management, particularly focusing on risks.

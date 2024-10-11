@@ -1,0 +1,27 @@
+Based on the analysis of the provided sentence, the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Risk**
+   - **Attributes**: 
+     - Type: Notable
+     - Type: Unnotable
+2. **Document**
+3. **Project**
+4. **Others** (Implying other risks or factors)
+
+### Relationships:
+1. **Aims to expose**: 
+   - **Source**: Aim
+   - **Target**: Document
+2. **Recognizes**: 
+   - **Source**: Document
+   - **Target**: Risk (notable)
+3. **Emerges later**: 
+   - **Source**: Others
+   - **Target**: Risk (unnotable)
+
+### Summary of Findings:
+- There is an intention (aim) to expose a **document** that recognizes a **notable risk**.
+- There are also **unnotable risks** that may be recognized as **others** that can emerge later in the context of a **project**.
+
+This structure captures the key concepts and relationships pertinent to project management risks as described in the sentence.

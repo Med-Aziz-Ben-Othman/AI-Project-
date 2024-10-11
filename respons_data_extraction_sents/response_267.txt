@@ -1,0 +1,40 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Qualitative Risk Analysis**
+   - Type: Process
+   - Domain: Project Management
+
+2. **Project Management Institute (PMI)**
+   - Type: Organization
+   - Domain: Project Management
+
+3. **Project Management**
+   - Type: Discipline/Field
+   - Domain: Project Management
+
+### Relationships:
+1. **Performs**:
+   - Source: Project Management Institute (PMI)
+   - Target: Qualitative Risk Analysis
+   - Nature: The PMI is responsible for developing or endorsing the qualitative risk analysis process.
+
+2. **Is a part of**:
+   - Source: Qualitative Risk Analysis
+   - Target: Project Management
+   - Nature: Qualitative risk analysis is a process that falls within the broader field of project management.
+
+### Attributes:
+- **Qualitative Risk Analysis**:
+  - Purpose: To identify and assess risks based on qualitative methods (e.g., expert judgment, probability and impact assessment).
+  - Importance: Helps in prioritizing risks for further analysis and response.
+
+- **Project Management Institute (PMI)**:
+  - Role: Governing body for project management standards and practices.
+  - Influence: Provides guidelines, resources, and certifications for project management professionals.
+
+- **Project Management**:
+  - Scope: Encompasses all processes and knowledge areas involved in planning, executing, and closing projects.
+  - Challenges: Includes managing risks effectively to ensure project success.
+
+This structured extraction captures the critical elements of project management risks as represented in the sentence.

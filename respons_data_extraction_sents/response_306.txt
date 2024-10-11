@@ -1,0 +1,29 @@
+Based on the provided sentence, I will extract key concepts, entities, and relationships relevant to project management risks.
+
+### Nodes (Entities):
+1. **Risk Analysis**
+   - Type: Partial Risk Analysis
+   - Type: Qualitative Risk Analysis
+2. **Risk**
+   - Type: Individual Risk
+3. **Project**
+   - Type: Overall Project
+
+### Relationships:
+1. **Aim Of**: 
+   - Partial Risk Analysis → Aim → Prioritize Individual Risk
+2. **Produces**: 
+   - Qualitative Risk Analysis → Produces → Measure of Overall Project Risk
+3. **Considers**: 
+   - Risk → Considers → Overall Project Risk
+4. **Cannot Produce**: 
+   - One Time View → Cannot Produce → Measure of Overall Project Risk
+
+### Attributes:
+- **Partial Risk Analysis**: Focused on a segment of risks rather than comprehensive.
+- **Qualitative Risk Analysis**: Involves subjective assessment of risks.
+- **Individual Risk**: Specific risk that is prioritized.
+- **Overall Project Risk**: The cumulative risk associated with the entire project.
+
+### Summary of Extraction:
+- The sentence discusses the limitations of conducting risk analysis in a way that does not allow for an adequate measure of overall project risk. It highlights the need to prioritize individual risks but notes that a singular view cannot effectively capture the totality of project risks.

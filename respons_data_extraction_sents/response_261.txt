@@ -1,0 +1,47 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Iterative Qualitative Risk Analysis**
+2. **Success**
+3. **Qualitative Risk Analysis**
+4. **Process**
+5. **Project**
+
+### Relationships
+1. **Enhances**: 
+   - Relationship between **Iterative Qualitative Risk Analysis** and **Qualitative Risk Analysis**. 
+   - (Iterative Qualitative Risk Analysis enhances Qualitative Risk Analysis)
+
+2. **Is a part of**: 
+   - Relationship between **Process** and **Project**. 
+   - (Process is a part of Project)
+
+3. **Contributes to**: 
+   - Relationship between **Qualitative Risk Analysis** and **Success**. 
+   - (Qualitative Risk Analysis contributes to Success)
+
+4. **Used throughout**: 
+   - Relationship between **Process** and **Project**. 
+   - (Process is used throughout Project)
+
+### Attributes
+- **Iterative Qualitative Risk Analysis**: 
+   - **Type**: Methodology
+   - **Nature**: Iterative
+
+- **Qualitative Risk Analysis**: 
+   - **Type**: Analysis technique
+   - **Focus**: Risk assessment
+
+- **Success**: 
+   - **Indicator**: Outcome of effective risk management
+
+- **Process**: 
+   - **Nature**: Continuous improvement
+   - **Purpose**: Enhance risk management
+
+- **Project**: 
+   - **Scope**: Overall project management lifecycle
+
+### Summary
+The extracted nodes represent key components in project management risk analysis, while the relationships illustrate how these components interact with one another. The attributes provide further context about each entity's role and significance in the project management framework.

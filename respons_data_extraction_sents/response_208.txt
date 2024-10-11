@@ -1,0 +1,35 @@
+Based on the provided sentence, here’s the extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Practice Standard Project Risk Management**
+2. **Historical Review**
+3. **Issues**
+4. **Past Projects**
+5. **Similar Projects**
+6. **Project Organization**
+7. **Comparable Project Organization**
+
+### Relationships:
+1. **Identifies**: 
+   - **Practice Standard Project Risk Management** identifies **Issues**.
+   
+2. **Conducts**:
+   - **Historical Review** conducts a review of **Past Projects**.
+
+3. **Compares**:
+   - **Past Projects** are compared to **Similar Projects**.
+   - **Project Organization** is compared to **Comparable Project Organization**.
+
+4. **Occurs**:
+   - **Issues** occur in **Past Projects** or **Similar Projects**.
+
+### Attributes:
+- **Practice Standard Project Risk Management**: Focuses on risk management practices.
+- **Historical Review**: Involves reviewing past project data.
+- **Issues**: Represents potential risks or problems identified during the review.
+- **Past Projects**: Refers to projects completed in the past that can be analyzed.
+- **Similar Projects**: Projects that share characteristics with past projects.
+- **Project Organization**: The structure or entity managing the project.
+- **Comparable Project Organization**: Organizations that can be assessed against others for similarities in project management.
+
+This structured extraction reflects the semantic relationships and key concepts relevant to project management risks as per the text provided.

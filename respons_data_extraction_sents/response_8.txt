@@ -1,0 +1,24 @@
+Based on the provided sentence, here is the structured extraction of key concepts, entities, and relationships relevant to project management risks:
+
+### Nodes (Entities)
+1. **Project Manager**
+   - Attribute: Role
+
+2. **Project Risk Management**
+   - Attribute: Process
+
+3. **Particular Responsibility**
+   - Attribute: Type of responsibility related to risk management
+
+### Relationships
+1. **Has Role**
+   - Relationship: Project Manager **has a role** in Project Risk Management
+
+2. **Responsible For**
+   - Relationship: Project Manager **is responsible for** Project Risk Management
+
+3. **Involves**
+   - Relationship: Project Risk Management **involves** particular responsibilities
+
+### Summary
+- The **Project Manager** is a key entity in the project management domain, specifically in the context of **Project Risk Management**, where they hold a **particular responsibility** related to the **process** of managing risks. The relationships indicate the Project Manager's role and the responsibilities they are tasked with in the risk management process.

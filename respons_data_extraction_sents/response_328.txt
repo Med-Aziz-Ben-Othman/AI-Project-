@@ -1,0 +1,47 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Project Model**
+   - Attributes: None specified
+
+2. **Quantitative Risk Analysis**
+   - Attributes: None specified
+
+3. **Project Schedule**
+   - Attributes: Related to time, timeline
+
+4. **Cost Estimate**
+   - Attributes: Related to cost
+
+5. **Decision Tree**
+   - Attributes: Related to decision-making
+
+6. **Uncertainty**
+   - Attributes: Related to risk
+
+7. **Total Project Model**
+   - Attributes: None specified
+
+### Relationships
+1. **Uses**
+   - **Project Model** uses **Quantitative Risk Analysis**
+   
+2. **Includes**
+   - **Quantitative Risk Analysis** includes **Project Schedule**
+   - **Quantitative Risk Analysis** includes **Cost Estimate**
+   - **Quantitative Risk Analysis** includes **Decision Tree**
+
+3. **Affects**
+   - **Project Schedule** affects **Timeline**
+   - **Cost Estimate** affects **Cost**
+   - **Decision Tree** affects **Decision**
+
+4. **Faces**
+   - **Decision Tree** faces **Uncertainty**
+   - **Quantitative Risk Analysis** faces **Uncertainty**
+
+5. **Relates to**
+   - **Total Project Model** relates to **Project Model**
+
+### Summary
+This analysis identifies key components of the project management risk landscape, including methodologies (Quantitative Risk Analysis), planning tools (Project Schedule, Cost Estimate), decision-making frameworks (Decision Tree), and the overarching context of uncertainty that affects project outcomes. Each entity is connected through relationships that illustrate how they interact and contribute to managing project risk.

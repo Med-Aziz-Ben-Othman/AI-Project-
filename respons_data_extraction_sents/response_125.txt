@@ -1,0 +1,32 @@
+Based on the provided sentence, here is a structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Qualitative Analysis**
+2. **High Impact**
+3. **Medium Probability**
+4. **Risk Management Plan**
+
+### Relationships
+1. **Qualitative Analysis** - is related to - **High Impact**
+   - (Qualitative analysis assesses the impact of risks, thus linking them.)
+   
+2. **Qualitative Analysis** - is related to - **Medium Probability**
+   - (Qualitative analysis evaluates the probability of risks occurring.)
+   
+3. **High Impact** - is associated with - **Risk Management Plan**
+   - (Risks that are classified as high impact are considered in the risk management plan.)
+   
+4. **Medium Probability** - is associated with - **Risk Management Plan**
+   - (Risks with medium probability are also addressed in the risk management plan.)
+
+### Attributes
+- **High Impact**
+  - Definition: Refers to risks that can have significant adverse effects on the project.
+  
+- **Medium Probability**
+  - Definition: Indicates a moderate likelihood of the risk occurring.
+
+- **Risk Management Plan**
+  - Definition: A formal document that outlines how risks will be identified, analyzed, and managed throughout the project lifecycle.
+
+This structured extraction reflects the key concepts and their relationships within the domain of project management risks as presented in the sentence.

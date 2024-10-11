@@ -1,0 +1,48 @@
+Based on the provided sentence, here’s an analysis to extract nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities):
+1. **Comparison**
+2. **Qualitative Approach**
+3. **Quantitative Approach**
+4. **Critical Success Factor**
+5. **Quantitative Risk Analysis**
+6. **Process Success**
+7. **Objective**
+8. **Risk Analysis Factors**
+9. **Section**
+
+### Relationships:
+1. **Comparison** 
+   - relationship: compares 
+   - entities: Qualitative Approach, Quantitative Approach
+
+2. **Quantitative Risk Analysis** 
+   - relationship: is influenced by 
+   - entities: Critical Success Factor
+  
+3. **Process Success** 
+   - relationship: is dependent on 
+   - entities: Quantitative Risk Analysis
+
+4. **Quantitative Risk Analysis** 
+   - relationship: helps to achieve 
+   - entities: Objective
+
+5. **Quantitative Risk Analysis** 
+   - relationship: is affected by 
+   - entities: Risk Analysis Factors
+
+6. **Section** 
+   - relationship: describes 
+   - entities: Risk Analysis Factors
+
+### Attributes:
+- **Qualitative Approach**: focuses on subjective assessment.
+- **Quantitative Approach**: relies on numerical data and statistical methods.
+- **Critical Success Factor**: essential elements that determine success.
+- **Process Success**: outcome achieved through effective risk analysis.
+- **Objective**: goal that the project aims to achieve.
+- **Risk Analysis Factors**: elements that influence risk evaluation.
+- **Section**: indicates where further details on risk analysis factors are provided.
+
+This structured extraction reflects the semantic relationships and attributes relevant to project management risks as presented in the sentence.

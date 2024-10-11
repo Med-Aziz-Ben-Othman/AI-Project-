@@ -1,0 +1,17 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Flow Control Information**
+2. **Project Risk Management Process**
+3. **Various Steps**
+
+### Relationships:
+1. **Shows** - (Flow Control Information) shows (Various Steps)
+2. **Is Part Of** - (Various Steps) is part of (Project Risk Management Process)
+
+### Attributes:
+- **Flow Control Information**: Represents the data or signals that manage the flow of activities within the project risk management process.
+- **Various Steps**: Indicates the different stages or components involved in managing project risks.
+- **Project Risk Management Process**: The overall framework or methodology that encompasses the steps and information used to mitigate project risks.
+
+This structured analysis reflects the semantic relationships in the context of project management risks.

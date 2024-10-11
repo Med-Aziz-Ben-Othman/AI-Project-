@@ -1,0 +1,20 @@
+Based on the provided sentence, I will extract the relevant nodes, relationships, and attributes related to project management risks.
+
+### Nodes:
+1. **Chapter Outline**
+2. **Step**
+3. **Project Risk Management**
+4. **Effectiveness**
+
+### Relationships:
+1. **Contains**: Chapter Outline contains Step
+2. **Requires**: Step requires Project Risk Management
+3. **Aims For**: Project Risk Management aims for Effectiveness
+
+### Attributes:
+- **Chapter Outline**: Represents a structured plan or guide for a section of a document or project.
+- **Step**: Indicates a specific action or phase within the project management process.
+- **Project Risk Management**: Refers to the systematic process of identifying, analyzing, and responding to project risks.
+- **Effectiveness**: Describes the degree to which the project risk management process achieves its intended outcomes.
+
+This structured extraction captures the essence of the sentence in the context of project management and risks.

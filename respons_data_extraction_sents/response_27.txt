@@ -1,0 +1,44 @@
+Based on the provided sentence, here is an analysis that extracts relevant nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Project Management**
+   - Definition: A discipline that involves planning, organizing, and managing resources to achieve specific goals.
+
+2. **Role**
+   - Definition: The function or position that an individual or group has within a project.
+
+3. **Control**
+   - Definition: The process of monitoring and regulating project processes and performance.
+
+4. **Uncertainty**
+   - Definition: The state of having limited knowledge about potential outcomes or risks in a project.
+
+5. **Risk**
+   - Definition: The possibility of an adverse outcome that could affect the project's objectives.
+
+### Relationships:
+1. **Defines**
+   - Relationship: "Role" defines "Control" in the context of project management.
+
+2. **Inherent In**
+   - Relationship: "Uncertainty" is inherent in "Project Management".
+
+3. **Affects**
+   - Relationship: "Uncertainty" affects "Risk" in project management.
+
+4. **Assumes**
+   - Relationship: "Control" assumes the existence of "Uncertainty" in projects.
+
+### Attributes:
+- **Project Management**: 
+  - Attributes: Goals, Resources, Processes
+- **Role**: 
+  - Attributes: Responsibilities, Authority, Accountability
+- **Control**: 
+  - Attributes: Monitoring Techniques, Performance Metrics
+- **Uncertainty**: 
+  - Attributes: Sources (e.g., market changes, resource availability), Impact Level
+- **Risk**: 
+  - Attributes: Type (e.g., financial, operational), Probability, Impact Severity
+
+This structured extraction highlights the key concepts in project management related to risks, their interrelationships, and their defining attributes.

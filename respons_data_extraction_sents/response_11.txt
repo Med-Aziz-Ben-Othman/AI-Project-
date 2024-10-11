@@ -1,0 +1,24 @@
+Based on the provided sentence, the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Role**: Project Manager
+2. **Entity**: Senior Management
+3. **Activity**: Project Risk Management
+
+### Relationships:
+1. **Encourages**: The Project Manager encourages Senior Management.
+2. **Supports**: Senior Management supports Project Risk Management activity.
+3. **Includes**: The role of the Project Manager includes encouraging Senior Management.
+
+### Attributes:
+- **Role**: Project Manager
+  - **Responsibilities**: Encouraging support from Senior Management for risk management activities.
+  
+- **Entity**: Senior Management
+  - **Role in Project Management**: Supportive role in risk management initiatives.
+
+- **Activity**: Project Risk Management
+  - **Purpose**: To manage and mitigate risks associated with the project.
+
+### Summary:
+The Project Manager has a role that includes the responsibility of encouraging Senior Management to support the activities related to Project Risk Management. Senior Management is positioned as a supportive entity in the overall risk management process of a project.

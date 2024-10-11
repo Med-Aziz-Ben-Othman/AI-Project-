@@ -1,0 +1,55 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Project Management**
+2. **Control**
+3. **Uncertain Environment**
+4. **Structure**
+5. **Disciplined Technique**
+6. **Estimate**
+7. **Plan**
+8. **Cost Control**
+9. **Task Allocation**
+10. **Earned Value Analysis**
+11. **Monitor**
+12. **Review Meeting**
+
+### Relationships:
+1. **Project Management** → **Control**: Project management aims to control project elements.
+2. **Control** → **Uncertain Environment**: Control is applied in an uncertain environment.
+3. **Control** → **Structure**: Control requires a structured approach.
+4. **Structure** → **Disciplined Technique**: A structured approach employs disciplined techniques.
+5. **Estimate** → **Plan**: Estimation is part of the planning process.
+6. **Plan** → **Cost Control**: Planning includes cost control measures.
+7. **Plan** → **Task Allocation**: Planning involves task allocation among team members.
+8. **Earned Value Analysis** → **Monitor**: Earned Value Analysis is used to monitor project performance.
+9. **Monitor** → **Review Meeting**: Monitoring outcomes lead to review meetings for evaluation.
+
+### Attributes:
+- **Project Management**
+  - Focused on risk management
+  - Involves various techniques and tools
+- **Control**
+  - Aimed at reducing uncertainty
+- **Uncertain Environment**
+  - Characterized by unpredictability and risk
+- **Structure**
+  - Provides a framework for managing projects
+- **Disciplined Technique**
+  - Encourages systematic approaches
+- **Estimate**
+  - Reflects forecasted values
+- **Plan**
+  - Serves as a roadmap for project execution
+- **Cost Control**
+  - Involves budgeting and financial oversight
+- **Task Allocation**
+  - Defines roles and responsibilities in the project
+- **Earned Value Analysis**
+  - A method for measuring project performance
+- **Monitor**
+  - Continuous assessment of project progress
+- **Review Meeting**
+  - A forum for discussing project status and addressing issues
+
+This structured analysis captures the key elements of project management risks and their interconnections, providing a foundation for graph-based learning models.

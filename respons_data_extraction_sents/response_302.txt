@@ -1,0 +1,39 @@
+Based on the provided sentence, the following nodes, relationships, and attributes relevant to project management risks can be extracted:
+
+### Nodes:
+1. **Uncertainty**
+2. **Project**
+3. **Quantitative Technique**
+4. **Monte Carlo Simulation**
+5. **Estimate**
+6. **Overall Project Cost**
+7. **Schedule**
+8. **Non-probabilistic Approach**
+9. **Activity Duration**
+10. **Line-item Cost Estimate**
+11. **Deterministic**
+
+### Relationships:
+1. **Analyze**: (Project) - [analyzes] -> (Uncertainty)
+2. **Uses**: (Project) - [uses] -> (Quantitative Technique)
+3. **Employs**: (Quantitative Technique) - [employs] -> (Monte Carlo Simulation)
+4. **Provides**: (Monte Carlo Simulation) - [provides] -> (Realism)
+5. **Estimates**: (Monte Carlo Simulation) - [estimates] -> (Overall Project Cost)
+6. **Estimates**: (Monte Carlo Simulation) - [estimates] -> (Schedule)
+7. **Assumes**: (Non-probabilistic Approach) - [assumes] -> (Activity Duration)
+8. **Assumes**: (Non-probabilistic Approach) - [assumes] -> (Line-item Cost Estimate)
+9. **Is**: (Activity Duration) - [is] -> (Deterministic)
+
+### Attributes:
+- **Monte Carlo Simulation**: 
+  - Type: Quantitative Technique
+  - Purpose: Provide realism in estimates
+- **Non-probabilistic Approach**: 
+  - Type: Methodology
+  - Characteristics: Assumes deterministic values for activity duration and line-item cost estimates
+- **Overall Project Cost**: 
+  - Type: Financial Estimate
+- **Schedule**: 
+  - Type: Temporal Estimate
+
+This structured extraction captures the essence of the relationships and attributes within the context of project management risks, focusing on how uncertainty is analyzed and estimated through specific methodologies.

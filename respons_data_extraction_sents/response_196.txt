@@ -1,0 +1,32 @@
+Based on the provided text, here is the extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Practice Standard**
+2. **Project Risk Management**
+3. **Chapter**
+4. **Issue**
+5. **Ownership Level**
+6. **Risk Identified**
+7. **Detail**
+8. **Number Level**
+
+### Relationships
+1. **Practice Standard** - **includes** - **Project Risk Management**
+2. **Chapter** - **contains** - **Issue**
+3. **Issue** - **is associated with** - **Ownership Level**
+4. **Issue** - **leads to** - **Risk Identified**
+5. **Risk Identified** - **has** - **Detail**
+6. **Detail** - **has** - **Number Level**
+7. **Ownership Level** - **affects** - **Risk Identified**
+
+### Attributes
+- **Practice Standard**: A guideline or framework for managing risks.
+- **Project Risk Management**: A systematic process of identifying, analyzing, and responding to project risks.
+- **Chapter**: A section of a document or book discussing specific aspects of project risk management.
+- **Issue**: A problem that can affect project outcomes.
+- **Ownership Level**: The degree of responsibility assigned to individuals or teams for managing risks.
+- **Risk Identified**: Specific risks that have been recognized in the project.
+- **Detail**: The specific characteristics or information related to the identified risks.
+- **Number Level**: A quantitative measure related to the detail of the identified risks (could refer to severity, likelihood, etc.).
+
+This structured extraction captures the essence of project management risks as reflected in the original text.

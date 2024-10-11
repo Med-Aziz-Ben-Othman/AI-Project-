@@ -1,0 +1,26 @@
+Based on the provided sentence, here’s a structured extraction of key concepts, entities (nodes), relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Risk Monitoring**
+2. **Control Risk**
+3. **Action**
+4. **Project Risk Exposure**
+5. **Risk Management Action**
+6. **Project Risk Management Process**
+7. **Effectiveness**
+
+### Relationships
+1. **Monitors** - (Risk Monitoring) → (Control Risk)
+2. **Implements** - (Action) → (Agreed-upon action)
+3. **Reviews** - (Action) → (Project Risk Exposure)
+4. **Identifies** - (Project Risk Exposure) → (Additional Risk Management Action)
+5. **Requires** - (Additional Risk Management Action) → (Effectiveness)
+6. **Supports** - (Effectiveness) → (Project Risk Management Process)
+
+### Attributes (Characteristics)
+- **Agreed-upon Action**: Refers to actions that have been mutually accepted by stakeholders.
+- **Project Risk Exposure**: Represents the level of risk that the project is currently facing.
+- **Additional Risk Management Action**: Indicates actions that need to be taken to mitigate identified risks.
+- **Effectiveness**: A measure of how well the risk management actions are performing in reducing risk.
+
+This extraction captures the essential components and relationships concerning risk management in projects, facilitating the development of a graph-based learning model for further analysis and understanding of project risks.

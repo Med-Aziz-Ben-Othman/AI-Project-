@@ -1,0 +1,25 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Role** (specific role)
+2. **Project Team Member** 
+3. **Stakeholder**
+4. **Project** 
+5. **Relation** (relationship)
+6. **Project Objective** 
+
+### Relationships:
+1. **Depends_On**: specific role depends on project team member
+2. **Involves**: project team member involves stakeholder
+3. **Located_In**: stakeholder placed within project
+4. **Affects**: relation affects project objective
+
+### Attributes:
+- **Role**: Specificity of the role (e.g., specific role)
+- **Project Team Member**: Characteristics of the member (e.g., skills, responsibilities)
+- **Stakeholder**: Characteristics of the stakeholder (e.g., influence, interests)
+- **Project**: Attributes relating to the project (e.g., scope, timeline, budget)
+- **Relation**: Nature of the relationship (e.g., collaborative, adversarial)
+- **Project Objective**: Goals or targets of the project (e.g., deliverables, outcomes)
+
+This structured extraction reflects the semantic relationships in project management, particularly focusing on roles, relationships, and objectives that can influence project risks.

@@ -1,0 +1,45 @@
+Based on the provided text, here is the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities):
+1. **Project Risk Management**
+2. **Practice Standard**
+3. **Chapter Introduction**
+4. **Project Management Process**
+5. **Project Risk Management Scope**
+6. **Objective**
+7. **Possible Start**
+8. **Risk**
+9. **Genuine Risk**
+10. **Non-Risks**
+11. **Cause**
+12. **Effect**
+13. **Problem**
+14. **Issue**
+
+### Relationships:
+1. **Practice Standard** - **defines** - **Project Risk Management**
+2. **Chapter Introduction** - **introduces** - **Project Risk Management**
+3. **Project Risk Management** - **includes** - **Project Management Process**
+4. **Project Risk Management** - **has** - **Scope**
+5. **Scope** - **outlines** - **Objective**
+6. **Objective** - **is to** - **agree upon Possible Start**
+7. **Possible Start** - **involves** - **Identify Risk**
+8. **Identify Risk** - **requires** - **careful Distinction**
+9. **Careful Distinction** - **between** - **Genuine Risk** and **Non-Risks**
+10. **Genuine Risk** - **can be caused by** - **Cause**
+11. **Genuine Risk** - **can lead to** - **Effect**
+12. **Effect** - **can relate to** - **Problem**
+13. **Problem** - **can lead to** - **Issue**
+
+### Attributes/Characteristics:
+- **Project Risk Management**: A systematic approach to identifying and managing risks in a project.
+- **Scope**: The boundaries and extent of the project risk management process.
+- **Objective**: The desired outcome of the risk management process, which includes agreement on starting points.
+- **Genuine Risk**: Risks that have real potential impacts on the project.
+- **Non-Risks**: Elements that may appear as risks but do not pose actual threats.
+- **Cause**: Factors contributing to the occurrence of genuine risks.
+- **Effect**: Consequences resulting from genuine risks that can affect project outcomes.
+- **Problem**: Specific issues that arise from the effects of risks.
+- **Issue**: Ongoing concerns that need to be addressed as a result of problems.
+
+This structured extraction captures the essence of project management risks as described in the provided text, highlighting the key components and their interconnections.

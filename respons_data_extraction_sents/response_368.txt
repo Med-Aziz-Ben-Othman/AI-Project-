@@ -1,0 +1,28 @@
+Based on the provided sentence, I can extract the following nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Contingency Reserve**
+2. **Time Resource**
+3. **Project Scope**
+4. **Project Plan**
+5. **Change**
+
+### Relationships
+1. **requires**: Contingency Reserve requires Time Resource.
+2. **exceeds**: Contingency Reserve exceeds Time Resource.
+3. **affects**: Change affects Project Scope.
+4. **may result in**: Change in Project Scope may result in changes to Project Plan.
+
+### Attributes
+- **Contingency Reserve**: 
+  - Type: Financial/Resource reserve
+- **Time Resource**: 
+  - Type: Temporal resource
+  - Status: Limited
+- **Project Scope**: 
+  - Type: Project deliverables and boundaries
+- **Project Plan**: 
+  - Type: Document/plan outlining the project execution
+
+### Summary of Findings
+- The sentence implies a risk scenario where the contingency reserve being required exceeds the available time resources, which can lead to changes in the project scope and may affect the overall project plan. This indicates a potential risk in project management where resource allocation and scope management are critical.

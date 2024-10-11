@@ -1,0 +1,25 @@
+Based on the provided sentence, the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Tool Technique** (Node Type: Method)
+2. **Qualitative Risk Analysis** (Node Type: Process)
+3. **Risk** (Node Type: Concept)
+4. **Individual Risk** (Node Type: Concept)
+5. **Project Success** (Node Type: Outcome)
+
+### Relationships:
+1. **Tool Technique** - **performs** → **Qualitative Risk Analysis**
+2. **Qualitative Risk Analysis** - **is used to** → **assess** → **Individual Risk**
+3. **Individual Risk** - **is identified to** → **identify risk**
+4. **Identifying Risk** - **is important for** → **Project Success**
+
+### Attributes:
+- **Qualitative Risk Analysis**: 
+  - Type: Analysis Method
+  - Focus: Individual Risks
+- **Individual Risk**:
+  - Importance: Critical for Project Success
+- **Project Success**:
+  - Dependency: On effective risk identification and assessment
+
+This structured extraction reflects key elements of project management risks and showcases how they interrelate within the context of qualitative risk analysis.

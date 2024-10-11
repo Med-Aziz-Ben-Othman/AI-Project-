@@ -1,0 +1,27 @@
+Based on the provided sentence, here’s the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Project Manager**
+2. **Project**
+3. **Success**
+4. **Objective**
+
+### Relationships:
+1. **has responsibility**: connects the Project Manager to the overall responsibility.
+2. **is responsible for**: connects the Project Manager to the Project.
+3. **aims to achieve**: connects the Project to Success.
+4. **is defined by**: connects Success to Objective.
+
+### Attributes:
+- **Project Manager**: 
+  - Role: Project Manager
+  - Responsibility Level: Overall
+- **Project**: 
+  - Status: Successful (desired outcome)
+- **Success**: 
+  - Criteria: Meet defined objective
+- **Objective**: 
+  - Definition: Defined (specific goals to be achieved)
+
+### Summary of Extraction:
+- The **Project Manager** has an overall responsibility to deliver a successful **Project** that meets a defined **Objective**. The relationship indicates that the success of the project is contingent upon achieving the objectives set forth at the beginning.

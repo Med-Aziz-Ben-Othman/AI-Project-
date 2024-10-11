@@ -1,0 +1,42 @@
+Based on the provided sentence, I will extract the relevant nodes (entities), relationships, and attributes related to project management risks.
+
+### Nodes (Entities)
+1. **Activity**
+2. **Build Project**
+3. **Work Breakdown Structure (WBS)**
+4. **Schedule**
+5. **Budget**
+6. **Work Assignment Document**
+
+### Relationships
+1. **Includes**: 
+   - Activity **includes** Work Breakdown Structure
+   - Work Breakdown Structure **includes** Schedule
+   - Work Breakdown Structure **includes** Budget
+   - Work Breakdown Structure **includes** Work Assignment Document
+
+2. **Part of**: 
+   - Work Breakdown Structure **is part of** Build Project
+   - Activity **is part of** Build Project
+
+### Attributes
+- **Activity**
+  - Can be associated with task types, durations, and dependencies.
+  
+- **Build Project**
+  - Can have attributes such as project name, project manager, and project timeline.
+  
+- **Work Breakdown Structure (WBS)**
+  - Can have attributes like level of detail, deliverables, and milestones.
+
+- **Schedule**
+  - Can include attributes like start date, end date, and critical path.
+
+- **Budget**
+  - Can include attributes such as total cost, cost categories, and funding sources.
+
+- **Work Assignment Document**
+  - Can include attributes like assigned resources, roles, and responsibilities.
+
+### Summary
+The analysis of the sentence reveals a structured relationship among various components of project management, particularly highlighting how activities are organized within a project through a Work Breakdown Structure (WBS) that encompasses schedules, budgets, and work assignments, all of which can be critical in assessing and managing project risks.

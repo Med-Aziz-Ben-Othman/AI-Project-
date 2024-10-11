@@ -1,0 +1,23 @@
+Based on the provided sentence, the following nodes, relationships, and attributes related to project management risks can be extracted:
+
+### Nodes:
+1. **Quantitative Risk Analysis**
+2. **Completeness**
+3. **Correctness**
+4. **Model**
+5. **Project**
+
+### Relationships:
+1. **Involves**: Quantitative Risk Analysis **involves** Completeness
+2. **Involves**: Quantitative Risk Analysis **involves** Correctness
+3. **Uses**: Model **is used in** Quantitative Risk Analysis
+4. **Applies to**: Quantitative Risk Analysis **applies to** Project
+
+### Attributes:
+- **Quantitative Risk Analysis**: Focuses on numerical assessment of risks.
+- **Completeness**: Ensures all potential risks are considered.
+- **Correctness**: Ensures the accuracy of the risk assessment process.
+- **Model**: A systematic representation used to analyze risks.
+- **Project**: The specific undertaking subject to risk analysis.
+
+This structured extraction captures the essence of the relationships and characteristics in the context of project management risks, suitable for graph-based learning models.

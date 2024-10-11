@@ -1,0 +1,25 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Communication**
+2. **Risk**
+3. **Project Team**
+4. **Management**
+5. **Stakeholder**
+
+### Relationships:
+1. **Facilitates**: Communication facilitates risk management.
+2. **Involves**: Project Team involves stakeholders.
+3. **Influences**: Management influences risk within the project team.
+
+### Attributes:
+- **Communication**: 
+  - Type: Open and honest
+- **Risk**:
+  - Context: Within project management
+- **Project Team**:
+  - Composition: Includes stakeholders
+- **Management**:
+  - Role: Overseeing project team dynamics and stakeholder engagement
+
+This structured representation captures the essence of project management risks as described in the sentence, highlighting key entities and their interactions.

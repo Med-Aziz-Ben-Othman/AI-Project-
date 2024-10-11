@@ -1,0 +1,43 @@
+Based on the provided sentence, here is the analysis of key concepts, entities, and relationships relevant to project management risks:
+
+### Nodes (Entities)
+1. **Quantitative Analysis**
+2. **Response Development**
+3. **Contingency Reserve**
+4. **Documentation**
+5. **Communication**
+6. **Subsequent Action**
+7. **Risk Calculation**
+8. **Appropriate Response**
+
+### Relationships
+1. **Focus**: 
+   - Quantitative Analysis → Response Development
+   - (The focus of quantitative analysis is to develop an appropriate response.)
+  
+2. **Require**: 
+   - Calculation → Contingency Reserve Level
+   - (Calculations are required to determine the appropriate level of contingency reserve.)
+
+3. **Must Document**: 
+   - Contingency Reserve Level → Documentation
+   - (The level of contingency reserve must be documented.)
+
+4. **Communicated**: 
+   - Documentation → Communication
+   - (The documentation must be communicated to relevant stakeholders.)
+
+5. **Inform**: 
+   - Communication → Subsequent Action
+   - (Communication of the documentation informs subsequent actions.)
+
+### Attributes/Characteristics
+- **Quantitative Analysis**: Involves numerical data and statistical methods.
+- **Response Development**: Aimed at creating strategies to address identified risks.
+- **Contingency Reserve**: A buffer amount set aside to address unforeseen risks.
+- **Documentation**: Formal records of analysis, decisions, and plans.
+- **Communication**: The process of sharing information with stakeholders.
+- **Subsequent Action**: The actions taken following the analysis and communication of risks.
+- **Appropriate Response**: Tailored strategies that are suitable for handling specific risks. 
+
+This structured extraction reflects the relationships and attributes relevant to project management risks and can support graph-based learning models.

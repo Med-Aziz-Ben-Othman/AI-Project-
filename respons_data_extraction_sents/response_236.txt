@@ -1,0 +1,40 @@
+Based on the provided sentence, I will extract the following entities (nodes), relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Qualitative Risk Analysis**
+2. **Risk List**
+3. **Risk Identification Process**
+4. **Project Management**
+5. **Risk Characteristics**
+6. **Positive Influence**
+7. **Negative Influence**
+8. **Project Objective**
+
+### Relationships
+1. **Applies To**:
+   - Qualitative Risk Analysis **applies to** Risk List.
+   
+2. **Creates**:
+   - Risk List **creates** updated risk identification process.
+   
+3. **Identifies**:
+   - Risk Identification Process **identifies** risks.
+   
+4. **Provides**:
+   - Risk Identification Process **provides** characteristics of risks.
+   
+5. **Influences**: 
+   - Risk Characteristics **influence** Project Objective (both positively and negatively).
+
+### Attributes (Characteristics)
+- **Qualitative Risk Analysis**:
+  - Type: Method
+- **Risk List**:
+  - Status: Updated
+- **Risk Characteristics**:
+  - Types: Positive Influence, Negative Influence
+- **Project Objective**:
+  - Goal: Achieve
+
+### Summary of Extraction
+The sentence describes a process where qualitative risk analysis is utilized to create an updated list of risks, which plays a crucial role in identifying risks within project management. The characteristics of these risks can have both positive and negative influences on achieving the overall project objectives.

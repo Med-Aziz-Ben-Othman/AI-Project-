@@ -1,0 +1,42 @@
+Based on the provided sentence, I will extract entities (nodes), relationships, and relevant attributes related to project management risks.
+
+### Nodes (Entities)
+1. **Risk**
+2. **List**
+3. **Quantitative Risk Analysis**
+4. **Process**
+5. **Significant Risk**
+6. **Effect**
+
+### Relationships
+1. **Identify**: 
+   - Between **List** and **Risk** (A list is used to identify risks.)
+   
+2. **Prioritize**: 
+   - Between **List** and **Risk** (The identified risks on the list are prioritized.)
+  
+3. **Ensure**: 
+   - Between **Risk** and **Quantitative Risk Analysis** (It is essential to ensure that risks are analyzed quantitatively.)
+  
+4. **Perform**: 
+   - Between **Process** and **Quantitative Risk Analysis** (The process involves performing a quantitative risk analysis.)
+  
+5. **Consider**: 
+   - Between **Process** and **Significant Risk** (The process considers significant risks.)
+  
+6. **Analyze**: 
+   - Between **Effect** and **Quantitative Risk Analysis** (The effect of risks is analyzed through quantitative risk analysis.)
+  
+7. **Analyze**: 
+   - Between **Significant Risk** and **Effect** (The effect of significant risks is analyzed.)
+
+### Attributes
+- **Risk**: Can be identified, prioritized, significant.
+- **List**: Contains identified risks.
+- **Quantitative Risk Analysis**: A method used to analyze risks quantitatively, focusing on their effects.
+- **Process**: Involves steps like ensuring, performing, and considering risks.
+- **Significant Risk**: A type of risk that warrants special consideration in the analysis.
+- **Effect**: The outcome or impact that risks may have, which is analyzed quantitatively.
+
+### Summary
+The sentence discusses a systematic approach to project management risks, emphasizing the importance of identifying and prioritizing risks, ensuring that a quantitative risk analysis is performed, and considering significant risks to analyze their effects. This structured extraction provides a clear understanding of the relationships and attributes involved in risk management processes within project management.

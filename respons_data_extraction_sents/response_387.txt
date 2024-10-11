@@ -1,0 +1,36 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Residual Risk**
+   - **Attributes**: 
+     - Type: Risk
+     - Status: Identified
+
+2. **Document**
+   - **Attributes**: 
+     - Type: Project Management Document
+     - Purpose: Analyze
+
+3. **Stakeholder**
+   - **Attributes**: 
+     - Type: Relevant Stakeholder
+     - Role: Communicates
+
+### Relationships:
+1. **Identified** 
+   - Relationship: Residual Risk -> Document
+   - Description: The residual risk has been identified in the document.
+
+2. **Analyzes**
+   - Relationship: Document -> Residual Risk
+   - Description: The document is used to analyze the residual risk.
+
+3. **Communicates**
+   - Relationship: Document -> Stakeholder
+   - Description: The findings in the document are communicated to relevant stakeholders.
+
+4. **Relevant to**
+   - Relationship: Residual Risk -> Stakeholder
+   - Description: The residual risk is relevant to the stakeholders.
+
+This structured approach highlights the connections between the components of project management risks as mentioned in the original sentence.

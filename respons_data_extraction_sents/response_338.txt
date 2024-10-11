@@ -1,0 +1,36 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Practice Standard Project Risk Management**
+   - **Attributes**: Methodology, Framework
+
+2. **Quantitative Risk Analysis**
+   - **Attributes**: Technique, Assessing Risks Numerically
+
+3. **Interrelationship of Risks**
+   - **Attributes**: Complexity, Dependencies
+
+4. **Individual Risk**
+   - **Attributes**: Specific Risk, Isolated Factor
+
+5. **Project Model**
+   - **Attributes**: Representation, Structural Framework
+
+### Relationships:
+1. **Practice Standard Project Risk Management** 
+   - **performs** → **Quantitative Risk Analysis**
+  
+2. **Quantitative Risk Analysis** 
+   - **focuses on** → **Interrelationship of Risks**
+
+3. **Interrelationship of Risks** 
+   - **includes** → **Individual Risk**
+
+4. **Individual Risk** 
+   - **relates to** → **Project Model**
+  
+5. **Project Model** 
+   - **represents** → **other Risks**
+
+### Summary:
+The practice of standard project risk management involves performing quantitative risk analysis, which emphasizes the interrelationships among various risks. Individual risks are considered in this analysis and are related to the broader project model, which represents the complexities and dependencies between these risks.

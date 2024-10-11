@@ -1,0 +1,38 @@
+Based on the provided sentence "data gather individual may subject report intentional bias," we can extract the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Data Gather**
+   - Type: Activity
+   - Attribute: Method of collecting information
+
+2. **Individual**
+   - Type: Entity
+   - Attribute: Person involved in the data gathering process
+
+3. **Report**
+   - Type: Document/Output
+   - Attribute: Summary of findings from data gathering
+
+4. **Intentional Bias**
+   - Type: Risk Factor
+   - Attribute: Possible distortion in data due to individual influence
+
+### Relationships:
+1. **Performs**
+   - Relation: **Individual** performs **Data Gather**
+   - Description: An individual is responsible for gathering data.
+
+2. **Produces**
+   - Relation: **Data Gather** produces **Report**
+   - Description: The process of data gathering results in a report.
+
+3. **May Lead To**
+   - Relation: **Report** may lead to **Intentional Bias**
+   - Description: The report generated may contain intentional bias due to the individual's influence during data gathering.
+
+4. **Is A Risk**
+   - Relation: **Intentional Bias** is a risk in project management
+   - Description: Intentional bias poses a risk to the integrity and accuracy of project data and reporting.
+
+### Summary:
+The extracted elements highlight the risk associated with data gathering processes in project management, emphasizing how an individual's actions can introduce bias into reports, which in turn could lead to problematic project outcomes.

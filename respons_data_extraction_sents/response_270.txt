@@ -1,0 +1,47 @@
+Based on the provided sentence, the following nodes, relationships, and attributes related to project management risks can be extracted:
+
+### Nodes
+1. **Qualitative Risk Analysis Tool**
+   - Type: Tool
+   - Role: Used in risk analysis
+
+2. **Risk**
+   - Type: Concept
+   - Role: Entity being analyzed
+
+3. **Risk Priority Order**
+   - Type: Concept
+   - Role: Method of organizing risks
+
+4. **Priority Group**
+   - Type: Concept
+   - Role: Classification of risks
+
+5. **High**
+   - Type: Attribute
+   - Role: Level of priority
+
+6. **Moderate**
+   - Type: Attribute
+   - Role: Level of priority
+
+7. **Low**
+   - Type: Attribute
+   - Role: Level of priority
+
+### Relationships
+1. **Includes**
+   - Relationship: "Qualitative Risk Analysis Tool" **includes** "Risk Priority Order"
+
+2. **Classifies**
+   - Relationship: "Risk Priority Order" **classifies** "Risk" into "Priority Group"
+
+3. **Has Levels**
+   - Relationship: "Priority Group" **has levels** of "High," "Moderate," and "Low"
+
+### Attributes/Characteristics
+- The **Qualitative Risk Analysis Tool** is designed to prioritize risks.
+- The **Risk Priority Order** assists in determining the urgency and importance of risks.
+- The **Priority Group** provides a framework for categorizing risks into different levels of severity (High, Moderate, Low).
+
+This structured representation captures the essential components and their interconnections relevant to project management risks as described in the sentence.

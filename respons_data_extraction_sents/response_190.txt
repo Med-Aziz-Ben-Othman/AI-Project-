@@ -1,0 +1,30 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk**
+2. **Project Objectives**
+3. **Project Risk**
+4. **Time**
+5. **Cost**
+6. **Quality**
+7. **Scope**
+
+### Relationships:
+1. **link**: Connects "Risk" to "Project Objectives".
+2. **identified**: Connects "Project Objectives" to "Project Risk".
+3. **relate**: Connects "Project Risk" to "Project Objectives".
+4. **impact**: Connects "Project Risk" to "Time".
+5. **impact**: Connects "Project Risk" to "Cost".
+6. **impact**: Connects "Project Risk" to "Quality".
+7. **impact**: Connects "Project Risk" to "Scope".
+
+### Attributes/Characteristics:
+1. **Risk**: Represents potential events or conditions that may negatively affect project objectives.
+2. **Project Objectives**: Specific goals that a project aims to achieve, which can be affected by risks.
+3. **Project Risk**: The uncertainty associated with achieving project objectives, related to various factors such as time, cost, quality, and scope.
+4. **Time**: One of the project constraints that could be impacted by risks.
+5. **Cost**: Financial aspect of the project that could be affected by identified risks.
+6. **Quality**: Refers to the standards and criteria that the project's deliverables must meet, which can be influenced by risks.
+7. **Scope**: The breadth and depth of the project's deliverables, potentially impacted by risks.
+
+This structured extraction captures the essential elements of project management risks as described in the sentence.

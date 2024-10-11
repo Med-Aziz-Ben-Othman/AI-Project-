@@ -1,0 +1,26 @@
+Based on the provided text, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities):
+1. **Project Risk Management**
+2. **Qualitative Risk Analysis**
+3. **Risk Characteristic**
+4. **Risk Importance**
+5. **Qualitative Risk Analysis Tool**
+6. **Risk**
+7. **Response Analysis**
+
+### Relationships:
+1. **practice**: Project Risk Management - practice -> Qualitative Risk Analysis
+2. **perform**: Project Risk Management - perform -> Qualitative Risk Analysis
+3. **select**: Qualitative Risk Analysis - select -> Risk Characteristic
+4. **define**: Risk Characteristic - define -> Risk Importance
+5. **provide**: Qualitative Risk Analysis Tool - provide -> way to distinguish Risk Important
+6. **important**: Response Analysis - important -> Risk
+
+### Attributes:
+- **Qualitative Risk Analysis Tool**: This tool is a method or instrument used in project risk management to assess and categorize risks qualitatively.
+- **Risk Characteristic**: This refers to the specific features or traits of risks that need to be identified and analyzed.
+- **Risk Importance**: This indicates the level of significance or priority assigned to a particular risk in the context of a project.
+- **Response Analysis**: This implies the evaluation of responses to risks, particularly those deemed important.
+
+This structured analysis captures the essential components of project risk management as described in the text, outlining the key entities and their relationships within the context of project risks.

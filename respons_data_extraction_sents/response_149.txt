@@ -1,0 +1,27 @@
+Based on the provided sentence, here are the extracted elements:
+
+### Nodes (Entities)
+1. **Management** 
+2. **Analysis Level**
+3. **Sourcing**
+4. **Project Risk**
+5. **Risk**
+6. **Limitations**
+7. **Provisions**
+8. **Resources**
+
+### Relationships
+1. **Management** -> **Analysis Level**: "involves"
+2. **Sourcing** -> **Management**: "requires"
+3. **Project Risk** -> **Risk**: "accepts"
+4. **Risk** -> **Limitations**: "may arise from"
+5. **Limitations** -> **Provision**: "place"
+6. **Provision** -> **Resources**: "provides"
+
+### Attributes/Characteristics
+- **Project Risk**: May arise due to specific limitations.
+- **Limitations**: Can impose constraints on management and sourcing.
+- **Resources**: Are essential provisions for managing risks.
+
+### Summary
+The sentence reflects a project management context where management involves analyzing levels of sourcing, which requires managing project risks. Risks can arise from specific limitations, and provisions are necessary resources for addressing these risks.

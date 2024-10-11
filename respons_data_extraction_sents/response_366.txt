@@ -1,0 +1,31 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Document Result**
+2. **Quantitative Risk Analysis**
+3. **Contingency Reserve**
+4. **Project Cost**
+5. **Schedule Risk Analysis**
+6. **Cost Estimate**
+7. **Schedule**
+8. **Prudent Target**
+9. **Realistic Expectation**
+10. **Process**
+
+### Relationships:
+1. **Document Result** → **Quantitative Risk Analysis**: *is part of*
+2. **Quantitative Risk Analysis** → **Contingency Reserve**: *includes*
+3. **Quantitative Risk Analysis** → **Project Cost**: *affects*
+4. **Schedule Risk Analysis** → **Cost Estimate**: *is based on*
+5. **Cost Estimate** → **Schedule**: *influences*
+6. **Quantitative Risk Analysis** → **Prudent Target**: *establishes*
+7. **Quantitative Risk Analysis** → **Realistic Expectation**: *sets*
+8. **Process** → **Quantitative Risk Analysis**: *involves*
+
+### Attributes:
+- **Contingency Reserve**: *financial buffer for unforeseen risks*
+- **Prudent Target**: *financially responsible goal*
+- **Realistic Expectation**: *achievable outcomes based on analysis*
+- **Process**: *methodology for conducting risk analysis*
+
+This structure captures the key concepts and their interrelations, which are essential for understanding project management risks and their quantitative analysis.

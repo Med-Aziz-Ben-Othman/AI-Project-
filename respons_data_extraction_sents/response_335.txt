@@ -1,0 +1,32 @@
+Based on the provided sentence, the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Risk Analysis**
+2. **Cost**
+3. **Schedule**
+4. **Example**
+5. **Method**
+6. **Monte Carlo Simulation**
+
+### Relationships:
+1. **Risk Analysis** - **evaluates** - **Cost**
+2. **Risk Analysis** - **evaluates** - **Schedule**
+3. **Method** - **is a type of** - **Monte Carlo Simulation**
+4. **Example** - **demonstrates** - **Method**
+5. **Method** - **is used for** - **Risk Analysis**
+
+### Attributes:
+- **Risk Analysis**
+  - Purpose: Assess project risks
+- **Cost**
+  - Type: Financial aspect of the project
+- **Schedule**
+  - Type: Time aspect of the project
+- **Example**
+  - Type: Illustrative case or instance
+- **Method**
+  - Type: Technique used in analysis
+- **Monte Carlo Simulation**
+  - Type: Quantitative risk analysis method
+
+This structured extraction captures the essence of project management risks as discussed in the sentence, highlighting key entities and their interrelations.

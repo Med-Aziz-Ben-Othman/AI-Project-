@@ -1,0 +1,30 @@
+Based on the provided sentence, I will extract the key concepts, entities (nodes), relationships, and attributes relevant to project management risks.
+
+### Nodes:
+1. **Risk Evaluation**
+2. **Qualitative Technique**
+3. **Individual Risk**
+4. **Quantitative Technique**
+5. **Overall Effect**
+6. **Risk**
+7. **Project Outcome**
+8. **Combination of Techniques**
+
+### Relationships:
+1. **Risk Evaluation** - **uses** - **Qualitative Technique**
+2. **Risk Evaluation** - **addresses** - **Individual Risk**
+3. **Risk Evaluation** - **uses** - **Quantitative Technique**
+4. **Quantitative Technique** - **considers** - **Overall Effect**
+5. **Risk Evaluation** - **affects** - **Risk**
+6. **Risk** - **influences** - **Project Outcome**
+7. **Qualitative Technique** - **and** - **Quantitative Technique** - **form** - **Combination of Techniques**
+
+### Attributes:
+- **Qualitative Technique**: Focuses on subjective analysis of risks (e.g., expert judgment, interviews).
+- **Quantitative Technique**: Involves numerical analysis (e.g., statistical models, simulations).
+- **Individual Risk**: Specific risks that are identified and evaluated independently.
+- **Overall Effect**: The cumulative impact of risks on the project.
+- **Project Outcome**: The final result or deliverable of the project.
+- **Combination of Techniques**: The integration of both qualitative and quantitative approaches for a comprehensive risk assessment.
+
+This structured extraction reflects the semantic relationships and key concepts associated with project management risks as described in the sentence.

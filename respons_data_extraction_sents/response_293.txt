@@ -1,0 +1,45 @@
+Based on the provided sentence, here is the analysis with extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Document Result**
+2. **Qualitative Risk Analysis Process**
+3. **Structure List**
+4. **Risk**
+5. **Identify Risk**
+6. **Chapter**
+7. **Category**
+8. **Priority**
+
+### Relationships
+1. **"perform"** - connects "document result" to "qualitative risk analysis process"
+   - Relationship: Documenting the results is an action taken during the qualitative risk analysis process.
+   
+2. **"add"** - connects "qualitative risk analysis process" to "structure list"
+   - Relationship: The qualitative risk analysis process involves adding a structured list of identified risks.
+
+3. **"differentiate"** - connects "risk" to "identify risk"
+   - Relationship: The process of identifying risks includes differentiating between various types of risks.
+
+4. **"see"** - connects "identify risk" to "chapter"
+   - Relationship: The identification of risks is referenced or guided by a specific chapter in a document or framework.
+
+5. **"categorize"** - connects "risk" to "category"
+   - Relationship: Risks can be categorized into different types or classes.
+
+6. **"rank"** - connects "category" to "priority"
+   - Relationship: Each category of risk can be assigned a priority, indicating its significance or urgency.
+
+### Attributes
+- **Qualitative Risk Analysis Process**
+  - Type: Process
+  - Purpose: To assess risks qualitatively.
+
+- **Risk**
+  - Type: Entity
+  - Characteristics: Can be categorized and prioritized.
+
+- **Priority**
+  - Type: Attribute
+  - Importance Level: Indicates the significance of the risk in relation to the project.
+
+This structured extraction captures the essential components of project management risks as they relate to qualitative analysis, emphasizing actions, classifications, and relationships.

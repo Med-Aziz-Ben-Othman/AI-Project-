@@ -1,0 +1,32 @@
+Based on the provided sentence, the following nodes, relationships, and attributes related to project management risks can be extracted:
+
+### Nodes:
+1. **Risk Owner**
+2. **Risk Response**
+3. **Risk Planning**
+4. **Additional Risk Response**
+5. **Risk Action Owner**
+6. **Agreed-upon Risk Response**
+7. **Risk Action Plan**
+8. **Timely Manner**
+
+### Relationships:
+1. **(Risk Owner) - is responsible for -> (Risk Response)**
+2. **(Risk Owner) - ensures -> (Risk Response)**
+3. **(Risk Response) - requires -> (Risk Planning)**
+4. **(Risk Planning) - includes -> (Additional Risk Response)**
+5. **(Risk Action Owner) - is responsible for -> (Agreed-upon Risk Response)**
+6. **(Risk Action Owner) - ensures -> (Risk Action Plan)**
+7. **(Risk Action Plan) - is carried out in -> (Timely Manner)**
+
+### Attributes:
+- **Risk Owner**: Responsible for overseeing risk management.
+- **Risk Response**: The planned actions to address identified risks.
+- **Risk Planning**: The process of preparing for potential risks.
+- **Additional Risk Response**: Additional measures that may be needed beyond the initial plan.
+- **Risk Action Owner**: The individual tasked with executing the risk response.
+- **Agreed-upon Risk Response**: The consensus on how to tackle the risk.
+- **Risk Action Plan**: The detailed plan that outlines how to address and manage risks.
+- **Timely Manner**: The expected timeframe for executing the risk response actions.
+
+This structured extraction can support graph-based learning models by providing a clear understanding of the entities involved in project management risks, their roles, and how they interact with each other.

@@ -1,0 +1,24 @@
+Based on the provided text, here is the extraction of key concepts, entities, and relationships related to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk Management**
+2. **Practice Standard**
+3. **Project**
+4. **Management**
+5. **Criteria**
+
+### Relationships
+1. **"is a type of"**: Project Risk Management **is a type of** Practice Standard.
+2. **"is related to"**: Project Risk Management **is related to** Project.
+3. **"involves"**: Project **involves** Management.
+4. **"is defined by"**: Practice Standard **is defined by** Criteria.
+5. **"applies to"**: Criteria **applies to** Project Management.
+
+### Attributes
+- **Project Risk Management**: Focuses on identifying, analyzing, and responding to project risks.
+- **Practice Standard**: Represents established norms and guidelines in project management.
+- **Project**: Could vary in scope, time, and resources.
+- **Management**: Encompasses processes and activities required to achieve project goals.
+- **Criteria**: The specific standards or benchmarks used to assess project risks.
+
+This structured extraction helps in understanding the interconnected nature of concepts in project management, especially concerning risks.

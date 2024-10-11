@@ -1,0 +1,22 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Success** 
+2. **Project Risk Management**
+3. **Number of Factors**
+4. **Inherent Level of Uncertainty**
+5. **Project**
+
+### Relationships
+1. **Measure**: The action of assessing or evaluating the "Success" in relation to "Project Risk Management."
+2. **Depend**: Indicates that "Success" in "Project Risk Management" is contingent upon the "Number of Factors."
+3. **Inherent**: Describes the nature of the "Level of Uncertainty" as it relates to "Project" and "Project Risk Management."
+
+### Attributes
+- **Success**: Qualitative measure of how well project goals are achieved.
+- **Project Risk Management**: A systematic process that involves identifying, analyzing, and responding to project risks.
+- **Number of Factors**: Quantitative measure that influences the effectiveness of project risk management.
+- **Inherent Level of Uncertainty**: Indicates the fundamental unpredictability associated with the project, which can affect risk management outcomes.
+  
+### Summary of Extraction
+The sentence conveys that the measurement of success in project risk management is dependent on various factors and the level of uncertainty inherent to the project. This establishes a direct relationship between the complexity of managing risks and the nature of the project itself.

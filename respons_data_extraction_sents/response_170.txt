@@ -1,0 +1,26 @@
+Based on the provided sentence, here are the extracted elements related to project management risks:
+
+### Nodes (Entities)
+1. **Risk Management Planning**
+   - Attributes: Complete
+2. **Process**
+   - Attributes: First, Iterative
+3. **Project Risk Management**
+4. **Objective**
+   - Attributes: Notable Risk
+
+### Relationships
+1. **Risk Management Planning** **is part of** **Process**
+   - (Relationship: "is part of" indicates that risk management planning is a component of the broader process)
+  
+2. **Process** **is characterized by** **Iterative** 
+   - (Relationship: "is characterized by" indicates that the process is iterative in nature)
+
+3. **Project Risk Management** **aims to** **identify** **Notable Risk**
+   - (Relationship: "aims to identify" describes the intent of project risk management)
+
+4. **Notable Risk** **is associated with** **Project Objective**
+   - (Relationship: "is associated with" indicates that notable risks are linked to achieving project objectives)
+
+### Summary
+The extracted components illustrate a framework of risk management in projects, highlighting the planning aspect, the nature of the process, and the objectives tied to identifying risks. This semantic structure provides a basis for understanding the interrelations and attributes within project management risk.

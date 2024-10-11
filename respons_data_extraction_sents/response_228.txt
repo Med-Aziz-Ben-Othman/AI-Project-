@@ -1,0 +1,39 @@
+Based on the provided sentence, I will extract the relevant nodes (entities), relationships, and attributes associated with project management risks.
+
+### Nodes (Entities)
+1. **Practice Standard**
+2. **Project Risk Management**
+3. **Chapter**
+4. **Qualitative Risk Analysis**
+5. **Purpose**
+6. **Objective**
+7. **Process**
+8. **Characteristic**
+9. **Identified Project Risk**
+10. **Priority Risk**
+11. **Agreed-upon Characteristic**
+
+### Relationships
+1. **has**: Practice Standard **has** Project Risk Management
+2. **describes**: Project Risk Management **describes** Chapter
+3. **involves**: Chapter **involves** Qualitative Risk Analysis
+4. **aims to**: Qualitative Risk Analysis **aims to** assess Purpose
+5. **aims to**: Qualitative Risk Analysis **aims to** achieve Objective
+6. **entails**: Qualitative Risk Analysis **entails** Process
+7. **evaluates**: Process **evaluates** Characteristic
+8. **identifies**: Process **identifies** Identified Project Risk
+9. **determines**: Identified Project Risk **determines** Priority Risk
+10. **based on**: Priority Risk **based on** Agreed-upon Characteristic
+
+### Attributes/Characteristics
+- **Practice Standard**: A framework or guideline for managing project risks.
+- **Project Risk Management**: A systematic approach to identifying, assessing, and controlling risks in a project.
+- **Qualitative Risk Analysis**: A method for assessing the impact and likelihood of identified risks.
+- **Purpose**: The goal of performing qualitative risk analysis, which may include improving project outcomes.
+- **Objective**: Specific aims or targets that qualitative risk analysis seeks to achieve.
+- **Characteristic**: Attributes or features of the project risk that are evaluated.
+- **Identified Project Risk**: Risks that have been recognized and documented.
+- **Priority Risk**: Risks that have been ranked based on their potential impact and likelihood.
+- **Agreed-upon Characteristic**: Standards or criteria that are mutually accepted by stakeholders for assessing project risks.
+
+This structured extraction reflects the semantic relationships and components relevant to project management risks as described in the original text.

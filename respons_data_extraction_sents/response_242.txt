@@ -1,0 +1,30 @@
+Based on the provided sentence, the analysis for extracting nodes, relationships, and attributes relevant to project management risks is as follows:
+
+### Nodes:
+1. **Definition**
+2. **Information**
+3. **Quality**
+4. **Collection**
+
+### Relationships:
+1. **"enables"**: Connects "Definition" to "Information" indicating that an agreed-upon definition allows for the collection of high-quality information.
+2. **"is associated with"**: Connects "Information" to "Quality" indicating that the quality of information is a key characteristic.
+3. **"pertains to"**: Connects "Collection" to "Information" indicating that the collection process is directly related to the information being gathered.
+
+### Attributes:
+- **Agreed-upon**: This attribute describes the nature of the "Definition," implying consensus or mutual understanding among stakeholders.
+- **High-quality**: This attribute describes the type of "Information" being collected, emphasizing its reliability and usefulness.
+
+### Structured Representation:
+- **Node 1**: Definition 
+  - Attribute: Agreed-upon
+- **Node 2**: Information 
+  - Attribute: High-quality
+- **Node 3**: Quality
+- **Node 4**: Collection
+
+- **Relationship 1**: Definition **enables** Information
+- **Relationship 2**: Information **is associated with** Quality
+- **Relationship 3**: Collection **pertains to** Information
+
+This structured extraction captures the key components and their interrelations relevant to project management risks, particularly focusing on the importance of definitions and quality information in risk assessment and management processes.

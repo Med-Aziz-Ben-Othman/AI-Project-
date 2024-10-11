@@ -1,0 +1,36 @@
+Based on the provided sentence, here are the extracted components relevant to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk Management**
+   - Type: Process
+   - Description: A systematic approach to identifying, analyzing, and responding to project risks.
+
+2. **Process Flow Diagram**
+   - Type: Diagram/Tool
+   - Description: A visual representation that outlines the steps involved in the project risk management process.
+
+3. **Project Management Institute (PMI)**
+   - Type: Organization
+   - Description: A professional association for project management that provides standards, guidelines, and resources for project management practices.
+
+### Relationships
+1. **Utilizes** (Relationship between "Project Risk Management" and "Process Flow Diagram")
+   - Description: The project risk management process employs a process flow diagram to visualize its steps.
+
+2. **Guides** (Relationship between "Project Risk Management" and "Project Management Institute")
+   - Description: The Project Management Institute provides guidelines and best practices for the project risk management process.
+
+3. **Develops** (Relationship between "Project Management Institute" and "Process Flow Diagram")
+   - Description: The Project Management Institute may develop or endorse specific process flow diagrams for project risk management.
+
+### Attributes/Characteristics
+- **Project Risk Management**
+  - Attributes: Systematic, Analytical, Proactive, Strategic.
+
+- **Process Flow Diagram**
+  - Attributes: Visual, Sequential, Clear, Informative.
+
+- **Project Management Institute**
+  - Attributes: Authoritative, Professional, Resourceful, Educational.
+
+This structured extraction highlights the key components of project risk management as mentioned in the sentence while establishing a clear understanding of their interconnections and relevant characteristics.

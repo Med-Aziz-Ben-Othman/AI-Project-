@@ -1,0 +1,50 @@
+Based on the provided text, the analysis yields the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Risk**
+   - Attributes: 
+     - Type: "Project Management Risk"
+     - Definition: "Possibility of loss or injury"
+  
+2. **Metalanguage**
+   - Attributes:
+     - Purpose: "Provide useful way to distinguish"
+
+3. **Cause**
+   - Attributes:
+     - Definition: "Reason for the occurrence of a risk"
+
+4. **Effect**
+   - Attributes:
+     - Definition: "Outcome resulting from a risk"
+
+5. **Three-Part Statement**
+   - Attributes:
+     - Structure: "Form to describe risk using cause and effect"
+
+6. **Figure**
+   - Attributes:
+     - Purpose: "Show relationship between cause and effect"
+
+### Relationships:
+1. **Distinguishes**
+   - Between: Metalanguage → Risk
+   - Description: "Metalanguage offers a useful way to distinguish risk"
+
+2. **Describes**
+   - Between: Risk → Three-Part Statement
+   - Description: "Risk is described using a three-part statement"
+
+3. **Leads To**
+   - Between: Cause → Effect
+   - Description: "A cause may lead to an effect"
+
+4. **Represents**
+   - Between: Figure → Cause and Effect
+   - Description: "Figure shows the relationship between cause and effect"
+
+5. **May Occur**
+   - Between: Risk → Cause
+   - Description: "Risk may occur as a result of a cause"
+
+By structuring the extracted information into nodes and relationships, it becomes clear how these concepts interact and contribute to understanding project management risks.

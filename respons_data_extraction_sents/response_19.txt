@@ -1,0 +1,27 @@
+Based on the provided text "oversee risk management subcontractor supplier," we can extract the following entities (nodes), relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Risk Management**
+2. **Subcontractor**
+3. **Supplier**
+4. **Oversight** (implied role)
+
+### Relationships
+1. **Oversees**: This relationship connects "Oversight" to "Risk Management," indicating that the oversight pertains to the management of risks.
+2. **Involves**: This relationship connects "Risk Management" to both "Subcontractor" and "Supplier," indicating that both entities are involved in the risk management process.
+
+### Attributes
+- **Risk Management**:
+  - **Purpose**: To identify, assess, and mitigate risks associated with a project.
+  
+- **Subcontractor**:
+  - **Role**: A third-party entity that is contracted to perform specific tasks or services.
+  
+- **Supplier**:
+  - **Role**: An entity that provides goods or services necessary for the project.
+
+### Summary of Extracted Information
+- **Oversight** is a key function that relates to **Risk Management**.
+- **Risk Management** involves the **Subcontractor** and **Supplier**, indicating their roles in managing project risks effectively. 
+
+This structured extraction allows for a clearer understanding of the entities and their interactions within the context of project management risks.

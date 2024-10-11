@@ -1,0 +1,38 @@
+Based on the provided sentence, the following key concepts, entities, relationships, and attributes related to project management risks can be extracted:
+
+### Nodes (Entities)
+1. **Definition** 
+2. **Example**
+3. **Level**
+4. **Probability**
+5. **Impact**
+6. **Objectives**
+7. **Provider**
+8. **Information**
+9. **Assessment**
+10. **Risk**
+11. **Communication**
+12. **Result**
+13. **Management**
+14. **Stakeholder**
+
+### Relationships
+1. **Definition - Examples**: A definition can provide examples.
+2. **Level - Probability**: The level of risk is associated with its probability.
+3. **Level - Impact**: The level of risk is also associated with its impact.
+4. **Objectives - Risk**: Objectives can be influenced by risks.
+5. **Provider - Information**: A provider gives information.
+6. **Information - Assessment**: Information is used to give an assessment.
+7. **Assessment - Risk**: An assessment is made regarding the risk.
+8. **Risk - Communication**: Risk facilitates communication.
+9. **Communication - Result**: Effective communication can lead to a positive result.
+10. **Management - Stakeholder**: Management involves stakeholders.
+
+### Attributes
+- **Probability**: Refers to the likelihood of a risk occurring.
+- **Impact**: Describes the potential effect or consequence of a risk.
+- **Objectives**: Goals that need to be achieved in the project context.
+- **Realistic Assessment**: The quality of the assessment related to risk.
+- **Facilitates**: Indicates the role of risk in enabling communication.
+
+This structure captures the essence of the relationships between various project management concepts and highlights the attributes that define them, particularly in the context of managing risks.

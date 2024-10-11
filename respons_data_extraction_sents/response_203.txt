@@ -1,0 +1,42 @@
+Based on the provided text, we can extract the following nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Source Bias**
+   - Attribute: Type of bias (can be qualitative or quantitative)
+   
+2. **Effect**
+   - Attribute: Potential impacts (positive or negative) on project outcomes
+
+3. **Risk**
+   - Attribute: Level of risk (high, medium, low), type of risk (strategic, operational, financial, etc.)
+
+4. **Process**
+   - Attribute: Steps or methodologies used in project management (e.g., risk assessment, risk mitigation)
+
+5. **Management**
+   - Attribute: Strategies or frameworks (e.g., risk management frameworks, project management methodologies)
+
+6. **Proactive**
+   - Attribute: Approach (preventive measures, forward-thinking strategies)
+
+### Relationships
+1. **Source Bias → Expose** 
+   - Relationship: *Identifies* (Source bias can expose risks)
+
+2. **Source Bias → Effect**
+   - Relationship: *Affects* (Source bias can affect the overall risk in a project)
+
+3. **Effect → Risk**
+   - Relationship: *Influences* (The effect of source bias can influence the level of risk)
+
+4. **Risk → Process**
+   - Relationship: *Managed by* (Risk is managed through specific processes)
+
+5. **Process → Management**
+   - Relationship: *Involves* (Management involves processes to handle risks)
+
+6. **Management → Proactive**
+   - Relationship: *Includes* (Management includes proactive approaches to mitigate risks)
+
+### Summary
+The overall structure indicates that understanding and managing source bias is crucial in identifying and mitigating project risks. The effects of biases can lead to various risks, which should be managed through established processes and proactive strategies in project management.

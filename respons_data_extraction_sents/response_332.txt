@@ -1,0 +1,27 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Data**
+2. **Success**
+3. **Risk Analysis**
+4. **Bias**
+5. **Ability**
+6. **Source Data**
+
+### Relationships:
+1. **gathers**: Data → Success
+2. **requires**: Risk Analysis → Ability
+3. **recognizes**: Ability → Bias
+4. **combats**: Ability → Bias
+5. **develops**: Ability → Source Data
+6. **occurs**: Bias → Source Data
+
+### Attributes:
+- **Data**: Unbiased
+- **Risk Analysis**: Requires ability to recognize and combat bias
+- **Ability**: Necessary for recognizing, combating bias, and developing source data
+- **Bias**: Can occur in data, needs to be recognized and combated
+- **Source Data**: Needs to be unbiased
+
+### Summary:
+The analysis reflects that success in project management is dependent on gathering unbiased data, which is integral to risk analysis. The ability to recognize and combat bias is crucial for developing unbiased source data.

@@ -1,0 +1,22 @@
+Based on the provided text, we can extract the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Sensitivity Analysis**
+2. **Cost Risk Analysis**
+3. **Schedule Risk Analysis**
+
+### Relationships
+- **Sensitivity Analysis** *is a type of* **Risk Analysis**
+- **Cost Risk Analysis** *is a type of* **Risk Analysis**
+- **Schedule Risk Analysis** *is a type of* **Risk Analysis**
+
+### Attributes
+- **Sensitivity Analysis**
+  - Focus: Assessing how different variables impact project outcomes
+- **Cost Risk Analysis**
+  - Focus: Evaluating potential financial impacts on the project budget
+- **Schedule Risk Analysis**
+  - Focus: Analyzing potential delays and their effects on project timelines
+
+### Summary
+The analysis indicates that all three entities (sensitivity analysis, cost risk analysis, and schedule risk analysis) are distinct types of risk analysis in project management, each with its specific focus on different aspects of project risks.

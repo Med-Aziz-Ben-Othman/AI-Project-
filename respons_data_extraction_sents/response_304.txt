@@ -1,0 +1,28 @@
+Based on the provided sentence, the following entities (nodes), relationships, and attributes relevant to project management risks can be extracted:
+
+### Nodes (Entities):
+1. **Qualitative Risk Analysis**
+2. **Information**
+3. **Risk Response**
+4. **Project**
+5. **Development**
+6. **Effectiveness**
+7. **Size** (referring to "smaller project")
+
+### Relationships:
+1. **Qualitative Risk Analysis** → **provides** → **Information**
+2. **Information** → **supports** → **Development**
+3. **Development** → **leads to** → **Effective Risk Response**
+4. **Effective Risk Response** → **applies to** → **Project**
+5. **Project** → **has** → **Size** (specifically refers to "smaller project")
+
+### Attributes:
+- **Qualitative Risk Analysis**: Type of risk analysis
+- **Information**: Type of output from the analysis
+- **Risk Response**: Strategy or action taken to mitigate risks
+- **Project**: An undertaking with specific objectives
+- **Development**: Process involved in creating or improving risk responses
+- **Effectiveness**: Measure of how well the risk response achieves its objectives
+- **Size**: Characteristic indicating the scale of the project (in this case, "smaller")
+
+This structured extraction captures the essential elements and their interconnections as they relate to project management risks identified in the text.

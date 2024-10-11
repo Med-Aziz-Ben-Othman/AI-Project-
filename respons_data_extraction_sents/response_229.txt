@@ -1,0 +1,30 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes
+1. **Individual Risk**
+2. **Qualitative Risk Analysis**
+3. **Probability of Risk Occurrence**
+4. **Effect of Individual Risk**
+5. **Project Objective**
+
+### Relationships
+1. **assess**: (Individual Risk) → (Qualitative Risk Analysis)  
+   - This indicates that the process of assessing focuses on individual risks using qualitative methods.
+
+2. **evaluate**: (Qualitative Risk Analysis) → (Probability of Risk Occurrence)  
+   - This shows that qualitative risk analysis involves evaluating the likelihood that a risk will occur.
+
+3. **impact**: (Probability of Risk Occurrence) → (Effect of Individual Risk)  
+   - This implies that the probability of a risk occurring influences the potential effect that the individual risk may have.
+
+4. **affect**: (Effect of Individual Risk) → (Project Objective)  
+   - This indicates that the effects of individual risks can impact the overall objectives of the project.
+
+### Attributes
+- **Individual Risk**: specific risks identified for evaluation.
+- **Qualitative Risk Analysis**: a method that focuses on understanding risks qualitatively, not quantitatively.
+- **Probability of Risk Occurrence**: likelihood that a given risk will manifest.
+- **Effect of Individual Risk**: potential consequences or impacts on the project resulting from individual risks.
+- **Project Objective**: goals or targets that the project aims to achieve, which may be jeopardized by risks.
+
+This structured analysis captures the semantic relationships and key components related to project management risks as presented in the sentence.

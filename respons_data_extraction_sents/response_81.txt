@@ -1,0 +1,26 @@
+Based on the provided sentence, we can extract the following nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Risk Owner**
+2. **Monitor Action**
+3. **Effectiveness**
+4. **Identify Secondary Risk**
+5. **Implementation Risk**
+6. **Risk Response**
+
+### Relationships:
+1. **Risk Owner** - **monitors** - **Monitor Action**
+2. **Monitor Action** - **determines** - **Effectiveness**
+3. **Effectiveness** - **identifies** - **Identify Secondary Risk**
+4. **Implementation Risk** - **triggers** - **Identify Secondary Risk**
+5. **Identify Secondary Risk** - **informs** - **Risk Response**
+
+### Attributes:
+- **Risk Owner**: Responsible entity for managing risks.
+- **Monitor Action**: Actions taken to oversee risk management processes.
+- **Effectiveness**: Measurement of how well the risk response actions are working.
+- **Identify Secondary Risk**: The process of recognizing additional risks that may occur as a result of managing primary risks.
+- **Implementation Risk**: Risks associated with the execution of a project or risk response.
+- **Risk Response**: Strategies or actions taken to address identified risks.
+
+This structured extraction captures the key components and their interrelations in the context of project management risks, allowing for a better understanding of how these elements interact within a project risk management framework.

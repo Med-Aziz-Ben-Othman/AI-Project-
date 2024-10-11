@@ -1,0 +1,37 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Risk Management Plan**
+2. **Key Numerical Value**
+3. **Quantitative Analysis**
+4. **Decision-Making**
+5. **Risk Response Planning**
+6. **Risk Monitoring**
+7. **Control**
+
+### Relationships:
+1. **Specifies**: 
+   - **Risk Management Plan** specifies **Key Numerical Value**.
+   
+2. **Requires**: 
+   - **Key Numerical Value** requires **Quantitative Analysis**.
+   
+3. **Informs**: 
+   - **Quantitative Analysis** informs **Decision-Making**.
+   
+4. **Involves**: 
+   - **Risk Response Planning** involves **Risk Monitoring**.
+   
+5. **Affects**: 
+   - **Risk Monitoring** affects **Control**.
+
+### Attributes:
+- **Risk Management Plan**: A structured approach to managing project risks.
+- **Key Numerical Value**: Represents measurable aspects of risks, such as probability or impact.
+- **Quantitative Analysis**: A method used to assess risks based on numerical data.
+- **Decision-Making**: The process of making choices based on analyzed data.
+- **Risk Response Planning**: The process of developing options and actions to enhance opportunities and reduce threats to project objectives.
+- **Risk Monitoring**: Continuous tracking of identified risks and potential new risks.
+- **Control**: Mechanisms in place to manage and mitigate risks effectively.
+
+This extraction reflects the relationships and characteristics associated with project management risks as outlined in the given sentence.

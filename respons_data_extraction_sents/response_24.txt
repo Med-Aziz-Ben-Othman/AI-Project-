@@ -1,0 +1,31 @@
+Based on the provided text, the following nodes, relationships, and attributes relevant to project management risks can be extracted:
+
+### Nodes (Entities)
+1. **Project Risk Management**
+2. **Project Management**
+3. **Project**
+4. **Risk**
+5. **Practice Standard**
+6. **Chapter Introduction**
+7. **Process**
+8. **Uncertainty**
+
+### Relationships
+1. **Practice Standard** - *defines* -> **Project Risk Management**
+2. **Project Management** - *includes* -> **Project Risk Management**
+3. **Project Risk Management** - *applies to* -> **Project**
+4. **Project** - *is characterized by* -> **Risk**
+5. **Project Risk Management** - *is part of* -> **Project Management**
+6. **Chapter Introduction** - *introduces* -> **Project Risk Management**
+7. **Project Management** - *deals with* -> **Uncertainty**
+8. **Process** - *is a component of* -> **Project Risk Management**
+
+### Attributes (Characteristics)
+- **Project Risk Management**
+  - *Focus*: Managing risks associated with projects
+  - *Components*: Identification, assessment, response planning
+- **Uncertainty**
+  - *Type*: Variability in project outcomes
+  - *Impact*: Affects project planning and execution
+
+This structured representation captures the essential components of project risk management as indicated in the text and their interrelations.

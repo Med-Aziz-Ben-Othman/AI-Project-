@@ -1,0 +1,40 @@
+Based on the provided sentence, I will extract the relevant nodes, relationships, and attributes related to project management risks.
+
+### Nodes:
+1. **Bias Risk**
+2. **Data**
+3. **Reason**
+4. **Source**
+5. **Cognitive Bias**
+6. **Motivational Bias**
+
+### Relationships:
+1. **Occurs**: Bias Risk occurs due to various reasons.
+2. **Is a Type Of**: Cognitive Bias and Motivational Bias are types of bias that contribute to Bias Risk.
+3. **Has**: Bias Risk has data associated with it.
+4. **Has Many**: Bias Risk occurs due to many reasons.
+5. **Common Source**: Cognitive Bias and Motivational Bias are common sources of Bias Risk.
+
+### Attributes:
+- **Bias Risk**: A potential risk in project management that can affect decision-making and outcomes.
+- **Data**: Information that may be influenced or skewed by bias.
+- **Reasons**: Factors contributing to the occurrence of bias risks, specified as cognitive and motivational.
+- **Cognitive Bias**: A psychological phenomenon where individuals make decisions based on subjective judgment rather than objective reality.
+- **Motivational Bias**: A tendency for individuals to make decisions based on personal motivations and interests rather than factual information.
+
+### Summary Structure:
+- **Nodes**: [Bias Risk, Data, Reason, Source, Cognitive Bias, Motivational Bias]
+- **Relationships**:
+   - Bias Risk occurs due to many reasons.
+   - Cognitive Bias is a type of Bias Risk.
+   - Motivational Bias is a type of Bias Risk.
+   - Bias Risk has associated Data.
+   - Cognitive Bias and Motivational Bias are common sources of Bias Risk.
+- **Attributes**: 
+   - Bias Risk: Potential risk in project management.
+   - Data: Information influenced by bias.
+   - Reasons: Contributing factors to bias risks.
+   - Cognitive Bias: Subjective judgment influencing decisions.
+   - Motivational Bias: Personal motivations affecting decision-making.
+
+This structured extraction provides a clear understanding of the concepts and relationships relevant to project management risks as described in the sentence.

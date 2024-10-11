@@ -1,0 +1,32 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Overall Project Risk**
+2. **Individual Risk**
+3. **Quantitative Risk Analysis**
+4. **Process**
+5. **Methodology**
+
+### Relationships:
+1. **Derives**: 
+   - Between **Individual Risk** and **Overall Project Risk** (Individual risks contribute to the overall project risk).
+2. **Performs**:
+   - Between **Project** and **Quantitative Risk Analysis** (The project performs a quantitative risk analysis).
+3. **Based Upon**:
+   - Between **Quantitative Risk Analysis** and **Methodology** (The analysis process is based upon a specific methodology).
+4. **Part of**:
+   - Between **Quantitative Risk Analysis** and **Process** (The analysis is part of the risk management process).
+
+### Attributes:
+- **Overall Project Risk**: 
+  - Represents cumulative risk associated with the project as a whole.
+- **Individual Risk**: 
+  - Specific risks identified that can impact the project.
+- **Quantitative Risk Analysis**: 
+  - A systematic approach to evaluating risks using numerical methods.
+- **Process**: 
+  - Refers to the structured approach for managing risks.
+- **Methodology**: 
+  - The framework or guidelines followed during the risk analysis.
+
+This structured understanding captures the semantic relationships between key concepts in project management related to risks.

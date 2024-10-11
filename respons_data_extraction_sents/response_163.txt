@@ -1,0 +1,26 @@
+Based on the provided sentence, here is the extracted information structured into nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes (Entities)
+1. **Document**
+2. **Result**
+3. **Plan**
+4. **Risk Management Process**
+5. **Risk Management Planning Document**
+6. **Risk Management Plan**
+
+### Relationships
+1. **Has**: Document → Result
+2. **Describes**: Result → Plan
+3. **Involves**: Plan → Risk Management Process
+4. **Contains**: Risk Management Process → Risk Management Planning Document
+5. **Defines**: Risk Management Planning Document → Risk Management Plan
+
+### Attributes
+- **Document**: Type (e.g., formal, record)
+- **Result**: Outcome (e.g., successful, pending)
+- **Plan**: Purpose (e.g., mitigation, strategy)
+- **Risk Management Process**: Stages (e.g., identification, analysis, response)
+- **Risk Management Planning Document**: Version, Date Created
+- **Risk Management Plan**: Scope, Objectives, Strategies
+
+This structure captures the essential components and their interrelations in the context of project management risks, allowing for a better understanding of how these elements interact within a risk management framework.

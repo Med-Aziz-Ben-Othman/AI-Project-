@@ -1,0 +1,23 @@
+Based on the provided sentence, here is the analysis with extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Practice Standard Project Risk Management**
+2. **Qualitative Risk Analysis**
+3. **High-Quality Information**
+4. **Risk Collection**
+5. **Requirement of High-Quality Information**
+
+### Relationships:
+1. **"performs"**: Practice Standard Project Risk Management performs Qualitative Risk Analysis.
+2. **"collects"**: Qualitative Risk Analysis collects High-Quality Information.
+3. **"requires"**: Risk Collection requires High-Quality Information.
+4. **"necessitates"**: Qualitative Risk Analysis necessitates High-Quality Information.
+
+### Attributes:
+- **Practice Standard Project Risk Management**: [Type: Process]
+- **Qualitative Risk Analysis**: [Type: Method, Focus: Risk Assessment]
+- **High-Quality Information**: [Type: Data, Importance: Essential for accuracy]
+- **Risk Collection**: [Type: Activity, Purpose: Gather data on potential risks]
+- **Requirement of High-Quality Information**: [Type: Necessity, Context: To effectively manage risks]
+
+This structured extraction captures the essence of the provided text in relation to project management risks, detailing the entities involved and their interconnections.

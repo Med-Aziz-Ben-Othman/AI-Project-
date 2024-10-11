@@ -1,0 +1,23 @@
+Based on the provided text, here’s the extraction of nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Quantitative Risk Analysis**
+2. **Project Management**
+3. **Project Management Institute**
+
+### Relationships
+1. **Conducts**: The relationship between "Project Management Institute" and "Quantitative Risk Analysis" – The Project Management Institute conducts or promotes quantitative risk analysis.
+2. **Is a Component of**: The relationship between "Quantitative Risk Analysis" and "Project Management" – Quantitative risk analysis is a part of project management practices.
+
+### Attributes
+- **Quantitative Risk Analysis**
+  - **Type**: Analysis method
+  - **Purpose**: To assess and quantify risks in a project
+- **Project Management**
+  - **Discipline**: Management of projects
+  - **Focus**: Achieving project objectives, including risk management
+- **Project Management Institute**
+  - **Type**: Professional organization
+  - **Role**: Standards development, education, and resources in project management
+
+This structured extraction reflects an understanding of the interrelationships and characteristics relevant to project management risks.

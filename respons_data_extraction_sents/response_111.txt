@@ -1,0 +1,29 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Project**
+2. **Risk Management**
+3. **Stakeholder**
+4. **Acceptable Level**
+5. **Result**
+6. **Project-related Criteria**
+7. **Cost**
+8. **Time**
+9. **Scope**
+
+### Relationships:
+1. **Stakeholder** - **must agree** - **Acceptable Level**
+2. **Risk Management** - **involves** - **Stakeholder**
+3. **Project-related Criteria** - **includes** - **Cost**
+4. **Project-related Criteria** - **includes** - **Time**
+5. **Project-related Criteria** - **includes** - **Scope**
+6. **Acceptable Level** - **affects** - **Result**
+7. **Result** - **is evaluated by** - **Project-related Criteria**
+
+### Attributes:
+- **Project-related Criteria**
+  - Attributes: Cost, Time, Scope
+- **Acceptable Level**
+  - Attribute: Level of agreement by the Stakeholder
+
+This structure captures the essential elements of project management risks as described in the sentence, focusing on the key entities and their interconnections.

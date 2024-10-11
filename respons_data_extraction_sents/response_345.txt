@@ -1,0 +1,50 @@
+Based on the provided sentence, I will extract the relevant nodes, relationships, and attributes related to project management risks.
+
+### Nodes:
+1. **Risk Impact Calculation**
+   - Type: Concept
+   - Attributes: None specified
+
+2. **Quantitative Model**
+   - Type: Concept
+   - Attributes: None specified
+
+3. **Risk**
+   - Type: Concept
+   - Attributes: Identified, Quantified
+
+4. **Effect**
+   - Type: Concept
+   - Attributes: None specified
+
+5. **Total Project**
+   - Type: Entity
+   - Attributes: Objectives
+
+6. **Project Objectives**
+   - Type: Concept
+   - Attributes: Describe Level
+
+### Relationships:
+1. **Facilitates**
+   - Between: Risk Impact Calculation and Quantitative Model
+   - Description: The quantitative model facilitates the risk impact calculation.
+
+2. **Affects**
+   - Between: Risk and Effect
+   - Description: The identified and quantified risks have an effect on project outcomes.
+
+3. **Describes**
+   - Between: Total Project and Project Objectives
+   - Description: The total project describes the level of project objectives.
+
+4. **Quantifies**
+   - Between: Risk and Quantitative Model
+   - Description: The quantitative model is used to quantify identified risks at a level of detail.
+
+5. **Impacts**
+   - Between: Risk Impact Calculation and Total Project
+   - Description: The risk impact calculation affects the total project, particularly its objectives.
+
+### Summary
+The analysis reveals a focus on the importance of quantitative models in accurately calculating risk impacts, which is essential for understanding the effects of various identified risks on project objectives. The total project context is emphasized, highlighting the need for detailed quantification of risks to ensure successful project management.

@@ -1,0 +1,41 @@
+Based on the provided sentence, the following nodes, relationships, and attributes related to project management risks can be extracted:
+
+### Nodes (Entities):
+1. **Uncertainty**
+2. **Project**
+3. **Temporary Undertaking**
+4. **Base Assumption**
+5. **Constraint**
+6. **Project Result**
+7. **Multiple Stakeholders**
+8. **Different Requirements**
+
+### Relationships:
+1. **Is Inevitable**: 
+   - Relationship between **Uncertainty** and **Project** (Uncertainty is inherent in a Project).
+   
+2. **Is Unique**: 
+   - Relationship between **Project** and **Temporary Undertaking** (A Project is a unique temporary undertaking).
+
+3. **Is Based On**: 
+   - Relationship between **Base Assumption** and **Project** (The project is founded on a base assumption).
+
+4. **Imposes**: 
+   - Relationship between **Constraint** and **Project** (Constraints are imposed on the project).
+
+5. **Affects**: 
+   - Relationship between **Constraint** and **Project Result** (Constraints affect the project result).
+
+6. **Involves**: 
+   - Relationship between **Project** and **Multiple Stakeholders** (A project involves multiple stakeholders).
+
+7. **Has Different**: 
+   - Relationship between **Multiple Stakeholders** and **Different Requirements** (Multiple stakeholders have different requirements).
+
+### Attributes/Characteristics:
+- **Uncertainty**: Characteristic of projects, indicating variability and unpredictability.
+- **Temporary**: Characteristic of projects indicating a defined beginning and end.
+- **Unique**: Indicates that each project has distinct features.
+- **Stakeholders**: Individuals or groups with varying interests and requirements involved in the project.
+
+These extracted elements can be used to inform a graph-based learning model by representing their relationships and attributes in a structured format, allowing for better understanding and analysis of project management risks.

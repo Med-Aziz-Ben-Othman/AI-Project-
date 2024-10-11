@@ -1,0 +1,26 @@
+Based on the provided sentence, we can extract the following elements related to project management risks:
+
+### Nodes (Entities)
+1. **Quantitative Risk Analysis Technique** - A method used to evaluate risks in project management.
+2. **Chapter** - Refers to a section in a document, likely providing more detailed information about the technique.
+
+### Relationships
+1. **Technique Used For** - The relationship between "Quantitative Risk Analysis Technique" and "Project Risks." This indicates that the technique is employed to assess or manage project risks.
+2. **References** - The relationship between "Quantitative Risk Analysis Technique" and "Chapter." This suggests that the chapter contains further details or instructions on the technique.
+
+### Attributes
+- **Quantitative Risk Analysis Technique**
+  - **Type**: Analysis Method
+  - **Purpose**: To evaluate and manage project risks
+- **Chapter**
+  - **Content**: Details about the quantitative risk analysis technique
+  - **Context**: Related to project management
+
+### Summary
+- **Nodes**: Quantitative Risk Analysis Technique, Chapter
+- **Relationships**: 
+  - Quantitative Risk Analysis Technique **Used For** Project Risks
+  - Quantitative Risk Analysis Technique **References** Chapter
+- **Attributes**: 
+  - Quantitative Risk Analysis Technique (Type: Analysis Method, Purpose: Evaluate/manage project risks)
+  - Chapter (Content: Details about the technique, Context: Project management)

@@ -1,0 +1,34 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **External Project Risk**
+2. **Impact**
+3. **Importance**
+4. **Enterprise**
+5. **Project**
+
+### Relationships:
+1. **May Increase**: Relationship between "External Project Risk" and "Impact"
+2. **Affect**: Relationship between "Impact" and "Importance"
+3. **Beyond**: Relationship between "Importance" and "Enterprise"
+4. **Associated With**: Relationship between "Enterprise" and "Project"
+
+### Attributes:
+- **External Project Risk**: A risk that originates outside of the project scope.
+- **Impact**: The potential effect or change caused by the risk.
+- **Importance**: The significance of the impact on the overall project or organization.
+- **Enterprise**: The broader organization or business context that may be influenced by the project.
+- **Project**: The specific initiative or effort being managed.
+
+### Structured Summary:
+- **Node**: External Project Risk 
+  - **Relationship**: May Increase 
+  - **Node**: Impact
+    - **Relationship**: Affect 
+    - **Node**: Importance
+      - **Relationship**: Beyond 
+      - **Node**: Enterprise
+        - **Relationship**: Associated With 
+        - **Node**: Project
+
+This structure captures the essence of the risks and their interconnections as described in the sentence.

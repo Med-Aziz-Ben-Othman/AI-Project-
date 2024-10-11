@@ -1,0 +1,57 @@
+Based on the provided sentence, here is the analysis of nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities)
+1. **Project Risk**
+   - Definition: The potential for an event or condition that could negatively affect project objectives.
+   
+2. **Estimate**
+   - Definition: An assessment or approximation of the potential risks associated with the project.
+
+3. **Overall Project**
+   - Definition: The entire undertaking encompassing all phases and aspects of the project.
+
+4. **Focus**
+   - Definition: The concentration or priority given to specific tasks or analyses, in this case, risk analysis.
+
+5. **Quantitative Risk Analysis**
+   - Definition: A systematic approach to estimating the probability and impact of risks in numerical terms.
+
+6. **Process**
+   - Definition: A series of actions or steps taken to achieve a particular end, especially in the context of risk analysis.
+
+### Relationships
+1. **Estimates are used to assess** → **Project Risk**
+   - The relationship indicates that estimates help determine the level or amount of project risk.
+
+2. **Focus on** → **Quantitative Risk Analysis**
+   - This relationship highlights that there is an emphasis on performing quantitative risk analysis.
+
+3. **Quantitative Risk Analysis is a part of** → **Risk Analysis Process**
+   - Indicates that quantitative risk analysis is a subset or component of the broader risk analysis process.
+
+4. **Overall Project involves** → **Project Risk**
+   - Suggests that the overall project includes considerations of project risks.
+
+5. **Process includes** → **Estimating Overall Project Risk**
+   - Indicates that the process entails estimating the overall project risk.
+
+### Attributes (Characteristics)
+- **Project Risk**
+  - Attribute: Can be high, medium, or low based on the analysis.
+  
+- **Estimate**
+  - Attribute: Can be qualitative or quantitative.
+
+- **Overall Project**
+  - Attribute: May have defined objectives, scope, timeline, and budget.
+
+- **Focus**
+  - Attribute: Can vary based on project needs or stakeholder priorities.
+
+- **Quantitative Risk Analysis**
+  - Attribute: Involves statistical methods and tools to quantify risk.
+
+- **Process**
+  - Attribute: May include various steps such as risk identification, risk assessment, and risk response planning.
+
+This structured extraction emphasizes the key concepts, their interrelationships, and relevant attributes within the context of project management risks.

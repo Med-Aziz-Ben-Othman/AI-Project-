@@ -1,0 +1,30 @@
+Based on the provided sentence, here’s the analysis of key concepts, entities, and relationships related to project management risks:
+
+### Nodes (Entities)
+1. **Tool Technique**
+2. **Quantitative Risk Analysis**
+3. **Process**
+4. **Comprehensive Risk Representation**
+5. **Risk Model**
+6. **Risk Impact**
+7. **Objective**
+
+### Relationships
+1. **Tool Technique** - **perform** -> **Quantitative Risk Analysis**
+2. **Tool Technique** - **use** -> **Quantitative Risk Analysis**
+3. **Quantitative Risk Analysis** - **follow** -> **Comprehensive Risk Representation**
+4. **Risk Model** - **permit** -> **Comprehensive Risk Representation**
+5. **Risk Model** - **permit** -> **many/all Risk Impact**
+6. **Risk Impact** - **affect** -> **Objective**
+
+### Attributes (Characteristics)
+- **Quantitative Risk Analysis**
+  - **Type**: Analysis Method
+- **Comprehensive Risk Representation**
+  - **Characteristics**: Detailed, Inclusive
+- **Risk Model**
+  - **Function**: Represent various risks
+- **Risk Impact**
+  - **Scope**: Affects multiple objectives
+
+This structured extraction showcases the entities involved in project management risks, their interconnections, and relevant attributes that define their roles and characteristics within the context of risk analysis and management.

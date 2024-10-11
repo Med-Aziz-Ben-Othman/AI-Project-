@@ -1,0 +1,24 @@
+Based on the provided sentence, here is the structured extraction of nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Success Criterion**
+2. **Risk Management**
+3. **Success**
+4. **Project**
+5. **Project Risk Management**
+
+### Relationships:
+1. **has_category**: Success Criterion → Risk Management
+2. **affects**: Risk Management → Success
+3. **is_part_of**: Risk Management → Project
+4. **is_related_to**: Project Risk Management → Project
+5. **contributes_to**: Project Risk Management → Success Criterion
+
+### Attributes:
+- **Success Criterion**: Represents the measures used to evaluate the success of project objectives.
+- **Risk Management**: The systematic process of identifying, analyzing, and responding to project risks.
+- **Success**: The achievement of project objectives and goals.
+- **Project**: A temporary endeavor undertaken to create a unique product, service, or result.
+- **Project Risk Management**: A specific area of risk management focused on the unique risks associated with projects.
+
+This structure allows for a clear representation of how these concepts interact within the context of project management and risk management, facilitating a better understanding for graph-based learning models.

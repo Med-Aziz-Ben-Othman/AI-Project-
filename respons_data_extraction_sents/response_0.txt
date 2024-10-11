@@ -1,0 +1,24 @@
+Based on the provided text, the following nodes, relationships, and attributes related to project management risks can be extracted:
+
+### Nodes:
+1. **Project Risk Management**
+2. **Principle Concepts**
+3. **Responsibility**
+4. **Risk Management**
+5. **Everyone**
+
+### Relationships:
+1. **"is a"** (Project Risk Management **is a** practice)
+2. **"includes"** (Project Risk Management **includes** Principle Concepts)
+3. **"defines"** (Principle Concepts **define** Responsibility)
+4. **"is considered"** (Risk Management **is considered** Everyone's Responsibility)
+5. **"may consider"** (Project Risk Management **may consider** simplistic approach)
+
+### Attributes:
+- **Project Risk Management**: A standard practice within project management.
+- **Principle Concepts**: Fundamental ideas that guide project risk management.
+- **Responsibility**: The notion that risk management is a collective duty.
+- **Risk Management**: Viewed as a responsibility that extends to all stakeholders.
+- **Everyone**: Indicates inclusivity in the responsibility for risk management.
+
+This structured extraction reflects the semantic relationships in the context of project management risks, highlighting the interconnectedness of concepts and responsibilities within the field.

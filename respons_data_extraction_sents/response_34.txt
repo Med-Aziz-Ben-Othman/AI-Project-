@@ -1,0 +1,25 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Action**
+2. **Risk**
+3. **Project**
+4. **Risk Management Process**
+5. **View**
+
+### Relationships:
+1. **perform**: Action - (relationship to) - Risk
+2. **involve**: View - (relationship to) - Risk
+3. **determine**: Risk Management Process - (relationship to) - Project
+4. **have**: Project - (relationship to) - Risk
+
+### Attributes:
+- **Clear View**: This attribute indicates the necessity for clarity in understanding the risks involved in the project.
+- **Project Risk Management Process**: This attribute signifies the structured approach to identifying and managing risks associated with the project.
+
+### Summary:
+- The action of performing relates to the risks when there is no clear view of the risks involved.
+- The risk management process is integral to determining the risks associated with the project. 
+- The clarity of view is essential for effective risk management. 
+
+This structured extraction can support graph-based learning models by representing the interconnections and attributes effectively.

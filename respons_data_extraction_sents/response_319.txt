@@ -1,0 +1,27 @@
+Based on the provided sentence, here are the extracted components related to project management risks:
+
+### Nodes (Entities)
+1. **Individual Risk**
+   - Definition: A specific risk that may affect a project.
+   - Characteristics: Can vary in impact and probability.
+
+2. **Overall Project Risk**
+   - Definition: The cumulative risk associated with a project, resulting from the aggregation of all individual risks.
+   - Characteristics: Influenced by the sum of all individual risks and their interactions.
+
+### Relationships
+1. **Contributes To**
+   - Relationship Type: Causal relationship
+   - Description: Individual risks contribute to the overall project risk.
+
+### Attributes
+- **Individual Risk Attributes:**
+  - Impact: The potential effect that the risk may have on project objectives.
+  - Probability: The likelihood of the risk occurrence.
+
+- **Overall Project Risk Attributes:**
+  - Aggregate Impact: The combined effect of all individual risks on the project.
+  - Risk Management Strategies: Approaches taken to mitigate or manage the overall project risk.
+
+### Summary
+The analysis indicates that individual risks serve as components that influence the overall project risk. Understanding the attributes of both individual and overall project risks is crucial for effective risk management in project management.

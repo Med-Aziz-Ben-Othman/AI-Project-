@@ -1,0 +1,66 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes relevant to project management risks:
+
+### Nodes:
+1. **Participant**
+   - Attribute: "important"
+   
+2. **Understanding**
+   - Attribute: "common"
+
+3. **Term**
+   - Attribute: "use"
+
+4. **Risk**
+   - Attribute: "critical"
+
+5. **Value Threshold**
+   - Attribute: "parameter"
+
+6. **Tool**
+   - Attribute: "defined manner"
+
+7. **Scope**
+   - Attribute: "consistent"
+
+8. **Project**
+   - Attribute: None specified
+
+9. **Attitudes**
+   - Attribute: None specified
+
+10. **Stakeholder**
+   - Attribute: None specified
+
+### Relationships:
+1. **Participant** --(shares)--> **Understanding**
+   - Type: Sharing knowledge or insights
+
+2. **Understanding** --(describes)--> **Term**
+   - Type: Clarification of terminology
+
+3. **Term** --(refers to)--> **Risk**
+   - Type: Terminology associated with risks
+
+4. **Risk** --(has)--> **Value Threshold**
+   - Type: Defining critical parameters for risk assessment
+
+5. **Value Threshold** --(serves as)--> **Parameter**
+   - Type: Functional role in tools or methods
+
+6. **Tool** --(is defined in)--> **Manner**
+   - Type: Specification of tool utilization
+
+7. **Manner** --(is consistent with)--> **Scope**
+   - Type: Alignment of tool application with project scope
+
+8. **Scope** --(is relevant to)--> **Project**
+   - Type: Contextual relationship
+
+9. **Attitudes** --(of)--> **Stakeholder**
+   - Type: Connection of perspectives or beliefs
+
+10. **Stakeholder** --(is influenced by)--> **Understanding**
+    - Type: Impact on stakeholder perspectives
+
+### Summary:
+The essence of the extracted information indicates that participants in a project must share a common understanding of terms used to describe risks, specifically critical risks associated with value thresholds that serve as parameters for tools defined in a manner consistent with the project's scope and stakeholder attitudes. This reflects the importance of communication and clarity in managing project risks.

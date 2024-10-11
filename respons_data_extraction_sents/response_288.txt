@@ -1,0 +1,47 @@
+Based on the provided sentence, the following nodes, relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Risk**
+   - Attributes: None specified, but can be inferred as a potential issue in project management.
+  
+2. **Time**
+   - Attributes: "occur" (referring to the timing of risk occurrence)
+  
+3. **Resource**
+   - Attributes: "scarce" (indicating limited availability)
+  
+4. **Recovery**
+   - Attributes: None specified, but generally refers to the process of overcoming risks.
+  
+5. **Problem**
+   - Attributes: None specified, but refers to the issues arising from risks.
+  
+6. **Risk Mitigation**
+   - Attributes: None specified, but refers to strategies to minimize risks.
+
+### Relationships:
+1. **Risk - occurs at - Time**
+   - Describes when risks are likely to occur.
+  
+2. **Resource - used for - Recovery**
+   - Indicates that resources are utilized in the recovery process.
+  
+3. **Recovery - provides - realistic picture**
+   - Suggests that effective recovery can give a true representation of the situation.
+  
+4. **Problem - arises from - Risk**
+   - Indicates that problems are a consequence of risks.
+  
+5. **Risk Mitigation - utilizes - Resource**
+   - Suggests that risk mitigation efforts require the use of resources, particularly those that are scarce.
+
+### Structured Summary:
+- **Nodes**: Risk, Time, Resource (scarce), Recovery, Problem, Risk Mitigation.
+- **Relationships**:
+  - Risk occurs at Time.
+  - Resource is used for Recovery.
+  - Recovery provides a realistic picture of the Problem.
+  - Problem arises from Risk.
+  - Risk Mitigation utilizes Resource.
+
+This extraction highlights the interconnectedness of risks, resources, and recovery within the context of project management, emphasizing the importance of managing scarce resources during risk mitigation efforts.

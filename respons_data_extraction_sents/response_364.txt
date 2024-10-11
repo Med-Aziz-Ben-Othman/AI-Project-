@@ -1,0 +1,24 @@
+Based on the provided sentence, here are the extracted components relevant to project management risks:
+
+### Nodes (Entities)
+1. **Quantitative Risk Analysis**
+2. **Information**
+3. **Project Plan**
+
+### Relationships
+1. **Quantitative Risk Analysis** -> **provides** -> **Information**
+2. **Information** -> **may use** -> **Project Plan**
+3. **Quantitative Risk Analysis** -> **may modify** -> **Project Plan**
+
+### Attributes/Characteristics
+- **Quantitative Risk Analysis**: 
+  - Type: Analysis Method
+  - Purpose: To assess risks numerically
+- **Information**: 
+  - Type: Data/Insights
+  - Relevance: Used for decision-making regarding risks
+- **Project Plan**: 
+  - Type: Planning Document
+  - Purpose: Guides project execution and adjustments
+
+This structured representation captures the essential concepts and their interrelationships regarding project management risks based on the original sentence.

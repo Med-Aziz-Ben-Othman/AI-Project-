@@ -1,0 +1,26 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes (Entities):
+1. **Project Risk**
+2. **Rescope**
+3. **Threat**
+4. **Opportunity**
+5. **Consequence**
+6. **Probability**
+
+### Relationships:
+1. **Rescope** -> **Project Risk**: "Rescope" is related to "Project Risk" as a potential action that may influence the risk.
+2. **Project Risk** -> **Threat**: "Project Risk" poses a "Threat."
+3. **Project Risk** -> **Opportunity**: "Project Risk" also presents an "Opportunity."
+4. **Threat** -> **Consequence**: "Threat" can lead to a "Consequence."
+5. **Probability** -> **Consequence**: "High Probability" is associated with the likelihood of encountering a "Consequence."
+6. **Threat** -> **Probability**: "Threat" is characterized by a "High Probability."
+
+### Attributes:
+- **Rescope**: Action related to adjusting project scope.
+- **Threat**: Represents negative outcomes associated with project risks.
+- **Opportunity**: Represents potential positive outcomes stemming from project risks.
+- **Consequence**: Resulting effect of a threat.
+- **High Probability**: Indicates a significant likelihood of a consequence occurring.
+
+This structured representation captures the critical concepts and their interrelations in the context of project management risks as articulated in the sentence.

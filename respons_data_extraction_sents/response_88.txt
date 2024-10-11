@@ -1,0 +1,50 @@
+Based on the provided sentence, here's an analysis structured into nodes, relationships, and attributes:
+
+### Nodes (Entities)
+1. **Chapter**
+   - Type: Document Section
+   - Attributes: "subsequent", "detailed"
+  
+2. **Plan**
+   - Type: Project Management Document
+   - Attributes: "risk management"
+
+3. **Scope**
+   - Type: Project Management Concept
+   - Attributes: "defined"
+
+4. **Objective**
+   - Type: Project Management Concept
+   - Attributes: "project risk management process"
+
+5. **Process**
+   - Type: Methodology/Procedure
+   - Attributes: "risk process"
+
+6. **Integration**
+   - Type: Project Management Concept
+   - Attributes: "wider project management"
+
+### Relationships
+1. **Follows**
+   - Between: Chapter → Plan
+   - Description: The "detailed subsequent chapter" follows the "plan".
+
+2. **Defines**
+   - Between: Plan → Scope
+   - Description: The "risk management plan" defines the "scope".
+
+3. **Aims at**
+   - Between: Objective → Process
+   - Description: The "objective" aims at ensuring the "risk management process".
+
+4. **Integrates**
+   - Between: Process → Integration
+   - Description: The "risk process" integrates into "wider project management".
+
+5. **Ensures**
+   - Between: Process → Risk Management
+   - Description: The "risk management process" ensures the effective management of risks.
+
+### Summary
+This analysis highlights key components of risk management in project management, illustrating how chapters, plans, objectives, and processes interrelate. The attributes provide additional context about the nature of these entities, while the relationships clarify how they interact within the framework of project management risks.

@@ -1,0 +1,22 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Project Manager**
+2. **Day-to-Day Management**
+3. **Project**
+4. **Risk Management**
+
+### Relationships:
+1. **Accountable For**: 
+   - **Project Manager** → **Day-to-Day Management**
+   - **Project Manager** → **Risk Management**
+   
+2. **Includes**: 
+   - **Day-to-Day Management** → **Project**
+   - **Day-to-Day Management** → **Effective Risk Management**
+
+### Attributes:
+- **Accountability**: The project manager is responsible for both the day-to-day management and effective risk management.
+- **Effectiveness**: The risk management should be effective, indicating a quality attribute that is desired in the management process.
+
+This structure captures the key concepts and their interrelations in the context of project management and risk management.

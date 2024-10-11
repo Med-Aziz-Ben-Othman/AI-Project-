@@ -1,0 +1,28 @@
+Based on the provided sentence, the following nodes, relationships, and attributes relevant to project management risks can be extracted:
+
+### Nodes
+1. **Quantitative Technique**
+2. **Insight**
+3. **Identified Risk**
+4. **Project Outcome**
+
+### Relationships
+1. **Provides**: The relationship between "Quantitative Technique" and "Insight" implies that the technique yields or offers insight.
+2. **Combines**: The relationship between "Insight" and "Identified Risk" suggests that the insight combines with identified risks to inform decisions.
+3. **Affects**: The relationship between "Identified Risk" and "Project Outcome" indicates that the identified risks have an effect on the project outcome.
+
+### Attributes
+- **Quantitative Technique**: 
+  - Type: Methodology
+  - Purpose: To analyze data quantitatively
+- **Insight**: 
+  - Type: Knowledge
+  - Relevance: Related to risk analysis
+- **Identified Risk**: 
+  - Type: Risk Factor
+  - Status: Identified (acknowledged risk in the project context)
+- **Project Outcome**: 
+  - Type: Result
+  - Measurement: Success or failure of the project
+
+This structured extraction can support graph-based learning models by defining clear nodes and relationships that represent the conceptual framework of project management risks.

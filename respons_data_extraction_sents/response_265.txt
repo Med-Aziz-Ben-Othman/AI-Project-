@@ -1,0 +1,28 @@
+Based on the provided text "process illustrate figure," we can analyze it semantically and extract relevant entities, relationships, and attributes related to project management risks.
+
+### Nodes (Entities)
+1. **Process** - This could refer to a sequence of actions or steps taken to achieve a particular end in project management.
+2. **Illustrate** - This could refer to the act of explaining or clarifying a concept, often through visual means.
+3. **Figure** - This typically refers to a visual representation or diagram that can help in understanding processes or concepts.
+
+### Relationships
+1. **Illustrates** - The relationship between "process" and "figure" indicates that the process is being visually represented or explained by the figure.
+2. **Represents** - A potential relationship where the "figure" serves as a representation of the "process."
+
+### Attributes
+- **Process**: 
+  - May include attributes such as "steps," "duration," "stakeholders," "risk factors," and "outcomes."
+  
+- **Figure**: 
+  - May include attributes such as "type" (e.g., diagram, chart), "clarity," "relevance to project management," and "complexity."
+
+### Summary of Extracted Information
+- **Nodes**: Process, Illustrate, Figure
+- **Relationships**: 
+  - Process **illustrates** Figure
+  - Figure **represents** Process
+- **Attributes**:
+  - Process: [steps, duration, stakeholders, risk factors, outcomes]
+  - Figure: [type, clarity, relevance to project management, complexity]
+
+This structured extraction captures the essence of the original phrase while relating it to project management risks and concepts.

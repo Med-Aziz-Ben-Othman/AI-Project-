@@ -1,0 +1,27 @@
+Based on the provided text, the following entities (nodes), relationships, and attributes can be extracted:
+
+### Nodes:
+1. **Result Type Analysis**
+2. **Likelihood of Success**
+3. **Project Objective**
+4. **Contingency Reserve**
+5. **Time**
+6. **Cost**
+7. **Risk**
+8. **Risk Tolerance**
+9. **Project Stakeholder**
+
+### Relationships:
+1. **Evaluates**: Result Type Analysis -> Likelihood of Success
+2. **Achieves**: Likelihood of Success -> Project Objective
+3. **Estimates**: Result Type Analysis -> Contingency Reserve
+4. **Considers**: Contingency Reserve <-> Time
+5. **Considers**: Contingency Reserve <-> Cost
+6. **Involves**: Risk Tolerance <-> Risk
+7. **Affects**: Risk <-> Project Stakeholder
+
+### Attributes:
+- **Contingency Reserve**: Appropriate (implying it should be suitable for the context)
+- **Risk Tolerance**: Varies among Project Stakeholders (indicating that different stakeholders may have different levels of risk acceptance)
+
+This structured extraction highlights the interconnected elements of project management risks and their associated dynamics.

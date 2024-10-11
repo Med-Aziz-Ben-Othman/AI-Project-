@@ -1,0 +1,51 @@
+Based on the provided sentence, here are the extracted nodes, relationships, and attributes related to project management risks:
+
+### Nodes:
+1. **Plan Risk Response**
+   - Type: Process
+   - Attributes: 
+     - Purpose: Determine appropriate response strategies for risks.
+
+2. **Response Strategy**
+   - Type: Concept
+   - Attributes:
+     - Nature: Action-oriented
+     - Focus: Individual risks
+
+3. **Individual Risk**
+   - Type: Entity
+   - Attributes:
+     - Definition: Specific potential negative events that could impact the project.
+
+4. **Overall Project Risk**
+   - Type: Entity
+   - Attributes:
+     - Definition: Aggregate of all individual risks affecting the project.
+
+5. **Project Management Plan**
+   - Type: Document
+   - Attributes:
+     - Content: Integrates all aspects of project management, including risk responses.
+
+### Relationships:
+1. **Determines**
+   - Between: Plan Risk Response → Response Strategy
+   - Description: The process of planning risk responses determines the appropriate strategies to be used.
+
+2. **Focuses On**
+   - Between: Response Strategy → Individual Risk
+   - Description: The response strategies are focused on addressing individual risks.
+
+3. **Integrates**
+   - Between: Overall Project Risk → Individual Risk
+   - Description: Overall project risk integrates the individual risks into a comprehensive assessment.
+
+4. **Consolidates**
+   - Between: Plan Risk Response → Project Management Plan
+   - Description: The plan for risk response consolidates strategies into the broader project management plan.
+
+5. **Affects**
+   - Between: Individual Risk → Overall Project Risk
+   - Description: The individual risks directly affect the overall risk profile of the project.
+
+This structured extraction highlights the key components and their interconnections relevant to project management risks.

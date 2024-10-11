@@ -1,0 +1,33 @@
+Based on the provided sentence, here is the analysis of the key concepts, entities, and relationships relevant to project management risks:
+
+### Nodes (Entities):
+1. **Document**
+   - Type: Artifact
+   - Attributes: Contains information on risk management
+
+2. **Risk Management Plan**
+   - Type: Plan
+   - Attributes: A structured approach to identifying and managing project risks
+
+3. **Principal Deliverable Plan**
+   - Type: Plan
+   - Attributes: Outlines the main deliverables of the project
+
+4. **Risk Management Process**
+   - Type: Process
+   - Attributes: Steps and methodologies for managing risks
+
+### Relationships:
+1. **Documents** (Node: Document) **contains** (Node: Risk Management Plan)
+   - This relationship indicates that the document serves as a repository of the risk management plan.
+
+2. **Approves** (Node: Risk Management Plan) **for** (Node: Principal Deliverable Plan)
+   - This illustrates that the risk management plan has an approval authority over the principal deliverable plan.
+
+3. **Includes** (Node: Risk Management Plan) **steps in** (Node: Risk Management Process)
+   - This relationship shows that the risk management plan incorporates various steps from the broader risk management process.
+
+### Summary:
+The extracted nodes highlight the key components of project management related to risks, while the relationships illustrate how these components interact and support each other in the context of managing project risks. 
+
+The attributes provide additional context to understand the roles of each entity within the project management framework.
