@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Development Implementation",
+            "type": "Project Phase", 
+            "attributes": {"duration": "maximized", "risk_level": "high", "cost": "potentially costly"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Risk Management Strategy", 
+            "attributes": {"effectiveness": "enhanced", "timing": "later"}
+        },
+        {
+            "name": "Time Available",
+            "type": "Resource", 
+            "attributes": {"maximized": "true", "importance": "critical"}
+        },
+        {
+            "name": "Cost",
+            "type": "Financial Metric", 
+            "attributes": {"impact": "high", "risk": "costly"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Time Available",
+            "relationship": "affects",
+            "target": "Development Implementation"
+        },
+        {
+            "source": "Development Implementation",
+            "relationship": "requires",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "impacts",
+            "target": "Cost"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "enhances",
+            "target": "Development Implementation"
+        }
+    ]
+}

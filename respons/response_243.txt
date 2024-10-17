@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Condition",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["state", "situation"], "impact": "can influence project outcomes"}
+        },
+        {
+            "name": "Process",
+            "type": "Project Management Component", 
+            "attributes": {"synonyms": ["method", "procedure"], "importance": "critical for execution"}
+        },
+        {
+            "name": "Execution",
+            "type": "Project Phase", 
+            "attributes": {"synonyms": ["implementation", "carrying out"], "significance": "determines project success"}
+        },
+        {
+            "name": "Credibility",
+            "type": "Quality Attribute", 
+            "attributes": {"synonyms": ["trustworthiness", "reliability"], "role": "affects stakeholder confidence"}
+        },
+        {
+            "name": "Output",
+            "type": "Project Deliverable", 
+            "attributes": {"synonyms": ["result", "product"], "measurement": "evaluated against objectives"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Condition",
+            "relationship": "affects",
+            "target": "Process"
+        },
+        {
+            "source": "Process",
+            "relationship": "influences",
+            "target": "Execution"
+        },
+        {
+            "source": "Execution",
+            "relationship": "contributes to",
+            "target": "Credibility"
+        },
+        {
+            "source": "Execution",
+            "relationship": "results in",
+            "target": "Output"
+        },
+        {
+            "source": "Credibility",
+            "relationship": "enhances",
+            "target": "Output"
+        }
+    ]
+}

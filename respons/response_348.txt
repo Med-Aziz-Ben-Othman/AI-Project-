@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Monte Carlo Simulation Tool",
+            "type": "Tool", 
+            "attributes": {"synonyms": ["Monte Carlo method"], "purpose": "risk analysis", "application": "project management"}
+        },
+        {
+            "name": "Probability Distribution",
+            "type": "Statistical Concept", 
+            "attributes": {"type": "probability theory", "role": "modeling uncertainty"}
+        },
+        {
+            "name": "Line Item Cost",
+            "type": "Financial Metric", 
+            "attributes": {"description": "cost associated with a specific line item", "impact": "affects overall project budget"}
+        },
+        {
+            "name": "Schedule Activity Duration",
+            "type": "Project Metric", 
+            "attributes": {"description": "time required to complete an activity", "impact": "affects project timeline"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Concept", 
+            "attributes": {"description": "lack of certainty in outcomes", "causes": ["incomplete information", "complexity"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Monte Carlo Simulation Tool",
+            "relationship": "uses",
+            "target": "Probability Distribution"
+        },
+        {
+            "source": "Monte Carlo Simulation Tool",
+            "relationship": "assesses",
+            "target": "Line Item Cost"
+        },
+        {
+            "source": "Monte Carlo Simulation Tool",
+            "relationship": "assesses",
+            "target": "Schedule Activity Duration"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "affects",
+            "target": "Line Item Cost"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "affects",
+            "target": "Schedule Activity Duration"
+        }
+    ]
+}

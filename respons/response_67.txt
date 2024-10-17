@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Technique",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["qualitative analysis", "qualitative assessment"], "description": "A method used to gain understanding of individual risks"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk Type", 
+            "attributes": {"characteristics": ["probability of occurrence", "degree of impact"], "description": "Specific risks related to project objectives"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Objective", 
+            "attributes": {"description": "Goals that the project aims to achieve", "manageability": "Assessable for risks"}
+        },
+        {
+            "name": "Common Cause",
+            "type": "Risk Factor", 
+            "attributes": {"description": "A shared origin of multiple risks", "effect": "Can influence various risks"}
+        },
+        {
+            "name": "Impact",
+            "type": "Risk Consequence", 
+            "attributes": {"description": "The potential effect of a risk on project objectives", "type": ["time", "cost", "quality"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Technique",
+            "relationship": "Used To Understand",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "Affects",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Common Cause",
+            "relationship": "Influences",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "Leads To",
+            "target": "Impact"
+        }
+    ]
+}

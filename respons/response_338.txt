@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {"synonyms": ["risk management", "project risk assessment"], "importance": "high"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["quantitative analysis", "statistical risk analysis"], "purpose": "to evaluate risks quantitatively"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["specific risk", "single risk"], "impact": "varies by project"}
+        },
+        {
+            "name": "Project Model",
+            "type": "Concept",
+            "attributes": {"synonyms": ["project framework", "project structure"], "application": "used to relate risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "assesses",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "relates to",
+            "target": "Project Model"
+        },
+        {
+            "source": "Project Model",
+            "relationship": "integrates",
+            "target": "Individual Risk"
+        }
+    ]
+}

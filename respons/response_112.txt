@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "project participant", "importance": "high", "synonyms": ["interested party", "shareholder"]}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"purpose": "identify and mitigate risks", "status": "draft", "synonyms": ["risk strategy", "risk mitigation plan"]}
+        },
+        {
+            "name": "Objective",
+            "type": "Goal", 
+            "attributes": {"type": "project outcome", "importance": "critical", "synonyms": ["aim", "target"]}
+        },
+        {
+            "name": "Project Definition Document",
+            "type": "Document", 
+            "attributes": {"purpose": "outline project scope", "status": "approved", "synonyms": ["project charter", "project scope document"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Stakeholder",
+            "relationship": "contributes to",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "references",
+            "target": "Objective"
+        },
+        {
+            "source": "Project Definition Document",
+            "relationship": "guides",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

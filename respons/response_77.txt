@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "Manage risks", "synonyms": ["risk manager", "risk controller"]}
+        },
+        {
+            "name": "Risk Strategy",
+            "type": "Strategy", 
+            "attributes": {"characteristics": ["suitable", "achievable", "affordable", "cost-effective", "appropriate"], "priority": "assessed"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk", 
+            "attributes": {"base": "characteristic", "priority": "assessed"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Owner",
+            "relationship": "selects",
+            "target": "Risk Strategy"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "informs",
+            "target": "Risk Strategy"
+        }
+    ]
+}

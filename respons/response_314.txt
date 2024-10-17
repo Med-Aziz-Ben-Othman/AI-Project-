@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Generic Risk",
+            "type": "Risk Category", 
+            "attributes": {"description": "A type of risk that has a broader effect", "synonyms": ["general risk", "common risk"]}
+        },
+        {
+            "name": "Broader Effect",
+            "type": "Effect Type", 
+            "attributes": {"description": "The overall impact on project elements", "synonyms": ["wider impact", "overall effect"]}
+        },
+        {
+            "name": "Individual Project Element",
+            "type": "Project Component", 
+            "attributes": {"description": "Specific parts of a project that can be affected by risks", "synonyms": ["project component", "project part"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Generic Risk",
+            "relationship": "Affects",
+            "target": "Broader Effect"
+        },
+        {
+            "source": "Broader Effect",
+            "relationship": "Impacts",
+            "target": "Individual Project Element"
+        }
+    ]
+}

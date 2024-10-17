@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Response Strategy",
+            "type": "Strategy",
+            "attributes": {"synonyms": ["tactical response", "action plan"], "type": "management"}
+        },
+        {
+            "name": "Threat",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["hazard", "danger"], "impact": "negative"}
+        },
+        {
+            "name": "Opportunity",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["advantage", "benefit"], "impact": "positive"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Response Strategy",
+            "relationship": "addresses",
+            "target": "Threat"
+        },
+        {
+            "source": "Response Strategy",
+            "relationship": "leverages",
+            "target": "Opportunity"
+        }
+    ]
+}

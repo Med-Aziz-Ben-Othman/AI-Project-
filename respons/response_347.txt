@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["ambiguity", "indeterminacy"], "type": "statistical"}
+        },
+        {
+            "name": "Probability",
+            "type": "Statistical Measure", 
+            "attributes": {"synonyms": ["likelihood", "chance"], "type": "quantitative"}
+        },
+        {
+            "name": "Event",
+            "type": "Project Element", 
+            "attributes": {"synonyms": ["occurrence", "incident"], "type": "specific"}
+        },
+        {
+            "name": "Probability Distribution",
+            "type": "Statistical Model", 
+            "attributes": {"synonyms": ["statistical distribution"], "type": "mathematical"}
+        },
+        {
+            "name": "Outcome",
+            "type": "Result", 
+            "attributes": {"synonyms": ["result", "consequence"], "type": "potential"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Uncertainty",
+            "relationship": "affects",
+            "target": "Probability"
+        },
+        {
+            "source": "Probability",
+            "relationship": "associated with",
+            "target": "Event"
+        },
+        {
+            "source": "Probability",
+            "relationship": "describes",
+            "target": "Probability Distribution"
+        },
+        {
+            "source": "Probability Distribution",
+            "relationship": "predicts",
+            "target": "Outcome"
+        }
+    ]
+}

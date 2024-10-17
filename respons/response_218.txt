@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying and managing risks", "category": "Project Management"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"description": "A temporary endeavor undertaken to create a unique product, service, or result", "category": "Project Management"}
+        },
+        {
+            "name": "Combination Technique",
+            "type": "Technique", 
+            "attributes": {"description": "A method that involves using multiple approaches for risk identification", "synonyms": ["mixed method", "integrated approach"]}
+        },
+        {
+            "name": "Category",
+            "type": "Attribute", 
+            "attributes": {"description": "A classification for grouping similar risks", "examples": ["Financial", "Operational", "Technical"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Process",
+            "relationship": "Applies To",
+            "target": "Project"
+        },
+        {
+            "source": "Risk Process",
+            "relationship": "Utilizes",
+            "target": "Combination Technique"
+        },
+        {
+            "source": "Combination Technique",
+            "relationship": "Belongs To",
+            "target": "Category"
+        }
+    ]
+}

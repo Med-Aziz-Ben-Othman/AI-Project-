@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"description": "Management of risks associated with a project", "synonyms": ["Risk Management", "Project Risk Assessment"]}
+        },
+        {
+            "name": "General Project Management",
+            "type": "Process",
+            "attributes": {"description": "Overall management of a project", "synonyms": ["Project Management", "Project Oversight"]}
+        },
+        {
+            "name": "Management Process",
+            "type": "Concept",
+            "attributes": {"description": "Methodology for managing projects", "synonyms": ["Project Management Methodology", "Management Framework"]}
+        },
+        {
+            "name": "Organization",
+            "type": "Entity",
+            "attributes": {"description": "Structure that carries out projects", "synonyms": ["Company", "Institution"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "is a part of",
+            "target": "General Project Management"
+        },
+        {
+            "source": "General Project Management",
+            "relationship": "utilizes",
+            "target": "Management Process"
+        },
+        {
+            "source": "Management Process",
+            "relationship": "is implemented in",
+            "target": "Organization"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "is related to",
+            "target": "Management Process"
+        }
+    ]
+}

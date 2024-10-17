@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Organization",
+            "type": "Entity", 
+            "attributes": {"type": "Business", "status": "Inexperienced"}
+        },
+        {
+            "name": "Risk Management Planning",
+            "type": "Process", 
+            "attributes": {"importance": "High", "status": "Needs Development"}
+        },
+        {
+            "name": "Approach",
+            "type": "Strategy", 
+            "attributes": {"type": "Risk Management", "status": "Needs Development"}
+        },
+        {
+            "name": "Time",
+            "type": "Resource", 
+            "attributes": {"amount": "Variable", "status": "Inappropriate"}
+        },
+        {
+            "name": "Effort",
+            "type": "Resource", 
+            "attributes": {"amount": "Variable", "status": "Inappropriate"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Organization",
+            "relationship": "Requires",
+            "target": "Risk Management Planning"
+        },
+        {
+            "source": "Risk Management Planning",
+            "relationship": "Needs",
+            "target": "Approach"
+        },
+        {
+            "source": "Approach",
+            "relationship": "Utilizes",
+            "target": "Time"
+        },
+        {
+            "source": "Approach",
+            "relationship": "Utilizes",
+            "target": "Effort"
+        }
+    ]
+}

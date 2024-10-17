@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk analysis"], "perspective": "three perspectives"}
+        },
+        {
+            "name": "Project Management Institute",
+            "type": "Organization", 
+            "attributes": {"abbreviation": "PMI", "focus": "project management standards and practices"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "Guided By",
+            "target": "Project Management Institute"
+        }
+    ]
+}

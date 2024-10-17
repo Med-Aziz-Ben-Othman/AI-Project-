@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Approach",
+            "type": "Risk Analysis Method", 
+            "attributes": {"description": "A method that assesses risks based on subjective judgments.", "synonyms": ["Qualitative Assessment", "Qualitative Risk Analysis"]}
+        },
+        {
+            "name": "Quantitative Approach",
+            "type": "Risk Analysis Method", 
+            "attributes": {"description": "A method that uses numerical values to assess risks.", "synonyms": ["Quantitative Assessment", "Quantitative Risk Analysis"]}
+        },
+        {
+            "name": "Critical Success Factor",
+            "type": "Project Management Concept", 
+            "attributes": {"description": "Elements that are vital for the success of a project.", "synonyms": ["Key Success Factor", "Critical Success Element"]}
+        },
+        {
+            "name": "Risk Analysis Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying and evaluating risks.", "synonyms": ["Risk Assessment Process", "Risk Evaluation Process"]}
+        },
+        {
+            "name": "Objective",
+            "type": "Project Goal", 
+            "attributes": {"description": "Desired outcome that a project aims to achieve.", "synonyms": ["Project Aim", "Project Objective"]}
+        },
+        {
+            "name": "Success",
+            "type": "Outcome", 
+            "attributes": {"description": "The achievement of project objectives.", "synonyms": ["Achievement", "Completion"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Approach",
+            "relationship": "is compared to",
+            "target": "Quantitative Approach"
+        },
+        {
+            "source": "Quantitative Approach",
+            "relationship": "is a part of",
+            "target": "Risk Analysis Process"
+        },
+        {
+            "source": "Quantitative Approach",
+            "relationship": "depends on",
+            "target": "Critical Success Factor"
+        },
+        {
+            "source": "Risk Analysis Process",
+            "relationship": "aims to achieve",
+            "target": "Objective"
+        },
+        {
+            "source": "Objective",
+            "relationship": "leads to",
+            "target": "Success"
+        }
+    ]
+}

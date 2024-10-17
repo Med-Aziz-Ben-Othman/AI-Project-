@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Management Process", "Risk Management"], "importance": "High", "components": ["Identification", "Assessment", "Mitigation", "Monitoring"]}
+        },
+        {
+            "name": "Stakeholder Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Stakeholder Engagement", "Stakeholder Relations"], "importance": "Critical", "responsibilities": ["Identify stakeholders", "Engage stakeholders", "Manage expectations"]}
+        },
+        {
+            "name": "Organization",
+            "type": "Entity",
+            "attributes": {"synonyms": ["Company", "Firm", "Institution"], "responsibility": "Implement risk management processes", "type": "Business"}
+        },
+        {
+            "name": "Barrier",
+            "type": "Challenge",
+            "attributes": {"synonyms": ["Obstacle", "Hurdle"], "type": "External/Internal", "impact": "Negative"}
+        },
+        {
+            "name": "Time and Effort",
+            "type": "Resource",
+            "attributes": {"synonyms": ["Time Investment", "Effort Allocation"], "importance": "Essential", "type": "Human Resource"}
+        },
+        {
+            "name": "Skill",
+            "type": "Attribute",
+            "attributes": {"synonyms": ["Competence", "Ability"], "type": "Human Resource", "impact": "Positive"}
+        },
+        {
+            "name": "Reactive Component",
+            "type": "Strategy",
+            "attributes": {"synonyms": ["Reactive Approach"], "type": "Management Strategy", "impact": "Variable"}
+        },
+        {
+            "name": "Passive Component",
+            "type": "Strategy",
+            "attributes": {"synonyms": ["Passive Approach"], "type": "Management Strategy", "impact": "Variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Requires",
+            "target": "Time and Effort"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Supports",
+            "target": "Stakeholder Management"
+        },
+        {
+            "source": "Organization",
+            "relationship": "Responsible for",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Barrier",
+            "relationship": "Affects",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Skill",
+            "relationship": "Enhances",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Reactive Component",
+            "relationship": "Is a type of",
+            "target": "Strategy"
+        },
+        {
+            "source": "Passive Component",
+            "relationship": "Is a type of",
+            "target": "Strategy"
+        }
+    ]
+}

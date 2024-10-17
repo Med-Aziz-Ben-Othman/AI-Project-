@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Response Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management process", "risk mitigation process"], "purpose": "to respond to project risks", "objectives": ["enhance project success", "comply with constraints"]}
+        },
+        {
+            "name": "Project Success",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["project achievement", "project completion"], "attributes": ["quality", "timeliness", "budget adherence"]}
+        },
+        {
+            "name": "Organizational Project Constraint",
+            "type": "Constraint", 
+            "attributes": {"synonyms": ["project limitations", "organizational restrictions"], "examples": ["budget constraints", "resource limitations"]}
+        },
+        {
+            "name": "Action Set",
+            "type": "Action", 
+            "attributes": {"synonyms": ["action plan", "response actions"], "components": ["preventive actions", "contingency actions"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Response Process",
+            "relationship": "aims to enhance",
+            "target": "Project Success"
+        },
+        {
+            "source": "Risk Response Process",
+            "relationship": "is governed by",
+            "target": "Organizational Project Constraint"
+        },
+        {
+            "source": "Risk Response Process",
+            "relationship": "involves setting",
+            "target": "Action Set"
+        }
+    ]
+}

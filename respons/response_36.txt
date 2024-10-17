@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Effective Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["efficient project risk management", "successful project risk management"], "importance": "critical", "goal": "minimize risks"}
+        },
+        {
+            "name": "Input",
+            "type": "Resource", 
+            "attributes": {"type": "data", "role": "support", "importance": "high"}
+        },
+        {
+            "name": "Project Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["project management framework", "project management methodology"], "stages": ["planning", "execution", "monitoring", "closure"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Input",
+            "relationship": "Supports",
+            "target": "Effective Project Risk Management"
+        },
+        {
+            "source": "Effective Project Risk Management",
+            "relationship": "Requires",
+            "target": "Project Management Process"
+        }
+    ]
+}

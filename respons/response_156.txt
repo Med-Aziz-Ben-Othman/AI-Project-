@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Elaboration Risk Management Plan",
+            "type": "Risk Management Document", 
+            "attributes": {"purpose": "To manage risks", "type": "Plan", "synonyms": ["Risk Management Strategy", "Risk Plan"]}
+        },
+        {
+            "name": "Effective Team Work",
+            "type": "Collaboration Method", 
+            "attributes": {"benefit": "Improved Risk Management", "type": "Team Approach", "synonyms": ["Collaborative Effort", "Team Collaboration"]}
+        },
+        {
+            "name": "Consultative Team Approach",
+            "type": "Team Interaction Method", 
+            "attributes": {"characteristic": "Involves consultation", "type": "Approach", "synonyms": ["Advisory Team Method", "Collaborative Consultation"]}
+        },
+        {
+            "name": "Subsequent Stage Risk Management Process",
+            "type": "Risk Management Process", 
+            "attributes": {"stage": "Later Phase", "type": "Process", "synonyms": ["Next Phase Risk Management", "Following Stage Risk Process"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Elaboration Risk Management Plan",
+            "relationship": "Serves to Develop",
+            "target": "Effective Team Work"
+        },
+        {
+            "source": "Effective Team Work",
+            "relationship": "Utilizes",
+            "target": "Consultative Team Approach"
+        },
+        {
+            "source": "Consultative Team Approach",
+            "relationship": "Is Used In",
+            "target": "Subsequent Stage Risk Management Process"
+        }
+    ]
+}

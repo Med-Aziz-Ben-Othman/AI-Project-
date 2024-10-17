@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Feasibility",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["viability", "practicality"], "importance": "high"}
+        },
+        {
+            "name": "Desirability",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["appeal", "attractiveness"], "importance": "medium"}
+        },
+        {
+            "name": "Threat",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["hazard", "danger"], "level": "high"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"type": "initiative", "status": "active"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Feasibility",
+            "relationship": "influences",
+            "target": "Project"
+        },
+        {
+            "source": "Desirability",
+            "relationship": "influences",
+            "target": "Project"
+        },
+        {
+            "source": "Threat",
+            "relationship": "poses risk to",
+            "target": "Project"
+        },
+        {
+            "source": "Feasibility",
+            "relationship": "can help eliminate",
+            "target": "Threat"
+        },
+        {
+            "source": "Desirability",
+            "relationship": "can help eliminate",
+            "target": "Threat"
+        }
+    ]
+}

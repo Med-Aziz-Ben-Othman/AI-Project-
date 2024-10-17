@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Contingency Reserve",
+            "type": "Resource",
+            "attributes": {"synonyms": ["reserve buffer", "buffer time"], "type": "financial", "purpose": "to manage risks"}
+        },
+        {
+            "name": "Organization Level Certainty",
+            "type": "Outcome",
+            "attributes": {"description": "measure of confidence in project execution", "importance": "high"}
+        },
+        {
+            "name": "Risk Tolerance",
+            "type": "Parameter",
+            "attributes": {"definition": "organization's willingness to accept risk", "levels": ["high", "medium", "low"]}
+        },
+        {
+            "name": "Resource Cost",
+            "type": "Cost",
+            "attributes": {"description": "expenses related to project resources", "components": ["labor", "materials", "overheads"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Contingency Reserve",
+            "relationship": "provides",
+            "target": "Organization Level Certainty"
+        },
+        {
+            "source": "Contingency Reserve",
+            "relationship": "based upon",
+            "target": "Risk Tolerance"
+        },
+        {
+            "source": "Resource Cost",
+            "relationship": "contributes to",
+            "target": "Contingency Reserve"
+        }
+    ]
+}

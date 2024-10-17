@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Scalable Element Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["scalable process", "flexible process"], "importance": "high"}
+        },
+        {
+            "name": "Available Resource",
+            "type": "Resource",
+            "attributes": {"synonyms": ["accessible resource", "existing resource"], "type": "human/technical", "status": "available"}
+        },
+        {
+            "name": "Methodology",
+            "type": "Method",
+            "attributes": {"synonyms": ["approach", "framework"], "type": "agile/waterfall", "application": "project management"}
+        },
+        {
+            "name": "Tool Technique",
+            "type": "Tool",
+            "attributes": {"synonyms": ["software tool", "method"], "usage": "supporting processes"}
+        },
+        {
+            "name": "Support Infrastructure",
+            "type": "Infrastructure",
+            "attributes": {"synonyms": ["support system", "technical infrastructure"], "type": "IT", "role": "supporting resources"}
+        },
+        {
+            "name": "Review Update Frequency",
+            "type": "Metric",
+            "attributes": {"synonyms": ["update cycle", "review interval"], "importance": "critical", "measurement": "time"}
+        },
+        {
+            "name": "Reporting Requirement",
+            "type": "Requirement",
+            "attributes": {"synonyms": ["reporting standards", "reporting criteria"], "type": "compliance", "importance": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Scalable Element Process",
+            "relationship": "includes",
+            "target": "Available Resource"
+        },
+        {
+            "source": "Scalable Element Process",
+            "relationship": "utilizes",
+            "target": "Methodology"
+        },
+        {
+            "source": "Methodology",
+            "relationship": "employs",
+            "target": "Tool Technique"
+        },
+        {
+            "source": "Tool Technique",
+            "relationship": "supports",
+            "target": "Support Infrastructure"
+        },
+        {
+            "source": "Support Infrastructure",
+            "relationship": "enables",
+            "target": "Review Update Frequency"
+        },
+        {
+            "source": "Review Update Frequency",
+            "relationship": "affects",
+            "target": "Reporting Requirement"
+        }
+    ]
+}

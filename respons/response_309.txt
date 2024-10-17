@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Objectives",
+            "type": "Project Goal",
+            "attributes": {"synonyms": ["Project Aims", "Project Targets"], "importance": "High"}
+        },
+        {
+            "name": "Project Budget",
+            "type": "Financial Resource",
+            "attributes": {"synonyms": ["Funding", "Financial Plan"], "amount": "Specified", "status": "Critical"}
+        },
+        {
+            "name": "Project Schedule",
+            "type": "Timeline",
+            "attributes": {"synonyms": ["Timeline", "Project Plan"], "status": "Specified", "importance": "High"}
+        },
+        {
+            "name": "Total Project Level",
+            "type": "Project Scope",
+            "attributes": {"synonyms": ["Overall Project", "Entire Project"], "description": "Higher Level"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Objectives",
+            "relationship": "Impacts",
+            "target": "Project Budget"
+        },
+        {
+            "source": "Project Objectives",
+            "relationship": "Impacts",
+            "target": "Project Schedule"
+        },
+        {
+            "source": "Project Budget",
+            "relationship": "Contributes to",
+            "target": "Total Project Level"
+        },
+        {
+            "source": "Project Schedule",
+            "relationship": "Contributes to",
+            "target": "Total Project Level"
+        }
+    ]
+}

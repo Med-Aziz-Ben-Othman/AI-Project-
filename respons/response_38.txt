@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"importance": "high", "prerequisite": "effective"}
+        },
+        {
+            "name": "Effective Management",
+            "type": "Strategy",
+            "attributes": {"quality": "high", "focus": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Effective Management",
+            "relationship": "is a prerequisite for",
+            "target": "Project Risk Management"
+        }
+    ]
+}

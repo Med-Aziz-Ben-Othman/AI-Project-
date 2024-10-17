@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Monitoring",
+            "type": "Process",
+            "attributes": {"synonyms": ["oversight", "supervision"], "importance": "critical"}
+        },
+        {
+            "name": "Effectiveness",
+            "type": "Quality Metric",
+            "attributes": {"synonyms": ["efficacy", "efficiency"], "measures": ["impact", "outcomes"]}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"phases": ["identification", "assessment", "response planning"], "goal": "minimize risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Monitoring",
+            "relationship": "assesses",
+            "target": "Effectiveness"
+        },
+        {
+            "source": "Monitoring",
+            "relationship": "is part of",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Effectiveness",
+            "relationship": "evaluates",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

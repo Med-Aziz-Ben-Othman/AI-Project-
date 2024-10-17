@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Iterative Qualitative Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"synonyms": ["repetitive qualitative risk assessment"], "purpose": "identify and evaluate risks", "process": "iterative"}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"synonyms": ["qualitative risk assessment"], "purpose": "assess risk impact", "process": "non-numerical"}
+        },
+        {
+            "name": "Project",
+            "type": "Project Entity", 
+            "attributes": {"status": "ongoing", "scope": "varies"}
+        },
+        {
+            "name": "Process Enhancement",
+            "type": "Process Improvement", 
+            "attributes": {"goal": "improve risk management", "method": "evidence-based"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Iterative Qualitative Risk Analysis",
+            "relationship": "enhances",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "is used in",
+            "target": "Project"
+        },
+        {
+            "source": "Process Enhancement",
+            "relationship": "is applied to",
+            "target": "Iterative Qualitative Risk Analysis"
+        }
+    ]
+}

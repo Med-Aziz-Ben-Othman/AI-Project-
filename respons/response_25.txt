@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["doubt", "ambiguity"], "type": "inevitable"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"characteristics": ["unique", "temporary"], "constraints": ["base assumption"]}
+        },
+        {
+            "name": "Stakeholders",
+            "type": "Entity", 
+            "attributes": {"types": ["multiple"], "requirements": ["different"]}
+        },
+        {
+            "name": "Project Result",
+            "type": "Outcome", 
+            "attributes": {"dependencies": ["stakeholder requirements"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Uncertainty",
+            "relationship": "affects",
+            "target": "Project"
+        },
+        {
+            "source": "Project",
+            "relationship": "involves",
+            "target": "Stakeholders"
+        },
+        {
+            "source": "Stakeholders",
+            "relationship": "influence",
+            "target": "Project Result"
+        },
+        {
+            "source": "Project",
+            "relationship": "requires",
+            "target": "Project Result"
+        }
+    ]
+}

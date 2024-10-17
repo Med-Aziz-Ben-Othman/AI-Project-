@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Register",
+            "type": "Document",
+            "attributes": {"synonyms": ["risk log", "risk management register"], "status": "active", "accessibility": "easy to use"}
+        },
+        {
+            "name": "Information Update",
+            "type": "Action",
+            "attributes": {"frequency": "as needed", "importance": "critical", "type": "new information"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Register",
+            "relationship": "requires",
+            "target": "Information Update"
+        }
+    ]
+}

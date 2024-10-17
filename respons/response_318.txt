@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Line Item",
+            "type": "Project Component", 
+            "attributes": {"cost": "cost", "schedule": "schedule", "activity": "activity"}
+        },
+        {
+            "name": "Risk",
+            "type": "Risk Factor", 
+            "attributes": {"consideration": "consider"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Line Item",
+            "relationship": "Contributes To",
+            "target": "Risk"
+        }
+    ]
+}

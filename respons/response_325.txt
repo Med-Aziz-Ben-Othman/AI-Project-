@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management", "risk assessment"], "importance": "high"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["quantitative analysis"], "purpose": "to assess risks numerically"}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["qualitative analysis"], "purpose": "to assess risks descriptively"}
+        },
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk identification process"], "stage": "initial"}
+        },
+        {
+            "name": "Risk Analysis Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["analysis process"], "stages": ["qualitative", "quantitative"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "occurs after",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "occurs after",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Analysis Process",
+            "relationship": "comprises",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Risk Analysis Process",
+            "relationship": "comprises",
+            "target": "Qualitative Risk Analysis"
+        }
+    ]
+}

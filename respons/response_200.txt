@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Human Activity",
+            "type": "Activity", 
+            "attributes": {"synonyms": ["human behavior", "human action"], "description": "Actions performed by individuals or groups that can influence project outcomes."} 
+        },
+        {
+            "name": "Bias",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["prejudice", "partiality"], "description": "A tendency to favor one perspective over another, affecting decision-making."}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["ambiguity", "indeterminacy"], "description": "The state of being unsure or having limited knowledge about future outcomes."}
+        },
+        {
+            "name": "Objectivity",
+            "type": "Quality", 
+            "attributes": {"synonyms": ["impartiality", "neutrality"], "description": "The principle of perceiving things as they truly are, free from personal bias."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Human Activity",
+            "relationship": "can lead to",
+            "target": "Bias"
+        },
+        {
+            "source": "Bias",
+            "relationship": "increases",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Objectivity",
+            "relationship": "reduces",
+            "target": "Bias"
+        },
+        {
+            "source": "Objectivity",
+            "relationship": "mitigates",
+            "target": "Uncertainty"
+        }
+    ]
+}

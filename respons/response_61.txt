@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {"status": "identified", "type": "project risk", "synonyms": ["recognized risk", "noted risk"]}
+        },
+        {
+            "name": "Risk Record",
+            "type": "Document",
+            "attributes": {"format": "record", "purpose": "documentation", "context": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "is documented in",
+            "target": "Risk Record"
+        }
+    ]
+}

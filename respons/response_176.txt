@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"description": "The process of recognizing risks that could affect the project.", "synonyms": ["risk recognition", "risk detection"]}
+        },
+        {
+            "name": "Immediate Action",
+            "type": "Action", 
+            "attributes": {"description": "Prompt measures taken to address identified risks.", "synonyms": ["quick response", "urgent action"]}
+        },
+        {
+            "name": "Appropriate Action",
+            "type": "Action", 
+            "attributes": {"description": "Suitable measures that are deemed necessary to mitigate risks.", "synonyms": ["suitable response", "correct action"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "leads to",
+            "target": "Immediate Action"
+        },
+        {
+            "source": "Immediate Action",
+            "relationship": "is a type of",
+            "target": "Appropriate Action"
+        }
+    ]
+}

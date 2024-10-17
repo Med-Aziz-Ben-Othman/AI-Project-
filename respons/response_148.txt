@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Resource",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["risk resource", "management resource"], "type": "specified", "status": "approved"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"synonyms": ["management plan", "risk plan"], "status": "approved"}
+        },
+        {
+            "name": "Management Level",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["management hierarchy", "leadership level"], "type": "adequate"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk process", "risk management procedure"], "status": "in accordance", "objective": "agreed-upon"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Resource",
+            "relationship": "specified within",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "requires",
+            "target": "Management Level"
+        },
+        {
+            "source": "Management Level",
+            "relationship": "carries out",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "aligned with",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["comprehensive risk assessment", "holistic risk evaluation"], "techniques": ["qualitative", "quantitative"]}
+        },
+        {
+            "name": "Quantitative Technique",
+            "type": "Method", 
+            "attributes": {"description": "A statistical method used to analyze numerical data", "examples": ["Monte Carlo simulation", "Sensitivity analysis"]}
+        },
+        {
+            "name": "Quantified Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "Risk that has been measured and expressed in numerical terms", "attributes": ["probability", "impact"]}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal", 
+            "attributes": {"description": "The desired outcome or target of the project", "attributes": ["specific", "measurable", "achievable"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Risk Analysis",
+            "relationship": "uses",
+            "target": "Quantitative Technique"
+        },
+        {
+            "source": "Quantitative Technique",
+            "relationship": "estimates",
+            "target": "Quantified Risk"
+        },
+        {
+            "source": "Quantified Risk",
+            "relationship": "impacts",
+            "target": "Project Objective"
+        }
+    ]
+}

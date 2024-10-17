@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Sensitivity Analysis",
+            "type": "Analysis Method", 
+            "attributes": {"synonyms": ["Sensitivity Assessment"], "purpose": "Evaluate how different values of an independent variable affect a particular dependent variable"}
+        },
+        {
+            "name": "Cost Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"synonyms": ["Cost Risk Assessment"], "purpose": "Identify and evaluate risks that could impact project costs"}
+        },
+        {
+            "name": "Schedule Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"synonyms": ["Schedule Risk Assessment"], "purpose": "Identify and evaluate risks that could impact project timelines"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Sensitivity Analysis",
+            "relationship": "Influences",
+            "target": "Cost Risk Analysis"
+        },
+        {
+            "source": "Sensitivity Analysis",
+            "relationship": "Influences",
+            "target": "Schedule Risk Analysis"
+        },
+        {
+            "source": "Cost Risk Analysis",
+            "relationship": "Relates to",
+            "target": "Schedule Risk Analysis"
+        }
+    ]
+}

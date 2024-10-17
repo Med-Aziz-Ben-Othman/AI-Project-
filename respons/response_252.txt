@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Rescope Project",
+            "type": "Project Activity", 
+            "attributes": {"synonyms": ["redefine scope", "adjust project scope"], "status": "active"}
+        },
+        {
+            "name": "Risk",
+            "type": "Risk Type", 
+            "attributes": {"risk_level": "high", "probability": "high", "consequence": "significant"}
+        },
+        {
+            "name": "Threat",
+            "type": "Risk Category", 
+            "attributes": {"type": "negative", "impact": "high"}
+        },
+        {
+            "name": "Opportunity",
+            "type": "Risk Category", 
+            "attributes": {"type": "positive", "potential": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Rescope Project",
+            "relationship": "poses",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "manifests as",
+            "target": "Threat"
+        },
+        {
+            "source": "Risk",
+            "relationship": "manifests as",
+            "target": "Opportunity"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"description": "A formal document outlining risk management processes", "status": "Active"}
+        },
+        {
+            "name": "Project Risk Management Role",
+            "type": "Role", 
+            "attributes": {"responsibility": "Define and manage project risks", "level": "Senior"}
+        },
+        {
+            "name": "Senior Management",
+            "type": "Entity", 
+            "attributes": {"role": "Decision Maker", "influence": "High"}
+        },
+        {
+            "name": "Project Personnel",
+            "type": "Entity", 
+            "attributes": {"role": "Team Member", "involvement": "Variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Specifies",
+            "target": "Project Risk Management Role"
+        },
+        {
+            "source": "Project Risk Management Role",
+            "relationship": "Defines expectations for",
+            "target": "Senior Management"
+        },
+        {
+            "source": "Project Risk Management Role",
+            "relationship": "Defines expectations for",
+            "target": "Project Personnel"
+        }
+    ]
+}

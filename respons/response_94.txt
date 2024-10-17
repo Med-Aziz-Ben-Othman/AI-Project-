@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Flow Control Information",
+            "type": "Data/Information", 
+            "attributes": {"synonyms": ["Flow Control", "Control Information"], "type": "Information"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Management Process"], "type": "Process", "steps": "Various"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Flow Control Information",
+            "relationship": "Part of",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

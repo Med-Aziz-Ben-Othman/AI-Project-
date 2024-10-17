@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["overall project risk"], "importance": "high", "category": "project management"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Analysis Method", 
+            "attributes": {"type": "quantitative", "purpose": "risk assessment", "process": "perform"}
+        },
+        {
+            "name": "Analysis Process",
+            "type": "Process", 
+            "attributes": {"steps": ["identify risks", "analyze risks", "evaluate risks"], "goal": "understand risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "requires",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "is part of",
+            "target": "Analysis Process"
+        },
+        {
+            "source": "Analysis Process",
+            "relationship": "discusses",
+            "target": "Project Risk"
+        }
+    ]
+}

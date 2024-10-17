@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risks Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk discovery"], "importance": "high", "phase": "planning"}
+        },
+        {
+            "name": "Project Stakeholders",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["stakeholder", "project participants"], "type": "varied", "role": "input providers"}
+        },
+        {
+            "name": "Multiple Perspectives",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["varied viewpoints", "diverse opinions"], "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Stakeholders",
+            "relationship": "provide input to",
+            "target": "Risks Identification"
+        },
+        {
+            "source": "Multiple Perspectives",
+            "relationship": "ensure representation in",
+            "target": "Risks Identification"
+        }
+    ]
+}

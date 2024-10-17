@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["project uncertainty", "project threat"], "impact": "affect project objectives"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Objective",
+            "attributes": {"definition": "specific goals of the project", "importance": "critical for project success"}
+        },
+        {
+            "name": "Stakeholders",
+            "type": "Entity",
+            "attributes": {"role": "interest in achieving objectives", "types": ["project manager", "team members", "clients"]}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"definition": "strategies to identify, assess, and mitigate risks", "importance": "ensures project success"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Stakeholders",
+            "relationship": "play role in",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "aims to achieve",
+            "target": "Project Objectives"
+        }
+    ]
+}

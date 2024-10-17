@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk management process"], "purpose": "to identify and mitigate risks"}
+        },
+        {
+            "name": "Overall Project Management Plan",
+            "type": "Document",
+            "attributes": {"components": ["budget", "resource", "cost", "time"], "purpose": "to guide project execution"}
+        },
+        {
+            "name": "Budget",
+            "type": "Financial Resource",
+            "attributes": {"attributes": ["cost estimation", "allocation"], "importance": "essential for project funding"}
+        },
+        {
+            "name": "Resource",
+            "type": "Asset",
+            "attributes": {"types": ["human", "material", "financial"], "importance": "crucial for project delivery"}
+        },
+        {
+            "name": "Cost",
+            "type": "Financial Metric",
+            "attributes": {"attributes": ["total cost", "cost variance"], "importance": "critical for financial control"}
+        },
+        {
+            "name": "Time",
+            "type": "Temporal Metric",
+            "attributes": {"attributes": ["schedule", "duration"], "importance": "vital for project timelines"}
+        },
+        {
+            "name": "Risk Management Activity",
+            "type": "Activity",
+            "attributes": {"synonyms": ["risk assessment", "risk mitigation"], "purpose": "to manage identified risks"}
+        },
+        {
+            "name": "Expenditure",
+            "type": "Financial Metric",
+            "attributes": {"attributes": ["actual cost", "budget variance"], "importance": "to monitor project spending"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "is part of",
+            "target": "Overall Project Management Plan"
+        },
+        {
+            "source": "Overall Project Management Plan",
+            "relationship": "includes",
+            "target": "Budget"
+        },
+        {
+            "source": "Overall Project Management Plan",
+            "relationship": "includes",
+            "target": "Resource"
+        },
+        {
+            "source": "Overall Project Management Plan",
+            "relationship": "includes",
+            "target": "Cost"
+        },
+        {
+            "source": "Overall Project Management Plan",
+            "relationship": "includes",
+            "target": "Time"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "executes",
+            "target": "Risk Management Activity"
+        },
+        {
+            "source": "Risk Management Activity",
+            "relationship": "defends",
+            "target": "Expenditure"
+        }
+    ]
+}

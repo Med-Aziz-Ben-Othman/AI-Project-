@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Permit",
+            "type": "Regulatory Requirement", 
+            "attributes": {"synonyms": ["license", "authorization"], "importance": "high"}
+        },
+        {
+            "name": "Representation",
+            "type": "Communication Method", 
+            "attributes": {"synonyms": ["depiction", "illustration"], "importance": "medium"}
+        },
+        {
+            "name": "Opportunity",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["chance", "prospect"], "importance": "high"}
+        },
+        {
+            "name": "Threats",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["dangers", "hazards"], "importance": "high"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Project Goal", 
+            "attributes": {"synonyms": ["aim", "target"], "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Permit",
+            "relationship": "enables",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Representation",
+            "relationship": "clarifies",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Opportunity",
+            "relationship": "impacts",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Threats",
+            "relationship": "negatively impacts",
+            "target": "Project Objective"
+        }
+    ]
+}

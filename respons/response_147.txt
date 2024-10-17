@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk management", "risk assessment"], "importance": "high", "related_to": "project management"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "influencer", "involvement": "high", "responsibility": "engagement"}
+        },
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {"responsibility": "oversee risk management", "skills": ["leadership", "communication", "risk analysis"], "experience": "required"}
+        },
+        {
+            "name": "Risk Management Activity",
+            "type": "Activity",
+            "attributes": {"purpose": "identify and mitigate risks", "steps": ["planning", "identification", "analysis", "response", "monitoring"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "involves",
+            "target": "Project Stakeholder"
+        },
+        {
+            "source": "Project Stakeholder",
+            "relationship": "participates in",
+            "target": "Risk Management Activity"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "requires",
+            "target": "Project Stakeholder"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "is overseen by",
+            "target": "Project Manager"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "plans",
+            "target": "Risk Management Activity"
+        }
+    ]
+}

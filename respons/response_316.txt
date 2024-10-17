@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice/Standard",
+            "attributes": {"synonyms": ["risk management", "risk analysis"], "purpose": "to identify and mitigate risks"}
+        },
+        {
+            "name": "Quantitative Analysis",
+            "type": "Method",
+            "attributes": {"synonyms": ["quantitative risk analysis", "statistical analysis"], "outcome": "provides numerical estimates of risk"}
+        },
+        {
+            "name": "Project Plan Baseline",
+            "type": "Document",
+            "attributes": {"description": "the original project plan against which performance is measured"}
+        },
+        {
+            "name": "Current Project Status",
+            "type": "State",
+            "attributes": {"description": "the present state of the project compared to the baseline"}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Metric",
+            "attributes": {"description": "the total risk level of the project", "importance": "critical for decision making"}
+        },
+        {
+            "name": "Probability of Meeting Project Objective",
+            "type": "Metric",
+            "attributes": {"description": "likelihood of achieving project goals", "importance": "essential for project success evaluation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Quantitative Analysis"
+        },
+        {
+            "source": "Quantitative Analysis",
+            "relationship": "compares",
+            "target": "Project Plan Baseline"
+        },
+        {
+            "source": "Quantitative Analysis",
+            "relationship": "compares",
+            "target": "Current Project Status"
+        },
+        {
+            "source": "Quantitative Analysis",
+            "relationship": "provides estimate for",
+            "target": "Overall Project Risk"
+        },
+        {
+            "source": "Overall Project Risk",
+            "relationship": "informs",
+            "target": "Probability of Meeting Project Objective"
+        }
+    ]
+}

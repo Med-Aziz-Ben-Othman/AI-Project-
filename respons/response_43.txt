@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Clear Risk",
+            "type": "Risk",
+            "attributes": {"definition": "A specific type of risk that is well-defined", "synonyms": ["identifiable risk", "explicit risk"]}
+        },
+        {
+            "name": "Relation to Objective",
+            "type": "Relationship",
+            "attributes": {"description": "The connection between risk and project objectives", "synonyms": ["risk-objective link", "risk-impact on goals"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Clear Risk",
+            "relationship": "Exists in relation to",
+            "target": "Relation to Objective"
+        }
+    ]
+}

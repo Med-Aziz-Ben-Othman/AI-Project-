@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Root Cause Group",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["common root cause", "underlying issues"], "type": "group risk"}
+        },
+        {
+            "name": "Risk Event",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["risk occurrence", "risk incident"], "type": "event"}
+        },
+        {
+            "name": "Effective Strategy",
+            "type": "Mitigation Approach", 
+            "attributes": {"synonyms": ["tactics", "action plan"], "type": "strategy"}
+        },
+        {
+            "name": "Magnitude of Risk",
+            "type": "Risk Measurement", 
+            "attributes": {"synonyms": ["level of risk", "risk extent"], "type": "measurement"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Root Cause Group",
+            "relationship": "may reveal",
+            "target": "Magnitude of Risk"
+        },
+        {
+            "source": "Magnitude of Risk",
+            "relationship": "affects",
+            "target": "Risk Event"
+        },
+        {
+            "source": "Effective Strategy",
+            "relationship": "might address",
+            "target": "Risk Event"
+        }
+    ]
+}

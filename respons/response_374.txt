@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"synonyms": ["threat", "opportunity"], "importance": "high"}
+        },
+        {
+            "name": "Project Team",
+            "type": "Team", 
+            "attributes": {"role": "responsible for risk management", "members": "cross-functional"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Objectives", 
+            "attributes": {"definition": "goals of the project", "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "poses threat to",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Risk",
+            "relationship": "offers opportunity for",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Project Team",
+            "relationship": "analyzes and prioritizes",
+            "target": "Risk"
+        },
+        {
+            "source": "Project Team",
+            "relationship": "develops and addresses",
+            "target": "Risk"
+        }
+    ]
+}

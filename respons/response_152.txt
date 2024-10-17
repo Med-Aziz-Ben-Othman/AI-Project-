@@ -1,0 +1,76 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Plan", 
+            "attributes": {"synonyms": ["risk mitigation plan", "risk management strategy"], "goal": "manage project risks", "objective": "minimize impact of risks"}
+        },
+        {
+            "name": "Organization Culture",
+            "type": "Cultural Aspect", 
+            "attributes": {"synonyms": ["corporate culture", "workplace culture"], "importance": "influences risk management effectiveness"}
+        },
+        {
+            "name": "Capability",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["skill", "competence"], "importance": "affects risk management execution"}
+        },
+        {
+            "name": "People",
+            "type": "Stakeholder", 
+            "attributes": {"synonyms": ["team members", "staff"], "role": "execute risk management plan"}
+        },
+        {
+            "name": "Facility",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["infrastructure", "premises"], "role": "support project execution"}
+        },
+        {
+            "name": "Value",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["worth", "benefit"], "importance": "guides decision making in risk management"}
+        },
+        {
+            "name": "Goal",
+            "type": "Objective", 
+            "attributes": {"synonyms": ["aim", "target"], "importance": "overarching purpose of risk management"}
+        },
+        {
+            "name": "Objective",
+            "type": "Objective", 
+            "attributes": {"synonyms": ["specific aim", "target"], "importance": "measurable target in risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "guides",
+            "target": "Organization Culture"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "requires",
+            "target": "Capability"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "involves",
+            "target": "People"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "utilizes",
+            "target": "Facility"
+        },
+        {
+            "source": "Goal",
+            "relationship": "aligns with",
+            "target": "Value"
+        },
+        {
+            "source": "Objective",
+            "relationship": "supports",
+            "target": "Goal"
+        }
+    ]
+}

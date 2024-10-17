@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Management Technique", 
+            "attributes": {"definition": "A method to evaluate risks using numerical values", "synonyms": ["quantitative analysis", "statistical risk assessment"], "purpose": "To provide data-driven insights for decision-making"}
+        },
+        {
+            "name": "Project Plan",
+            "type": "Project Document", 
+            "attributes": {"definition": "A formal document that outlines the project's objectives and how to achieve them", "synonyms": ["project roadmap", "project schedule"], "components": ["scope", "timeline", "resources"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Provides Information For",
+            "target": "Project Plan"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "May Use To Modify",
+            "target": "Project Plan"
+        }
+    ]
+}

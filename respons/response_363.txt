@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource", 
+            "attributes": {"purpose": "Mitigate risks", "type": "Reserve Fund", "related_terms": ["contingency planning", "risk management"]}
+        },
+        {
+            "name": "Project Schedule",
+            "type": "Project Management Artifact", 
+            "attributes": {"description": "Timeline of project activities", "importance": "Critical for time management", "related_terms": ["Gantt chart", "task list"]}
+        },
+        {
+            "name": "Project Budget",
+            "type": "Financial Resource", 
+            "attributes": {"description": "Estimated costs for project", "importance": "Critical for cost management", "related_terms": ["financial plan", "cost estimation"]}
+        },
+        {
+            "name": "Response Planning",
+            "type": "Process", 
+            "attributes": {"description": "Process of developing responses to project risks", "importance": "Essential for risk mitigation", "related_terms": ["risk response", "risk strategy"]}
+        },
+        {
+            "name": "Overall Project",
+            "type": "Project", 
+            "attributes": {"description": "Entire project including all phases", "scope": "All project activities", "related_terms": ["project lifecycle", "project management"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Contingency Reserve",
+            "relationship": "Funds",
+            "target": "Project Budget"
+        },
+        {
+            "source": "Project Schedule",
+            "relationship": "Impacts",
+            "target": "Contingency Reserve"
+        },
+        {
+            "source": "Response Planning",
+            "relationship": "Involves",
+            "target": "Overall Project"
+        },
+        {
+            "source": "Project Budget",
+            "relationship": "Affects",
+            "target": "Project Schedule"
+        }
+    ]
+}

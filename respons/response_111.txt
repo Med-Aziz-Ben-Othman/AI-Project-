@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Management", "Risk Assessment"], "related_terms": ["stakeholder", "project success", "acceptable level"]}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "Decision Maker", "importance": "High", "influence": "Direct"}
+        },
+        {
+            "name": "Acceptable Level",
+            "type": "Criteria",
+            "attributes": {"description": "The threshold for risk that is deemed acceptable", "related_terms": ["risk tolerance", "risk appetite"]}
+        },
+        {
+            "name": "Project-related Criterion",
+            "type": "Criteria",
+            "attributes": {"components": ["cost", "time", "scope"], "importance": "Essential"}
+        },
+        {
+            "name": "Cost",
+            "type": "Metric",
+            "attributes": {"description": "Financial resources allocated to the project", "unit": "Currency"}
+        },
+        {
+            "name": "Time",
+            "type": "Metric",
+            "attributes": {"description": "Duration allocated for project completion", "unit": "Time units"}
+        },
+        {
+            "name": "Scope",
+            "type": "Metric",
+            "attributes": {"description": "The boundaries and deliverables of the project", "related_terms": ["project deliverables", "project boundaries"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Stakeholder",
+            "relationship": "Must Agree On",
+            "target": "Acceptable Level"
+        },
+        {
+            "source": "Acceptable Level",
+            "relationship": "Determines",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Considers",
+            "target": "Project-related Criterion"
+        },
+        {
+            "source": "Project-related Criterion",
+            "relationship": "Includes",
+            "target": "Cost"
+        },
+        {
+            "source": "Project-related Criterion",
+            "relationship": "Includes",
+            "target": "Time"
+        },
+        {
+            "source": "Project-related Criterion",
+            "relationship": "Includes",
+            "target": "Scope"
+        }
+    ]
+}

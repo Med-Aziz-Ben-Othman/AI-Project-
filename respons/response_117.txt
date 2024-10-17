@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Research Project",
+            "type": "Project",
+            "attributes": {"synonyms": ["study project", "investigation project"], "status": "ongoing"}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk assessment process", "risk mitigation process"], "importance": "high"}
+        },
+        {
+            "name": "Success Result Variance",
+            "type": "Metric",
+            "attributes": {"synonyms": ["success variation", "outcome deviation"], "measurement": "quantitative"}
+        },
+        {
+            "name": "Baseline",
+            "type": "Reference Point",
+            "attributes": {"synonyms": ["standard", "benchmark"], "definition": "initial planned performance"}
+        },
+        {
+            "name": "Allowable Success",
+            "type": "Criteria",
+            "attributes": {"synonyms": ["acceptable success", "tolerable outcome"], "threshold": "defined"}
+        },
+        {
+            "name": "Predictable Process",
+            "type": "Process characteristic",
+            "attributes": {"synonyms": ["reliable process", "consistent process"], "predictability": "high"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"synonyms": ["initiative", "undertaking"], "scope": "defined"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Research Project",
+            "relationship": "utilizes",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "assesses",
+            "target": "Success Result Variance"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "compares against",
+            "target": "Baseline"
+        },
+        {
+            "source": "Baseline",
+            "relationship": "defines",
+            "target": "Allowable Success"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "leads to",
+            "target": "Predictable Process"
+        },
+        {
+            "source": "Predictable Process",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

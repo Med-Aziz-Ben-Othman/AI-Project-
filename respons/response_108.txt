@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Activity",
+            "type": "Activity", 
+            "attributes": {"synonyms": ["risk management task", "risk handling activity"], "importance": "high", "category": "risk management"}
+        },
+        {
+            "name": "Project Management Plan",
+            "type": "Document", 
+            "attributes": {"synonyms": ["project plan", "management plan"], "purpose": "guides project execution", "status": "active"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Activity",
+            "relationship": "integrates with",
+            "target": "Project Management Plan"
+        }
+    ]
+}

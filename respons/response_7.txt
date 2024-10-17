@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Responsibility Allocation",
+            "type": "Process", 
+            "attributes": {"synonyms": ["duty assignment", "task distribution"], "importance": "high"}
+        },
+        {
+            "name": "Risk Related Lessons",
+            "type": "Knowledge", 
+            "attributes": {"synonyms": ["risk management insights", "risk lessons learned"], "application": "future use"}
+        },
+        {
+            "name": "Future Use",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["subsequent application", "future application"], "context": "project management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Responsibility Allocation",
+            "relationship": "ensures",
+            "target": "Risk Related Lessons"
+        },
+        {
+            "source": "Risk Related Lessons",
+            "relationship": "applied for",
+            "target": "Future Use"
+        }
+    ]
+}

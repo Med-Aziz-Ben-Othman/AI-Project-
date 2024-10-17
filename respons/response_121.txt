@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Output Analysis",
+            "type": "Process",
+            "attributes": {"description": "Evaluation of project outcomes", "synonyms": ["result analysis", "performance assessment"]}
+        },
+        {
+            "name": "Threshold",
+            "type": "Parameter",
+            "attributes": {"description": "Limit values set for evaluation", "synonyms": ["limit", "cut-off point"], "importance": "high"}
+        },
+        {
+            "name": "Weight Factor",
+            "type": "Parameter",
+            "attributes": {"description": "Value assigned to different risk elements", "synonyms": ["weight", "importance factor"], "magnitude": "variable"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"description": "Methodology for identifying and mitigating risks", "synonyms": ["risk management framework", "risk assessment process"]}
+        },
+        {
+            "name": "Specific Project",
+            "type": "Project",
+            "attributes": {"description": "Particular initiative under consideration", "synonyms": ["particular project", "target project"], "scope": "defined"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Output Analysis",
+            "relationship": "involves",
+            "target": "Threshold"
+        },
+        {
+            "source": "Output Analysis",
+            "relationship": "involves",
+            "target": "Weight Factor"
+        },
+        {
+            "source": "Weight Factor",
+            "relationship": "applied in",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Threshold",
+            "relationship": "applied in",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "applies to",
+            "target": "Specific Project"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "High-Priority Risk",
+            "type": "Risk",
+            "attributes": {"impact": "high", "priority": "high", "synonyms": ["critical risk", "significant risk"]}
+        },
+        {
+            "name": "Objective",
+            "type": "Project Objective",
+            "attributes": {"type": "schedule", "uncertainty": "high", "synonyms": ["goal", "target"]}
+        },
+        {
+            "name": "Activity",
+            "type": "Project Activity",
+            "attributes": {"action": "address", "purpose": "reduce uncertainty", "synonyms": ["task", "action item"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "High-Priority Risk",
+            "relationship": "impacts",
+            "target": "Objective"
+        },
+        {
+            "source": "Objective",
+            "relationship": "indicates need for",
+            "target": "Activity"
+        }
+    ]
+}

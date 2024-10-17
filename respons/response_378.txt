@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Responsibility",
+            "type": "Project Management Concept", 
+            "attributes": {"synonyms": ["accountability", "duty"], "importance": "high"}
+        },
+        {
+            "name": "Monitoring",
+            "type": "Project Management Activity", 
+            "attributes": {"synonyms": ["supervision", "oversight"], "importance": "critical"}
+        },
+        {
+            "name": "Project Condition",
+            "type": "Project Status", 
+            "attributes": {"synonyms": ["project state", "project health"], "importance": "medium"}
+        },
+        {
+            "name": "Action",
+            "type": "Project Management Task", 
+            "attributes": {"synonyms": ["task", "activity"], "importance": "high"}
+        },
+        {
+            "name": "Assignment",
+            "type": "Project Management Process", 
+            "attributes": {"synonyms": ["allocation", "delegation"], "importance": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Responsibility",
+            "relationship": "involves",
+            "target": "Monitoring"
+        },
+        {
+            "source": "Monitoring",
+            "relationship": "evaluates",
+            "target": "Project Condition"
+        },
+        {
+            "source": "Project Condition",
+            "relationship": "triggers",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "requires",
+            "target": "Assignment"
+        }
+    ]
+}

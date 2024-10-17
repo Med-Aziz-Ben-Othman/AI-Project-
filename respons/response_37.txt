@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Work Breakdown Structure",
+            "type": "Project Management Tool", 
+            "attributes": {"synonyms": ["WBS"], "purpose": "Decomposes project into manageable sections", "related processes": ["Planning", "Estimation"]}
+        },
+        {
+            "name": "Project Schedule",
+            "type": "Project Management Document", 
+            "attributes": {"synonyms": ["Timeline", "Gantt Chart"], "purpose": "Displays project activities over time", "related processes": ["Scheduling", "Monitoring"]}
+        },
+        {
+            "name": "Assumption List",
+            "type": "Project Management Document", 
+            "attributes": {"synonyms": ["Assumptions"], "purpose": "Identifies assumptions that may affect project success", "related processes": ["Risk Management", "Planning"]}
+        },
+        {
+            "name": "Estimate",
+            "type": "Project Management Process", 
+            "attributes": {"synonyms": ["Cost Estimate", "Time Estimate"], "purpose": "Predicts resources required for project activities", "related processes": ["Estimating", "Budgeting"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Work Breakdown Structure",
+            "relationship": "Informs",
+            "target": "Estimate"
+        },
+        {
+            "source": "Work Breakdown Structure",
+            "relationship": "Supports",
+            "target": "Project Schedule"
+        },
+        {
+            "source": "Assumption List",
+            "relationship": "Affects",
+            "target": "Estimate"
+        },
+        {
+            "source": "Project Schedule",
+            "relationship": "Depends on",
+            "target": "Estimate"
+        }
+    ]
+}

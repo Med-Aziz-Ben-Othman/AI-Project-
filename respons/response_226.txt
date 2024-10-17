@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"description": "The process of identifying potential risks that could affect the project", "synonyms": ["risk discovery", "risk detection"]}
+        },
+        {
+            "name": "Risk Register",
+            "type": "Document", 
+            "attributes": {"description": "A tool used to document identified risks, their assessment, and management strategies", "synonyms": ["risk log", "risk record"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "Produces",
+            "target": "Risk Register"
+        }
+    ]
+}

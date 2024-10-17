@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Individual Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["specific risk", "single risk"], "impact": "contributes to overall project risk"}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["total project risk", "aggregate risk"], "components": "composed of individual risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Individual Risk",
+            "relationship": "contributes to",
+            "target": "Overall Project Risk"
+        }
+    ]
+}

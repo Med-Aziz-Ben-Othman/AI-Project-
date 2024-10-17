@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk",
+            "attributes": {"definition": "Potential events that may negatively impact project outcomes", "synonyms": ["project uncertainty", "project threat"], "management strategies": ["acceptance", "mitigation", "transfer"]}
+        },
+        {
+            "name": "Analysis Level Sourcing",
+            "type": "Process",
+            "attributes": {"definition": "Evaluating and selecting sources for project resources", "importance": "Critical for identifying risks", "related terms": ["resource evaluation", "sourcing strategy"]}
+        },
+        {
+            "name": "Resource Provision",
+            "type": "Resource",
+            "attributes": {"definition": "Allocation of necessary resources for project execution", "types": ["human resources", "financial resources", "material resources"], "importance": "Essential for managing project risks"}
+        },
+        {
+            "name": "Limitations",
+            "type": "Constraint",
+            "attributes": {"definition": "Restrictions that may affect project execution", "examples": ["budget constraints", "time constraints", "scope limitations"], "impact": "Can increase project risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Analysis Level Sourcing",
+            "relationship": "requires",
+            "target": "Project Risk"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "may arise from",
+            "target": "Limitations"
+        },
+        {
+            "source": "Resource Provision",
+            "relationship": "is necessary for",
+            "target": "managing Project Risk"
+        },
+        {
+            "source": "Limitations",
+            "relationship": "place constraints on",
+            "target": "Resource Provision"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Response",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management response", "risk mitigation strategy"], "status": "active"}
+        },
+        {
+            "name": "Implementation",
+            "type": "Action", 
+            "attributes": {"description": "Executing the risk response plan", "relatedProcesses": ["risk assessment", "risk monitoring"]}
+        },
+        {
+            "name": "Planning",
+            "type": "Process", 
+            "attributes": {"description": "Developing strategies to address potential risks", "importance": "critical"}
+        },
+        {
+            "name": "Consideration",
+            "type": "Action", 
+            "attributes": {"description": "Evaluating risks and responses", "relatedProcesses": ["risk analysis"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Response",
+            "relationship": "is part of",
+            "target": "Planning"
+        },
+        {
+            "source": "Planning",
+            "relationship": "leads to",
+            "target": "Implementation"
+        },
+        {
+            "source": "Consideration",
+            "relationship": "informs",
+            "target": "Risk Response"
+        }
+    ]
+}

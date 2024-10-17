@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Role",
+            "type": "Responsibility", 
+            "attributes": {"synonyms": ["Position", "Function"], "importance": "High", "description": "Defines the extent of accountability in project risk management."}
+        },
+        {
+            "name": "Responsibility",
+            "type": "Accountability", 
+            "attributes": {"synonyms": ["Duty", "Obligation"], "importance": "Critical", "description": "Specifies what individuals are held accountable for in managing risks."}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Management", "Risk Control"], "importance": "Essential", "description": "The process of identifying, assessing, and controlling risks in a project."}
+        },
+        {
+            "name": "Individual",
+            "type": "Stakeholder", 
+            "attributes": {"synonyms": ["Person", "Team Member"], "importance": "Variable", "description": "Any person who has a defined role in the project risk management process."}
+        },
+        {
+            "name": "Accountability",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Responsibility", "Liability"], "importance": "High", "description": "The obligation to report, explain, and be answerable for resulting consequences in risk management."}
+        },
+        {
+            "name": "Result",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["Consequence", "Effect"], "importance": "High", "description": "The outcome of the actions taken in managing project risks."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Role",
+            "relationship": "Defines",
+            "target": "Responsibility"
+        },
+        {
+            "source": "Responsibility",
+            "relationship": "Is held by",
+            "target": "Individual"
+        },
+        {
+            "source": "Individual",
+            "relationship": "Is accountable for",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Results in",
+            "target": "Result"
+        },
+        {
+            "source": "Accountability",
+            "relationship": "Is associated with",
+            "target": "Responsibility"
+        },
+        {
+            "source": "Responsibility",
+            "relationship": "Affects",
+            "target": "Result"
+        }
+    ]
+}

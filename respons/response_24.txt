@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"description": "Systematic process for identifying, analyzing, and responding to project risks", "synonyms": ["risk management", "risk assessment"], "importance": "Critical for project success"}
+        },
+        {
+            "name": "Project Management",
+            "type": "Discipline",
+            "attributes": {"description": "Application of knowledge, skills, tools, and techniques to project activities", "synonyms": ["project administration", "project execution"], "goal": "Deliver project objectives"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Concept",
+            "attributes": {"description": "State of having limited knowledge regarding outcomes", "synonyms": ["risk", "ambiguity"], "impact": "Affects project decision-making"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "is part of",
+            "target": "Project Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "addresses",
+            "target": "Uncertainty"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"description": "The process of identifying risks", "synonyms": ["risk assessment", "risk recognition"], "importance": "High"}
+        },
+        {
+            "name": "Risk",
+            "type": "Entity", 
+            "attributes": {"definition": "Potential events that could cause harm", "types": ["financial", "operational", "strategic"], "impact": "Variable"}
+        },
+        {
+            "name": "Maximum Extent Practicable",
+            "type": "Concept", 
+            "attributes": {"definition": "The highest level of risk management achievable under the circumstances", "related_terms": ["feasibility", "practicability"], "importance": "Critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "Aims to Identify",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "Operates Within",
+            "target": "Maximum Extent Practicable"
+        }
+    ]
+}

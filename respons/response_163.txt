@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management procedure", "risk management methodology"], "status": "defined"}
+        },
+        {
+            "name": "Risk Management Planning Document",
+            "type": "Document", 
+            "attributes": {"synonyms": ["risk plan", "risk strategy document"], "version": "1.0"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Plan", 
+            "attributes": {"synonyms": ["risk strategy", "risk assessment plan"], "status": "drafted"}
+        },
+        {
+            "name": "Result",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["output", "conclusion"], "type": "final"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "produces",
+            "target": "Risk Management Planning Document"
+        },
+        {
+            "source": "Risk Management Planning Document",
+            "relationship": "leads to",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "results in",
+            "target": "Result"
+        }
+    ]
+}

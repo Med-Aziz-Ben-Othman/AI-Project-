@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Attitude",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["risk perception", "risk preference"], "type": "organizational attitude"}
+        },
+        {
+            "name": "Organization",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["company", "firm"], "type": "business entity"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["interested party", "investor"], "type": "individual or group"}
+        },
+        {
+            "name": "Number of Factors",
+            "type": "Quantitative Measure", 
+            "attributes": {"description": "total count of identified factors", "type": "numerical value"}
+        },
+        {
+            "name": "Identified Factors",
+            "type": "Risk Factor", 
+            "attributes": {"description": "elements that pose potential risks", "type": "identified risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Attitude",
+            "relationship": "affects",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "influences",
+            "target": "Organization"
+        },
+        {
+            "source": "Organization",
+            "relationship": "has",
+            "target": "Identified Factors"
+        },
+        {
+            "source": "Identified Factors",
+            "relationship": "contributes to",
+            "target": "Number of Factors"
+        }
+    ]
+}

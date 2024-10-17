@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"synonyms": ["hazard", "threat"], "urgency": "high", "response_time": "near term"}
+        },
+        {
+            "name": "Response",
+            "type": "Action", 
+            "attributes": {"type": "urgent", "priority": "high"}
+        },
+        {
+            "name": "Address",
+            "type": "Action", 
+            "attributes": {"type": "urgent", "context": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "requires",
+            "target": "Response"
+        },
+        {
+            "source": "Response",
+            "relationship": "may consider",
+            "target": "Address"
+        }
+    ]
+}

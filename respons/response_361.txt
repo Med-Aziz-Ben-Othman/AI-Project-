@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "A method to evaluate the potential risks in a project using numerical values.", "synonyms": ["Quantitative Assessment", "Statistical Risk Analysis"], "importance": "High"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"id": "P001", "status": "In Progress", "duration": "6 months"}
+        },
+        {
+            "name": "Repeat Project",
+            "type": "Entity", 
+            "attributes": {"description": "A project that is being repeated or revisited.", "reason": "Learning from previous outcomes", "risk": "Higher uncertainty due to past issues"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Evaluates",
+            "target": "Project"
+        },
+        {
+            "source": "Repeat Project",
+            "relationship": "Involves",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Project",
+            "relationship": "Can Be",
+            "target": "Repeat Project"
+        }
+    ]
+}

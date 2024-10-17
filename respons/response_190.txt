@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Project Objectives",
+            "type": "Project Management Concept", 
+            "attributes": {"synonyms": ["project goals", "project aims"], "type": "Outcome"}
+        },
+        {
+            "name": "Project Risk",
+            "type": "Risk Management Concept", 
+            "attributes": {"synonyms": ["project hazard", "risk factor"], "type": "Threat"}
+        },
+        {
+            "name": "Time",
+            "type": "Project Constraint", 
+            "attributes": {"synonyms": ["schedule", "duration"], "type": "Resource"}
+        },
+        {
+            "name": "Cost",
+            "type": "Project Constraint", 
+            "attributes": {"synonyms": ["budget", "financial resources"], "type": "Resource"}
+        },
+        {
+            "name": "Quality",
+            "type": "Project Constraint", 
+            "attributes": {"synonyms": ["standard", "excellence"], "type": "Attribute"}
+        },
+        {
+            "name": "Scope",
+            "type": "Project Constraint", 
+            "attributes": {"synonyms": ["project boundaries", "work scope"], "type": "Attribute"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "relates to",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Time"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Cost"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Quality"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Scope"
+        }
+    ]
+}

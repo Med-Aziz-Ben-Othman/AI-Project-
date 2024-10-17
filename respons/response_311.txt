@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Risk Analysis",
+            "type": "Risk Management Concept", 
+            "attributes": {"synonyms": ["comprehensive risk assessment", "holistic risk evaluation"], "method": "quantitative"}
+        },
+        {
+            "name": "Quantitative Method",
+            "type": "Analysis Technique", 
+            "attributes": {"description": "A method that relies on quantifiable data", "requires": "complete and accurate representation"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Project Management Component", 
+            "attributes": {"definition": "Goals that a project aims to achieve", "characteristics": ["specific", "measurable", "achievable", "relevant", "time-bound"]}
+        },
+        {
+            "name": "Individual Project Element",
+            "type": "Project Component", 
+            "attributes": {"examples": ["resources", "tasks", "milestones"], "importance": "critical for overall project success"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Risk Analysis",
+            "relationship": "uses",
+            "target": "Quantitative Method"
+        },
+        {
+            "source": "Quantitative Method",
+            "relationship": "requires",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Project Objectives",
+            "relationship": "composes",
+            "target": "Individual Project Element"
+        }
+    ]
+}

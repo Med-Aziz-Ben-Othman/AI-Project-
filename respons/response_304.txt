@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "Assessment technique to evaluate risks based on their qualitative characteristics", "synonyms": ["Qualitative Assessment", "Risk Evaluation"]}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Strategy", 
+            "attributes": {"description": "Actions taken to mitigate or eliminate risks", "synonyms": ["Risk Mitigation", "Response Planning"]}
+        },
+        {
+            "name": "Smaller Project",
+            "type": "Project", 
+            "attributes": {"description": "Projects with limited scope, resources, and complexity", "synonyms": ["Small-scale Project", "Minor Project"]}
+        },
+        {
+            "name": "Effective Development",
+            "type": "Outcome",
+            "attributes": {"description": "Successful creation and implementation of strategies", "synonyms": ["Successful Development", "Effective Implementation"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Provides Information For",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "Applied In",
+            "target": "Smaller Project"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "Leads To",
+            "target": "Effective Development"
+        }
+    ]
+}

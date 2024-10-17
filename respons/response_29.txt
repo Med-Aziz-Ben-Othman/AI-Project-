@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Concept",
+            "attributes": {"synonyms": ["project administration", "project oversight"], "importance": "high"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Concept",
+            "attributes": {"synonyms": ["risk assessment", "risk mitigation"], "importance": "critical"}
+        },
+        {
+            "name": "Critical Success Factor",
+            "type": "Concept",
+            "attributes": {"synonyms": ["key success factor", "vital factor"], "importance": "essential"}
+        },
+        {
+            "name": "Project Success",
+            "type": "Outcome",
+            "attributes": {"synonyms": ["project completion", "project effectiveness"], "importance": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "includes",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "is a",
+            "target": "Critical Success Factor"
+        },
+        {
+            "source": "Critical Success Factor",
+            "relationship": "contributes to",
+            "target": "Project Success"
+        }
+    ]
+}

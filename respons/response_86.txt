@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Team",
+            "type": "Team",
+            "attributes": {"role": "Evaluator", "function": "Risk Management", "status": "Active"}
+        },
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {"status": "Identified", "type": "Primary", "description": "Risk that has been recognized and assessed"}
+        },
+        {
+            "name": "Emergent Secondary Risk",
+            "type": "Risk",
+            "attributes": {"status": "Emergent", "type": "Secondary", "description": "New risks arising as a consequence of managing identified risks"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"effectiveness": "To be determined", "steps": ["Identification", "Assessment", "Mitigation", "Monitoring"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Team",
+            "relationship": "Evaluates",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Identified Risk",
+            "relationship": "Leads to",
+            "target": "Emergent Secondary Risk"
+        },
+        {
+            "source": "Project Team",
+            "relationship": "Determines effectiveness of",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

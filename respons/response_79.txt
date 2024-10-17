@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "defining action", "synonyms": ["risk manager", "risk leader"]}
+        },
+        {
+            "name": "Action",
+            "type": "Activity", 
+            "attributes": {"description": "steps taken to mitigate risk", "synonyms": ["measure", "intervention"]}
+        },
+        {
+            "name": "Strategy",
+            "type": "Concept", 
+            "attributes": {"description": "plan for risk management", "synonyms": ["approach", "method"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Owner",
+            "relationship": "defines",
+            "target": "Action"
+        },
+        {
+            "source": "Risk Owner",
+            "relationship": "chooses",
+            "target": "Strategy"
+        },
+        {
+            "source": "Action",
+            "relationship": "implements",
+            "target": "Strategy"
+        }
+    ]
+}

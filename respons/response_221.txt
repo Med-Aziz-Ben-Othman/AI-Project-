@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management", "risk control"], "importance": "high"}
+        },
+        {
+            "name": "Risk Identification Technique",
+            "type": "Method", 
+            "attributes": {"synonyms": ["risk identification method", "risk assessment technique"], "examples": ["brainstorming", "interviews", "checklists"]}
+        },
+        {
+            "name": "Identified Risk",
+            "type": "Entity", 
+            "attributes": {"description": "risks that have been recognized", "status": "important"}
+        },
+        {
+            "name": "Actual Risk",
+            "type": "Entity", 
+            "attributes": {"description": "risks that pose a genuine threat to the project", "status": "critical"}
+        },
+        {
+            "name": "Non-Risks",
+            "type": "Entity", 
+            "attributes": {"description": "elements that do not pose a risk", "impact": "distracting"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "utilizes",
+            "target": "Risk Identification Technique"
+        },
+        {
+            "source": "Risk Identification Technique",
+            "relationship": "identifies",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Identified Risk",
+            "relationship": "describes",
+            "target": "Actual Risk"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "focuses on",
+            "target": "Actual Risk"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "avoids",
+            "target": "Non-Risks"
+        }
+    ]
+}

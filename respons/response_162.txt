@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Decision Making Template",
+            "type": "Template", 
+            "attributes": {"purpose": "assist in decision making", "context": "project management", "synonyms": ["decision template", "making template"]}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"purpose": "identify and mitigate risks", "components": ["risk identification", "risk analysis", "risk response"], "synonyms": ["risk plan", "risk strategy"]}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"scope": "specific objectives", "duration": "time-bound", "stakeholders": ["team", "clients", "management"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Decision Making Template",
+            "relationship": "includes",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

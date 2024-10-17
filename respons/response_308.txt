@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk Entity", 
+            "attributes": {"synonyms": ["specific risk", "project uncertainty"], "type": "quantified", "detail_level": "detailed"}
+        },
+        {
+            "name": "Cost",
+            "type": "Cost Factor", 
+            "attributes": {"description": "line-item cost", "impact": "financial"}
+        },
+        {
+            "name": "Schedule",
+            "type": "Schedule Factor", 
+            "attributes": {"description": "activity level", "impact": "time management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Cost"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Schedule"
+        }
+    ]
+}

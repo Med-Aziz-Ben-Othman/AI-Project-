@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk analysis"], "importance": "high"}
+        },
+        {
+            "name": "Qualitative Technique",
+            "type": "Method", 
+            "attributes": {"description": "technique for assessing risks based on subjective judgment", "usage": "used in risk prioritization"}
+        },
+        {
+            "name": "Prioritization",
+            "type": "Action", 
+            "attributes": {"definition": "the process of ranking risks", "goal": "to manage risks effectively"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"description": "a temporary endeavor undertaken to create a unique product or service", "duration": "defined period"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management",
+            "relationship": "employs",
+            "target": "Qualitative Technique"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "requires",
+            "target": "Prioritization"
+        },
+        {
+            "source": "Prioritization",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

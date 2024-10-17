@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Analysis",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk assessment", "risk evaluation"], "importance": "high", "stage": "planning"}
+        },
+        {
+            "name": "Credibility",
+            "type": "Quality",
+            "attributes": {"synonyms": ["trustworthiness", "reliability"], "importance": "critical"}
+        },
+        {
+            "name": "Agreed-upon Approach",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["consensus method", "standard procedure"], "type": "framework"}
+        },
+        {
+            "name": "Identified Risks",
+            "type": "Risk",
+            "attributes": {"synonyms": ["recognized risks", "noted threats"], "category": "various", "status": "identified"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"synonyms": ["initiative", "task"], "scope": "project management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Analysis",
+            "relationship": "builds",
+            "target": "Credibility"
+        },
+        {
+            "source": "Agreed-upon Approach",
+            "relationship": "is used in",
+            "target": "Risk Analysis"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "applies to",
+            "target": "Identified Risks"
+        },
+        {
+            "source": "Identified Risks",
+            "relationship": "affects",
+            "target": "Project"
+        },
+        {
+            "source": "Agreed-upon Approach",
+            "relationship": "is applied across",
+            "target": "Identified Risks"
+        }
+    ]
+}

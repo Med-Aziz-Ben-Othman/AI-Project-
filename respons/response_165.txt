@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Overview",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["summary", "outline"], "importance": "high"}
+        },
+        {
+            "name": "Key Area",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["critical aspect", "main focus"], "importance": "high"}
+        },
+        {
+            "name": "Focus",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["emphasis", "concentration"], "importance": "medium"}
+        },
+        {
+            "name": "Figure",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["data representation", "visual"], "importance": "low"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overview",
+            "relationship": "describes",
+            "target": "Key Area"
+        },
+        {
+            "source": "Key Area",
+            "relationship": "requires attention on",
+            "target": "Focus"
+        },
+        {
+            "source": "Focus",
+            "relationship": "illustrated by",
+            "target": "Figure"
+        }
+    ]
+}

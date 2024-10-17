@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Bias Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["prejudgment risk", "subjective risk"], "description": "Potential for errors in decision-making due to biases."} 
+        },
+        {
+            "name": "Cognitive Bias",
+            "type": "Bias Type", 
+            "attributes": {"synonyms": ["mental bias", "thinking bias"], "description": "Systematic pattern of deviation from norm or rationality in judgment."}
+        },
+        {
+            "name": "Motivational Bias",
+            "type": "Bias Type", 
+            "attributes": {"synonyms": ["incentive bias", "desire-driven bias"], "description": "Bias stemming from personal motivations or desires."}
+        },
+        {
+            "name": "Data Sources",
+            "type": "Source Type", 
+            "attributes": {"description": "Origins of data that may influence bias risks."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Bias Risk",
+            "relationship": "is caused by",
+            "target": "Cognitive Bias"
+        },
+        {
+            "source": "Bias Risk",
+            "relationship": "is caused by",
+            "target": "Motivational Bias"
+        },
+        {
+            "source": "Cognitive Bias",
+            "relationship": "originates from",
+            "target": "Data Sources"
+        },
+        {
+            "source": "Motivational Bias",
+            "relationship": "originates from",
+            "target": "Data Sources"
+        }
+    ]
+}

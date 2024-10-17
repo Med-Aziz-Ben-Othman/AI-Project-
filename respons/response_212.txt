@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Historical Review Approach",
+            "type": "Assessment Technique", 
+            "attributes": {"synonyms": ["Past Analysis", "Historical Analysis"], "application": "Project Evaluation", "type": "Retrospective"}
+        },
+        {
+            "name": "Current Assessment Technique",
+            "type": "Assessment Technique", 
+            "attributes": {"synonyms": ["Contemporary Evaluation", "Modern Assessment"], "application": "Project Evaluation", "type": "Prospective"}
+        },
+        {
+            "name": "Outside Reference Point",
+            "type": "Reference", 
+            "attributes": {"synonyms": ["External Benchmark", "External Reference"], "usage": "Comparison", "context": "Assessment"}
+        },
+        {
+            "name": "Base Examination",
+            "type": "Evaluation Method", 
+            "attributes": {"synonyms": ["Fundamental Analysis", "Core Review"], "application": "Risk Assessment", "context": "Project Management"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["Initiative", "Task"], "domain": "Project Management", "complexity": "Varies"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Current Assessment Technique",
+            "relationship": "relies on",
+            "target": "Outside Reference Point"
+        },
+        {
+            "source": "Current Assessment Technique",
+            "relationship": "is based on",
+            "target": "Base Examination"
+        },
+        {
+            "source": "Base Examination",
+            "relationship": "applies to",
+            "target": "Project"
+        },
+        {
+            "source": "Historical Review Approach",
+            "relationship": "differs from",
+            "target": "Current Assessment Technique"
+        }
+    ]
+}

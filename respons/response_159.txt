@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Specification Tool",
+            "type": "Tool", 
+            "attributes": {"function": "input parameters", "applicability": "specific project", "required": "yes"}
+        },
+        {
+            "name": "Process",
+            "type": "Process", 
+            "attributes": {"type": "subsequent", "involves": "input parameters"}
+        },
+        {
+            "name": "Parameter Input",
+            "type": "Parameter", 
+            "attributes": {"requirement": "required", "context": "specific project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Specification Tool",
+            "relationship": "used in",
+            "target": "Process"
+        },
+        {
+            "source": "Process",
+            "relationship": "includes",
+            "target": "Parameter Input"
+        },
+        {
+            "source": "Parameter Input",
+            "relationship": "ensures",
+            "target": "Specification Tool"
+        }
+    ]
+}

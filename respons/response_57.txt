@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Notable Risk",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["significant risk", "major risk"], "status": "identified", "importance": "high"} 
+        },
+        {
+            "name": "Unnotable Risk",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["minor risk", "insignificant risk"], "status": "not identified", "importance": "low"} 
+        },
+        {
+            "name": "Project",
+            "type": "Project", 
+            "attributes": {"status": "active", "timeline": "ongoing"} 
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Notable Risk",
+            "relationship": "is related to",
+            "target": "Project"
+        },
+        {
+            "source": "Unnotable Risk",
+            "relationship": "may emerge in",
+            "target": "Project"
+        }
+    ]
+}

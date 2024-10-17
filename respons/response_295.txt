@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["recognized risk", "detected risk"], "severity": "varies", "description": "A risk that has been recognized in the project."}
+        },
+        {
+            "name": "Priority",
+            "type": "Management Concept",
+            "attributes": {"level": "high/medium/low", "description": "The importance assigned to a risk to determine response actions."}
+        },
+        {
+            "name": "Objective",
+            "type": "Project Goal",
+            "attributes": {"description": "The intended outcome or target to be achieved in the project.", "scope": "entire project"}
+        },
+        {
+            "name": "Entire Project",
+            "type": "Project",
+            "attributes": {"description": "The whole scope of work and objectives to be completed."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "assigns",
+            "target": "Priority"
+        },
+        {
+            "source": "Priority",
+            "relationship": "influences",
+            "target": "Objective"
+        },
+        {
+            "source": "Objective",
+            "relationship": "applies to",
+            "target": "Entire Project"
+        }
+    ]
+}

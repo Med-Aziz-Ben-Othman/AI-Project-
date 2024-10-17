@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Clear View",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["clarity", "transparency"], "importance": "high"} 
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["hazard", "threat"], "type": "uncertainty", "impact": "variable"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"steps": ["risk identification", "risk assessment", "risk response planning"], "goal": "minimize risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Clear View",
+            "relationship": "is necessary for",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "is a factor in",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

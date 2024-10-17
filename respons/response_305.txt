@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying, assessing, and mitigating risks", "importance": "High", "synonyms": ["risk assessment process", "risk analysis process"]}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Analysis Technique", 
+            "attributes": {"description": "A statistical method to evaluate the impact of risks", "benefit": "Provides numerical insight into risk exposure", "synonyms": ["quantitative assessment", "quantitative evaluation"]}
+        },
+        {
+            "name": "Effort",
+            "type": "Resource", 
+            "attributes": {"description": "The amount of work required to complete a task", "type": "Human Resource", "synonyms": ["work load", "resources needed"]}
+        },
+        {
+            "name": "Additional Insight",
+            "type": "Outcome", 
+            "attributes": {"description": "Further understanding gained from analysis", "value": "Increases decision-making quality", "synonyms": ["deeper understanding", "further knowledge"]}
+        },
+        {
+            "name": "Value Justification",
+            "type": "Concept", 
+            "attributes": {"description": "The rationale provided for the worth of an action", "importance": "Critical for project approval", "synonyms": ["value assessment", "cost-benefit analysis"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "includes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "requires",
+            "target": "Effort"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "provides",
+            "target": "Additional Insight"
+        },
+        {
+            "source": "Additional Insight",
+            "relationship": "supports",
+            "target": "Value Justification"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Process",
+            "type": "Project Management Concept",
+            "attributes": {"synonyms": ["procedure", "method"], "description": "A series of actions or steps taken to achieve a particular end in project management."}
+        },
+        {
+            "name": "Figure",
+            "type": "Visual Representation",
+            "attributes": {"synonyms": ["diagram", "illustration"], "description": "A graphical representation used to convey information or data visually in project management."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Process",
+            "relationship": "Illustrates",
+            "target": "Figure"
+        }
+    ]
+}

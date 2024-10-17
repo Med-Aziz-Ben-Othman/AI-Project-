@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Response",
+            "type": "Action",
+            "attributes": {"synonyms": ["reaction", "reply"], "type": "response strategy"}
+        },
+        {
+            "name": "Potential Effect",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["possible impact", "consequence"], "type": "impact assessment"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal",
+            "attributes": {"synonyms": ["project aim", "project target"], "type": "project planning"}
+        },
+        {
+            "name": "Additional Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["extra risk", "further risk"], "type": "risk assessment"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Response",
+            "relationship": "implements",
+            "target": "Potential Effect"
+        },
+        {
+            "source": "Potential Effect",
+            "relationship": "affects",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Project Objective",
+            "relationship": "generates",
+            "target": "Additional Risk"
+        }
+    ]
+}

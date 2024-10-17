@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Historical Review Approach",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["retrospective analysis", "historical analysis"], "purpose": "to assess past projects for risk management"}
+        },
+        {
+            "name": "Comparable Situation",
+            "type": "Context", 
+            "attributes": {"synonyms": ["similar scenario", "analogous situation"], "relevance": "to draw parallels with current project risks"}
+        },
+        {
+            "name": "Current Project",
+            "type": "Project", 
+            "attributes": {"status": "ongoing", "focus": "risk management", "data": "current risk factors"}
+        },
+        {
+            "name": "Previous Risk",
+            "type": "Risk Factor", 
+            "attributes": {"examples": ["budget overruns", "timeline delays"], "importance": "to inform current risk assessments"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Historical Review Approach",
+            "relationship": "informs",
+            "target": "Previous Risk"
+        },
+        {
+            "source": "Comparable Situation",
+            "relationship": "compares to",
+            "target": "Current Project"
+        },
+        {
+            "source": "Previous Risk",
+            "relationship": "considered in",
+            "target": "Current Project"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"description": "A method that quantifies risks using numerical values", "importance": "High", "synonyms": ["Quantitative Risk Assessment", "Statistical Risk Analysis"]}
+        },
+        {
+            "name": "Project",
+            "type": "Project Entity", 
+            "attributes": {"description": "A temporary endeavor undertaken to create a unique product or service", "characteristics": ["Temporary", "Unique", "Defined Start and End"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Requires",
+            "target": "Project"
+        }
+    ]
+}

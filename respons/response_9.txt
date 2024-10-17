@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"responsibility": "overall responsibility", "synonyms": ["project lead", "project coordinator"], "role_type": "management"}
+        },
+        {
+            "name": "Successful Project",
+            "type": "Outcome", 
+            "attributes": {"definition": "meet defined objective", "criteria": ["on time", "within budget", "scope adherence"]}
+        },
+        {
+            "name": "Defined Objective",
+            "type": "Goal", 
+            "attributes": {"description": "specific targets to be achieved", "measurable": "true"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "has responsibility for",
+            "target": "Successful Project"
+        },
+        {
+            "source": "Successful Project",
+            "relationship": "requires",
+            "target": "Defined Objective"
+        }
+    ]
+}

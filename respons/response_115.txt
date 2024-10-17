@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Success Measurement",
+            "type": "Concept", 
+            "attributes": {"definition": "A process to evaluate the effectiveness of project management", "synonyms": ["performance assessment", "evaluation of success"]}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"definition": "The process of identifying, analyzing, and responding to project risks", "synonyms": ["risk management strategy", "risk assessment"]}
+        },
+        {
+            "name": "Factors",
+            "type": "Entity", 
+            "attributes": {"definition": "Elements that influence project outcomes", "synonyms": ["elements", "variables"]}
+        },
+        {
+            "name": "Level of Uncertainty",
+            "type": "Concept", 
+            "attributes": {"definition": "The degree of unpredictability in project outcomes", "synonyms": ["uncertainty degree", "risk level"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "depends on",
+            "target": "Factors"
+        },
+        {
+            "source": "Success Measurement",
+            "relationship": "is influenced by",
+            "target": "Level of Uncertainty"
+        },
+        {
+            "source": "Level of Uncertainty",
+            "relationship": "is determined by",
+            "target": "Factors"
+        }
+    ]
+}

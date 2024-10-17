@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Practice",
+            "type": "Practice",
+            "attributes": {"description": "Standard practices for managing project risks", "synonyms": ["risk management", "risk mitigation"]}
+        },
+        {
+            "name": "Issue Identification",
+            "type": "Process",
+            "attributes": {"description": "The process of identifying issues in a project", "synonyms": ["risk identification", "problem detection"]}
+        },
+        {
+            "name": "Risk Ownership",
+            "type": "Concept",
+            "attributes": {"description": "The assignment of responsibility for managing identified risks", "synonyms": ["risk accountability", "risk responsibility"], "levels": ["high", "medium", "low"]}
+        },
+        {
+            "name": "Risk Detail Level",
+            "type": "Metric",
+            "attributes": {"description": "The granularity of information regarding identified risks", "levels": ["high detail", "medium detail", "low detail"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Practice",
+            "relationship": "includes",
+            "target": "Issue Identification"
+        },
+        {
+            "source": "Issue Identification",
+            "relationship": "leads to",
+            "target": "Risk Ownership"
+        },
+        {
+            "source": "Risk Ownership",
+            "relationship": "requires",
+            "target": "Risk Detail Level"
+        }
+    ]
+}

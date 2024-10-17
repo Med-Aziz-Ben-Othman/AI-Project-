@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Structure Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "Risk related to the structure of the project", "synonyms": ["Structural Risk", "Framework Risk"]}
+        },
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "Accountable for managing the risk", "synonyms": ["Risk Manager", "Risk Controller"]}
+        },
+        {
+            "name": "Risk Information",
+            "type": "Information", 
+            "attributes": {"description": "Details about the risk", "key elements": ["cause", "effect", "trigger", "condition"]}
+        },
+        {
+            "name": "Preliminary Response",
+            "type": "Response Strategy", 
+            "attributes": {"description": "Initial action to mitigate the risk", "synonyms": ["Initial Response", "Early Mitigation"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Structure Risk",
+            "relationship": "described by",
+            "target": "Risk Information"
+        },
+        {
+            "source": "Structure Risk",
+            "relationship": "assigned to",
+            "target": "Risk Owner"
+        },
+        {
+            "source": "Risk Information",
+            "relationship": "includes",
+            "target": "Preliminary Response"
+        }
+    ]
+}

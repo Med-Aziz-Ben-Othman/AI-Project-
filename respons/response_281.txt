@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Prioritization Index",
+            "type": "Risk Management Tool",
+            "attributes": {"synonyms": ["risk index", "prioritization metric"], "purpose": "to assess and rank risks"}
+        },
+        {
+            "name": "Organization",
+            "type": "Entity",
+            "attributes": {"synonyms": ["company", "firm", "institution"], "role": "responsible for risk management"}
+        },
+        {
+            "name": "Explicit Index",
+            "type": "Index Type",
+            "attributes": {"synonyms": ["clear index", "defined index"], "characteristics": "provides clear criteria for evaluation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Organization",
+            "relationship": "needs",
+            "target": "Risk Prioritization Index"
+        },
+        {
+            "source": "Risk Prioritization Index",
+            "relationship": "requires",
+            "target": "Explicit Index"
+        },
+        {
+            "source": "Explicit Index",
+            "relationship": "is a type of",
+            "target": "Risk Prioritization Index"
+        }
+    ]
+}

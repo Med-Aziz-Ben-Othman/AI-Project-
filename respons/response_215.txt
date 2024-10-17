@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Technique",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["method", "approach"], "description": "A systematic way of doing something"}
+        },
+        {
+            "name": "Group",
+            "type": "Entity",
+            "attributes": {"synonyms": ["team", "collective"], "description": "A number of people or things that are located, gathered, or classed together"}
+        },
+        {
+            "name": "Degree",
+            "type": "Measurement",
+            "attributes": {"synonyms": ["extent", "level"], "description": "The amount, level, or intensity of something"}
+        },
+        {
+            "name": "Structure",
+            "type": "Framework",
+            "attributes": {"synonyms": ["organization", "arrangement"], "description": "The arrangement of and relations between the parts or elements of something complex"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Technique",
+            "relationship": "employs",
+            "target": "Group"
+        },
+        {
+            "source": "Technique",
+            "relationship": "varies in",
+            "target": "Degree"
+        },
+        {
+            "source": "Technique",
+            "relationship": "requires",
+            "target": "Structure"
+        }
+    ]
+}

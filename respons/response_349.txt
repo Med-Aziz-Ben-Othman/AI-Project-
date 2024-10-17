@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Data Gathering Tool",
+            "type": "Tool", 
+            "attributes": {"description": "A tool used for collecting data", "synonyms": ["data collection tool", "data acquisition tool"]}
+        },
+        {
+            "name": "Assessment Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to evaluate data", "steps": ["historical data analysis", "workshop", "interview", "questionnaire"]}
+        },
+        {
+            "name": "Quantified Information",
+            "type": "Data", 
+            "attributes": {"description": "Numerical data related to risks", "examples": ["probability of risk occurrence", "probability distribution", "potential impact"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"description": "The potential for loss or damage", "attributes": ["cost", "time"], "synonyms": ["hazard", "threat"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Data Gathering Tool",
+            "relationship": "is used in",
+            "target": "Assessment Process"
+        },
+        {
+            "source": "Assessment Process",
+            "relationship": "gathers",
+            "target": "Quantified Information"
+        },
+        {
+            "source": "Quantified Information",
+            "relationship": "informs",
+            "target": "Risk"
+        }
+    ]
+}

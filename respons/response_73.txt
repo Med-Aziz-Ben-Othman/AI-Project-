@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Analysis",
+            "type": "Analysis Technique", 
+            "attributes": {"key1": "statistical", "key2": "data-driven", "synonyms": ["quantitative assessment", "numerical analysis"]}
+        },
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource", 
+            "attributes": {"key1": "risk management", "key2": "buffer", "synonyms": ["reserve fund", "safety margin"]}
+        },
+        {
+            "name": "Response Development",
+            "type": "Project Management Process", 
+            "attributes": {"key1": "risk response", "key2": "planning", "synonyms": ["response planning", "mitigation strategy"]}
+        },
+        {
+            "name": "Documentation",
+            "type": "Project Management Artifact", 
+            "attributes": {"key1": "record keeping", "key2": "communication", "synonyms": ["project records", "reporting"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Analysis",
+            "relationship": "requires",
+            "target": "Contingency Reserve"
+        },
+        {
+            "source": "Response Development",
+            "relationship": "involves",
+            "target": "Quantitative Analysis"
+        },
+        {
+            "source": "Documentation",
+            "relationship": "supports",
+            "target": "Response Development"
+        },
+        {
+            "source": "Contingency Reserve",
+            "relationship": "must be documented in",
+            "target": "Documentation"
+        },
+        {
+            "source": "Documentation",
+            "relationship": "communicates",
+            "target": "Subsequent Action"
+        }
+    ]
+}

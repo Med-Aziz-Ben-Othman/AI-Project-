@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"synonyms": ["threat", "hazard"], "type": "individual", "assessment": "specific"}
+        },
+        {
+            "name": "Project Element",
+            "type": "Project Component", 
+            "attributes": {"synonyms": ["project part", "component"], "detail level": "individual"}
+        },
+        {
+            "name": "Schedule Activity",
+            "type": "Project Activity", 
+            "attributes": {"synonyms": ["task", "work item"], "cost level": "line item"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "affects",
+            "target": "Project Element"
+        },
+        {
+            "source": "Project Element",
+            "relationship": "includes",
+            "target": "Schedule Activity"
+        }
+    ]
+}

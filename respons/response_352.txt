@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Result Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["Outcome Risk", "Project Outcome Risk"], "description": "Risk associated with the outcomes of a project."} 
+        },
+        {
+            "name": "Probability",
+            "type": "Metric", 
+            "attributes": {"synonyms": ["Likelihood", "Chance"], "description": "The likelihood of a risk occurring."}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal", 
+            "attributes": {"synonyms": ["Project Aim", "Project Target"], "description": "The specific goals that a project aims to achieve."}
+        },
+        {
+            "name": "Budget",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["Financial Plan", "Funding"], "description": "The financial resources allocated for a project."}
+        },
+        {
+            "name": "Fishing Time",
+            "type": "Duration", 
+            "attributes": {"synonyms": ["Fishing Period", "Fishing Duration"], "description": "The time allocated for fishing activities within the project."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Result Risk",
+            "relationship": "Affects",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Probability",
+            "relationship": "Impacts",
+            "target": "Result Risk"
+        },
+        {
+            "source": "Fishing Time",
+            "relationship": "Contributes To",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Budget",
+            "relationship": "Constraints",
+            "target": "Project Objective"
+        }
+    ]
+}

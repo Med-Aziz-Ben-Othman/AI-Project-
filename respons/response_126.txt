@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"key_concepts": ["risk management", "quantitative analysis", "risk response planning", "risk monitoring", "risk control"], "purpose": "to specify key numerical values for decision making"}
+        },
+        {
+            "name": "Quantitative Analysis",
+            "type": "Process",
+            "attributes": {"key_elements": ["data collection", "statistical analysis", "risk assessment"], "importance": "critical for informed decision making"}
+        },
+        {
+            "name": "Risk Response Planning",
+            "type": "Process",
+            "attributes": {"key_steps": ["identify risks", "develop strategies", "assign responsibilities"], "goal": "to mitigate identified risks"}
+        },
+        {
+            "name": "Risk Monitoring and Control",
+            "type": "Process",
+            "attributes": {"key_tasks": ["track identified risks", "evaluate risk response strategies", "adjust plans as necessary"], "objective": "to ensure risks are managed effectively"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "includes",
+            "target": "Quantitative Analysis"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "guides",
+            "target": "Risk Response Planning"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "informs",
+            "target": "Risk Monitoring and Control"
+        },
+        {
+            "source": "Quantitative Analysis",
+            "relationship": "supports",
+            "target": "Risk Response Planning"
+        },
+        {
+            "source": "Risk Response Planning",
+            "relationship": "feeds into",
+            "target": "Risk Monitoring and Control"
+        }
+    ]
+}

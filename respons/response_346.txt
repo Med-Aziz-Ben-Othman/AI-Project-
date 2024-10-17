@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Method",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["quantitative analysis", "quantitative approach"], "purpose": "analyze uncertainty", "application": "probability model"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"description": "lack of certainty in outcomes", "related terms": ["risk", "variability"]}
+        },
+        {
+            "name": "Probability Model",
+            "type": "Model", 
+            "attributes": {"description": "mathematical representation of uncertain events", "use": "address uncertainty"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Method",
+            "relationship": "analyzes",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Quantitative Method",
+            "relationship": "uses",
+            "target": "Probability Model"
+        },
+        {
+            "source": "Probability Model",
+            "relationship": "addresses",
+            "target": "Uncertainty"
+        }
+    ]
+}

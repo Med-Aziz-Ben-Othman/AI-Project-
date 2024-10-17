@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Result Type Analysis",
+            "type": "Analysis Method", 
+            "attributes": {"description": "Evaluation of outcomes", "purpose": "Assess project success likelihood"}
+        },
+        {
+            "name": "Likelihood of Success",
+            "type": "Metric", 
+            "attributes": {"description": "Probability of achieving project objectives", "value": "Variable"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Project Goal", 
+            "attributes": {"description": "Desired outcome of the project", "importance": "High"}
+        },
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource", 
+            "attributes": {"description": "Funds set aside for unexpected costs", "related_to": "Risk management"}
+        },
+        {
+            "name": "Time Cost",
+            "type": "Resource", 
+            "attributes": {"description": "Duration and budget required for project", "measurement": "Hours and Currency"}
+        },
+        {
+            "name": "Risk Tolerance",
+            "type": "Risk Management Parameter", 
+            "attributes": {"description": "Willingness to accept risk", "level": "Variable"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Entity", 
+            "attributes": {"description": "Individuals or groups invested in the project", "role": "Variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Result Type Analysis",
+            "relationship": "Evaluates",
+            "target": "Likelihood of Success"
+        },
+        {
+            "source": "Likelihood of Success",
+            "relationship": "Determines",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Contingency Reserve",
+            "relationship": "Estimates",
+            "target": "Time Cost"
+        },
+        {
+            "source": "Risk Tolerance",
+            "relationship": "Affects",
+            "target": "Contingency Reserve"
+        },
+        {
+            "source": "Project Stakeholder",
+            "relationship": "Influences",
+            "target": "Risk Tolerance"
+        }
+    ]
+}

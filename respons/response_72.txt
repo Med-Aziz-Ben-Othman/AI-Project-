@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Risk",
+            "type": "Risk Indicator", 
+            "attributes": {"synonyms": ["cumulative risk", "total risk"], "degree": "high"}
+        },
+        {
+            "name": "Project",
+            "type": "Project Entity", 
+            "attributes": {"status": "active", "scope": "undefined"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Risk",
+            "relationship": "Indicates",
+            "target": "Project"
+        }
+    ]
+}

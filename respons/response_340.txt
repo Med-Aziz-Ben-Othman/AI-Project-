@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"synonyms": ["hazard", "threat"], "type": "uncertainty", "impact": "negative"}
+        },
+        {
+            "name": "Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"synonyms": ["evaluation", "assessment"], "method": "qualitative or quantitative"}
+        },
+        {
+            "name": "Correlation",
+            "type": "Statistical Relationship", 
+            "attributes": {"synonyms": ["association", "connection"], "type": "linear or non-linear"}
+        },
+        {
+            "name": "Possibility",
+            "type": "Likelihood", 
+            "attributes": {"synonyms": ["probability", "chance"], "scale": "0-1"}
+        },
+        {
+            "name": "Address",
+            "type": "Risk Management Action", 
+            "attributes": {"synonyms": ["mitigate", "tackle"], "approaches": ["avoidance", "acceptance", "transference"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "analyzed by",
+            "target": "Analysis"
+        },
+        {
+            "source": "Risk",
+            "relationship": "correlated with",
+            "target": "Correlation"
+        },
+        {
+            "source": "Possibility",
+            "relationship": "affects",
+            "target": "Risk"
+        },
+        {
+            "source": "Address",
+            "relationship": "ensures reduction of",
+            "target": "Risk"
+        }
+    ]
+}

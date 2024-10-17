@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Subjectivity",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["bias", "personal opinion"], "impact": "High", "type": "Cognitive"}
+        },
+        {
+            "name": "Open Identification",
+            "type": "Risk Management Practice", 
+            "attributes": {"synonyms": ["transparent identification", "clear recognition"], "goal": "Identify risks early"}
+        },
+        {
+            "name": "Project Risks",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["project threats", "project uncertainties"], "types": ["financial", "operational", "strategic"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Subjectivity",
+            "relationship": "Increases",
+            "target": "Project Risks"
+        },
+        {
+            "source": "Open Identification",
+            "relationship": "Aims to minimize",
+            "target": "Subjectivity"
+        },
+        {
+            "source": "Open Identification",
+            "relationship": "Facilitates",
+            "target": "Project Risks"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying, analyzing, and responding to project risks", "synonyms": ["Risk Management", "Risk Assessment"], "importance": "Critical for project success"}
+        },
+        {
+            "name": "Project Management Processes",
+            "type": "Concept", 
+            "attributes": {"description": "Processes involved in managing a project", "examples": ["Initiating", "Planning", "Executing", "Monitoring", "Closing"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Incorporates",
+            "target": "Project Management Processes"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Contingent Risk Response Action",
+            "type": "Risk Management Action", 
+            "attributes": {"synonyms": ["contingent action", "risk response"], "importance": "high", "type": "proactive"}
+        },
+        {
+            "name": "Optimum Time",
+            "type": "Time Metric", 
+            "attributes": {"synonyms": ["ideal time", "best time"], "importance": "critical", "context": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Contingent Risk Response Action",
+            "relationship": "needs to be executed at",
+            "target": "Optimum Time"
+        }
+    ]
+}

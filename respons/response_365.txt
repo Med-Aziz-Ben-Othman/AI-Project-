@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Risk",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["total risk", "aggregate risk"], "type": "project risk", "impact": "high"}
+        },
+        {
+            "name": "Time",
+            "type": "Project Attribute",
+            "attributes": {"synonyms": ["schedule", "duration"], "type": "constraint", "impact": "medium"}
+        },
+        {
+            "name": "Cost",
+            "type": "Project Attribute",
+            "attributes": {"synonyms": ["budget", "financial resources"], "type": "constraint", "impact": "high"}
+        },
+        {
+            "name": "Adjustment Scope",
+            "type": "Change Item",
+            "attributes": {"synonyms": ["scope adjustment", "scope modification"], "type": "scope change", "impact": "medium"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Analysis Method",
+            "attributes": {"synonyms": ["quantitative analysis", "risk quantification"], "type": "risk assessment", "purpose": "identify risks"}
+        },
+        {
+            "name": "Project",
+            "type": "Project Entity",
+            "attributes": {"synonyms": ["initiative", "undertaking"], "type": "overall project", "status": "active"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Risk",
+            "relationship": "influences",
+            "target": "Time"
+        },
+        {
+            "source": "Overall Risk",
+            "relationship": "influences",
+            "target": "Cost"
+        },
+        {
+            "source": "Adjustment Scope",
+            "relationship": "requires",
+            "target": "Time"
+        },
+        {
+            "source": "Adjustment Scope",
+            "relationship": "requires",
+            "target": "Cost"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

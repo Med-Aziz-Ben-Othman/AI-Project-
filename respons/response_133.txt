@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "team",
+            "type": "Group",
+            "attributes": {"role": "project team", "function": "risk management"}
+        },
+        {
+            "name": "plan",
+            "type": "Document",
+            "attributes": {"type": "project plan", "purpose": "describe project scope"}
+        },
+        {
+            "name": "risk management meeting",
+            "type": "Event",
+            "attributes": {"frequency": "various", "requirement": "report content"}
+        },
+        {
+            "name": "project risk management process",
+            "type": "Process",
+            "attributes": {"structure": "defined", "content": "risk identification, assessment, response"}
+        },
+        {
+            "name": "meeting report",
+            "type": "Document",
+            "attributes": {"content": "summary of meeting outcomes", "format": "structured"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "team",
+            "relationship": "creates",
+            "target": "plan"
+        },
+        {
+            "source": "team",
+            "relationship": "participates in",
+            "target": "risk management meeting"
+        },
+        {
+            "source": "risk management meeting",
+            "relationship": "produces",
+            "target": "meeting report"
+        },
+        {
+            "source": "meeting report",
+            "relationship": "documents",
+            "target": "project risk management process"
+        },
+        {
+            "source": "plan",
+            "relationship": "guides",
+            "target": "project risk management process"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Agreed Upon Approach",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["consensus strategy", "accepted method"], "importance": "high"}
+        },
+        {
+            "name": "Foundation Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["base procedure", "core process"], "stage": "initial"}
+        },
+        {
+            "name": "Credibility",
+            "type": "Quality", 
+            "attributes": {"synonyms": ["trustworthiness", "reliability"], "impact": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Agreed Upon Approach",
+            "relationship": "is based on",
+            "target": "Foundation Process"
+        },
+        {
+            "source": "Foundation Process",
+            "relationship": "enhances",
+            "target": "Credibility"
+        }
+    ]
+}

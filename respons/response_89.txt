@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Chapter",
+            "type": "Document",
+            "attributes": {"description": "A chapter that outlines various risks", "importance": "High", "synonyms": ["risk section", "risk analysis chapter"]}
+        },
+        {
+            "name": "Notable Risks",
+            "type": "Concept",
+            "attributes": {"description": "Significant risks identified in the project", "examples": ["financial risk", "operational risk"], "synonyms": ["key risks", "major risks"]}
+        },
+        {
+            "name": "Practicable Risks",
+            "type": "Concept",
+            "attributes": {"description": "Risks that can be realistically managed", "synonyms": ["manageable risks", "feasible risks"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Chapter",
+            "relationship": "Identifies",
+            "target": "Notable Risks"
+        },
+        {
+            "source": "Notable Risks",
+            "relationship": "Can be",
+            "target": "Practicable Risks"
+        }
+    ]
+}

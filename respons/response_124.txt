@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Participant",
+            "type": "Stakeholder", 
+            "attributes": {"role": "important participant", "understanding": "common"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"description": "critical value threshold", "parameter": "defined manner"}
+        },
+        {
+            "name": "Tool",
+            "type": "Resource", 
+            "attributes": {"purpose": "serve parameter", "consistency": "consistent with scope"}
+        },
+        {
+            "name": "Attitude",
+            "type": "Perception", 
+            "attributes": {"context": "project", "stakeholder": "associated"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Participant",
+            "relationship": "has understanding of",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "defined by",
+            "target": "Tool"
+        },
+        {
+            "source": "Tool",
+            "relationship": "maintains consistency with",
+            "target": "Attitude"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Combination Risk Analysis",
+            "type": "Risk Management Technique", 
+            "attributes": {"synonyms": ["integrated risk assessment", "aggregate risk evaluation"], "purpose": "to identify and assess multiple risks simultaneously"}
+        },
+        {
+            "name": "Work Breakdown Structure (WBS)",
+            "type": "Project Management Tool", 
+            "attributes": {"synonyms": ["WBS", "task decomposition"], "purpose": "to break down a project into smaller, manageable components"}
+        },
+        {
+            "name": "Project Exhibit",
+            "type": "Project Documentation", 
+            "attributes": {"synonyms": ["project display", "project demonstration"], "purpose": "to showcase project details and risks"}
+        },
+        {
+            "name": "Risk Area",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["risk domain", "risk zone"], "examples": ["technical risk", "financial risk", "operational risk"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Combination Risk Analysis",
+            "relationship": "Utilizes",
+            "target": "Work Breakdown Structure (WBS)"
+        },
+        {
+            "source": "Work Breakdown Structure (WBS)",
+            "relationship": "Identifies",
+            "target": "Risk Area"
+        },
+        {
+            "source": "Project Exhibit",
+            "relationship": "Displays",
+            "target": "Risk Area"
+        }
+    ]
+}

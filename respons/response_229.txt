@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Individual Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["specific risk", "single risk"], "importance": "high", "description": "A risk that affects a specific aspect of the project."}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Risk Analysis Method",
+            "attributes": {"synonyms": ["qualitative assessment"], "purpose": "evaluate risks based on their characteristics", "approach": "subjective assessment"}
+        },
+        {
+            "name": "Probability of Risk Occurrence",
+            "type": "Risk Metric",
+            "attributes": {"synonyms": ["risk likelihood"], "scale": "0-1", "description": "The chance that a specific risk will occur."}
+        },
+        {
+            "name": "Effect on Project Objective",
+            "type": "Impact Assessment",
+            "attributes": {"synonyms": ["impact on goals", "outcome effect"], "description": "How a risk affects the overall goals of the project.", "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Individual Risk",
+            "relationship": "is assessed through",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "has",
+            "target": "Probability of Risk Occurrence"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "affects",
+            "target": "Effect on Project Objective"
+        }
+    ]
+}

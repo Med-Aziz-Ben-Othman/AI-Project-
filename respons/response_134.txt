@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Stakeholder Plan",
+            "type": "Document", 
+            "attributes": {"purpose": "Sets expectations", "frequency": "Routine", "content": "Structure of information sharing", "synonyms": ["Stakeholder Communication Plan", "Stakeholder Engagement Plan"]}
+        },
+        {
+            "name": "Expectation Structure",
+            "type": "Concept", 
+            "attributes": {"description": "Framework for how expectations are communicated", "importance": "Critical for managing stakeholder relationships"}
+        },
+        {
+            "name": "Information Sharing",
+            "type": "Process", 
+            "attributes": {"method": "Document receive", "way": "Through escalation process", "synonyms": ["Data sharing", "Knowledge transfer"]}
+        },
+        {
+            "name": "Exceptional Event",
+            "type": "Event", 
+            "attributes": {"description": "Unforeseen occurrence that may impact project", "risk_level": "High"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Stakeholder Plan",
+            "relationship": "Defines",
+            "target": "Expectation Structure"
+        },
+        {
+            "source": "Stakeholder Plan",
+            "relationship": "Involves",
+            "target": "Information Sharing"
+        },
+        {
+            "source": "Information Sharing",
+            "relationship": "Triggered by",
+            "target": "Exceptional Event"
+        }
+    ]
+}

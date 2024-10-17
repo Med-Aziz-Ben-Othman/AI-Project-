@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {"synonyms": ["risk management", "project risk"], "importance": "high", "scope": "projects"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["quantitative analysis", "quantitative risk assessment"], "steps": "iterative", "purpose": "assess risks quantitatively"}
+        },
+        {
+            "name": "Success",
+            "type": "Outcome",
+            "attributes": {"criteria": ["project objectives met", "stakeholder satisfaction"], "importance": "critical"}
+        },
+        {
+            "name": "Process Enhancement",
+            "type": "Action",
+            "attributes": {"synonyms": ["process improvement"], "goal": "increase efficiency", "application": "throughout project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "contributes to",
+            "target": "Success"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "supports",
+            "target": "Process Enhancement"
+        }
+    ]
+}

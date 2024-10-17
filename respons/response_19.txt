@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk oversight", "risk control"], "importance": "critical", "status": "active"}
+        },
+        {
+            "name": "Subcontractor",
+            "type": "Entity", 
+            "attributes": {"role": "provider", "relationship": "dependent", "type": "external"}
+        },
+        {
+            "name": "Supplier",
+            "type": "Entity", 
+            "attributes": {"role": "provider", "relationship": "independent", "type": "external"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management",
+            "relationship": "oversees",
+            "target": "Subcontractor"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "oversees",
+            "target": "Supplier"
+        }
+    ]
+}

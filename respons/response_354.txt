@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Identity Location",
+            "type": "Concept",
+            "attributes": {"synonyms": ["Identity", "Location"], "importance": "High", "context": "Project Model"}
+        },
+        {
+            "name": "Project Model",
+            "type": "Entity",
+            "attributes": {"type": "Framework", "relevance": "Critical"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {"synonyms": ["Threat", "Hazard"], "impact": "Variable", "management": "Necessary"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identity Location",
+            "relationship": "is part of",
+            "target": "Project Model"
+        },
+        {
+            "source": "Identity Location",
+            "relationship": "is associated with",
+            "target": "Risk"
+        },
+        {
+            "source": "Project Model",
+            "relationship": "contains",
+            "target": "Risk"
+        }
+    ]
+}

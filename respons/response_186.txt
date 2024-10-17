@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk detection"], "importance": "high", "stage": "planning"}
+        },
+        {
+            "name": "Risk Sources",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["risk factors", "risk origins"], "examples": ["financial issues", "technical failures", "environmental factors"]}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["ambiguity", "insecurity"], "impact": "affects objectives", "level": "variable"}
+        },
+        {
+            "name": "Objectives",
+            "type": "Goal", 
+            "attributes": {"synonyms": ["targets", "aims"], "nature": "project-specific", "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "involves",
+            "target": "Risk Sources"
+        },
+        {
+            "source": "Risk Sources",
+            "relationship": "contributes to",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "might affect",
+            "target": "Objectives"
+        }
+    ]
+}

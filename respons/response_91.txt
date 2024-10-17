@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Quantitative Assessment", "Numerical Risk Evaluation"], "purpose": "Evaluate risks quantitatively", "methods": ["Monte Carlo Simulation", "Decision Tree Analysis"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Threat", "Hazard"], "type": "Project Risk", "impact": "Affects project outcome"}
+        },
+        {
+            "name": "Overall Project Outcome",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["Project Result", "Final Deliverable"], "importance": "Determines project success", "metrics": ["Time", "Cost", "Quality"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Evaluates",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "Affects",
+            "target": "Overall Project Outcome"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Combines Effect of",
+            "target": "Risk"
+        }
+    ]
+}

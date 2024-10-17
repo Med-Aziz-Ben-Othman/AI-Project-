@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Assessment", "Risk Evaluation"], "type": "Qualitative", "aim": "Prioritize individual risks"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Entity", 
+            "attributes": {"description": "Specific risk impacting the project", "measure": "One time"}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Entity", 
+            "attributes": {"description": "Comprehensive risk affecting the entire project", "consideration": "Cannot be measured through partial analysis"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Analysis",
+            "relationship": "Aims to Prioritize",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "Contributes to",
+            "target": "Overall Project Risk"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "Cannot Measure",
+            "target": "Overall Project Risk"
+        }
+    ]
+}

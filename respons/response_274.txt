@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Data Collection Evaluation Tool",
+            "type": "Tool",
+            "attributes": {"description": "A tool used for collecting and evaluating data", "synonyms": ["evaluation tool", "data tool"], "type": "evaluation"}
+        },
+        {
+            "name": "Interview",
+            "type": "Method",
+            "attributes": {"description": "A method for collecting qualitative data", "synonyms": ["interview method", "qualitative interview"], "type": "data collection"}
+        },
+        {
+            "name": "Workshop",
+            "type": "Method",
+            "attributes": {"description": "A collaborative meeting to gather information", "synonyms": ["collaborative workshop", "group workshop"], "type": "data collection"}
+        },
+        {
+            "name": "Reference Databases",
+            "type": "Resource",
+            "attributes": {"description": "Databases used for reference in project management", "synonyms": ["databases", "reference resources"], "type": "information source"}
+        },
+        {
+            "name": "Prior Project",
+            "type": "Project",
+            "attributes": {"description": "Previous projects that serve as a reference", "synonyms": ["previous project", "historical project"], "type": "project history"}
+        },
+        {
+            "name": "Management Support",
+            "type": "Support",
+            "attributes": {"description": "Assistance from management for project success", "synonyms": ["executive support", "management assistance"], "type": "support type"}
+        },
+        {
+            "name": "Attention",
+            "type": "Requirement",
+            "attributes": {"description": "Need for focus on specific aspects of the project", "synonyms": ["focus", "consideration"], "type": "project requirement"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Data Collection Evaluation Tool",
+            "relationship": "includes",
+            "target": "Interview"
+        },
+        {
+            "source": "Data Collection Evaluation Tool",
+            "relationship": "includes",
+            "target": "Workshop"
+        },
+        {
+            "source": "Data Collection Evaluation Tool",
+            "relationship": "utilizes",
+            "target": "Reference Databases"
+        },
+        {
+            "source": "Prior Project",
+            "relationship": "requires",
+            "target": "Management Support"
+        },
+        {
+            "source": "Prior Project",
+            "relationship": "requires",
+            "target": "Attention"
+        }
+    ]
+}

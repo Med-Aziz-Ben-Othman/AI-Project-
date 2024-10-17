@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice/Standard", 
+            "attributes": {"synonyms": ["risk management", "project risk control"], "importance": "essential", "process": "iterative"}
+        },
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"key_point": "essential", "occurrence": "throughout project life cycle", "nature": "iterative"}
+        },
+        {
+            "name": "Project Life Cycle",
+            "type": "Phase", 
+            "attributes": {"stages": ["initiation", "planning", "execution", "closure"], "duration": "varies"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "occurs during",
+            "target": "Project Life Cycle"
+        }
+    ]
+}

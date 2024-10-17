@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"key1": "plan", "key2": "management", "type": "strategic", "synonyms": ["risk plan", "management strategy"]}
+        },
+        {
+            "name": "Risk Level",
+            "type": "Risk Attribute", 
+            "attributes": {"key1": "level", "key2": "detail", "synonyms": ["risk classification", "risk tier"]}
+        },
+        {
+            "name": "Risk Register",
+            "type": "Document", 
+            "attributes": {"key1": "register", "key2": "template", "synonyms": ["risk log", "risk record"], "purpose": "to record risk-related information"}
+        },
+        {
+            "name": "Risk-related Information",
+            "type": "Information Type", 
+            "attributes": {"key1": "information", "key2": "risk", "synonyms": ["risk data", "risk details"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "establishes",
+            "target": "Risk Level"
+        },
+        {
+            "source": "Risk Level",
+            "relationship": "addresses",
+            "target": "Risk-related Information"
+        },
+        {
+            "source": "Risk Register",
+            "relationship": "provides",
+            "target": "Risk-related Information"
+        },
+        {
+            "source": "Risk Register",
+            "relationship": "uses",
+            "target": "Risk-related Information"
+        }
+    ]
+}

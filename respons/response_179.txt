@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk recognition"], "stage": "early", "importance": "high"}
+        },
+        {
+            "name": "Project Lifecycle",
+            "type": "Concept", 
+            "attributes": {"phases": ["initiation", "planning", "execution", "closure"], "current_stage": "initial"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Factor", 
+            "attributes": {"level": "high", "description": "lack of information"}
+        },
+        {
+            "name": "Information Base",
+            "type": "Resource", 
+            "attributes": {"quantity": "limited", "quality": "variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "occurs during",
+            "target": "Project Lifecycle"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "increases during",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Project Lifecycle",
+            "relationship": "affects",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Information Base",
+            "relationship": "impacts",
+            "target": "Risk Identification"
+        }
+    ]
+}

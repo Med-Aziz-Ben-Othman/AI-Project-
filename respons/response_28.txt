@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Management", "Risk Control"], "definition": "The systematic identification, assessment, and prioritization of risks."} 
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Ambiguity", "Indeterminacy"], "definition": "A situation where the outcome of an event is not known."}
+        },
+        {
+            "name": "Assessment",
+            "type": "Activity", 
+            "attributes": {"synonyms": ["Evaluation", "Appraisal"], "definition": "The process of estimating the likelihood and impact of risks."}
+        },
+        {
+            "name": "Management",
+            "type": "Activity", 
+            "attributes": {"synonyms": ["Administration", "Oversight"], "definition": "The process of coordinating and overseeing resources to mitigate risks."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Includes",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Involves",
+            "target": "Assessment"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Requires",
+            "target": "Management"
+        }
+    ]
+}

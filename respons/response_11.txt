@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"responsibilities": "oversee project execution", "skills": "leadership, communication, risk management"}
+        },
+        {
+            "name": "Senior Management",
+            "type": "Role", 
+            "attributes": {"level": "executive", "influence": "high", "responsibilities": "strategic decision-making"}
+        },
+        {
+            "name": "Project Risk Management Activity",
+            "type": "Activity", 
+            "attributes": {"purpose": "identify, assess, and mitigate risks", "importance": "critical for project success"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "encourages",
+            "target": "Senior Management"
+        },
+        {
+            "source": "Senior Management",
+            "relationship": "supports",
+            "target": "Project Risk Management Activity"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "conducts",
+            "target": "Project Risk Management Activity"
+        }
+    ]
+}

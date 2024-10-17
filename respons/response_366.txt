@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Quantitative Analysis", "Risk Assessment"], "purpose": "To assess potential risks quantitatively", "outcomes": ["Risk Mitigation Strategies", "Cost Estimates"]}
+        },
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource", 
+            "attributes": {"synonyms": ["Contingency Fund"], "purpose": "To cover unexpected costs", "related_process": "Risk Management"}
+        },
+        {
+            "name": "Project Cost",
+            "type": "Financial Metric", 
+            "attributes": {"synonyms": ["Budget", "Financial Plan"], "components": ["Direct Costs", "Indirect Costs"], "importance": "Critical for project success"}
+        },
+        {
+            "name": "Schedule Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Schedule Assessment"], "purpose": "To evaluate potential scheduling risks", "outcomes": ["Revised Schedule", "Risk Mitigation Plans"]}
+        },
+        {
+            "name": "Cost Estimate",
+            "type": "Document", 
+            "attributes": {"synonyms": ["Budget Estimate"], "importance": "Basis for financial planning", "components": ["Labor Costs", "Material Costs"]}
+        },
+        {
+            "name": "Prudent Target",
+            "type": "Goal", 
+            "attributes": {"synonyms": ["Cautious Objective"], "importance": "To ensure realistic project goals", "context": "Project Management"}
+        },
+        {
+            "name": "Realistic Expectation",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["Feasible Expectation"], "importance": "To align stakeholder expectations with project realities", "context": "Project Delivery"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Incorporates",
+            "target": "Cost Estimate"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Produces",
+            "target": "Contingency Reserve"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Affects",
+            "target": "Project Cost"
+        },
+        {
+            "source": "Schedule Risk Analysis",
+            "relationship": "Incorporates",
+            "target": "Project Cost"
+        },
+        {
+            "source": "Schedule Risk Analysis",
+            "relationship": "Leads to",
+            "target": "Prudent Target"
+        },
+        {
+            "source": "Schedule Risk Analysis",
+            "relationship": "Leads to",
+            "target": "Realistic Expectation"
+        }
+    ]
+}

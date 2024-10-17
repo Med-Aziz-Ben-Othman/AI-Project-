@@ -1,0 +1,84 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Register",
+            "type": "Document",
+            "attributes": {
+                "description": "A tool used to identify and manage project risks.",
+                "synonyms": ["risk log", "risk management log"],
+                "components": ["risk identification", "risk assessment", "risk response planning"]
+            }
+        },
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {
+                "description": "Potential events that may negatively impact project objectives.",
+                "synonyms": ["threat", "hazard"],
+                "types": ["schedule risk", "cost risk", "performance risk"]
+            }
+        },
+        {
+            "name": "Root Cause",
+            "type": "Concept",
+            "attributes": {
+                "description": "The underlying reason for the occurrence of a risk.",
+                "synonyms": ["origin", "source"],
+                "examples": ["poor planning", "lack of resources"]
+            }
+        },
+        {
+            "name": "Project Element",
+            "type": "Component",
+            "attributes": {
+                "description": "Various components that make up a project.",
+                "examples": ["schedule", "cost", "scope", "resources"]
+            }
+        },
+        {
+            "name": "Schedule Activity",
+            "type": "Task",
+            "attributes": {
+                "description": "Specific tasks or activities outlined in the project schedule.",
+                "synonyms": ["scheduled task", "activity"],
+                "related_elements": ["duration", "start date", "end date"]
+            }
+        },
+        {
+            "name": "Cost Element",
+            "type": "Financial Component",
+            "attributes": {
+                "description": "Financial aspects related to project activities.",
+                "synonyms": ["cost factor", "budget item"],
+                "related_items": ["labor cost", "material cost", "overhead"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Register",
+            "relationship": "contains",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "identified by",
+            "target": "Root Cause"
+        },
+        {
+            "source": "Risk",
+            "relationship": "associated with",
+            "target": "Project Element"
+        },
+        {
+            "source": "Project Element",
+            "relationship": "includes",
+            "target": "Schedule Activity"
+        },
+        {
+            "source": "Project Element",
+            "relationship": "includes",
+            "target": "Cost Element"
+        }
+    ]
+}

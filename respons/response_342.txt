@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Particular Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["specific risk", "individual risk"], "description": "A specific risk that can affect project elements."} 
+        },
+        {
+            "name": "Element",
+            "type": "Project Component", 
+            "attributes": {"synonyms": ["component", "factor"], "description": "An aspect of the project that can be impacted by risks."}
+        },
+        {
+            "name": "Experience",
+            "type": "Factor", 
+            "attributes": {"synonyms": ["expertise", "knowledge"], "description": "The level of knowledge or proficiency that influences risk outcomes."}
+        },
+        {
+            "name": "Effect",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["impact", "result"], "description": "The result of a particular risk affecting a project element."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Particular Risk",
+            "relationship": "Affects",
+            "target": "Element"
+        },
+        {
+            "source": "Particular Risk",
+            "relationship": "Influences",
+            "target": "Experience"
+        },
+        {
+            "source": "Element",
+            "relationship": "Leads to",
+            "target": "Effect"
+        }
+    ]
+}

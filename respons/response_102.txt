@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"status": "may need adaptation", "context": "project management"}
+        },
+        {
+            "name": "Project Stakeholders",
+            "type": "Entity",
+            "attributes": {"role": "influencer", "clarity": "needs to become clearer"}
+        },
+        {
+            "name": "Change",
+            "type": "Concept",
+            "attributes": {"impact": "affects risk management plan"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "requires clarification from",
+            "target": "Project Stakeholders"
+        },
+        {
+            "source": "Change",
+            "relationship": "influences",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

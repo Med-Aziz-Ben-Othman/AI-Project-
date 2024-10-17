@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Assessment Document",
+            "type": "Document", 
+            "attributes": {"purpose": "Assess project risks qualitatively", "format": "Written"}
+        },
+        {
+            "name": "Key Project Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "Decision Maker", "influence": "High", "communication": "Required"}
+        },
+        {
+            "name": "Appropriate Response",
+            "type": "Action", 
+            "attributes": {"type": "Risk Mitigation", "criteria": "Based on assessment"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Assessment Document",
+            "relationship": "Communicates to",
+            "target": "Key Project Stakeholder"
+        },
+        {
+            "source": "Qualitative Assessment Document",
+            "relationship": "Forms basis for",
+            "target": "Appropriate Response"
+        }
+    ]
+}

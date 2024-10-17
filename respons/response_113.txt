@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk control", "risk mitigation"], "importance": "high"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Action", 
+            "attributes": {"synonyms": ["risk reaction", "risk handling"], "type": "proactive"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["interested party", "stakeholder group"], "role": "influencer"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal", 
+            "attributes": {"synonyms": ["project aim", "project target"], "priority": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management",
+            "relationship": "guides",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "prioritizes",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "supports",
+            "target": "Project Objective"
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Activity",
+            "type": "Project Element", 
+            "attributes": {"synonyms": ["Task", "Action"], "description": "A specific piece of work in a project."} 
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["Initiative", "Undertaking"], "description": "A temporary endeavor undertaken to create a unique product, service, or result."}
+        },
+        {
+            "name": "Work Breakdown Structure",
+            "type": "Project Management Tool", 
+            "attributes": {"synonyms": ["WBS"], "description": "A hierarchical decomposition of the total scope of work to accomplish the project objectives."}
+        },
+        {
+            "name": "Schedule",
+            "type": "Project Management Component", 
+            "attributes": {"synonyms": ["Timeline", "Project Plan"], "description": "A plan for carrying out a process or procedure, giving lists of intended events and times."}
+        },
+        {
+            "name": "Budget",
+            "type": "Financial Element", 
+            "attributes": {"synonyms": ["Cost Estimate", "Financial Plan"], "description": "An estimate of the total cost of the project."}
+        },
+        {
+            "name": "Work Assignment Document",
+            "type": "Documentation", 
+            "attributes": {"synonyms": ["Task Assignment", "Work Allocation"], "description": "A document that outlines specific work tasks assigned to team members."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Activity",
+            "relationship": "Includes",
+            "target": "Work Breakdown Structure"
+        },
+        {
+            "source": "Project",
+            "relationship": "Consists of",
+            "target": "Activity"
+        },
+        {
+            "source": "Work Breakdown Structure",
+            "relationship": "Defines",
+            "target": "Schedule"
+        },
+        {
+            "source": "Work Breakdown Structure",
+            "relationship": "Defines",
+            "target": "Budget"
+        },
+        {
+            "source": "Project",
+            "relationship": "Utilizes",
+            "target": "Work Assignment Document"
+        }
+    ]
+}

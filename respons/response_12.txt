@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["danger", "threat", "hazard"], "type": "project management risk", "level": "acceptable"}
+        },
+        {
+            "name": "Project Consultation",
+            "type": "Process", 
+            "attributes": {"synonyms": ["project advisory", "project review"], "stakeholders involved": "various"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "influencer", "importance": "high", "involvement": "active"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "evaluated during",
+            "target": "Project Consultation"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "participates in",
+            "target": "Project Consultation"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "influences",
+            "target": "Risk"
+        }
+    ]
+}

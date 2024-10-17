@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Activity", 
+            "attributes": {"synonyms": ["risk management", "risk assessment"], "importance": "high", "focus": "resource allocation"}
+        },
+        {
+            "name": "Resource Attention",
+            "type": "Resource", 
+            "attributes": {"type": "human", "level": "appropriate", "impact": "risk mitigation"}
+        },
+        {
+            "name": "Different Projects",
+            "type": "Entity", 
+            "attributes": {"variability": "high", "risk level": "variable"}
+        },
+        {
+            "name": "Risk Management Application",
+            "type": "Process", 
+            "attributes": {"application level": "varied", "context": "project-specific"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "requires",
+            "target": "Resource Attention"
+        },
+        {
+            "source": "Different Projects",
+            "relationship": "necessitate",
+            "target": "Risk Management Application"
+        },
+        {
+            "source": "Resource Attention",
+            "relationship": "influences",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Risk Management Application",
+            "relationship": "tailored for",
+            "target": "Different Projects"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"description": "A plan outlining how risks will be managed", "synonyms": ["RMP", "Risk Plan"], "key_components": ["risk identification", "risk assessment", "risk response"]}
+        },
+        {
+            "name": "Organizational Procedure",
+            "type": "Process", 
+            "attributes": {"description": "Formalized methods used within an organization", "synonyms": ["Org Procedure", "Corporate Procedure"], "relevance": "Provides guidelines for risk management activities"}
+        },
+        {
+            "name": "Enterprise Environmental Factor",
+            "type": "External Factor", 
+            "attributes": {"description": "Conditions that affect project management", "synonyms": ["EEF", "Environmental Factor"], "examples": ["regulatory requirements", "market conditions"]}
+        },
+        {
+            "name": "Strategic Risk Management",
+            "type": "Approach", 
+            "attributes": {"description": "Management of risks aligned with strategic goals", "synonyms": ["Strategic RM", "SRM"], "focus": "Long-term risk mitigation"}
+        },
+        {
+            "name": "Corporate Governance Process",
+            "type": "Framework", 
+            "attributes": {"description": "System of rules, practices, and processes by which a company is directed", "synonyms": ["Corporate Governance", "Governance Framework"], "importance": "Ensures accountability and transparency in risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Incorporates",
+            "target": "Organizational Procedure"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Considers",
+            "target": "Enterprise Environmental Factor"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Utilizes",
+            "target": "Strategic Risk Management"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Aligned with",
+            "target": "Corporate Governance Process"
+        }
+    ]
+}

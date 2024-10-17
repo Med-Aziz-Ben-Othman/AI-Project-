@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk evaluation"], "type": "step"}
+        },
+        {
+            "name": "Risk Category",
+            "type": "Category", 
+            "attributes": {"synonyms": ["risk classification"], "type": "classification"}
+        },
+        {
+            "name": "Source of Risk",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["risk origin", "risk source"], "type": "external/internal"}
+        },
+        {
+            "name": "Cause of Risk",
+            "type": "Factor", 
+            "attributes": {"synonyms": ["risk trigger", "risk factor"], "type": "underlying cause"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Analysis",
+            "relationship": "categorizes",
+            "target": "Risk Category"
+        },
+        {
+            "source": "Risk Category",
+            "relationship": "is determined by",
+            "target": "Source of Risk"
+        },
+        {
+            "source": "Risk Category",
+            "relationship": "is influenced by",
+            "target": "Cause of Risk"
+        }
+    ]
+}

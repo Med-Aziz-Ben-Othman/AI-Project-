@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Residual Risk",
+            "type": "Risk Concept", 
+            "attributes": {"definition": "The risk that remains after risk mitigation efforts", "synonyms": ["remaining risk", "after-mitigation risk"], "type": "Project Risk"}
+        },
+        {
+            "name": "Document",
+            "type": "Artifact", 
+            "attributes": {"type": "Project Documentation", "purpose": "To analyze and communicate risks"}
+        },
+        {
+            "name": "Relevant Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "Stakeholder involved in risk management", "interest": "Affected by residual risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Residual Risk",
+            "relationship": "Identified In",
+            "target": "Document"
+        },
+        {
+            "source": "Document",
+            "relationship": "Communicated To",
+            "target": "Relevant Stakeholder"
+        },
+        {
+            "source": "Residual Risk",
+            "relationship": "Analyzed In",
+            "target": "Document"
+        }
+    ]
+}

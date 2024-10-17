@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management", "project risk analysis"], "importance": "high", "type": "standard practice"}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["qualitative analysis", "risk assessment"], "purpose": "evaluate risks qualitatively", "type": "analysis"}
+        },
+        {
+            "name": "Chapter",
+            "type": "Document Section", 
+            "attributes": {"number": "specific", "context": "related to project management"}
+        },
+        {
+            "name": "Figure",
+            "type": "Visual Aid", 
+            "attributes": {"type": "diagram", "purpose": "illustrate analysis"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Chapter",
+            "relationship": "contains",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "illustrated by",
+            "target": "Figure"
+        }
+    ]
+}

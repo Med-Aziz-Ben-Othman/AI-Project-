@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Collection Risk Data",
+            "type": "Risk Management Activity", 
+            "attributes": {"synonyms": ["data collection", "risk data gathering"], "importance": "high", "frequency": "ongoing"}
+        },
+        {
+            "name": "Resource Time",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["time resource", "time allocation"], "availability": "limited", "criticality": "essential"}
+        },
+        {
+            "name": "Management Support",
+            "type": "Support Entity", 
+            "attributes": {"synonyms": ["management assistance", "leadership support"], "level": "high", "impact": "positive"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Collection Risk Data",
+            "relationship": "requires",
+            "target": "Resource Time"
+        },
+        {
+            "source": "Collection Risk Data",
+            "relationship": "needs",
+            "target": "Management Support"
+        }
+    ]
+}

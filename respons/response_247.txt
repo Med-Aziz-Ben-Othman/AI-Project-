@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Factor",
+            "type": "Risk Management Concept",
+            "attributes": {"importance": "value", "urgency": "value", "proximity": "value"}
+        },
+        {
+            "name": "Urgency",
+            "type": "Risk Attribute",
+            "attributes": {"definition": "time sensitivity", "synonyms": ["immediacy", "priority"]}
+        },
+        {
+            "name": "Proximity",
+            "type": "Risk Attribute",
+            "attributes": {"definition": "closeness to occurrence", "synonyms": ["nearness", "closeness"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Factor",
+            "relationship": "considers",
+            "target": "Urgency"
+        },
+        {
+            "source": "Risk Factor",
+            "relationship": "considers",
+            "target": "Proximity"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Analysis",
+            "type": "Analysis Method", 
+            "attributes": {"description": "A method for assessing risks based on qualitative criteria", "synonyms": ["Qualitative Risk Assessment", "Qualitative Evaluation"]}
+        },
+        {
+            "name": "High Impact",
+            "type": "Risk Attribute", 
+            "attributes": {"description": "A level of impact that is significant", "synonyms": ["Severe Impact", "Critical Impact"], "scale": "High"}
+        },
+        {
+            "name": "Medium Probability",
+            "type": "Risk Attribute", 
+            "attributes": {"description": "A likelihood of occurrence that is moderate", "synonyms": ["Moderate Likelihood", "Average Probability"], "scale": "Medium"}
+        },
+        {
+            "name": "Defined Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"description": "A formalized plan outlining risk management strategies", "synonyms": ["Risk Management Strategy", "Risk Management Framework"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Analysis",
+            "relationship": "Utilizes",
+            "target": "High Impact"
+        },
+        {
+            "source": "Qualitative Analysis",
+            "relationship": "Utilizes",
+            "target": "Medium Probability"
+        },
+        {
+            "source": "Qualitative Analysis",
+            "relationship": "Informs",
+            "target": "Defined Risk Management Plan"
+        },
+        {
+            "source": "Defined Risk Management Plan",
+            "relationship": "Includes",
+            "target": "High Impact"
+        },
+        {
+            "source": "Defined Risk Management Plan",
+            "relationship": "Includes",
+            "target": "Medium Probability"
+        }
+    ]
+}

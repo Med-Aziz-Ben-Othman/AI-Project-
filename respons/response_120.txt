@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Inherent Tolerance",
+            "type": "Risk Attribute", 
+            "attributes": {"synonyms": ["built-in tolerance", "natural tolerance"], "description": "The built-in capacity to endure uncertainty in project objectives."}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["ambiguity", "indeterminacy"], "description": "The lack of certainty regarding project outcomes."}
+        },
+        {
+            "name": "Relative Importance",
+            "type": "Risk Metric", 
+            "attributes": {"synonyms": ["priority", "significance"], "description": "The degree to which a risk factor affects project goals."}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Project Goal", 
+            "attributes": {"synonyms": ["project aim", "project target"], "description": "Specific goals that the project is intended to achieve."}
+        },
+        {
+            "name": "Miss",
+            "type": "Risk Outcome", 
+            "attributes": {"synonyms": ["failure", "neglect"], "description": "The failure to achieve a specific project objective."}
+        },
+        {
+            "name": "Specification",
+            "type": "Project Requirement", 
+            "attributes": {"synonyms": ["spec", "requirement"], "description": "Detailed description of the project's objectives and requirements."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Inherent Tolerance",
+            "relationship": "affects",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "influences",
+            "target": "Relative Importance"
+        },
+        {
+            "source": "Relative Importance",
+            "relationship": "determines",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Project Objective",
+            "relationship": "can be",
+            "target": "Miss"
+        },
+        {
+            "source": "Project Objective",
+            "relationship": "defined by",
+            "target": "Specification"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["PM", "Project Oversight"], "importance": "High", "related_fields": ["Risk Management", "Resource Management"]}
+        },
+        {
+            "name": "Inherent Uncertainty",
+            "type": "Concept",
+            "attributes": {"synonyms": ["Intrinsic Uncertainty", "Natural Variability"], "impact": "High", "context": "Project Risks"}
+        },
+        {
+            "name": "Interface Structure",
+            "type": "Component",
+            "attributes": {"synonyms": ["System Interface", "Integration Framework"], "function": "Connects various elements", "importance": "Critical"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Management Framework", "Risk Assessment Process"], "stages": ["Identification", "Analysis", "Response"], "goal": "Minimize Risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "addresses",
+            "target": "Inherent Uncertainty"
+        },
+        {
+            "source": "Project Management",
+            "relationship": "requires",
+            "target": "Interface Structure"
+        },
+        {
+            "source": "Interface Structure",
+            "relationship": "supports",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Inherent Uncertainty",
+            "relationship": "affects",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

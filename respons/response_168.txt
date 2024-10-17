@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Methodology",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["risk management approach", "risk management framework"], "description": "A structured approach to identify, assess, and manage risks."}
+        },
+        {
+            "name": "Risk Management Organization",
+            "type": "Organization",
+            "attributes": {"roles": ["risk manager", "project manager"], "responsibilities": ["oversee risk management", "implement risk strategies"], "authority": "decision-making on risk-related issues"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"risk_tolerance": "criterion", "description": "Individuals or groups with an interest in the project outcomes."}
+        },
+        {
+            "name": "Risk Management Tool",
+            "type": "Tool",
+            "attributes": {"guideline_use": "to assist in managing risks", "threshold": "defined limit for risk acceptance"}
+        },
+        {
+            "name": "Communication Plan",
+            "type": "Plan",
+            "attributes": {"strategy": "method for communicating risks", "description": "A plan to ensure effective communication among stakeholders."}
+        },
+        {
+            "name": "Risk Breakdown Structure",
+            "type": "Structure",
+            "attributes": {"definition": "a hierarchical representation of risks", "description": "Organizes risks into categories for better management."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Methodology",
+            "relationship": "defines",
+            "target": "Risk Management Organization"
+        },
+        {
+            "source": "Risk Management Organization",
+            "relationship": "involves",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "has",
+            "target": "Risk Tolerance Criterion"
+        },
+        {
+            "source": "Risk Management Tool",
+            "relationship": "provides",
+            "target": "guideline use"
+        },
+        {
+            "source": "Risk Management Tool",
+            "relationship": "sets",
+            "target": "threshold"
+        },
+        {
+            "source": "Communication Plan",
+            "relationship": "supports",
+            "target": "Risk Management Methodology"
+        },
+        {
+            "source": "Risk Breakdown Structure",
+            "relationship": "is part of",
+            "target": "Risk Management Methodology"
+        }
+    ]
+}

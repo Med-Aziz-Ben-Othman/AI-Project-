@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process",
+            "attributes": {"frequency": "frequency", "effort": "effort", "dependency": "depend", "event": "event", "monitoring": "monitor", "control": "control"} 
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"type": "project", "context": "within project"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {"synonyms": ["threat", "hazard"], "related_to": "risk management process"}
+        },
+        {
+            "name": "Chapter",
+            "type": "Document",
+            "attributes": {"context": "risk management", "content": "monitoring and control"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "describes",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "applies to",
+            "target": "Project"
+        },
+        {
+            "source": "Risk",
+            "relationship": "is discussed in",
+            "target": "Chapter"
+        },
+        {
+            "source": "Project",
+            "relationship": "involves",
+            "target": "Risk Management Process"
+        }
+    ]
+}

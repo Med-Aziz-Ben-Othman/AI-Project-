@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Indicator of Urgency",
+            "type": "Risk Indicator", 
+            "attributes": {"synonyms": ["Urgency Indicator"], "definition": "A signal that prompts attention to potential risks.", "importance": "High"}
+        },
+        {
+            "name": "Lead Time",
+            "type": "Project Attribute", 
+            "attributes": {"definition": "The amount of time required to prepare for and execute a risk response.", "importance": "Critical"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Risk Management Action", 
+            "attributes": {"definition": "Actions taken to mitigate or manage identified risks.", "types": ["Avoidance", "Mitigation", "Transfer", "Acceptance"]}
+        },
+        {
+            "name": "Clarity",
+            "type": "Quality Attribute", 
+            "attributes": {"definition": "The quality of being clear and understandable in communication regarding risks.", "importance": "Essential"}
+        },
+        {
+            "name": "Symptom",
+            "type": "Risk Indicator", 
+            "attributes": {"synonyms": ["Warning Sign"], "definition": "Observable signs that indicate a potential risk.", "importance": "Medium"}
+        },
+        {
+            "name": "Detectability",
+            "type": "Risk Characteristic", 
+            "attributes": {"definition": "The ability to identify or recognize a risk before it escalates.", "importance": "High"}
+        },
+        {
+            "name": "Response Trigger",
+            "type": "Risk Management Concept", 
+            "attributes": {"definition": "Conditions under which a risk response is initiated.", "importance": "Critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Indicator of Urgency",
+            "relationship": "Includes",
+            "target": "Lead Time"
+        },
+        {
+            "source": "Lead Time",
+            "relationship": "Necessary to Execute",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "Requires",
+            "target": "Clarity"
+        },
+        {
+            "source": "Symptom",
+            "relationship": "Acts as a",
+            "target": "Warning Sign"
+        },
+        {
+            "source": "Symptom",
+            "relationship": "Indicates",
+            "target": "Detectability"
+        },
+        {
+            "source": "Detectability",
+            "relationship": "May Trigger",
+            "target": "Response Trigger"
+        }
+    ]
+}

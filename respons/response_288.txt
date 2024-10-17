@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Occurrence Time",
+            "type": "Risk Factor", 
+            "attributes": {"description": "Time when risks may occur", "importance": "High"}
+        },
+        {
+            "name": "Resource Recovery",
+            "type": "Mitigation Strategy", 
+            "attributes": {"description": "Process of recovering resources", "effectiveness": "Variable"}
+        },
+        {
+            "name": "Scarce Resource",
+            "type": "Resource", 
+            "attributes": {"description": "Limited availability of resources", "impact": "Critical"}
+        },
+        {
+            "name": "Risk Mitigation",
+            "type": "Management Strategy", 
+            "attributes": {"description": "Strategies to reduce risk impact", "goal": "Increase project success"}
+        },
+        {
+            "name": "Realistic Picture of Problems",
+            "type": "Outcome", 
+            "attributes": {"description": "Accurate understanding of risk-related issues", "benefit": "Informed decision-making"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Occurrence Time",
+            "relationship": "Affects",
+            "target": "Risk Mitigation"
+        },
+        {
+            "source": "Resource Recovery",
+            "relationship": "Supports",
+            "target": "Risk Mitigation"
+        },
+        {
+            "source": "Scarce Resource",
+            "relationship": "Challenges",
+            "target": "Risk Mitigation"
+        },
+        {
+            "source": "Risk Mitigation",
+            "relationship": "Leads to",
+            "target": "Realistic Picture of Problems"
+        },
+        {
+            "source": "Scarce Resource",
+            "relationship": "Impacts",
+            "target": "Realistic Picture of Problems"
+        }
+    ]
+}

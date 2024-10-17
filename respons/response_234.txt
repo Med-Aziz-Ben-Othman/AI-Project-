@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Common Effect Group Risk",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["Group Risk", "Common Risk"], "description": "A risk that affects multiple areas or components of a project."}
+        },
+        {
+            "name": "Identification Area",
+            "type": "Risk Management Process", 
+            "attributes": {"synonyms": ["Risk Identification Area"], "description": "The domain or scope in which risks are identified."}
+        },
+        {
+            "name": "Greatest Risk Exposure",
+            "type": "Risk Assessment Metric", 
+            "attributes": {"synonyms": ["Maximum Risk Exposure"], "description": "The highest level of risk that a project may encounter."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Common Effect Group Risk",
+            "relationship": "Allows identification of",
+            "target": "Identification Area"
+        },
+        {
+            "source": "Identification Area",
+            "relationship": "Identifies",
+            "target": "Greatest Risk Exposure"
+        }
+    ]
+}

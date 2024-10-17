@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Objective",
+            "type": "Objective", 
+            "attributes": {"description": "The goal or target of the project", "synonyms": ["project aim", "project goal"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Risk Factor", 
+            "attributes": {"description": "Potential events or conditions that may negatively impact the project objective", "synonyms": ["threat", "hazard"], "impact": "may affect project objective"}
+        },
+        {
+            "name": "Risk Identification Process",
+            "type": "Process", 
+            "attributes": {"description": "Systematic approach to recognize and assess risks", "synonyms": ["risk assessment", "risk analysis"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification Process",
+            "relationship": "assists in",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "may affect",
+            "target": "Project Objective"
+        }
+    ]
+}

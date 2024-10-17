@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk assessment", "risk evaluation"], "importance": "high", "frequency": "repeatable"}
+        },
+        {
+            "name": "Key Milestone",
+            "type": "Project Element",
+            "attributes": {"definition": "significant event in project timeline", "impact": "high"}
+        },
+        {
+            "name": "Project Operating Environment",
+            "type": "Context",
+            "attributes": {"factors": ["external conditions", "internal conditions"], "change_type": "significant"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "affects",
+            "target": "Key Milestone"
+        },
+        {
+            "source": "Key Milestone",
+            "relationship": "is influenced by",
+            "target": "Project Operating Environment"
+        },
+        {
+            "source": "Project Operating Environment",
+            "relationship": "triggers",
+            "target": "Risk Identification"
+        }
+    ]
+}

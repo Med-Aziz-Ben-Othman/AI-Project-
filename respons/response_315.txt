@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Monte Carlo Simulation",
+            "type": "Quantitative Method", 
+            "attributes": {"description": "A statistical method used to estimate the impact of risk and uncertainty in prediction and forecasting models.", "synonyms": ["Monte Carlo", "Simulation Method"], "application": "Risk analysis"}
+        },
+        {
+            "name": "Decision Tree Analysis",
+            "type": "Quantitative Method", 
+            "attributes": {"description": "A graphical representation used to make decisions and assess the risks associated with different choices.", "synonyms": ["Decision Trees", "Tree Analysis"], "application": "Risk assessment"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"description": "Potential events or conditions that could impact project objectives.", "type": "Project Risk", "examples": ["Financial Risk", "Operational Risk"]}
+        },
+        {
+            "name": "Overall Project Objective",
+            "type": "Project Goal", 
+            "attributes": {"description": "The primary aim or outcome that a project seeks to achieve.", "attributes": ["Success Criteria", "Deliverables"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Monte Carlo Simulation",
+            "relationship": "Method For",
+            "target": "Risk"
+        },
+        {
+            "source": "Decision Tree Analysis",
+            "relationship": "Method For",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "Affects",
+            "target": "Overall Project Objective"
+        },
+        {
+            "source": "Monte Carlo Simulation",
+            "relationship": "Incorporates",
+            "target": "Decision Tree Analysis"
+        }
+    ]
+}

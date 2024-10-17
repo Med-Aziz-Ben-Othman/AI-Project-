@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"status": "approved", "purpose": "management of risks", "relatedTo": "principal deliverable"}
+        },
+        {
+            "name": "Principal Deliverable Plan",
+            "type": "Plan", 
+            "attributes": {"type": "deliverable", "importance": "high"}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"steps": "identification, assessment, response, monitoring", "goal": "mitigate risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "approves",
+            "target": "Principal Deliverable Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "includes",
+            "target": "Risk Management Process"
+        }
+    ]
+}

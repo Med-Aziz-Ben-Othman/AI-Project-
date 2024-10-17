@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Emergent Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["unnotable risk"], "status": "notable", "requirement": "identify"}
+        },
+        {
+            "name": "Risk Identification Process",
+            "type": "Process", 
+            "attributes": {"type": "iterative", "action": "repeat", "goal": "find new risks"}
+        },
+        {
+            "name": "Notable Risk",
+            "type": "Risk Type", 
+            "attributes": {"status": "notable", "origin": "previous iteration"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Emergent Risk",
+            "relationship": "requires",
+            "target": "Risk Identification Process"
+        },
+        {
+            "source": "Risk Identification Process",
+            "relationship": "results in",
+            "target": "Notable Risk"
+        },
+        {
+            "source": "Notable Risk",
+            "relationship": "emerges from",
+            "target": "Emergent Risk"
+        }
+    ]
+}

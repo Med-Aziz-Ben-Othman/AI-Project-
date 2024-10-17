@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {"synonyms": ["risk management"], "type": "standard practice"}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process",
+            "attributes": {"synonyms": ["qualitative analysis"], "type": "analysis technique"}
+        },
+        {
+            "name": "High-Quality Information",
+            "type": "Resource",
+            "attributes": {"synonyms": ["reliable data", "accurate information"], "importance": "essential for risk assessment"}
+        },
+        {
+            "name": "Risk Collection",
+            "type": "Activity",
+            "attributes": {"synonyms": ["risk gathering"], "type": "data collection"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "requires",
+            "target": "High-Quality Information"
+        },
+        {
+            "source": "High-Quality Information",
+            "relationship": "supports",
+            "target": "Risk Collection"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk evaluation"], "purpose": "identifying potential risks in a project"}
+        },
+        {
+            "name": "Cost",
+            "type": "Metric", 
+            "attributes": {"description": "financial resources required for the project", "unit": "currency"}
+        },
+        {
+            "name": "Schedule",
+            "type": "Metric", 
+            "attributes": {"description": "timeline for project completion", "unit": "days"}
+        },
+        {
+            "name": "Monte Carlo Simulation",
+            "type": "Method", 
+            "attributes": {"synonyms": ["Monte Carlo method"], "application": "risk assessment and forecasting"}
+        },
+        {
+            "name": "Example",
+            "type": "Concept", 
+            "attributes": {"description": "a specific instance of applying risk analysis"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Analysis",
+            "relationship": "uses",
+            "target": "Monte Carlo Simulation"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "involves",
+            "target": "Cost"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "involves",
+            "target": "Schedule"
+        },
+        {
+            "source": "Monte Carlo Simulation",
+            "relationship": "provides",
+            "target": "Example"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Technique",
+            "type": "Risk Management Methodology", 
+            "attributes": {"synonyms": ["Quantitative Analysis", "Statistical Technique"], "purpose": "Assess project risks quantitatively"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"category": "Project Management", "status": "Active"}
+        },
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"method": "Management Strategy", "goal": "Minimize adverse effects of risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Technique",
+            "relationship": "Requires",
+            "target": "Project"
+        },
+        {
+            "source": "Project",
+            "relationship": "Involves",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "Ensures",
+            "target": "Effective Management"
+        }
+    ]
+}

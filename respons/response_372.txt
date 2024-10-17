@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "Risk Attitude", "synonyms": ["interest holder", "stakeholder"], "importance": "high"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"status": "specified", "type": "risk management", "importance": "critical"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {"status": "identified", "synonyms": ["threat", "hazard"], "importance": "high"}
+        },
+        {
+            "name": "Constraint",
+            "type": "Concept",
+            "attributes": {"type": "limitation", "importance": "medium"}
+        },
+        {
+            "name": "Assumption",
+            "type": "Concept",
+            "attributes": {"type": "presumption", "importance": "medium"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Stakeholder",
+            "relationship": "has",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "includes",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "considered with",
+            "target": "Constraint"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "based on",
+            "target": "Assumption"
+        }
+    ]
+}

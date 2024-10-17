@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Root Cause",
+            "type": "Risk Source", 
+            "attributes": {"synonyms": ["common source", "underlying issue"], "type": "origin of risks"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Management Strategy", 
+            "attributes": {"effectiveness": "may be effective", "focus": "address root cause"}
+        },
+        {
+            "name": "Risks",
+            "type": "Project Risk", 
+            "attributes": {"synonyms": ["uncertainties", "threats"], "nature": "potential negative impacts"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Root Cause",
+            "relationship": "generates",
+            "target": "Risks"
+        },
+        {
+            "source": "Root Cause",
+            "relationship": "is addressed by",
+            "target": "Risk Response"
+        }
+    ]
+}

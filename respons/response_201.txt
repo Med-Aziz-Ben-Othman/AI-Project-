@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Motivational Bias",
+            "type": "Cognitive Bias", 
+            "attributes": {"definition": "A tendency to favor information that supports one's desires", "synonyms": ["desirability bias", "wishful thinking"], "impact": "Can lead to poor decision-making in project management"}
+        },
+        {
+            "name": "Heuristic",
+            "type": "Decision-Making Tool", 
+            "attributes": {"definition": "A mental shortcut that allows people to solve problems quickly", "examples": ["rule of thumb", "educated guess"], "risk": "May lead to cognitive biases if relied upon excessively"}
+        },
+        {
+            "name": "Judgment",
+            "type": "Cognitive Process", 
+            "attributes": {"definition": "The ability to make considered decisions", "synonyms": ["decision-making", "evaluation"], "risk": "Can be impaired by biases"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Motivational Bias",
+            "relationship": "affects",
+            "target": "Judgment"
+        },
+        {
+            "source": "Heuristic",
+            "relationship": "may lead to",
+            "target": "Motivational Bias"
+        },
+        {
+            "source": "Judgment",
+            "relationship": "utilizes",
+            "target": "Heuristic"
+        }
+    ]
+}

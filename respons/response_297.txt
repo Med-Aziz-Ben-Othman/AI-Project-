@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Register",
+            "type": "Document", 
+            "attributes": {"purpose": "List of identified risks", "status": "Active", "format": "Digital"}
+        },
+        {
+            "name": "Risk Prioritization",
+            "type": "Process", 
+            "attributes": {"goal": "Identify critical risks", "method": "Qualitative and Quantitative"}
+        },
+        {
+            "name": "Project Participant",
+            "type": "Role", 
+            "attributes": {"responsibility": "Manage risks", "influence": "High"}
+        },
+        {
+            "name": "Project Analysis",
+            "type": "Activity", 
+            "attributes": {"focus": "Risk assessment", "frequency": "Ongoing"}
+        },
+        {
+            "name": "Action Plan",
+            "type": "Document", 
+            "attributes": {"purpose": "Mitigate risks", "components": "Tasks, deadlines, responsibilities"}
+        },
+        {
+            "name": "Project Plan",
+            "type": "Document", 
+            "attributes": {"scope": "Project objectives", "timeline": "Defined", "stakeholders": "Involved"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Register",
+            "relationship": "Contains",
+            "target": "Risk Prioritization"
+        },
+        {
+            "source": "Project Participant",
+            "relationship": "Responsible for",
+            "target": "Risk Prioritization"
+        },
+        {
+            "source": "Project Analysis",
+            "relationship": "Informs",
+            "target": "Risk Register"
+        },
+        {
+            "source": "Risk Prioritization",
+            "relationship": "Leads to",
+            "target": "Action Plan"
+        },
+        {
+            "source": "Action Plan",
+            "relationship": "Supports",
+            "target": "Project Plan"
+        }
+    ]
+}

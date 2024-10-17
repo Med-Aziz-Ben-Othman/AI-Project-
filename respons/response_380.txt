@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "ensure risk response effective", "synonyms": ["risk manager", "risk facilitator"]}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Concept", 
+            "attributes": {"type": "action", "attributes": ["effective", "planning", "additional"]}
+        },
+        {
+            "name": "Risk Action Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "ensure agreed-upon risk response", "synonyms": ["action manager", "response coordinator"]}
+        },
+        {
+            "name": "Risk Plan",
+            "type": "Document", 
+            "attributes": {"type": "planning document", "attributes": ["timely manner"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Owner",
+            "relationship": "responsible for",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Action Owner",
+            "relationship": "responsible for",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "requires",
+            "target": "Risk Plan"
+        }
+    ]
+}

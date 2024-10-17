@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Probability",
+            "type": "Risk Factor", 
+            "attributes": {"definition": "Likelihood of a risk occurring", "synonyms": ["likelihood", "chance"]}
+        },
+        {
+            "name": "Risk Impact",
+            "type": "Risk Factor", 
+            "attributes": {"definition": "Effect of a risk on project objectives", "synonyms": ["consequence", "effect"]}
+        },
+        {
+            "name": "Overall Project",
+            "type": "Project Entity", 
+            "attributes": {"definition": "The complete project under consideration", "synonyms": ["entire project", "full project"]}
+        },
+        {
+            "name": "Specific Risk",
+            "type": "Risk Type", 
+            "attributes": {"definition": "A particular risk identified in the project", "synonyms": ["particular risk", "identified risk"]}
+        },
+        {
+            "name": "Importance",
+            "type": "Evaluation Metric", 
+            "attributes": {"definition": "Significance of a risk to project success", "synonyms": ["significance", "value"]}
+        },
+        {
+            "name": "Specific Objective",
+            "type": "Project Goal", 
+            "attributes": {"definition": "Defined goal that the project aims to achieve", "synonyms": ["target objective", "project aim"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Probability",
+            "relationship": "Affects",
+            "target": "Risk Impact"
+        },
+        {
+            "source": "Risk Impact",
+            "relationship": "Influences",
+            "target": "Overall Project"
+        },
+        {
+            "source": "Specific Risk",
+            "relationship": "Has Importance",
+            "target": "Importance"
+        },
+        {
+            "source": "Importance",
+            "relationship": "Contrasts",
+            "target": "Specific Objective"
+        }
+    ]
+}

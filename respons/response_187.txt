@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk analysis"], "importance": "high"}
+        },
+        {
+            "name": "Opportunity Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["opportunity assessment", "opportunity analysis"], "importance": "medium"}
+        },
+        {
+            "name": "Opportunity",
+            "type": "Concept", 
+            "attributes": {"description": "a favorable circumstance", "type": "positive risk"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "ensures",
+            "target": "Opportunity Identification"
+        },
+        {
+            "source": "Opportunity Identification",
+            "relationship": "considers",
+            "target": "Opportunity"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "nodes": [
+        {
+            "name": "Impact Estimate",
+            "type": "Project Management Activity", 
+            "attributes": {"synonyms": ["impact assessment", "impact evaluation"], "related_terms": ["risk assessment", "cost estimation"]}
+        },
+        {
+            "name": "Resource Requirement",
+            "type": "Project Management Concept", 
+            "attributes": {"synonyms": ["resource needs", "resource allocation"], "related_terms": ["resource planning", "project resources"]}
+        },
+        {
+            "name": "Cost",
+            "type": "Financial Metric", 
+            "attributes": {"synonyms": ["expenses", "budget"], "related_terms": ["cost estimation", "cost management"]}
+        },
+        {
+            "name": "Duration",
+            "type": "Time Metric", 
+            "attributes": {"synonyms": ["time frame", "timeline"], "related_terms": ["project duration", "schedule management"]}
+        },
+        {
+            "name": "Scope Change",
+            "type": "Project Management Event", 
+            "attributes": {"synonyms": ["scope alteration", "scope modification"], "related_terms": ["scope creep", "change management"]}
+        },
+        {
+            "name": "Replanning",
+            "type": "Project Management Activity", 
+            "attributes": {"synonyms": ["rescheduling", "plan adjustment"], "related_terms": ["project adjustment", "plan revision"]}
+        },
+        {
+            "name": "Forward Strategy",
+            "type": "Project Management Approach", 
+            "attributes": {"synonyms": ["proactive strategy", "forward planning"], "related_terms": ["strategic planning", "risk management strategy"]}
+        },
+        {
+            "name": "Resource Allocation",
+            "type": "Project Management Process", 
+            "attributes": {"synonyms": ["resource assignment", "resource distribution"], "related_terms": ["task assignment", "resource planning"]}
+        },
+        {
+            "name": "Task Report",
+            "type": "Project Management Document", 
+            "attributes": {"synonyms": ["task update", "progress report"], "related_terms": ["status report", "performance reporting"]}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Project Role", 
+            "attributes": {"synonyms": ["interested party", "project participant"], "related_terms": ["stakeholder management", "stakeholder engagement"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Impact Estimate",
+            "relationship": "assesses",
+            "target": "Resource Requirement"
+        },
+        {
+            "source": "Impact Estimate",
+            "relationship": "affects",
+            "target": "Cost"
+        },
+        {
+            "source": "Impact Estimate",
+            "relationship": "affects",
+            "target": "Duration"
+        },
+        {
+            "source": "Scope Change",
+            "relationship": "requires",
+            "target": "Replanning"
+        },
+        {
+            "source": "Forward Strategy",
+            "relationship": "informs",
+            "target": "Replanning"
+        },
+        {
+            "source": "Resource Allocation",
+            "relationship": "is part of",
+            "target": "Task Report"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "receives",
+            "target": "Task Report"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "influences",
+            "target": "Scope Change"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk detection"], "importance": "necessary", "stage": "initial"}
+        },
+        {
+            "name": "Risk Evaluation",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk analysis"], "importance": "high", "criteria": ["importance", "level"]}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Entity", 
+            "attributes": {"examples": ["financial risk", "operational risk"], "importance": "varies"}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["project risk exposure"], "importance": "critical", "level": "aggregate"}
+        },
+        {
+            "name": "Appropriate Response",
+            "type": "Action", 
+            "attributes": {"synonyms": ["risk mitigation", "risk response strategy"], "importance": "essential"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "leads to",
+            "target": "Risk Evaluation"
+        },
+        {
+            "source": "Risk Evaluation",
+            "relationship": "assesses",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "contributes to",
+            "target": "Overall Project Risk"
+        },
+        {
+            "source": "Overall Project Risk",
+            "relationship": "requires",
+            "target": "Appropriate Response"
+        }
+    ]
+}

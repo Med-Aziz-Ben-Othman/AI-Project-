@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"scope": "Define project boundaries", "objective": "Identify and manage risks", "synonyms": ["risk management process", "risk assessment"]}
+        },
+        {
+            "name": "Risk Identification",
+            "type": "Activity", 
+            "attributes": {"description": "Identifying potential risks", "importance": "Critical for risk management"}
+        },
+        {
+            "name": "Genuine Risk",
+            "type": "Risk Type", 
+            "attributes": {"definition": "Real potential threats", "examples": ["financial loss", "schedule delays"]}
+        },
+        {
+            "name": "Non-Risks",
+            "type": "Risk Type", 
+            "attributes": {"definition": "Elements that do not constitute a risk", "examples": ["problems", "issues"]}
+        },
+        {
+            "name": "Cause and Effect",
+            "type": "Concept", 
+            "attributes": {"definition": "Relationship between events", "importance": "Understanding impacts of risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Includes",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "Distinguishes",
+            "target": "Genuine Risk"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "Distinguishes",
+            "target": "Non-Risks"
+        },
+        {
+            "source": "Genuine Risk",
+            "relationship": "Influences",
+            "target": "Cause and Effect"
+        },
+        {
+            "source": "Non-Risks",
+            "relationship": "Contrasts with",
+            "target": "Genuine Risk"
+        }
+    ]
+}

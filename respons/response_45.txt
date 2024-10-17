@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project",
+            "type": "Entity Type", 
+            "attributes": {"synonyms": ["initiative", "task"], "risk_level": "varying", "scalability": "scalable"}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process Type", 
+            "attributes": {"steps": "multi-step", "objective": "mitigate risks"}
+        },
+        {
+            "name": "Risk Level",
+            "type": "Risk Type", 
+            "attributes": {"degree": "varied", "exposure": "different"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project",
+            "relationship": "exposes",
+            "target": "Risk Level"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "incorporates",
+            "target": "Risk Level"
+        },
+        {
+            "source": "Project",
+            "relationship": "utilizes",
+            "target": "Risk Management Process"
+        }
+    ]
+}

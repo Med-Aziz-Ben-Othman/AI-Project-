@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["recognized risk", "detected risk"], "importance": "high"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process",
+            "attributes": {"synonyms": ["quantitative assessment", "statistical risk analysis"], "steps": ["data collection", "risk modeling", "risk evaluation"]}
+        },
+        {
+            "name": "Significant Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["major risk", "critical risk"], "impact": "high"}
+        },
+        {
+            "name": "Effect Analysis",
+            "type": "Process",
+            "attributes": {"synonyms": ["impact analysis", "effect evaluation"], "methods": ["scenario analysis", "sensitivity analysis"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "requires",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "considers",
+            "target": "Significant Risk"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "involves",
+            "target": "Effect Analysis"
+        }
+    ]
+}

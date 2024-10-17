@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"purpose": "Assess project risks", "objective": "Evaluate risk characteristics", "synonyms": ["Qualitative risk assessment", "Risk evaluation process"]}
+        },
+        {
+            "name": "Project Risk",
+            "type": "Entity", 
+            "attributes": {"characteristics": "Identified risks", "priority": "Risk priority", "base": "Agreed-upon characteristics"}
+        },
+        {
+            "name": "Risk Priority",
+            "type": "Metric", 
+            "attributes": {"definition": "Assessment of risk importance", "criteria": "Agreed-upon characteristics"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Evaluates",
+            "target": "Project Risk"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "Has",
+            "target": "Risk Priority"
+        }
+    ]
+}

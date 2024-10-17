@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Approach",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["strategy", "method"], "type": "project management"}
+        },
+        {
+            "name": "Realism",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["pragmatism", "real-world applicability"], "importance": "high"}
+        },
+        {
+            "name": "Usefulness",
+            "type": "Quality", 
+            "attributes": {"synonyms": ["utility", "benefit"], "importance": "high"}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["qualitative assessment", "subjective risk analysis"], "focus": "non-numerical evaluation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Approach",
+            "relationship": "contributes to",
+            "target": "Realism"
+        },
+        {
+            "source": "Approach",
+            "relationship": "enhances",
+            "target": "Usefulness"
+        },
+        {
+            "source": "Approach",
+            "relationship": "is applied in",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Realism",
+            "relationship": "is a characteristic of",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Usefulness",
+            "relationship": "is evaluated in",
+            "target": "Qualitative Risk Analysis"
+        }
+    ]
+}

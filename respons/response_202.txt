@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["threat", "hazard"], "type": "project management risk", "status": "identified"}
+        },
+        {
+            "name": "Process",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["procedure", "method"], "type": "risk management process"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "is addressed by",
+            "target": "Process"
+        },
+        {
+            "source": "Risk",
+            "relationship": "is identified in",
+            "target": "Process"
+        }
+    ]
+}

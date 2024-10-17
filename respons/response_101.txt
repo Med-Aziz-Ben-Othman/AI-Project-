@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Initial Risk Management Planning",
+            "type": "Process", 
+            "attributes": {"benefit": "greatest", "stage": "early", "integration": "overall project management plan"}
+        },
+        {
+            "name": "Overall Planning Project",
+            "type": "Activity", 
+            "attributes": {"corresponds_to": "risk management activity"}
+        },
+        {
+            "name": "Risk Management Activity",
+            "type": "Process", 
+            "attributes": {"type": "integrated", "relation": "activity"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Initial Risk Management Planning",
+            "relationship": "integrates",
+            "target": "Overall Planning Project"
+        },
+        {
+            "source": "Overall Planning Project",
+            "relationship": "corresponds to",
+            "target": "Risk Management Activity"
+        }
+    ]
+}

@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Discipline",
+            "attributes": {"synonyms": ["project oversight", "project administration"], "focus": "risk management"}
+        },
+        {
+            "name": "Uncertain Environment",
+            "type": "Condition",
+            "attributes": {"synonyms": ["volatile environment", "unstable conditions"], "impact": "increases risk"}
+        },
+        {
+            "name": "Disciplined Technique",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["structured approach", "methodical technique"], "purpose": "control risks"}
+        },
+        {
+            "name": "Cost Control",
+            "type": "Process",
+            "attributes": {"synonyms": ["budget management", "financial oversight"], "goal": "manage project expenses"}
+        },
+        {
+            "name": "Task Allocation",
+            "type": "Activity",
+            "attributes": {"synonyms": ["resource assignment", "work distribution"], "importance": "efficient resource use"}
+        },
+        {
+            "name": "Earned Value Analysis",
+            "type": "Technique",
+            "attributes": {"synonyms": ["EVA", "performance measurement"], "function": "assess project performance"}
+        },
+        {
+            "name": "Monitoring and Review Meeting",
+            "type": "Event",
+            "attributes": {"synonyms": ["progress review", "status meeting"], "function": "track project status"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "implements",
+            "target": "Disciplined Technique"
+        },
+        {
+            "source": "Uncertain Environment",
+            "relationship": "affects",
+            "target": "Project Management"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "enhances",
+            "target": "Cost Control"
+        },
+        {
+            "source": "Cost Control",
+            "relationship": "supports",
+            "target": "Task Allocation"
+        },
+        {
+            "source": "Task Allocation",
+            "relationship": "is assessed by",
+            "target": "Earned Value Analysis"
+        },
+        {
+            "source": "Monitoring and Review Meeting",
+            "relationship": "facilitates",
+            "target": "Project Management"
+        }
+    ]
+}

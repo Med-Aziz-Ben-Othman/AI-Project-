@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Data Gathering",
+            "type": "Process", 
+            "attributes": {"description": "The process of collecting information for analysis", "importance": "High"}
+        },
+        {
+            "name": "Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "The identification and evaluation of risks", "importance": "Critical"}
+        },
+        {
+            "name": "Bias Recognition",
+            "type": "Ability", 
+            "attributes": {"description": "The skill to identify bias in data", "synonyms": ["bias detection", "bias identification"], "importance": "Essential"}
+        },
+        {
+            "name": "Unbiased Source Data",
+            "type": "Data Type", 
+            "attributes": {"description": "Data that is free of bias", "importance": "Vital"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Data Gathering",
+            "relationship": "involves",
+            "target": "Risk Analysis"
+        },
+        {
+            "source": "Bias Recognition",
+            "relationship": "requires",
+            "target": "Data Gathering"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "needs",
+            "target": "Unbiased Source Data"
+        },
+        {
+            "source": "Bias Recognition",
+            "relationship": "helps to combat",
+            "target": "Bias Recognition"
+        }
+    ]
+}

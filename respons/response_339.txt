@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["threat", "hazard"], "type": "project risk", "common root cause": "yes"}
+        },
+        {
+            "name": "Root Cause",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["underlying cause", "origin"], "type": "common cause"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "may have",
+            "target": "Root Cause"
+        }
+    ]
+}

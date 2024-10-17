@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Qualitative Risk Assessment"], "purpose": "Assess individual risk", "importance": "Important for project success"}
+        },
+        {
+            "name": "Risk Assessment Tool",
+            "type": "Tool Technique", 
+            "attributes": {"type": "Risk Analysis Tool", "usage": "Identify risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Uses",
+            "target": "Risk Assessment Tool"
+        },
+        {
+            "source": "Risk Assessment Tool",
+            "relationship": "Affects",
+            "target": "Qualitative Risk Analysis"
+        }
+    ]
+}

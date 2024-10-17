@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Impact Calculation",
+            "type": "Process",
+            "attributes": {"method": "quantitative", "purpose": "facilitate correct calculation"}
+        },
+        {
+            "name": "Quantitative Model",
+            "type": "Model",
+            "attributes": {"application": "risk impact calculation", "type": "quantitative"}
+        },
+        {
+            "name": "Risk",
+            "type": "Entity",
+            "attributes": {"status": "identified", "level": "quantified"}
+        },
+        {
+            "name": "Total Project",
+            "type": "Project",
+            "attributes": {"scope": "total", "objectives": "project objectives"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Impact Calculation",
+            "relationship": "uses",
+            "target": "Quantitative Model"
+        },
+        {
+            "source": "Risk",
+            "relationship": "affects",
+            "target": "Total Project"
+        },
+        {
+            "source": "Total Project",
+            "relationship": "describes",
+            "target": "project objectives"
+        }
+    ]
+}

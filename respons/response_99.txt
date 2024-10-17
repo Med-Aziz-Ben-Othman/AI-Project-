@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying, assessing, and mitigating risks in projects", "relatedTerms": ["risk assessment", "risk mitigation", "risk analysis"]}
+        },
+        {
+            "name": "Project Management Process",
+            "type": "Process", 
+            "attributes": {"description": "The overall framework for planning, executing, and closing projects", "relatedTerms": ["project planning", "project execution", "project closure"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "is part of",
+            "target": "Project Management Process"
+        }
+    ]
+}

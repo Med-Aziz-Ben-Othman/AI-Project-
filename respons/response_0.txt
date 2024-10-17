@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Concept",
+            "attributes": {"definition": "A discipline that involves identifying, assessing, and prioritizing risks", "synonyms": ["risk management", "risk governance"], "responsibility": "shared"}
+        },
+        {
+            "name": "Responsibility",
+            "type": "Concept",
+            "attributes": {"definition": "The obligation to manage risks", "synonyms": ["accountability", "duty"], "scope": "everyone"}
+        },
+        {
+            "name": "Principle Concepts",
+            "type": "Concept",
+            "attributes": {"definition": "Fundamental ideas underlying project risk management", "examples": ["risk identification", "risk assessment", "risk response"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Principle Concepts"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "is",
+            "target": "Responsibility"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Schedule",
+            "type": "Project Management Artifact", 
+            "attributes": {"synonyms": ["Timeline", "Gantt Chart"], "importance": "Critical", "riskImpact": "Delays"}
+        },
+        {
+            "name": "Cost Estimate",
+            "type": "Financial Document", 
+            "attributes": {"synonyms": ["Budget Estimate", "Cost Projection"], "importance": "High", "riskImpact": "Overruns"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Schedule",
+            "relationship": "Influences",
+            "target": "Cost Estimate"
+        }
+    ]
+}

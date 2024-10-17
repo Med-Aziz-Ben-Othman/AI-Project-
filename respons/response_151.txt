@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Organization Objectives",
+            "type": "Objective", 
+            "attributes": {"synonyms": ["organizational goals", "company aims"], "importance": "high"} 
+        },
+        {
+            "name": "Policy Practice",
+            "type": "Policy", 
+            "attributes": {"synonyms": ["regulatory framework", "guidelines"], "type": "formal"}
+        },
+        {
+            "name": "Feasibility Risk Management",
+            "type": "Risk Management Approach", 
+            "attributes": {"synonyms": ["practicality assessment", "viability risk"], "focus": "planning"}
+        },
+        {
+            "name": "Feature Organization",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["function structure", "feature arrangement"], "role": "dependent"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Organization Objectives",
+            "relationship": "Guides",
+            "target": "Policy Practice"
+        },
+        {
+            "source": "Policy Practice",
+            "relationship": "Influences",
+            "target": "Feasibility Risk Management"
+        },
+        {
+            "source": "Feasibility Risk Management",
+            "relationship": "Depends On",
+            "target": "Feature Organization"
+        }
+    ]
+}

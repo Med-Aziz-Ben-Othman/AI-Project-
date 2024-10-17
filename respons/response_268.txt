@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {"synonyms": ["risk management", "risk control"], "importance": "high"}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Tool",
+            "attributes": {"synonyms": ["qualitative analysis", "qualitative assessment"], "purpose": "assess risk characteristics"}
+        },
+        {
+            "name": "Risk Characteristic",
+            "type": "Entity",
+            "attributes": {"synonyms": ["risk feature", "risk attribute"], "importance": "varies"}
+        },
+        {
+            "name": "Risk Importance",
+            "type": "Concept",
+            "attributes": {"synonyms": ["risk significance", "risk priority"], "definition": "degree of impact on project"}
+        },
+        {
+            "name": "Response Analysis",
+            "type": "Process",
+            "attributes": {"synonyms": ["response evaluation", "response strategy"], "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "involves",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "utilizes",
+            "target": "Risk Characteristic"
+        },
+        {
+            "source": "Risk Characteristic",
+            "relationship": "affects",
+            "target": "Risk Importance"
+        },
+        {
+            "source": "Risk Importance",
+            "relationship": "informs",
+            "target": "Response Analysis"
+        }
+    ]
+}

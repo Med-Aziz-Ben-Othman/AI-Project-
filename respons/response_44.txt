@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"definition": "A systematic approach to identifying, assessing, and controlling risks in a project", "synonyms": ["risk management process", "project risk management"], "importance": "Essential for project success"}
+        },
+        {
+            "name": "Objective",
+            "type": "Goal", 
+            "attributes": {"definition": "A specific result that a project aims to achieve", "synonyms": ["aim", "target", "goal"], "type": "SMART"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "Defines",
+            "target": "Objective"
+        }
+    ]
+}

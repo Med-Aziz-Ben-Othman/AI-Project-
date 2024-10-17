@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Variety Risk Identification Technique",
+            "type": "Risk Management Technique", 
+            "attributes": {"synonyms": ["Diverse Risk Assessment Method"], "strengths": ["Comprehensive analysis", "Multiple perspectives"], "weaknesses": ["Complexity", "Resource-intensive"]}
+        },
+        {
+            "name": "Strength",
+            "type": "Risk Attribute", 
+            "attributes": {"description": "Positive aspect of the technique", "examples": ["In-depth insights", "Holistic view"]}
+        },
+        {
+            "name": "Weakness",
+            "type": "Risk Attribute", 
+            "attributes": {"description": "Negative aspect of the technique", "examples": ["Time-consuming", "Requires expertise"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Variety Risk Identification Technique",
+            "relationship": "has",
+            "target": "Strength"
+        },
+        {
+            "source": "Variety Risk Identification Technique",
+            "relationship": "has",
+            "target": "Weakness"
+        }
+    ]
+}

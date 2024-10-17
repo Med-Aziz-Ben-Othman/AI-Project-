@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk",
+            "attributes": {"definition": "Uncertain event or condition", "effect": "Positive or negative", "related_to": "Project objective"}
+        },
+        {
+            "name": "Uncertain Event",
+            "type": "Event",
+            "attributes": {"category": "Risk", "impact": "Can affect project objectives"}
+        },
+        {
+            "name": "Condition",
+            "type": "Context",
+            "attributes": {"description": "Circumstance affecting project risk", "type": "Uncertain"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Objective",
+            "attributes": {"importance": "Critical for project success", "affected_by": "Project Risk"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "describes",
+            "target": "Uncertain Event"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "involves",
+            "target": "Condition"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Project Objective"
+        }
+    ]
+}

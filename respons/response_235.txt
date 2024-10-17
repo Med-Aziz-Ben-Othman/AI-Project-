@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Project Completion Date",
+            "type": "Milestone", 
+            "attributes": {"key1": "Date", "key2": "Deadline"}
+        },
+        {
+            "name": "Budget",
+            "type": "Financial Resource", 
+            "attributes": {"key1": "Total Amount", "key2": "Allocated Funds"}
+        },
+        {
+            "name": "Deliverable",
+            "type": "Project Output", 
+            "attributes": {"key1": "Specific Item", "key2": "Outcome"}
+        },
+        {
+            "name": "Scope",
+            "type": "Project Parameter", 
+            "attributes": {"key1": "Defined Limits", "key2": "Project Boundaries"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Risk Management Strategy", 
+            "attributes": {"key1": "Mitigation Plan", "key2": "Contingency Measures"}
+        },
+        {
+            "name": "Focus Area",
+            "type": "Strategic Element", 
+            "attributes": {"key1": "Key Priority", "key2": "Attention Area"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Completion Date",
+            "relationship": "Affects",
+            "target": "Budget"
+        },
+        {
+            "source": "Budget",
+            "relationship": "Determines",
+            "target": "Deliverable"
+        },
+        {
+            "source": "Scope",
+            "relationship": "Defines",
+            "target": "Deliverable"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "Involves",
+            "target": "Scope"
+        },
+        {
+            "source": "Focus Area",
+            "relationship": "Guides",
+            "target": "Risk Response"
+        }
+    ]
+}

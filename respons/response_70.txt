@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Technique",
+            "type": "Methodology", 
+            "attributes": {"description": "A statistical method used to analyze numerical data", "synonyms": ["quantitative analysis", "statistical technique"]}
+        },
+        {
+            "name": "Identified Risk",
+            "type": "Risk Factor", 
+            "attributes": {"description": "A potential event or condition that may affect project outcomes", "synonyms": ["recognized risk", "assessed risk"]}
+        },
+        {
+            "name": "Project Outcome",
+            "type": "Project Result", 
+            "attributes": {"description": "The final results or deliverables of a project", "synonyms": ["project deliverable", "project result"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Technique",
+            "relationship": "Provides Insight On",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Identified Risk",
+            "relationship": "Affects",
+            "target": "Project Outcome"
+        }
+    ]
+}

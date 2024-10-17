@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Data Assessment",
+            "type": "Process", 
+            "attributes": {"synonyms": ["data evaluation", "data analysis"], "purpose": "to evaluate risks based on collected data"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["specific risk", "unique risk"], "description": "risks that affect a single aspect of the project"}
+        },
+        {
+            "name": "Base Information",
+            "type": "Data Source", 
+            "attributes": {"synonyms": ["fundamental data", "primary data"], "importance": "serves as the foundation for risk assessment"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Base Information",
+            "relationship": "Informs",
+            "target": "Data Assessment"
+        },
+        {
+            "source": "Data Assessment",
+            "relationship": "Evaluates",
+            "target": "Individual Risk"
+        }
+    ]
+}

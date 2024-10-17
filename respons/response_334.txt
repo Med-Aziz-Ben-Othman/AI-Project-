@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Project Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["total project risk", "aggregate project risk"], "description": "The total risk associated with the entire project."}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["specific risk", "component risk"], "description": "Risks that pertain to specific elements or components of the project."}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process",
+            "attributes": {"synonyms": ["quantitative analysis", "statistical risk analysis"], "description": "A method to assess the probability and impact of risks using numerical values."}
+        },
+        {
+            "name": "Risk Analysis Methodology",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["risk assessment framework", "risk evaluation method"], "description": "The structured approach used to conduct risk analysis."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Individual Risk",
+            "relationship": "Contributes To",
+            "target": "Overall Project Risk"
+        },
+        {
+            "source": "Risk Analysis Methodology",
+            "relationship": "Guides",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Affects",
+            "target": "Overall Project Risk"
+        }
+    ]
+}

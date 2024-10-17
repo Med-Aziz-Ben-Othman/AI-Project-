@@ -1,0 +1,28 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["Quantitative Analysis", "Quantitative Risk Assessment"],
+                "characteristics": ["Comprehensive risk representation", "Risk model"],
+                "objective": "To represent all risk impacts"
+            }
+        },
+        {
+            "name": "Risk Model",
+            "type": "Tool",
+            "attributes": {
+                "synonyms": ["Risk Assessment Model", "Risk Representation Model"],
+                "purpose": "Permit representation of risk impact"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "uses",
+            "target": "Risk Model"
+        }
+    ]
+}

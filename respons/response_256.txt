@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Assessment",
+            "type": "Process", 
+            "attributes": {"definition": "realistic assessment of risks", "level": "example level", "probability": "probability", "impact": "impact"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "management", "influence": "facilitates communication"}
+        },
+        {
+            "name": "Provider",
+            "type": "Entity", 
+            "attributes": {"function": "assist", "information": "information"}
+        },
+        {
+            "name": "Objectives",
+            "type": "Concept", 
+            "attributes": {"relevance": "impact on project success"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Assessment",
+            "relationship": "assesses",
+            "target": "Objectives"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "communicates with",
+            "target": "Provider"
+        },
+        {
+            "source": "Provider",
+            "relationship": "provides",
+            "target": "Risk Assessment"
+        },
+        {
+            "source": "Risk Assessment",
+            "relationship": "involves",
+            "target": "Stakeholder"
+        }
+    ]
+}

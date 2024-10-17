@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Method", 
+            "attributes": {"synonyms": ["Qualitative Assessment"], "characteristics": ["subjective", "descriptive"], "purpose": "identify and evaluate risks"}
+        },
+        {
+            "name": "Risk List",
+            "type": "Document", 
+            "attributes": {"key1": "updated", "key2": "identifies risks", "type": "inventory"}
+        },
+        {
+            "name": "Risk Process",
+            "type": "Process", 
+            "attributes": {"key1": "iterative", "key2": "systematic", "characteristics": ["identification", "assessment", "response planning"]}
+        },
+        {
+            "name": "Project Management",
+            "type": "Discipline", 
+            "attributes": {"key1": "objective", "key2": "delivery", "characteristics": ["planning", "execution", "monitoring"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Entity", 
+            "attributes": {"key1": "characteristic", "key2": "impact", "types": ["positive", "negative"]}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal", 
+            "attributes": {"key1": "achievement", "key2": "success", "characteristics": ["measurable", "specific"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "applies to",
+            "target": "Risk List"
+        },
+        {
+            "source": "Risk List",
+            "relationship": "is part of",
+            "target": "Risk Process"
+        },
+        {
+            "source": "Risk Process",
+            "relationship": "supports",
+            "target": "Project Management"
+        },
+        {
+            "source": "Risk",
+            "relationship": "affects",
+            "target": "Project Objective"
+        },
+        {
+            "source": "Project Management",
+            "relationship": "aims to achieve",
+            "target": "Project Objective"
+        }
+    ]
+}

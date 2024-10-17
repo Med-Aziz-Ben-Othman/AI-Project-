@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Breakdown Structure",
+            "type": "Tool", 
+            "attributes": {"synonyms": ["RBS"], "purpose": "Organize and categorize potential risks", "type": "Risk Management Tool"}
+        },
+        {
+            "name": "Potential Risk",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["Risk Factor", "Risk Element"], "description": "Factors that may affect the project's success", "type": "Identified Risk"}
+        },
+        {
+            "name": "Project Prompt List",
+            "type": "Document", 
+            "attributes": {"description": "A list to assist in identifying potential risks", "type": "Checklist"}
+        },
+        {
+            "name": "Risk Source",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["Risk Origin", "Risk Cause"], "description": "Origins of potential risks", "type": "Identified Source"}
+        },
+        {
+            "name": "Thinking",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Cognition", "Thought Process"], "description": "Original thinking in risk management", "type": "Cognitive Process"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Breakdown Structure",
+            "relationship": "Organizes",
+            "target": "Potential Risk"
+        },
+        {
+            "source": "Project Prompt List",
+            "relationship": "Assists in identifying",
+            "target": "Potential Risk"
+        },
+        {
+            "source": "Potential Risk",
+            "relationship": "May originate from",
+            "target": "Risk Source"
+        },
+        {
+            "source": "Thinking",
+            "relationship": "Can replace",
+            "target": "Risk Breakdown Structure"
+        }
+    ]
+}

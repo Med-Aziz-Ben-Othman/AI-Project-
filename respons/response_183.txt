@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Frequency",
+            "type": "Variable", 
+            "attributes": {"description": "The rate at which events occur", "synonyms": ["rate", "occurrence"]}
+        },
+        {
+            "name": "Plan Risk Management Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying and managing risks in a project", "components": ["risk identification", "risk analysis", "risk response planning"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Frequency",
+            "relationship": "Determines",
+            "target": "Plan Risk Management Process"
+        }
+    ]
+}

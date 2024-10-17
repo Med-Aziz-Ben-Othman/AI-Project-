@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Action",
+            "type": "Project Management Action", 
+            "attributes": {"synonyms": ["agreed-upon action", "essential action"], "status": "implemented", "type": "risk mitigation"}
+        },
+        {
+            "name": "Risk Exposure",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["risk factor"], "status": "unchanged", "type": "project risk"}
+        },
+        {
+            "name": "Project",
+            "type": "Project", 
+            "attributes": {"status": "ongoing", "scope": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Action",
+            "relationship": "mitigates",
+            "target": "Risk Exposure"
+        },
+        {
+            "source": "Project",
+            "relationship": "involves",
+            "target": "Risk Exposure"
+        }
+    ]
+}

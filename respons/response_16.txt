@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"aspect": "participate", "synonyms": ["risk management process", "risk assessment process"]}
+        },
+        {
+            "name": "Participation",
+            "type": "Activity", 
+            "attributes": {"description": "involvement in the risk management process"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Participation",
+            "relationship": "is a part of",
+            "target": "Project Risk Management"
+        }
+    ]
+}

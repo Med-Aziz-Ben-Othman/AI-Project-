@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "High-Level Description Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["generalized risk", "abstract risk"], "severity": "high", "impact": "difficult to manage"}
+        },
+        {
+            "name": "Response Development",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk response planning"], "status": "requires effort", "complexity": "high"}
+        },
+        {
+            "name": "Ownership Assignment",
+            "type": "Process", 
+            "attributes": {"synonyms": ["responsibility allocation", "task delegation"], "importance": "critical"}
+        },
+        {
+            "name": "Risk Detail Description",
+            "type": "Documentation", 
+            "attributes": {"synonyms": ["risk specification", "risk elaboration"], "level of detail": "high"}
+        },
+        {
+            "name": "Workload",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["effort", "task load"], "amount": "great deal"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "High-Level Description Risk",
+            "relationship": "makes difficult",
+            "target": "Response Development"
+        },
+        {
+            "source": "High-Level Description Risk",
+            "relationship": "requires",
+            "target": "Ownership Assignment"
+        },
+        {
+            "source": "High-Level Description Risk",
+            "relationship": "needs",
+            "target": "Risk Detail Description"
+        },
+        {
+            "source": "Response Development",
+            "relationship": "creates",
+            "target": "Workload"
+        }
+    ]
+}

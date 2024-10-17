@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Lesson Learned",
+            "type": "Process",
+            "attributes": {"synonyms": ["Experience", "Insights"], "stage": "Project Management"}
+        },
+        {
+            "name": "Project Start",
+            "type": "Milestone",
+            "attributes": {"synonyms": ["Initiation", "Commencement"], "phase": "Beginning of Project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Lesson Learned",
+            "relationship": "Informs",
+            "target": "Project Start"
+        }
+    ]
+}

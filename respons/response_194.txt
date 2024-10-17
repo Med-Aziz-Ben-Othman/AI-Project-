@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Resource Logistics",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["resource management", "logistical planning"], "importance": "high"}
+        },
+        {
+            "name": "Inadequate Communication",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["poor communication", "ineffective messaging"], "impact": "high"}
+        },
+        {
+            "name": "Nature of Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["risk characteristics", "risk attributes"], "description": "inherent qualities of risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Resource Logistics",
+            "relationship": "Contributes To",
+            "target": "Inadequate Communication"
+        },
+        {
+            "source": "Inadequate Communication",
+            "relationship": "Describes",
+            "target": "Nature of Risk"
+        }
+    ]
+}

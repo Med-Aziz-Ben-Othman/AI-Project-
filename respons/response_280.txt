@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Communication",
+            "type": "Process", 
+            "attributes": {"synonyms": ["interaction", "dialogue"], "importance": "high", "ease": "common reason"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "influencer", "interest": "project outcomes", "type": "internal/external"}
+        },
+        {
+            "name": "Management",
+            "type": "Function", 
+            "attributes": {"synonyms": ["administration", "oversight"], "focus": "risk mitigation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Stakeholder",
+            "relationship": "influences",
+            "target": "Communication"
+        },
+        {
+            "source": "Management",
+            "relationship": "oversees",
+            "target": "Communication"
+        },
+        {
+            "source": "Management",
+            "relationship": "addresses",
+            "target": "Stakeholder"
+        }
+    ]
+}

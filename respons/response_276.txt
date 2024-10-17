@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Probability",
+            "type": "Risk Factor", 
+            "attributes": {"description": "Likelihood of a risk occurring", "synonyms": ["risk likelihood", "risk chance"]}
+        },
+        {
+            "name": "Impact",
+            "type": "Risk Factor", 
+            "attributes": {"description": "Consequences of a risk if it occurs", "synonyms": ["risk effect", "risk outcome"]}
+        },
+        {
+            "name": "Specific Objective",
+            "type": "Project Objective", 
+            "attributes": {"description": "Goals that the project aims to achieve", "synonyms": ["project goal", "project aim"]}
+        },
+        {
+            "name": "Risk Priority",
+            "type": "Risk Assessment", 
+            "attributes": {"description": "Ranking of risks based on probability and impact", "synonyms": ["risk ranking", "risk importance"]}
+        },
+        {
+            "name": "Tool",
+            "type": "Resource", 
+            "attributes": {"description": "Instrument used to assess or manage risks", "synonyms": ["method", "technique"]}
+        },
+        {
+            "name": "Term",
+            "type": "Terminology", 
+            "attributes": {"description": "Specific language or jargon used in risk management", "synonyms": ["definition", "phrase"]}
+        },
+        {
+            "name": "Objective",
+            "type": "Project Objective", 
+            "attributes": {"description": "Overall aim of the project", "synonyms": ["goal", "purpose"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Probability",
+            "relationship": "Affects",
+            "target": "Risk Priority"
+        },
+        {
+            "source": "Impact",
+            "relationship": "Affects",
+            "target": "Risk Priority"
+        },
+        {
+            "source": "Risk Priority",
+            "relationship": "Determines",
+            "target": "Specific Objective"
+        },
+        {
+            "source": "Tool",
+            "relationship": "Used For",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Term",
+            "relationship": "Defines",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Specific Objective",
+            "relationship": "Related To",
+            "target": "Objective"
+        }
+    ]
+}

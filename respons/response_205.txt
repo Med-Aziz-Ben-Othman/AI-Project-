@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification Tool",
+            "type": "Tool",
+            "attributes": {"synonyms": ["risk assessment tool", "risk detection tool"], "type": "technique", "availability": "available"}
+        },
+        {
+            "name": "Risk Identification Process",
+            "type": "Process",
+            "attributes": {"range": "various", "description": "systematic approach to identifying risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification Tool",
+            "relationship": "used in",
+            "target": "Risk Identification Process"
+        }
+    ]
+}

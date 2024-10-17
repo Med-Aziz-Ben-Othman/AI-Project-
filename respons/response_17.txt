@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Response",
+            "type": "Risk Management Concept", 
+            "attributes": {"synonyms": ["risk mitigation", "risk management response"], "status": "pending approval"}
+        },
+        {
+            "name": "Action",
+            "type": "Project Management Action", 
+            "attributes": {"synonyms": ["measure", "step", "intervention"], "type": "preventive"}
+        },
+        {
+            "name": "Implementation",
+            "type": "Project Management Phase", 
+            "attributes": {"synonyms": ["execution", "deployment"], "status": "upcoming"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Response",
+            "relationship": "requires",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "leads to",
+            "target": "Implementation"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Trigger Condition",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["initiating factor", "catalyst"], "type": "Condition", "importance": "High"}
+        },
+        {
+            "name": "Possible",
+            "type": "Risk Assessment", 
+            "attributes": {"synonyms": ["potential", "likely"], "certainty": "Variable"}
+        },
+        {
+            "name": "Appropriate",
+            "type": "Risk Response", 
+            "attributes": {"synonyms": ["suitable", "fitting"], "context": "Risk Mitigation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Trigger Condition",
+            "relationship": "can lead to",
+            "target": "Possible"
+        },
+        {
+            "source": "Possible",
+            "relationship": "requires",
+            "target": "Appropriate"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Data Gather Individual",
+            "type": "Stakeholder", 
+            "attributes": {"role": "data collector", "potential bias": "intentional"}
+        },
+        {
+            "name": "Report",
+            "type": "Document", 
+            "attributes": {"content": "analysis results", "type": "risk report"}
+        },
+        {
+            "name": "Intentional Bias",
+            "type": "Risk Factor", 
+            "attributes": {"description": "deliberate skewing of data", "impact": "misleading conclusions"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Data Gather Individual",
+            "relationship": "may influence",
+            "target": "Report"
+        },
+        {
+            "source": "Report",
+            "relationship": "is affected by",
+            "target": "Intentional Bias"
+        }
+    ]
+}

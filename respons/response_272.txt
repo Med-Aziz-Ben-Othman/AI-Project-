@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Assessment Tool",
+            "type": "Tool", 
+            "attributes": {"key1": "risk assessment", "key2": "evaluation", "synonyms": ["assessment tool", "risk evaluation tool"]}
+        },
+        {
+            "name": "Risk Importance",
+            "type": "Concept", 
+            "attributes": {"key1": "importance", "key2": "priority", "synonyms": ["risk significance", "risk weight"]}
+        },
+        {
+            "name": "Probability of Occurrence",
+            "type": "Metric", 
+            "attributes": {"key1": "probability", "key2": "likelihood", "synonyms": ["chance of occurrence", "occurrence rate"]}
+        },
+        {
+            "name": "Impact Degree",
+            "type": "Metric", 
+            "attributes": {"key1": "impact", "key2": "severity", "synonyms": ["impact level", "impact extent"]}
+        },
+        {
+            "name": "Risk Objective",
+            "type": "Goal", 
+            "attributes": {"key1": "objective", "key2": "goal", "synonyms": ["risk management objective", "risk goal"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Assessment Tool",
+            "relationship": "assesses",
+            "target": "Risk Importance"
+        },
+        {
+            "source": "Risk Importance",
+            "relationship": "is determined by",
+            "target": "Probability of Occurrence"
+        },
+        {
+            "source": "Risk Importance",
+            "relationship": "is influenced by",
+            "target": "Impact Degree"
+        },
+        {
+            "source": "Risk Assessment Tool",
+            "relationship": "aims to achieve",
+            "target": "Risk Objective"
+        }
+    ]
+}

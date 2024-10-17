@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Management Technique", 
+            "attributes": {"description": "A method for evaluating risks using numerical values", "synonyms": ["Quantitative Analysis", "Statistical Risk Assessment"], "purpose": "To assess the impact of risks on project outcomes"}
+        },
+        {
+            "name": "Figure",
+            "type": "Visual Representation", 
+            "attributes": {"description": "An illustration that represents data or concepts visually", "type": "Graph, Chart, Diagram"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Illustrates",
+            "target": "Figure"
+        }
+    ]
+}

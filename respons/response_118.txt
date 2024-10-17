@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Level Risk",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["Degree of Risk", "Risk Level"], "description": "The extent of risk considered in the project."} 
+        },
+        {
+            "name": "Acceptable Risk",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["Tolerable Risk", "Permissible Risk"], "description": "The amount of risk that is deemed acceptable by stakeholders."}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["Project Initiative", "Project Plan"], "description": "The overall plan or initiative that is being managed."}
+        },
+        {
+            "name": "Risk Attitude",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Risk Appetite", "Risk Tolerance"], "description": "The degree of variability in outcomes that a stakeholder is willing to withstand."}
+        },
+        {
+            "name": "Relevant Stakeholder",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["Stakeholder", "Project Stakeholder"], "description": "Individuals or organizations that are affected by or can affect the project."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Level Risk",
+            "relationship": "Depends On",
+            "target": "Risk Attitude"
+        },
+        {
+            "source": "Acceptable Risk",
+            "relationship": "Is Affected By",
+            "target": "Relevant Stakeholder"
+        },
+        {
+            "source": "Project",
+            "relationship": "Considers",
+            "target": "Acceptable Risk"
+        }
+    ]
+}

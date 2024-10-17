@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["hazard", "threat"], "type": "Project Management Risk", "description": "Potential negative impact on project objectives"}
+        },
+        {
+            "name": "Causal Chain",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["cause-effect relationship", "causal link"], "type": "Analytical Framework", "description": "A sequence of events where one event causes another"}
+        },
+        {
+            "name": "Implication",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["consequence", "effect"], "type": "Outcome", "description": "The result or effect of an action or decision in the project"}
+        },
+        {
+            "name": "Understanding",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["comprehension", "insight"], "type": "Cognitive Process", "description": "The ability to grasp the meaning of something"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "links to",
+            "target": "Causal Chain"
+        },
+        {
+            "source": "Causal Chain",
+            "relationship": "leads to",
+            "target": "Understanding"
+        },
+        {
+            "source": "Understanding",
+            "relationship": "implies",
+            "target": "Implication"
+        },
+        {
+            "source": "Risk",
+            "relationship": "leads to",
+            "target": "Understanding"
+        }
+    ]
+}

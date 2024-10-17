@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Initial Step Document",
+            "type": "Document", 
+            "attributes": {"synonyms": ["initial step", "step document"], "type": "project management document", "purpose": "to communicate scope and objectives"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Person/Group", 
+            "attributes": {"role": "influence project outcomes", "type": "internal/external"}
+        },
+        {
+            "name": "Scope",
+            "type": "Concept", 
+            "attributes": {"definition": "boundaries of the project", "importance": "critical for risk management"}
+        },
+        {
+            "name": "Objective",
+            "type": "Concept", 
+            "attributes": {"definition": "goals of the project", "importance": "critical for risk management"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"definition": "systematic approach to managing risks", "phases": ["identification", "analysis", "response", "monitoring"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Initial Step Document",
+            "relationship": "Communicates",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Initial Step Document",
+            "relationship": "Defines",
+            "target": "Scope"
+        },
+        {
+            "source": "Initial Step Document",
+            "relationship": "Defines",
+            "target": "Objective"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "Ensures Understanding Of",
+            "target": "Scope"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "Ensures Understanding Of",
+            "target": "Objective"
+        },
+        {
+            "source": "Scope",
+            "relationship": "Part Of",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Objective",
+            "relationship": "Part Of",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

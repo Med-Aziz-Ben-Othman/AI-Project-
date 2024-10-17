@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {"description": "Standard procedures for identifying, assessing, and responding to project risks", "synonyms": ["Risk Management Process", "Risk Assessment"]}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Methodology",
+            "attributes": {"description": "A technique used to assess the impact of risks qualitatively", "key components": ["Risk Categorization", "Risk Probability", "Risk Magnitude"]}
+        },
+        {
+            "name": "Risk Cause",
+            "type": "Entity",
+            "attributes": {"description": "Factors that lead to the emergence of project risks", "synonyms": ["Risk Trigger", "Risk Origin"]}
+        },
+        {
+            "name": "Improved Analysis",
+            "type": "Outcome",
+            "attributes": {"description": "Enhanced understanding of risks through better assessment practices", "synonyms": ["Enhanced Risk Assessment", "Refined Risk Analysis"]}
+        },
+        {
+            "name": "Project Risk Response",
+            "type": "Strategy",
+            "attributes": {"description": "Actions taken to reduce or eliminate risks", "types": ["Mitigation", "Avoidance", "Transfer", "Acceptance"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Includes",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Assesses",
+            "target": "Risk Cause"
+        },
+        {
+            "source": "Risk Cause",
+            "relationship": "Leads to",
+            "target": "Project Risk"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Results in",
+            "target": "Improved Analysis"
+        },
+        {
+            "source": "Improved Analysis",
+            "relationship": "Facilitates",
+            "target": "Project Risk Response"
+        }
+    ]
+}

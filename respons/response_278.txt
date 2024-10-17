@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Common Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["frequent risk", "typical risk"], "impact": "uneven", "category": "project management"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Project Element", 
+            "attributes": {"synonyms": ["project goal", "project aim"], "importance": "critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Common Risk",
+            "relationship": "Affects",
+            "target": "Project Objective"
+        }
+    ]
+}

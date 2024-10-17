@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Creativity Technique",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["creative method", "brainstorming technique"], "type": "risk identification"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "influencer", "interest": "project outcome"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"type": "project risk", "impact": "affect project outcomes"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Creativity Technique",
+            "relationship": "Encourages Use",
+            "target": "Project Stakeholder"
+        },
+        {
+            "source": "Creativity Technique",
+            "relationship": "Aids in Identification of",
+            "target": "Risk"
+        },
+        {
+            "source": "Project Stakeholder",
+            "relationship": "Identifies",
+            "target": "Risk"
+        }
+    ]
+}

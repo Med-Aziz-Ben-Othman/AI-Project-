@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Opportunity",
+            "type": "Risk Management Concept", 
+            "attributes": {"synonyms": ["chance", "possibility"], "type": "positive risk", "importance": "high"}
+        },
+        {
+            "name": "Proactive Management",
+            "type": "Risk Management Approach", 
+            "attributes": {"synonyms": ["preventive", "anticipatory"], "type": "strategy", "focus": "risk mitigation"}
+        },
+        {
+            "name": "Limit Extent",
+            "type": "Risk Control Measure", 
+            "attributes": {"synonyms": ["restrict scope", "reduce impact"], "type": "negative risk", "importance": "medium"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Opportunity",
+            "relationship": "can be enhanced by",
+            "target": "Proactive Management"
+        },
+        {
+            "source": "Proactive Management",
+            "relationship": "aims to",
+            "target": "Limit Extent"
+        }
+    ]
+}

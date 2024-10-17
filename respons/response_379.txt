@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"synonyms": ["threat", "hazard"], "characteristics": ["uncertainty", "potential impact"]}
+        },
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "manage risk", "authority": "decision making"}
+        },
+        {
+            "name": "Risk Process",
+            "type": "Process", 
+            "attributes": {"steps": ["identification", "assessment", "response"], "goal": "manage risks effectively"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Action", 
+            "attributes": {"types": ["avoidance", "mitigation", "transfer", "acceptance"], "goal": "reduce risk impact"}
+        },
+        {
+            "name": "Risk Action Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "execute risk response", "authority": "implementation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "is assigned to",
+            "target": "Risk Owner"
+        },
+        {
+            "source": "Risk",
+            "relationship": "is identified in",
+            "target": "Risk Process"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "is part of",
+            "target": "Risk Process"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "is executed by",
+            "target": "Risk Action Owner"
+        },
+        {
+            "source": "Risk Action Owner",
+            "relationship": "is responsible for",
+            "target": "Risk Response"
+        }
+    ]
+}

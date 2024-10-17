@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Capability",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["ability", "competence"], "importance": "high"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["hazard", "threat"], "importance": "critical"}
+        },
+        {
+            "name": "Objective",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["goal", "aim"], "importance": "essential"}
+        },
+        {
+            "name": "Management",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["administration", "oversight"], "importance": "vital"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Capability",
+            "relationship": "enables",
+            "target": "Risk"
+        },
+        {
+            "source": "Objective",
+            "relationship": "is related to",
+            "target": "Risk"
+        },
+        {
+            "source": "Management",
+            "relationship": "involves",
+            "target": "Risk"
+        }
+    ]
+}

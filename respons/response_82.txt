@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Individual Risk Response Action",
+            "type": "Risk Management Action", 
+            "attributes": {"synonyms": ["risk response action", "risk mitigation action"], "description": "Actions taken to address specific risks individually"}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Project Risk", 
+            "attributes": {"synonyms": ["project-wide risk", "composite project risk"], "description": "The total risk exposure of the project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Individual Risk Response Action",
+            "relationship": "Contributes To",
+            "target": "Overall Project Risk"
+        }
+    ]
+}

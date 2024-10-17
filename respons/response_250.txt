@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Manageability Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["manageability issue", "manageability challenge"], "description": "Risk associated with the ability to manage project resources effectively."}
+        },
+        {
+            "name": "Resources",
+            "type": "Resource Type", 
+            "attributes": {"key1": "waste potential", "description": "Assets that can be wasted if the risk is not managed."}
+        },
+        {
+            "name": "Attempts to Address Risks",
+            "type": "Action Type", 
+            "attributes": {"synonyms": ["risk mitigation efforts", "risk management actions"], "description": "Efforts made to minimize or eliminate risks."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Manageability Risk",
+            "relationship": "causes waste of",
+            "target": "Resources"
+        },
+        {
+            "source": "Manageability Risk",
+            "relationship": "requires",
+            "target": "Attempts to Address Risks"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Objectives",
+            "type": "Project Element", 
+            "attributes": {"definition": "clear definition", "level": "high-level", "context": "project environment"}
+        },
+        {
+            "name": "Solution Approach",
+            "type": "Project Strategy", 
+            "attributes": {"requirement": "provide valid basis", "purpose": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Objectives",
+            "relationship": "informs",
+            "target": "Solution Approach"
+        }
+    ]
+}

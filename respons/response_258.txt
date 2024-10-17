@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Historic Database",
+            "type": "Data Source", 
+            "attributes": {"description": "A collection of past project data", "usage": "Used for risk analysis", "synonyms": ["historical data", "archive"]}
+        },
+        {
+            "name": "Interviews",
+            "type": "Data Collection Method", 
+            "attributes": {"description": "One-on-one discussions to gather insights", "usage": "Used for expert judgment", "synonyms": ["personal interviews", "face-to-face discussions"]}
+        },
+        {
+            "name": "Workshops",
+            "type": "Data Collection Method", 
+            "attributes": {"description": "Group sessions to discuss and analyze risks", "usage": "Used for collaborative risk assessment", "synonyms": ["brainstorming sessions", "focus groups"]}
+        },
+        {
+            "name": "Expert Judgment",
+            "type": "Risk Assessment Technique", 
+            "attributes": {"description": "Using the knowledge of experienced individuals to assess risks", "usage": "Guides decision-making in risk management", "synonyms": ["expert analysis", "professional opinion"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Historic Database",
+            "relationship": "Informs",
+            "target": "Expert Judgment"
+        },
+        {
+            "source": "Interviews",
+            "relationship": "Contributes to",
+            "target": "Expert Judgment"
+        },
+        {
+            "source": "Workshops",
+            "relationship": "Facilitates",
+            "target": "Expert Judgment"
+        }
+    ]
+}

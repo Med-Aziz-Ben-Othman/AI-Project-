@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"definition": "A standard practice for managing risks in projects", "synonyms": ["risk management", "project risk handling"], "importance": "high"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk Factor",
+            "attributes": {"definition": "A specific risk that could impact project outcomes", "examples": ["budget overruns", "schedule delays"], "priority": "varies"}
+        },
+        {
+            "name": "Overall Project Risk Exposure",
+            "type": "Metric",
+            "attributes": {"definition": "The total potential risk impact on the project", "measures": ["quantitative", "qualitative"], "importance": "critical"}
+        },
+        {
+            "name": "Risk Response Development",
+            "type": "Process",
+            "attributes": {"definition": "Creating strategies to mitigate identified risks", "methods": ["avoidance", "transference", "mitigation", "acceptance"], "iterative": "true"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "contributes to",
+            "target": "Overall Project Risk Exposure"
+        },
+        {
+            "source": "Overall Project Risk Exposure",
+            "relationship": "requires",
+            "target": "Risk Response Development"
+        },
+        {
+            "source": "Risk Response Development",
+            "relationship": "is based on",
+            "target": "Individual Risk"
+        }
+    ]
+}

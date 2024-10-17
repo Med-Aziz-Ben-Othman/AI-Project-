@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"description": "The process of identifying, assessing, and controlling risks in a project", "synonyms": ["risk management", "project risk analysis"], "importance": "Critical for successful project completion"}
+        },
+        {
+            "name": "Chapter Outline",
+            "type": "Document Structure", 
+            "attributes": {"purpose": "To provide a structured framework for discussing project risk management", "components": ["steps", "requirements", "recommendations"]}
+        },
+        {
+            "name": "Step Requirement",
+            "type": "Component", 
+            "attributes": {"description": "Specific actions or criteria needed to effectively manage project risks", "synonyms": ["steps", "actions", "tasks"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Chapter Outline",
+            "relationship": "Contains",
+            "target": "Step Requirement"
+        },
+        {
+            "source": "Step Requirement",
+            "relationship": "Supports",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Is Informed By",
+            "target": "Chapter Outline"
+        }
+    ]
+}

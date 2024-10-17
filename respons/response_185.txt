@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk identification", "identify risk"], "status": "emergent", "frequency": "regular review"}
+        },
+        {
+            "name": "Project Plan",
+            "type": "Document", 
+            "attributes": {"key1": "project plan", "description": "a formal document used to guide the execution and control of a project"}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"key1": "project risk management process", "description": "a systematic approach to managing risks throughout the project lifecycle"}
+        },
+        {
+            "name": "Time Limit",
+            "type": "Constraint", 
+            "attributes": {"key1": "time limit", "description": "a defined duration within which risks must be identified or managed"}
+        },
+        {
+            "name": "Risk Event",
+            "type": "Event", 
+            "attributes": {"key1": "risk event", "description": "specific occurrence that may impact the project negatively"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "is part of",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "is guided by",
+            "target": "Project Plan"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "is bounded by",
+            "target": "Time Limit"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "results in",
+            "target": "Risk Event"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "includes",
+            "target": "Risk Identification"
+        }
+    ]
+}

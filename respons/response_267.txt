@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["qualitative assessment", "risk evaluation"], "purpose": "to identify and prioritize risks"}
+        },
+        {
+            "name": "Project Management Institute",
+            "type": "Organization", 
+            "attributes": {"abbreviation": "PMI", "focus": "project management standards and practices"}
+        },
+        {
+            "name": "Project Management",
+            "type": "Discipline", 
+            "attributes": {"key concepts": ["planning", "execution", "monitoring"], "importance": "ensuring project success"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "is a process of",
+            "target": "Project Management"
+        },
+        {
+            "source": "Project Management Institute",
+            "relationship": "provides guidelines for",
+            "target": "Qualitative Risk Analysis"
+        }
+    ]
+}

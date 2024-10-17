@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"accountability": "High", "responsibility": "Day-to-day management"}
+        },
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"effectiveness": "High", "importance": "Critical"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"scope": "Defined", "duration": "Ongoing"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "Oversees",
+            "target": "Project"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "Responsible for",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "Affects",
+            "target": "Project"
+        }
+    ]
+}

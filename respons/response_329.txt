@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"sensitivity": "high", "completeness": "critical", "correctness": "essential"}
+        },
+        {
+            "name": "Project Model",
+            "type": "Project Management Tool", 
+            "attributes": {"usage": "active", "type": "quantitative"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Utilizes",
+            "target": "Project Model"
+        }
+    ]
+}

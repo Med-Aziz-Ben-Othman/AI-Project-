@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Expert Judgment",
+            "type": "Risk Assessment Method", 
+            "attributes": {"synonyms": ["Expert Opinion", "Professional Insight"], "importance": "High", "type": "Qualitative"}
+        },
+        {
+            "name": "Data Gathering",
+            "type": "Risk Management Process", 
+            "attributes": {"synonyms": ["Data Collection", "Information Gathering"], "importance": "Critical", "type": "Quantitative"}
+        },
+        {
+            "name": "Bias",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["Prejudice", "Partiality"], "impact": "Negative", "type": "Cognitive"}
+        },
+        {
+            "name": "Information",
+            "type": "Resource", 
+            "attributes": {"synonyms": ["Data", "Knowledge"], "importance": "Essential"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Expert Judgment",
+            "relationship": "Informs",
+            "target": "Data Gathering"
+        },
+        {
+            "source": "Bias",
+            "relationship": "Affects",
+            "target": "Data Gathering"
+        },
+        {
+            "source": "Information",
+            "relationship": "Supports",
+            "target": "Expert Judgment"
+        },
+        {
+            "source": "Data Gathering",
+            "relationship": "Relies On",
+            "target": "Expert Judgment"
+        }
+    ]
+}

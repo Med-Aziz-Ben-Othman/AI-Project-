@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"definition": "Structured approach to understand and manage risks", "chapter": "Introduction", "synonyms": ["risk management process", "risk management"]}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Component", 
+            "attributes": {"purpose": "Identify, assess, and mitigate risks", "steps": "Defined steps in managing project risks"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"type": "Standard", "focus": "Management of risks within a project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

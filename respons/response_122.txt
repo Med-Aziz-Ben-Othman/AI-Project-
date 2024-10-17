@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "guideline rule",
+            "type": "Guideline",
+            "attributes": {"synonyms": ["policy", "protocol"], "type": "management"}
+        },
+        {
+            "name": "risk-related information",
+            "type": "Information",
+            "attributes": {"synonyms": ["risk data", "risk insights"], "type": "critical"}
+        },
+        {
+            "name": "stakeholder",
+            "type": "Entity",
+            "attributes": {"synonyms": ["interested party", "project participant"], "type": "individual or group"}
+        },
+        {
+            "name": "risk attitude",
+            "type": "Attitude",
+            "attributes": {"synonyms": ["risk tolerance", "risk perception"], "type": "behavioral"}
+        },
+        {
+            "name": "expectation",
+            "type": "Expectation",
+            "attributes": {"synonyms": ["anticipation", "forecast"], "type": "project outcome"}
+        },
+        {
+            "name": "correspond",
+            "type": "Action",
+            "attributes": {"synonyms": ["align", "relate"], "type": "communication"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "guideline rule",
+            "relationship": "provides",
+            "target": "risk-related information"
+        },
+        {
+            "source": "stakeholder",
+            "relationship": "has",
+            "target": "risk attitude"
+        },
+        {
+            "source": "stakeholder",
+            "relationship": "holds",
+            "target": "expectation"
+        },
+        {
+            "source": "expectation",
+            "relationship": "corresponds to",
+            "target": "stakeholder"
+        }
+    ]
+}

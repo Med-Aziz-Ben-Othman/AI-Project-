@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "action",
+            "type": "Task",
+            "attributes": {"synonyms": ["task", "activity"], "status": "pending"}
+        },
+        {
+            "name": "action owner",
+            "type": "Role",
+            "attributes": {"synonyms": ["owner", "responsible party"], "responsibility": "overseeing action"}
+        },
+        {
+            "name": "appropriate",
+            "type": "Criteria",
+            "attributes": {"synonyms": ["suitable", "fitting"], "context": "relevant to action delegation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "action",
+            "relationship": "delegated to",
+            "target": "action owner"
+        },
+        {
+            "source": "action owner",
+            "relationship": "meets criteria of",
+            "target": "appropriate"
+        }
+    ]
+}

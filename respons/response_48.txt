@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Management Process", "Project Risk Process"], "status": "Initiation", "phase": "Start"}
+        },
+        {
+            "name": "Initiation Step",
+            "type": "Step", 
+            "attributes": {"synonyms": ["Initiation Phase", "Starting Step"], "purpose": "Define project scope", "outcome": "Initial risk assessment"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "Includes",
+            "target": "Initiation Step"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Project Risk",
+            "type": "Risk Category", 
+            "attributes": {"definition": "The total risk associated with a project", "synonyms": ["Total Project Risk", "Aggregate Risk"]}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Analysis Technique", 
+            "attributes": {"definition": "A method to evaluate the risks quantitatively", "synonyms": ["Quantitative Analysis", "Numerical Risk Assessment"], "process": "Analytical"}
+        },
+        {
+            "name": "Risk Calculation",
+            "type": "Process", 
+            "attributes": {"definition": "The act of determining risk levels", "synonyms": ["Risk Estimation", "Risk Assessment"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Project Risk",
+            "relationship": "is assessed by",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "involves",
+            "target": "Risk Calculation"
+        }
+    ]
+}

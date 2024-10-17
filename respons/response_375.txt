@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Action Plan",
+            "type": "Document",
+            "attributes": {"synonyms": ["plan", "strategy"], "status": "draft", "owner": "Project Manager"}
+        },
+        {
+            "name": "Budget",
+            "type": "Financial Resource",
+            "attributes": {"amount": "variable", "currency": "USD", "status": "proposed"}
+        },
+        {
+            "name": "Schedule",
+            "type": "Project Timeline",
+            "attributes": {"duration": "variable", "start_date": "TBD", "end_date": "TBD"}
+        },
+        {
+            "name": "Resource",
+            "type": "Asset",
+            "attributes": {"type": "human", "availability": "variable", "status": "assigned"}
+        },
+        {
+            "name": "Scope",
+            "type": "Project Definition",
+            "attributes": {"details": "variable", "approval_status": "pending"}
+        },
+        {
+            "name": "Potential Change",
+            "type": "Risk Event",
+            "attributes": {"impact": "high", "likelihood": "medium", "status": "identified"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Action Plan",
+            "relationship": "entails",
+            "target": "Budget"
+        },
+        {
+            "source": "Action Plan",
+            "relationship": "entails",
+            "target": "Schedule"
+        },
+        {
+            "source": "Action Plan",
+            "relationship": "entails",
+            "target": "Resource"
+        },
+        {
+            "source": "Action Plan",
+            "relationship": "entails",
+            "target": "Scope"
+        },
+        {
+            "source": "Action Plan",
+            "relationship": "might cause",
+            "target": "Potential Change"
+        }
+    ]
+}

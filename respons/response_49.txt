@@ -1,0 +1,111 @@
+{
+    "nodes": [
+        {
+            "name": "Order",
+            "type": "Concept",
+            "attributes": {"synonyms": ["sequence", "arrangement"], "importance": "high"}
+        },
+        {
+            "name": "Common Understanding",
+            "type": "Concept",
+            "attributes": {"synonyms": ["shared knowledge", "mutual comprehension"], "importance": "critical"}
+        },
+        {
+            "name": "Agreement",
+            "type": "Concept",
+            "attributes": {"synonyms": ["contract", "consensus"], "importance": "essential"}
+        },
+        {
+            "name": "Team",
+            "type": "Entity",
+            "attributes": {"role": "collaborators", "type": "project team"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "interested party", "type": "external"}
+        },
+        {
+            "name": "Approach",
+            "type": "Concept",
+            "attributes": {"synonyms": ["method", "strategy"], "importance": "moderate"}
+        },
+        {
+            "name": "Parameter",
+            "type": "Concept",
+            "attributes": {"synonyms": ["factor", "criterion"], "importance": "moderate"}
+        },
+        {
+            "name": "Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk assessment", "risk control"], "importance": "high"}
+        },
+        {
+            "name": "Project Scope",
+            "type": "Concept",
+            "attributes": {"synonyms": ["project boundaries", "project definition"], "importance": "high"}
+        },
+        {
+            "name": "Objective",
+            "type": "Concept",
+            "attributes": {"synonyms": ["goal", "aim"], "importance": "critical"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"description": "systematic approach to identifying, assessing, and managing project risks", "importance": "essential"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Order",
+            "relationship": "ensures",
+            "target": "Common Understanding"
+        },
+        {
+            "source": "Common Understanding",
+            "relationship": "leads to",
+            "target": "Agreement"
+        },
+        {
+            "source": "Agreement",
+            "relationship": "involves",
+            "target": "Team"
+        },
+        {
+            "source": "Agreement",
+            "relationship": "involves",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Team",
+            "relationship": "applies",
+            "target": "Approach"
+        },
+        {
+            "source": "Approach",
+            "relationship": "considers",
+            "target": "Parameter"
+        },
+        {
+            "source": "Parameter",
+            "relationship": "affects",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Project Scope",
+            "relationship": "defines",
+            "target": "Objective"
+        },
+        {
+            "source": "Objective",
+            "relationship": "guides",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "manages",
+            "target": "Project Scope"
+        }
+    ]
+}

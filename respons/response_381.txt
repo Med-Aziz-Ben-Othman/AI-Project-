@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"synonyms": ["Risk Manager", "Risk Responsible"], "responsibilities": ["Identifying risks", "Assigning risk actions"]}
+        },
+        {
+            "name": "Risk Action Owner",
+            "type": "Role", 
+            "attributes": {"synonyms": ["Action Responsible", "Task Owner"], "responsibilities": ["Implementing risk actions", "Monitoring risk responses"]}
+        },
+        {
+            "name": "Single Person",
+            "type": "Entity", 
+            "attributes": {"description": "An individual assigned to manage risks", "role": "Can be a risk action owner"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Owner",
+            "relationship": "May Assign",
+            "target": "Single Person"
+        },
+        {
+            "source": "Single Person",
+            "relationship": "Is",
+            "target": "Risk Action Owner"
+        }
+    ]
+}

@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Exposure",
+            "type": "Risk",
+            "attributes": {"level": "time", "change": "result"}
+        },
+        {
+            "name": "Decision Action",
+            "type": "Action",
+            "attributes": {"type": "take", "context": "project internal change"}
+        },
+        {
+            "name": "Change Imposition",
+            "type": "Change",
+            "attributes": {"context": "project", "type": "internal"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Exposure",
+            "relationship": "affects",
+            "target": "Decision Action"
+        },
+        {
+            "source": "Decision Action",
+            "relationship": "involves",
+            "target": "Change Imposition"
+        },
+        {
+            "source": "Change Imposition",
+            "relationship": "results in",
+            "target": "Project Risk Exposure"
+        }
+    ]
+}

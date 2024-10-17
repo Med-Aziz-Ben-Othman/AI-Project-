@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Model",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["appropriate project model", "model"], "type": "quantitative", "use_case": "risk analysis"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["quantitative analysis"], "purpose": "evaluate project risks", "basis": "data-driven"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Model",
+            "relationship": "Used For",
+            "target": "Quantitative Risk Analysis"
+        }
+    ]
+}

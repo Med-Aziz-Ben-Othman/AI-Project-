@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management process", "risk assessment procedure"], "importance": "high", "status": "ongoing"}
+        },
+        {
+            "name": "Project Team",
+            "type": "Entity", 
+            "attributes": {"role": "team members", "responsibility": "execute project tasks"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "interested parties", "influence": "high", "expectations": "varied"}
+        },
+        {
+            "name": "Success Level",
+            "type": "Metric", 
+            "attributes": {"criteria": "success criteria", "indicators": ["timeliness", "quality", "budget adherence"]}
+        },
+        {
+            "name": "Authority",
+            "type": "Entity", 
+            "attributes": {"level": "decision-making", "scope": "project management"}
+        },
+        {
+            "name": "Action",
+            "type": "Activity", 
+            "attributes": {"types": ["preventive action", "corrective action"], "importance": "variable"}
+        },
+        {
+            "name": "Decision",
+            "type": "Process", 
+            "attributes": {"types": ["strategic decision", "operational decision"], "impact": "project outcome"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "involves",
+            "target": "Project Team"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "requires input from",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "has expectations for",
+            "target": "Success Level"
+        },
+        {
+            "source": "Authority",
+            "relationship": "determines",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "influences",
+            "target": "Decision"
+        },
+        {
+            "source": "Decision",
+            "relationship": "affects",
+            "target": "Success Level"
+        }
+    ]
+}

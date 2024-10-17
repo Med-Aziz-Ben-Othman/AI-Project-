@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"definition": "A plan that outlines how risks will be managed", "category": "Project Management", "synonyms": ["Risk Plan", "Risk Strategy"]}
+        },
+        {
+            "name": "Communication",
+            "type": "Concept",
+            "attributes": {"definition": "The process of exchanging information", "category": "Project Management", "synonyms": ["Information Exchange", "Dialogue"]}
+        },
+        {
+            "name": "Principle Category",
+            "type": "Concept",
+            "attributes": {"definition": "A fundamental category that guides project management", "synonyms": ["Core Category", "Main Category"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Involves",
+            "target": "Communication"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Defined by",
+            "target": "Principle Category"
+        }
+    ]
+}

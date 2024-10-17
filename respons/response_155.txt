@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management procedure", "risk assessment process"], "stage": "planning"}
+        },
+        {
+            "name": "Planning Session",
+            "type": "Event", 
+            "attributes": {"synonyms": ["planning meeting", "strategy session"], "purpose": "build common understanding"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "influencer", "interest": "project outcomes"}
+        },
+        {
+            "name": "Risk Management Technique",
+            "type": "Method", 
+            "attributes": {"synonyms": ["risk management tool", "risk mitigation technique"], "usage": "managing risk"}
+        },
+        {
+            "name": "Project Risk Approach",
+            "type": "Strategy", 
+            "attributes": {"synonyms": ["risk strategy", "risk response plan"], "goal": "gain agreement"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "includes",
+            "target": "Planning Session"
+        },
+        {
+            "source": "Planning Session",
+            "relationship": "aims to",
+            "target": "build common understanding"
+        },
+        {
+            "source": "Project Stakeholder",
+            "relationship": "engages in",
+            "target": "Planning Session"
+        },
+        {
+            "source": "Risk Management Technique",
+            "relationship": "applied in",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Project Risk Approach",
+            "relationship": "involves",
+            "target": "Risk Management Technique"
+        }
+    ]
+}

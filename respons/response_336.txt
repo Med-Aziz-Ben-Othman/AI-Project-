@@ -1,0 +1,76 @@
+{
+    "nodes": [
+        {
+            "name": "Decision Tree",
+            "type": "Method",
+            "attributes": {"synonyms": ["decision-making tree", "tree diagram"], "purpose": "to evaluate future events", "application": "risk analysis"}
+        },
+        {
+            "name": "Future Event",
+            "type": "Event",
+            "attributes": {"certainty": "uncertain", "impact": "variable"}
+        },
+        {
+            "name": "Probability",
+            "type": "Metric",
+            "attributes": {"type": "statistical", "purpose": "to assess likelihood"}
+        },
+        {
+            "name": "Impact",
+            "type": "Factor",
+            "attributes": {"type": "risk factor", "description": "potential effect on project"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {"synonyms": ["hazard", "threat"], "context": "project management"}
+        },
+        {
+            "name": "Overall Project Value",
+            "type": "Metric",
+            "attributes": {"description": "total worth of a project", "calculation": "based on combined effects"}
+        },
+        {
+            "name": "Cost",
+            "type": "Metric",
+            "attributes": {"type": "financial", "description": "investment required for project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Decision Tree",
+            "relationship": "uses",
+            "target": "Probability"
+        },
+        {
+            "source": "Decision Tree",
+            "relationship": "evaluates",
+            "target": "Future Event"
+        },
+        {
+            "source": "Future Event",
+            "relationship": "has",
+            "target": "Impact"
+        },
+        {
+            "source": "Impact",
+            "relationship": "contributes to",
+            "target": "Risk"
+        },
+        {
+            "source": "Probability",
+            "relationship": "affects",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "influences",
+            "target": "Overall Project Value"
+        },
+        {
+            "source": "Overall Project Value",
+            "relationship": "depends on",
+            "target": "Cost"
+        }
+    ]
+}

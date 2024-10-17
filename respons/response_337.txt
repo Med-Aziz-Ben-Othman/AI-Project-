@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Specification",
+            "type": "Risk Management Concept",
+            "attributes": {"level": "specified", "detail": "task line item", "type": "method"}
+        },
+        {
+            "name": "Cost",
+            "type": "Project Metric",
+            "attributes": {"type": "line item", "influence": "schedule", "impact": "entire project"}
+        },
+        {
+            "name": "Model",
+            "type": "Analytical Tool",
+            "attributes": {"purpose": "calculate effect", "application": "project objectives"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Project Goal",
+            "attributes": {"scope": "entire project", "focus": "cost and schedule"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Specification",
+            "relationship": "incorporates",
+            "target": "Model"
+        },
+        {
+            "source": "Model",
+            "relationship": "calculates effect on",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Cost",
+            "relationship": "affects",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Cost",
+            "relationship": "is influenced by",
+            "target": "Risk Specification"
+        }
+    ]
+}

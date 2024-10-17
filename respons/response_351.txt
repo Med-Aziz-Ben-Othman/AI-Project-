@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Probability Distribution",
+            "type": "Statistical Concept", 
+            "attributes": {"description": "A mathematical function that provides the probabilities of occurrence of different possible outcomes.", "synonyms": ["probability density function", "probability model"]}
+        },
+        {
+            "name": "Project Completion Date",
+            "type": "Project Metric", 
+            "attributes": {"description": "The date by which a project is expected to be completed.", "synonyms": ["deadline", "due date"]}
+        },
+        {
+            "name": "Total Cost",
+            "type": "Financial Metric", 
+            "attributes": {"description": "The overall budget allocated for the project.", "synonyms": ["overall expenditure", "total budget"]}
+        },
+        {
+            "name": "Expected Value",
+            "type": "Statistical Concept", 
+            "attributes": {"description": "The anticipated value for a given investment or project based on probability and outcomes.", "synonyms": ["mean value", "average outcome"]}
+        },
+        {
+            "name": "Project Decision",
+            "type": "Decision-Making Process", 
+            "attributes": {"description": "The process of making choices regarding the project execution.", "synonyms": ["project choice", "project selection"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Probability Distribution",
+            "relationship": "Affects",
+            "target": "Project Completion Date"
+        },
+        {
+            "source": "Total Cost",
+            "relationship": "Influences",
+            "target": "Expected Value"
+        },
+        {
+            "source": "Expected Value",
+            "relationship": "Informs",
+            "target": "Project Decision"
+        }
+    ]
+}

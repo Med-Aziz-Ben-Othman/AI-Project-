@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Probabilistic Technique",
+            "type": "Risk Management Technique", 
+            "attributes": {"synonyms": ["probability-based method"], "type": "quantitative"}
+        },
+        {
+            "name": "Projectwide Effect",
+            "type": "Project Impact", 
+            "attributes": {"description": "overall impact on the project", "scope": "entire project"}
+        },
+        {
+            "name": "Correlation Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "risks that are related due to interdependencies", "synonyms": ["correlated risks"]}
+        },
+        {
+            "name": "Interdependency",
+            "type": "Project Relationship", 
+            "attributes": {"description": "dependencies between project elements", "type": "dynamic"}
+        },
+        {
+            "name": "Feedback Loops",
+            "type": "Project Mechanism", 
+            "attributes": {"description": "circular cause-and-effect relationships", "impact": "can amplify risks"}
+        },
+        {
+            "name": "Overall Risk",
+            "type": "Risk Metric", 
+            "attributes": {"description": "cumulative risk faced by the project", "measurement": "degree of risk"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Probabilistic Technique",
+            "relationship": "assesses",
+            "target": "Overall Risk"
+        },
+        {
+            "source": "Projectwide Effect",
+            "relationship": "is influenced by",
+            "target": "Correlation Risk"
+        },
+        {
+            "source": "Correlation Risk",
+            "relationship": "arises from",
+            "target": "Interdependency"
+        },
+        {
+            "source": "Interdependency",
+            "relationship": "creates",
+            "target": "Feedback Loops"
+        },
+        {
+            "source": "Feedback Loops",
+            "relationship": "affect",
+            "target": "Overall Risk"
+        },
+        {
+            "source": "Overall Risk",
+            "relationship": "is determined by",
+            "target": "Projectwide Effect"
+        }
+    ]
+}

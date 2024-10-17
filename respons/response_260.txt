@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Bias",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["prejudice", "partiality"], "type": "Cognitive Bias", "impact": "High"}
+        },
+        {
+            "name": "Source of Information",
+            "type": "Entity", 
+            "attributes": {"description": "Origin of data used in decision making", "type": "Data Source"}
+        },
+        {
+            "name": "Unbiased Information",
+            "type": "Data Type", 
+            "attributes": {"description": "Objective and impartial data", "importance": "Critical"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Bias",
+            "relationship": "Identified In",
+            "target": "Source of Information"
+        },
+        {
+            "source": "Bias",
+            "relationship": "Remedied By",
+            "target": "Unbiased Information"
+        },
+        {
+            "source": "Source of Information",
+            "relationship": "Can Lead To",
+            "target": "Bias"
+        }
+    ]
+}

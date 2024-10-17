@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Risk",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["comprehensive risk", "aggregate risk"], "description": "The cumulative risk that affects project objectives."}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Objective", 
+            "attributes": {"synonyms": ["project goals", "project aims"], "description": "The specific outcomes the project aims to achieve."}
+        },
+        {
+            "name": "Combined Effect",
+            "type": "Risk Interaction", 
+            "attributes": {"synonyms": ["cumulative effect", "joint impact"], "description": "The interaction of multiple risks that can affect outcomes."}
+        },
+        {
+            "name": "Risk Potential",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["risk likelihood", "risk probability"], "description": "The likelihood that a risk will occur."}
+        },
+        {
+            "name": "Interaction",
+            "type": "Risk Relationship", 
+            "attributes": {"synonyms": ["relationship", "connection"], "description": "The way in which different risks or factors influence each other."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Risk",
+            "relationship": "affects",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Combined Effect",
+            "relationship": "results from",
+            "target": "Overall Risk"
+        },
+        {
+            "source": "Risk Potential",
+            "relationship": "influences",
+            "target": "Combined Effect"
+        },
+        {
+            "source": "Interaction",
+            "relationship": "describes",
+            "target": "Combined Effect"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"definition": "A systematic approach to managing risks", "scale": "Project Scale"}
+        },
+        {
+            "name": "Risk Threshold",
+            "type": "Metric", 
+            "attributes": {"definition": "The level of risk that is acceptable", "tolerance": "Risk Tolerance"}
+        },
+        {
+            "name": "Objective",
+            "type": "Goal", 
+            "attributes": {"definition": "A specific aim or target in the project", "related_to": "Risk Identification"}
+        },
+        {
+            "name": "Assessment Framework",
+            "type": "Framework", 
+            "attributes": {"definition": "A structured approach for evaluating risks", "purpose": "Risk Assessment"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "includes",
+            "target": "Risk Threshold"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "defines",
+            "target": "Objective"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "utilizes",
+            "target": "Assessment Framework"
+        }
+    ]
+}

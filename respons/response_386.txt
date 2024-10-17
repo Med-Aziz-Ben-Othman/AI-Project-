@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Residual Risk",
+            "type": "Risk Type", 
+            "attributes": {"definition": "The risk that remains after risk treatment", "synonyms": ["remaining risk", "leftover risk"], "status": "potential"}
+        },
+        {
+            "name": "Response Implementation",
+            "type": "Risk Management Action", 
+            "attributes": {"definition": "The process of executing actions to manage identified risks", "synonyms": ["risk response execution", "risk treatment"], "status": "active"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Response Implementation",
+            "relationship": "Aims to Mitigate",
+            "target": "Residual Risk"
+        }
+    ]
+}

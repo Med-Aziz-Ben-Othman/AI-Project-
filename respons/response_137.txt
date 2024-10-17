@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Critical Success Factor",
+            "type": "Concept", 
+            "attributes": {"definition": "A factor that is critical to the success of a project", "synonyms": ["Key Performance Indicator", "Success Criterion"]}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"definition": "A process to identify, assess, and manage risks", "steps": ["Risk Identification", "Risk Analysis", "Risk Response", "Monitoring and Review"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Critical Success Factor",
+            "relationship": "Influences",
+            "target": "Risk Management Process"
+        }
+    ]
+}

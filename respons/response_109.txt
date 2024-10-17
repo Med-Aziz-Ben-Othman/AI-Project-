@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Success Criterion",
+            "type": "Category",
+            "attributes": {"synonyms": ["Success Metric", "Success Indicator"], "type": "Assessment"}
+        },
+        {
+            "name": "Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Mitigation", "Risk Control"], "type": "Management"}
+        },
+        {
+            "name": "Project Success",
+            "type": "Outcome",
+            "attributes": {"synonyms": ["Project Achievement", "Project Completion"], "type": "Result"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Project Risk Control", "Project Risk Mitigation"], "type": "Management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Success Criterion",
+            "relationship": "Evaluates",
+            "target": "Project Success"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "Supports",
+            "target": "Project Success"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Is a Type Of",
+            "target": "Risk Management"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process Flow Diagram",
+            "type": "Diagram",
+            "attributes": {"description": "Visual representation of the steps involved in project risk management", "created_by": "Project Management Institute", "synonyms": ["risk management flowchart", "process flow for risk management"]}
+        },
+        {
+            "name": "Project Management Institute",
+            "type": "Organization",
+            "attributes": {"acronym": "PMI", "focus_area": "Project Management", "type": "Non-profit"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process Flow Diagram",
+            "relationship": "Created By",
+            "target": "Project Management Institute"
+        }
+    ]
+}

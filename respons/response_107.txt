@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"frequency": "normal", "process": "repeat", "condition": "exceptional", "action": "correspond", "initiate": "true"}
+        },
+        {
+            "name": "Exceptional Condition",
+            "type": "Condition",
+            "attributes": {"description": "specific", "impact": "potential risk"}
+        },
+        {
+            "name": "Action",
+            "type": "Activity",
+            "attributes": {"type": "correspond", "initiate": "true"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "defines",
+            "target": "Exceptional Condition"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "initiates",
+            "target": "Action"
+        }
+    ]
+}

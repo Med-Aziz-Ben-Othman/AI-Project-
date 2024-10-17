@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risks",
+            "type": "Category", 
+            "attributes": {"synonyms": ["hazards", "threats"], "type": "project management risk"}
+        },
+        {
+            "name": "Categories",
+            "type": "Concept", 
+            "attributes": {"definition": "Classes used to classify risks", "examples": ["technical", "financial", "operational"]}
+        },
+        {
+            "name": "Figure",
+            "type": "Visual Aid", 
+            "attributes": {"description": "Illustration showing risk categories", "type": "diagram"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risks",
+            "relationship": "is classified into",
+            "target": "Categories"
+        },
+        {
+            "source": "Categories",
+            "relationship": "is illustrated by",
+            "target": "Figure"
+        }
+    ]
+}

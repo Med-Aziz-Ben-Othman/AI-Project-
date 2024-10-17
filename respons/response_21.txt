@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Identified Risk",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["recognized risk", "noticed risk"], "status": "escalated"}
+        },
+        {
+            "name": "Senior Management",
+            "type": "Entity", 
+            "attributes": {"role": "decision maker", "authority level": "high"}
+        },
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"responsibilities": ["manage project", "coordinate actions"], "authority": "medium"}
+        },
+        {
+            "name": "Outside Authority",
+            "type": "Entity", 
+            "attributes": {"role": "external stakeholder", "influence": "limited"}
+        },
+        {
+            "name": "Risk Management Reserve Fund",
+            "type": "Financial Resource", 
+            "attributes": {"usage": "risk mitigation", "availability": "conditional"}
+        },
+        {
+            "name": "Action",
+            "type": "Activity", 
+            "attributes": {"type": "risk response", "required input": "yes"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "requires input from",
+            "target": "Senior Management"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "escalates",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Senior Management",
+            "relationship": "oversees",
+            "target": "Action"
+        },
+        {
+            "source": "Outside Authority",
+            "relationship": "provides guidance to",
+            "target": "Project Manager"
+        },
+        {
+            "source": "Risk Management Reserve Fund",
+            "relationship": "allocated for",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Action",
+            "relationship": "involves",
+            "target": "Outside Authority"
+        }
+    ]
+}

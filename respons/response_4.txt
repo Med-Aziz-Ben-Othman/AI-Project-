@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Team Member",
+            "type": "Person/Role", 
+            "attributes": {"role": "Team Member", "synonyms": ["team player", "project contributor"], "responsibility": "Execute tasks within the project"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Person/Role", 
+            "attributes": {"role": "Stakeholder", "synonyms": ["interested party", "investor"], "influence": "Impact project decisions"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal", 
+            "attributes": {"description": "Desired outcome of the project", "criteria": ["measurable", "achievable"], "importance": "Guides project direction"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Team Member",
+            "relationship": "Depends On",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "Influences",
+            "target": "Project Objective"
+        }
+    ]
+}

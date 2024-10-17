@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Structure Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "risk associated with the organization or framework of the project", "synonyms": ["organizational risk", "framework risk"], "impact": "can affect project execution"}
+        },
+        {
+            "name": "Clarity",
+            "type": "Risk Attribute", 
+            "attributes": {"importance": "high", "related to": "communication and understanding", "implications": "lack of clarity can lead to misinterpretations"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Structure Risk",
+            "relationship": "influences",
+            "target": "Clarity"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource",
+            "attributes": {"description": "Funds set aside for unforeseen circumstances", "synonyms": ["buffer", "safety reserve"]}
+        },
+        {
+            "name": "Time Resource",
+            "type": "Resource",
+            "attributes": {"description": "The amount of time allocated for project tasks", "synonyms": ["time allocation", "schedule resource"]}
+        },
+        {
+            "name": "Project Scope",
+            "type": "Project Management Concept",
+            "attributes": {"description": "Defines the boundaries and deliverables of the project", "synonyms": ["scope of work", "project boundaries"]}
+        },
+        {
+            "name": "Change Plan",
+            "type": "Project Management Document",
+            "attributes": {"description": "A plan outlining changes to be made in the project", "synonyms": ["change management plan", "modification plan"]}
+        },
+        {
+            "name": "Risk of Overexpenditure",
+            "type": "Risk",
+            "attributes": {"description": "The risk associated with exceeding budget or available resources", "synonyms": ["budget overrun risk", "cost overrun risk"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Contingency Reserve",
+            "relationship": "Requires",
+            "target": "Time Resource"
+        },
+        {
+            "source": "Time Resource",
+            "relationship": "Exceeds",
+            "target": "Contingency Reserve"
+        },
+        {
+            "source": "Change Plan",
+            "relationship": "May Result From",
+            "target": "Project Scope"
+        },
+        {
+            "source": "Change Plan",
+            "relationship": "May Lead To",
+            "target": "Risk of Overexpenditure"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Status",
+            "type": "Risk Management Concept", 
+            "attributes": {"synonyms": ["risk condition", "risk level"], "description": "Current evaluation of the risk"}
+        },
+        {
+            "name": "Key Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "decision maker", "influence": "high", "description": "Individual or group with significant interest in the project"}
+        },
+        {
+            "name": "Recommendation",
+            "type": "Action", 
+            "attributes": {"type": "advisory", "description": "Suggested course of action based on analysis"}
+        },
+        {
+            "name": "Strategic Decision",
+            "type": "Decision Type", 
+            "attributes": {"level": "high", "description": "Long-term choice that affects project direction"}
+        },
+        {
+            "name": "Acceptable Risk Exposure",
+            "type": "Risk Metric", 
+            "attributes": {"definition": "Level of risk that is tolerable", "description": "Threshold for risk that can be managed"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Status",
+            "relationship": "Informs",
+            "target": "Recommendation"
+        },
+        {
+            "source": "Recommendation",
+            "relationship": "Leads to",
+            "target": "Strategic Decision"
+        },
+        {
+            "source": "Strategic Decision",
+            "relationship": "Affects",
+            "target": "Acceptable Risk Exposure"
+        },
+        {
+            "source": "Key Stakeholder",
+            "relationship": "Provides",
+            "target": "Recommendation"
+        },
+        {
+            "source": "Recommendation",
+            "relationship": "Aims to Maintain",
+            "target": "Acceptable Risk Exposure"
+        }
+    ]
+}

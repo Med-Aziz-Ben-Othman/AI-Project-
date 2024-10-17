@@ -1,0 +1,54 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {
+                "definition": "A formal document that outlines how risks will be identified, assessed, and managed.",
+                "status": "Modified",
+                "purpose": "To ensure proper tracking of expenditures and conditions."
+            }
+        },
+        {
+            "name": "Monitoring Method",
+            "type": "Methodology",
+            "attributes": {
+                "description": "A systematic approach to observe and track risks and expenditures.",
+                "synonyms": ["Tracking Method", "Oversight Method"]
+            }
+        },
+        {
+            "name": "Expenditure",
+            "type": "Financial Metric",
+            "attributes": {
+                "description": "The amount of money spent on project activities.",
+                "tracked_condition": "Ensured to be tracked according to the plan."
+            }
+        },
+        {
+            "name": "Budget",
+            "type": "Financial Resource",
+            "attributes": {
+                "description": "An estimate of the total costs required for the project.",
+                "status": "Pending Approval"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Defines",
+            "target": "Monitoring Method"
+        },
+        {
+            "source": "Monitoring Method",
+            "relationship": "Ensures",
+            "target": "Expenditure"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Modifies",
+            "target": "Budget"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"synonyms": ["hazard", "threat"], "type": "priority base risk"}
+        },
+        {
+            "name": "Probability",
+            "type": "Risk Attribute", 
+            "attributes": {"synonyms": ["likelihood", "chance"], "description": "the likelihood of occurrence"}
+        },
+        {
+            "name": "Potential Impact",
+            "type": "Risk Attribute", 
+            "attributes": {"synonyms": ["consequence", "effect"], "description": "the potential effect of the risk on project objectives"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Project Element", 
+            "attributes": {"synonyms": ["goals", "targets"], "description": "specific goals of the project"}
+        },
+        {
+            "name": "Whole Project",
+            "type": "Project Scope", 
+            "attributes": {"synonyms": ["entire project", "overall project"], "description": "the complete scope of the project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "has",
+            "target": "Probability"
+        },
+        {
+            "source": "Risk",
+            "relationship": "has",
+            "target": "Potential Impact"
+        },
+        {
+            "source": "Risk",
+            "relationship": "affects",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Risk",
+            "relationship": "relates to",
+            "target": "Whole Project"
+        }
+    ]
+}

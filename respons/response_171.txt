@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Risk", 
+            "attributes": {"synonyms": ["threat", "hazard", "uncertainty"], "status": "unknown", "stage": "outset"}
+        },
+        {
+            "name": "Project",
+            "type": "Project", 
+            "attributes": {"phase": "initial", "scope": "undefined", "complexity": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "associated with",
+            "target": "Project"
+        }
+    ]
+}

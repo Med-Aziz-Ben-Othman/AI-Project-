@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"responsibility": "overseeing project", "type": "leadership"}
+        },
+        {
+            "name": "Project Team Member",
+            "type": "Role", 
+            "attributes": {"responsibility": "task execution", "type": "collaboration"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"influence": "high", "type": "interest"}
+        },
+        {
+            "name": "Broader Organization",
+            "type": "Entity", 
+            "attributes": {"scope": "organizational impact", "type": "external"}
+        },
+        {
+            "name": "Subject Matter Expert",
+            "type": "Role", 
+            "attributes": {"responsibility": "providing expertise", "type": "consultation"}
+        },
+        {
+            "name": "Facilitator",
+            "type": "Role", 
+            "attributes": {"responsibility": "guiding discussions", "type": "moderation"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "selects",
+            "target": "Project Team Member"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "engages",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Project Team Member",
+            "relationship": "works with",
+            "target": "Subject Matter Expert"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "impacts",
+            "target": "Broader Organization"
+        },
+        {
+            "source": "Facilitator",
+            "relationship": "aids",
+            "target": "Project Team Member"
+        }
+    ]
+}

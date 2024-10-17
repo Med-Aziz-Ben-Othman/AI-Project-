@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Source Bias",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["bias from source", "origin bias"], "type": "cognitive bias"}
+        },
+        {
+            "name": "Effect",
+            "type": "Impact", 
+            "attributes": {"synonyms": ["outcome", "result"], "type": "negative outcome"}
+        },
+        {
+            "name": "Risk Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management process", "risk handling"], "type": "project management"}
+        },
+        {
+            "name": "Proactive Management",
+            "type": "Strategy", 
+            "attributes": {"synonyms": ["preventive measures", "anticipatory management"], "type": "risk management strategy"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Source Bias",
+            "relationship": "Exposes",
+            "target": "Effect"
+        },
+        {
+            "source": "Risk Process",
+            "relationship": "Manages",
+            "target": "Proactive Management"
+        }
+    ]
+}

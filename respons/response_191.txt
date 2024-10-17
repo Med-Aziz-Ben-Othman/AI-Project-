@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"definition": "uncertain event or condition", "effect": ["positive", "negative"], "related_to": "project objectives"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Concept", 
+            "attributes": {"definition": "goal or target of the project", "importance": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "affects",
+            "target": "Project Objective"
+        }
+    ]
+}

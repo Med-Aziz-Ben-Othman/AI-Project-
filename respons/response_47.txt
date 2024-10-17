@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Successful Project Risk Management Implementation",
+            "type": "Process",
+            "attributes": {"importance": "high", "status": "requires understanding"}
+        },
+        {
+            "name": "Risk Threshold",
+            "type": "Concept",
+            "attributes": {"definition": "level of risk acceptable to stakeholders", "synonyms": ["risk limit", "risk boundary"]}
+        },
+        {
+            "name": "Key Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "decision-maker", "influence": "high"}
+        },
+        {
+            "name": "Acceptable Level of Risk",
+            "type": "Concept",
+            "attributes": {"criteria": "defined by stakeholders", "significance": "guides project decisions"}
+        },
+        {
+            "name": "Risk Framework",
+            "type": "Structure",
+            "attributes": {"purpose": "identify and assess risks", "components": ["risk identification", "risk assessment"]}
+        },
+        {
+            "name": "Identified Risks",
+            "type": "Concept",
+            "attributes": {"status": "assessed", "impact": "varies"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Successful Project Risk Management Implementation",
+            "relationship": "requires",
+            "target": "Clear Understanding of Risk Threshold"
+        },
+        {
+            "source": "Risk Threshold",
+            "relationship": "defines",
+            "target": "Acceptable Level of Risk"
+        },
+        {
+            "source": "Key Stakeholder",
+            "relationship": "provides",
+            "target": "Acceptable Level of Risk"
+        },
+        {
+            "source": "Risk Framework",
+            "relationship": "utilizes",
+            "target": "Identified Risks"
+        },
+        {
+            "source": "Identified Risks",
+            "relationship": "assessed by",
+            "target": "Risk Framework"
+        }
+    ]
+}

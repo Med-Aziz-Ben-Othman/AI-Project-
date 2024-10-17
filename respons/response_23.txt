@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Audit",
+            "type": "Process",
+            "attributes": {"synonyms": ["examination", "review"], "category": "Financial"}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Strategy",
+            "attributes": {"synonyms": ["risk mitigation", "risk management"], "category": "Project Management"}
+        },
+        {
+            "name": "Effectiveness",
+            "type": "Measurement",
+            "attributes": {"synonyms": ["efficacy", "efficiency"], "category": "Performance Indicator"}
+        },
+        {
+            "name": "Document",
+            "type": "Artifact",
+            "attributes": {"synonyms": ["report", "file"], "category": "Documentation"}
+        },
+        {
+            "name": "Lesson Learned",
+            "type": "Knowledge",
+            "attributes": {"synonyms": ["insight", "takeaway"], "category": "Project Improvement"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Audit",
+            "relationship": "assesses",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "evaluates",
+            "target": "Effectiveness"
+        },
+        {
+            "source": "Effectiveness",
+            "relationship": "documented in",
+            "target": "Document"
+        },
+        {
+            "source": "Document",
+            "relationship": "contains",
+            "target": "Lesson Learned"
+        }
+    ]
+}

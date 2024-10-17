@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Process", 
+            "attributes": {"importance": "high", "focus": "risk management", "view": "effective"}
+        },
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"importance": "important", "optional": "true", "additional overhead": "task"}
+        },
+        {
+            "name": "Overhead Task",
+            "type": "Task", 
+            "attributes": {"type": "additional", "nature": "optional"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "includes",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "requires",
+            "target": "Overhead Task"
+        }
+    ]
+}

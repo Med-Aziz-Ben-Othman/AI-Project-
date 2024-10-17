@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Document",
+            "type": "Artifact", 
+            "attributes": {"status": "pending", "type": "approval", "importance": "high"}
+        },
+        {
+            "name": "Senior Level",
+            "type": "Stakeholder", 
+            "attributes": {"role": "decision-maker", "authority": "high", "influence": "significant"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Document",
+            "relationship": "Requires Approval From",
+            "target": "Senior Level"
+        }
+    ]
+}

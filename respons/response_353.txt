@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource", 
+            "attributes": {"amount": "cost", "level_of_confidence": "required", "type": "reserve"}
+        },
+        {
+            "name": "Resource",
+            "type": "Project Element", 
+            "attributes": {"type": "time", "need": "provide"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Contingency Reserve",
+            "relationship": "Provides",
+            "target": "Resource"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "External Project Risk",
+            "type": "Risk",
+            "attributes": {"importance": "high", "affect": "enterprise", "scope": "beyond project"}
+        },
+        {
+            "name": "Enterprise",
+            "type": "Entity",
+            "attributes": {"type": "organization", "scope": "overall impact"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"type": "specific project", "status": "under assessment"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "External Project Risk",
+            "relationship": "increases",
+            "target": "Enterprise"
+        },
+        {
+            "source": "External Project Risk",
+            "relationship": "affects",
+            "target": "Project"
+        }
+    ]
+}

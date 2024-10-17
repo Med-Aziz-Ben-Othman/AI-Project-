@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Agreed-upon Definition",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["agreed definition", "mutually accepted definition"], "importance": "high", "context": "project management"}
+        },
+        {
+            "name": "High-quality Information",
+            "type": "Data Quality", 
+            "attributes": {"synonyms": ["reliable information", "accurate information"], "characteristics": ["valid", "relevant", "timely"], "impact": "critical"}
+        },
+        {
+            "name": "Information Collection",
+            "type": "Process", 
+            "attributes": {"synonyms": ["data gathering", "information gathering"], "methods": ["surveys", "interviews", "observations"], "importance": "essential"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Agreed-upon Definition",
+            "relationship": "enables",
+            "target": "High-quality Information"
+        },
+        {
+            "source": "High-quality Information",
+            "relationship": "is derived from",
+            "target": "Information Collection"
+        }
+    ]
+}

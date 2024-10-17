@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Evaluation",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk analysis"], "techniques": ["qualitative technique", "quantitative technique"], "purpose": "to address individual risk and consider overall effect on project outcome"} 
+        },
+        {
+            "name": "Qualitative Technique",
+            "type": "Technique", 
+            "attributes": {"description": "technique used to assess individual risks", "focus": "subjective assessment"}
+        },
+        {
+            "name": "Quantitative Technique",
+            "type": "Technique", 
+            "attributes": {"description": "technique used to consider overall effect on project outcome", "focus": "objective measurement"}
+        },
+        {
+            "name": "Project Outcome",
+            "type": "Result", 
+            "attributes": {"description": "final results of the project", "impact": "affected by risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Evaluation",
+            "relationship": "uses",
+            "target": "Qualitative Technique"
+        },
+        {
+            "source": "Risk Evaluation",
+            "relationship": "uses",
+            "target": "Quantitative Technique"
+        },
+        {
+            "source": "Qualitative Technique",
+            "relationship": "addresses",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Quantitative Technique",
+            "relationship": "considers",
+            "target": "Project Outcome"
+        },
+        {
+            "source": "Risk Evaluation",
+            "relationship": "results in",
+            "target": "Project Outcome"
+        }
+    ]
+}

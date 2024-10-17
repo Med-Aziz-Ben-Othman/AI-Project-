@@ -1,0 +1,29 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Management Technique", 
+            "attributes": {
+                "description": "A method for evaluating risks using numerical values.",
+                "synonyms": ["Quantitative Analysis", "Statistical Risk Analysis"],
+                "type": "Risk Assessment"
+            }
+        },
+        {
+            "name": "Project Management Institute",
+            "type": "Organization", 
+            "attributes": {
+                "abbreviation": "PMI",
+                "location": "USA",
+                "established": "1969"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Developed By",
+            "target": "Project Management Institute"
+        }
+    ]
+}

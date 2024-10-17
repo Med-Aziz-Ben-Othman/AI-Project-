@@ -1,0 +1,76 @@
+{
+    "nodes": [
+        {
+            "name": "Critical Success Factor",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["CSF"], "importance": "High"}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"status": "Valid", "purpose": "Identify and manage risks"}
+        },
+        {
+            "name": "Principal Criterion",
+            "type": "Criterion", 
+            "attributes": {"definition": "A standard for evaluating risk management plans"}
+        },
+        {
+            "name": "Stakeholder Alignment",
+            "type": "Process", 
+            "attributes": {"importance": "Critical", "related_to": "Stakeholder engagement"}
+        },
+        {
+            "name": "Internal Constraint",
+            "type": "Constraint", 
+            "attributes": {"definition": "Limitations within the organization"}
+        },
+        {
+            "name": "External Constraint",
+            "type": "Constraint", 
+            "attributes": {"definition": "Limitations from outside the organization"}
+        },
+        {
+            "name": "Project Balance",
+            "type": "Concept", 
+            "attributes": {"factors": ["Cost", "Effort", "Benefit"], "definition": "Equilibrium among project factors"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"definition": "Systematic process for identifying and mitigating risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Critical Success Factor",
+            "relationship": "Influences",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Principal Criterion",
+            "relationship": "Guides",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Stakeholder Alignment",
+            "relationship": "Requires",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Internal Constraint",
+            "relationship": "Affects",
+            "target": "Project Balance"
+        },
+        {
+            "source": "External Constraint",
+            "relationship": "Affects",
+            "target": "Project Balance"
+        },
+        {
+            "source": "Project Balance",
+            "relationship": "Impacts",
+            "target": "Project Risk Management"
+        }
+    ]
+}

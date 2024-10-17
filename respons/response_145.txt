@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"purpose": "to deliver value", "importance": "integral part of project"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"role": "carry integral part of project", "function": "manage risks"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"objective": "successful completion", "components": "tasks, resources"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Supports",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Part of",
+            "target": "Project"
+        }
+    ]
+}

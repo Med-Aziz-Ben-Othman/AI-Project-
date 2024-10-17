@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Assessment",
+            "type": "Process", 
+            "attributes": {"importance": "high", "focus": "project objectives", "synonyms": ["risk evaluation", "risk analysis"]}
+        },
+        {
+            "name": "High Priority Risks",
+            "type": "Risk Type", 
+            "attributes": {"threaten": "project objectives", "impact": "significant"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Goal", 
+            "attributes": {"importance": "important", "synonyms": ["project goals", "project targets"]}
+        },
+        {
+            "name": "Risk Response Planning",
+            "type": "Process", 
+            "attributes": {"goal": "enhance achievement", "synonyms": ["risk management planning", "risk mitigation planning"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Assessment",
+            "relationship": "assesses",
+            "target": "High Priority Risks"
+        },
+        {
+            "source": "High Priority Risks",
+            "relationship": "threatens",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Risk Response Planning",
+            "relationship": "aims to enhance",
+            "target": "Project Objectives"
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["ambiguity", "instability"], "importance": "high", "description": "Variability in project outcomes due to unknowns."}
+        },
+        {
+            "name": "Monte Carlo Simulation",
+            "type": "Quantitative Technique", 
+            "attributes": {"synonyms": ["stochastic simulation"], "purpose": "risk analysis", "description": "A method used to understand the impact of risk and uncertainty in project cost and schedule."}
+        },
+        {
+            "name": "Overall Project Cost",
+            "type": "Project Metric", 
+            "attributes": {"synonyms": ["total cost", "budget"], "description": "The sum of all costs associated with the project."}
+        },
+        {
+            "name": "Schedule",
+            "type": "Project Metric", 
+            "attributes": {"synonyms": ["timeline", "project schedule"], "description": "A plan for carrying out a process or project, including the timing of tasks."}
+        },
+        {
+            "name": "Deterministic Approach",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["fixed approach"], "description": "An approach that assumes a fixed outcome for project activities."}
+        },
+        {
+            "name": "Activity Duration",
+            "type": "Project Metric", 
+            "attributes": {"synonyms": ["task duration", "time estimate"], "description": "The estimated time required to complete a specific project activity."}
+        },
+        {
+            "name": "Line-item Cost Estimate",
+            "type": "Cost Estimate", 
+            "attributes": {"synonyms": ["detailed cost estimate"], "description": "A breakdown of costs associated with individual project activities."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Uncertainty",
+            "relationship": "affects",
+            "target": "Monte Carlo Simulation"
+        },
+        {
+            "source": "Monte Carlo Simulation",
+            "relationship": "provides realism to",
+            "target": "Overall Project Cost"
+        },
+        {
+            "source": "Monte Carlo Simulation",
+            "relationship": "provides realism to",
+            "target": "Schedule"
+        },
+        {
+            "source": "Deterministic Approach",
+            "relationship": "assumes",
+            "target": "Activity Duration"
+        },
+        {
+            "source": "Deterministic Approach",
+            "relationship": "assumes",
+            "target": "Line-item Cost Estimate"
+        }
+    ]
+}

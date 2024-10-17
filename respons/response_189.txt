@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment", "risk analysis"], "importance": "critical", "stage": "planning"}
+        },
+        {
+            "name": "Immediate Project Team",
+            "type": "Team", 
+            "attributes": {"role": "project execution", "responsibility": "risk management", "size": "variable"}
+        },
+        {
+            "name": "Notable Risk",
+            "type": "Risk", 
+            "attributes": {"severity": "high", "impact": "significant", "probability": "potentially high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Immediate Project Team",
+            "relationship": "conducts",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "exposes",
+            "target": "Notable Risk"
+        }
+    ]
+}

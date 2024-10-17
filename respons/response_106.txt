@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Progressive Elaboration",
+            "type": "Project Management Process",
+            "attributes": {"synonyms": ["iterative development", "incremental planning"], "description": "A process of continuously improving and detailing a plan as more information becomes available."}
+        },
+        {
+            "name": "Risk Management Activity",
+            "type": "Activity",
+            "attributes": {"synonyms": ["risk assessment", "risk mitigation"], "description": "The process of identifying, analyzing, and responding to project risks."}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"description": "A temporary endeavor undertaken to create a unique product, service, or result."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Progressive Elaboration",
+            "relationship": "Involves",
+            "target": "Risk Management Activity"
+        },
+        {
+            "source": "Risk Management Activity",
+            "relationship": "Occurs Throughout",
+            "target": "Project"
+        }
+    ]
+}

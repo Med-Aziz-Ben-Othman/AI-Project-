@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Technique",
+            "type": "Method",
+            "attributes": {"synonyms": ["approach", "strategy"], "description": "A systematic method used to achieve a specific goal."}
+        },
+        {
+            "name": "Overall Risk Priority Measure",
+            "type": "Metric",
+            "attributes": {"synonyms": ["risk assessment", "risk ranking"], "description": "A quantifiable measure of the priority of risks."}
+        },
+        {
+            "name": "Document",
+            "type": "Artifact",
+            "attributes": {"synonyms": ["record", "file"], "description": "A formal written record or report."}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk assessment process", "risk control process"], "description": "A systematic approach to identifying, evaluating, and responding to project risks."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Technique",
+            "relationship": "Creates",
+            "target": "Overall Risk Priority Measure"
+        },
+        {
+            "source": "Overall Risk Priority Measure",
+            "relationship": "Documented in",
+            "target": "Document"
+        },
+        {
+            "source": "Document",
+            "relationship": "Used in",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "Involves",
+            "target": "Technique"
+        }
+    ]
+}

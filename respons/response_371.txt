@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"chapter": "Standard", "type": "Management"}
+        },
+        {
+            "name": "Risk Response Plan",
+            "type": "Document",
+            "attributes": {"purpose": "Outline responses", "focus": "Individual risks"}
+        },
+        {
+            "name": "Risk Response Process",
+            "type": "Procedure",
+            "attributes": {"function": "Determine response actions", "goal": "Effective response"}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Entity",
+            "attributes": {"priority": "Appropriate", "impact": "Variable"}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Concept",
+            "attributes": {"aggregation": "All individual risks", "assessment": "Cumulative impact"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Includes",
+            "target": "Risk Response Plan"
+        },
+        {
+            "source": "Risk Response Plan",
+            "relationship": "Guides",
+            "target": "Risk Response Process"
+        },
+        {
+            "source": "Risk Response Process",
+            "relationship": "Affects",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "Contributes to",
+            "target": "Overall Project Risk"
+        }
+    ]
+}

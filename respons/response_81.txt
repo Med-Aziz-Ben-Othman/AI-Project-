@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "oversee risk management", "synonyms": ["risk manager", "risk controller"]}
+        },
+        {
+            "name": "Monitor Action",
+            "type": "Process", 
+            "attributes": {"description": "tracking risk management actions", "synonyms": ["oversight action", "supervision"]}
+        },
+        {
+            "name": "Effectiveness",
+            "type": "Metric", 
+            "attributes": {"description": "measure of success", "synonyms": ["efficacy", "performance"]}
+        },
+        {
+            "name": "Secondary Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "new risks arising from responses", "synonyms": ["indirect risk", "consequential risk"]}
+        },
+        {
+            "name": "Implementation Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "risks associated with executing the project", "synonyms": ["execution risk", "operational risk"]}
+        },
+        {
+            "name": "Risk Response",
+            "type": "Strategy", 
+            "attributes": {"description": "actions to mitigate risks", "synonyms": ["risk mitigation", "risk management strategy"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Owner",
+            "relationship": "performs",
+            "target": "Monitor Action"
+        },
+        {
+            "source": "Monitor Action",
+            "relationship": "determines",
+            "target": "Effectiveness"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "may lead to",
+            "target": "Secondary Risk"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "addresses",
+            "target": "Implementation Risk"
+        }
+    ]
+}

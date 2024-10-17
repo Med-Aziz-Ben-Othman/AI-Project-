@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Result Analysis",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Outcome Evaluation"], "importance": "High", "related_concepts": ["Risk Response", "Planning"]}
+        },
+        {
+            "name": "Urgency Risk Response",
+            "type": "Risk Management Strategy", 
+            "attributes": {"synonyms": ["Immediate Risk Mitigation"], "priority": "High", "description": "Actions taken promptly to mitigate risks"}
+        },
+        {
+            "name": "Risk Response Plan",
+            "type": "Document", 
+            "attributes": {"key1": "Risk Mitigation Strategy", "key2": "Contingency Planning"}
+        },
+        {
+            "name": "Probability",
+            "type": "Statistical Measure", 
+            "attributes": {"definition": "Likelihood of an event occurring", "importance": "Critical"}
+        },
+        {
+            "name": "Plan Objective",
+            "type": "Project Goal", 
+            "attributes": {"description": "Desired outcome of the project", "related_terms": ["Project Scope", "Deliverables"]}
+        },
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource", 
+            "attributes": {"definition": "Funds set aside for unforeseen circumstances", "importance": "Essential"}
+        },
+        {
+            "name": "Confidence Level",
+            "type": "Measurement", 
+            "attributes": {"definition": "Degree of certainty in achieving objectives", "scale": "0-100%"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Result Analysis",
+            "relationship": "Influences",
+            "target": "Urgency Risk Response"
+        },
+        {
+            "source": "Risk Response Plan",
+            "relationship": "Depends on",
+            "target": "Probability"
+        },
+        {
+            "source": "Risk Response Plan",
+            "relationship": "Aims to Achieve",
+            "target": "Plan Objective"
+        },
+        {
+            "source": "Contingency Reserve",
+            "relationship": "Required for",
+            "target": "Confidence Level"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"key1": "responsible for project execution", "key2": "communicates with stakeholders"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"key1": "influences project outcomes", "key2": "has changing attitudes"}
+        },
+        {
+            "name": "Risk Management Approach",
+            "type": "Process", 
+            "attributes": {"key1": "adaptive", "key2": "considers new facts"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"key1": "subject to changes", "key2": "evolves over time"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "communicates with",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "influences",
+            "target": "Project"
+        },
+        {
+            "source": "Project",
+            "relationship": "evolves due to",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "affects",
+            "target": "Risk Management Approach"
+        },
+        {
+            "source": "Risk Management Approach",
+            "relationship": "adapts to",
+            "target": "new facts"
+        }
+    ]
+}

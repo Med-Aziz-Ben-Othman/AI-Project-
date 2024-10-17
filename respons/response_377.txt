@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Specification Risk",
+            "type": "Risk Type", 
+            "attributes": {"description": "A potential issue arising from the specifications of a project.", "synonyms": ["specification-related risk", "requirement risk"]}
+        },
+        {
+            "name": "Description",
+            "type": "Attribute", 
+            "attributes": {"definition": "Detailed information about an aspect of the project."}
+        },
+        {
+            "name": "Trigger Condition",
+            "type": "Condition Type", 
+            "attributes": {"definition": "A specific situation or set of circumstances that may lead to the realization of a risk."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Specification Risk",
+            "relationship": "Includes",
+            "target": "Description"
+        },
+        {
+            "source": "Specification Risk",
+            "relationship": "Corresponds to",
+            "target": "Trigger Condition"
+        }
+    ]
+}

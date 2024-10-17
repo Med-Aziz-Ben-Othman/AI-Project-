@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"description": "Identifying potential risks that may occur in a project", "synonyms": ["risk detection", "risk recognition"]}
+        },
+        {
+            "name": "Qualitative Analysis",
+            "type": "Process", 
+            "attributes": {"description": "A process used to analyze risks based on their qualitative aspects", "synonyms": ["qualitative risk assessment"], "steps": ["risk assessment", "risk evaluation"]}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk", 
+            "attributes": {"description": "Specific risk that is identified in the project", "synonyms": ["single risk", "particular risk"]}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"description": "A temporary endeavor undertaken to create a unique product, service, or result", "synonyms": ["initiative", "undertaking"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project",
+            "relationship": "has",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "leads to",
+            "target": "Qualitative Analysis"
+        },
+        {
+            "source": "Qualitative Analysis",
+            "relationship": "analyzes",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "is part of",
+            "target": "Project"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management", "risk assessment"], "purpose": "to identify and mitigate risks"}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["quantitative analysis", "numerical risk analysis"], "objective": "to provide numerical estimates of risks"}
+        },
+        {
+            "name": "Risk Objective",
+            "type": "Goal", 
+            "attributes": {"description": "overall effect of risk on project", "base": "current plan information"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "aims to achieve",
+            "target": "Risk Objective"
+        }
+    ]
+}

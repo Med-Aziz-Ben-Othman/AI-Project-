@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Contingency Reserve",
+            "type": "Risk Management Tool", 
+            "attributes": {"definition": "A budget set aside to cover unforeseen expenses", "synonyms": ["contingency fund", "risk reserve"], "type": "financial"}
+        },
+        {
+            "name": "Opportunity",
+            "type": "Risk Factor", 
+            "attributes": {"definition": "A chance to gain benefits or advantages", "synonyms": ["advantage", "benefit"], "type": "positive risk"}
+        },
+        {
+            "name": "Priority",
+            "type": "Project Attribute", 
+            "attributes": {"definition": "Importance or urgency of tasks or risks", "synonyms": ["importance", "precedence"], "type": "management"}
+        },
+        {
+            "name": "Project",
+            "type": "Project Entity", 
+            "attributes": {"definition": "A temporary endeavor undertaken to create a unique product, service, or result", "synonyms": ["initiative", "assignment"], "type": "work"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Contingency Reserve",
+            "relationship": "Establishes",
+            "target": "Opportunity"
+        },
+        {
+            "source": "Opportunity",
+            "relationship": "Judges",
+            "target": "Priority"
+        },
+        {
+            "source": "Priority",
+            "relationship": "Relates to",
+            "target": "Project"
+        }
+    ]
+}

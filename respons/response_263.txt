@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Frequency",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["regularity", "occurrence"], "importance": "high", "context": "risk assessment"}
+        },
+        {
+            "name": "Effort Plan",
+            "type": "Document", 
+            "attributes": {"synonyms": ["effort estimation", "resource allocation plan"], "purpose": "resource management"}
+        },
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk assessment process", "risk mitigation strategy"], "phases": ["identification", "analysis", "response", "monitoring"]}
+        },
+        {
+            "name": "Event",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["incident", "occurrence"], "context": "project risk"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["initiative", "undertaking"], "lifecycle": ["planning", "execution", "closure"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Frequency",
+            "relationship": "affects",
+            "target": "Effort Plan"
+        },
+        {
+            "source": "Effort Plan",
+            "relationship": "influences",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Event",
+            "relationship": "occurs within",
+            "target": "Project"
+        },
+        {
+            "source": "Project",
+            "relationship": "impacts",
+            "target": "Risk Management Process"
+        }
+    ]
+}

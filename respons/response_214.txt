@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Outcome Effectiveness",
+            "type": "Project Outcome", 
+            "attributes": {"synonyms": ["result efficiency"], "type": "qualitative"}
+        },
+        {
+            "name": "Technique Depend",
+            "type": "Risk Management Technique", 
+            "attributes": {"synonyms": ["method reliance"], "type": "quantitative"}
+        },
+        {
+            "name": "Ability Participant",
+            "type": "Participant Skill", 
+            "attributes": {"synonyms": ["competence contributor"], "type": "qualitative"}
+        },
+        {
+            "name": "Think",
+            "type": "Cognitive Process", 
+            "attributes": {"synonyms": ["consider", "reflect"], "type": "process"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Technique Depend",
+            "relationship": "affects",
+            "target": "Outcome Effectiveness"
+        },
+        {
+            "source": "Ability Participant",
+            "relationship": "influences",
+            "target": "Outcome Effectiveness"
+        },
+        {
+            "source": "Think",
+            "relationship": "supports",
+            "target": "Ability Participant"
+        }
+    ]
+}

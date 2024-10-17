@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Management", "Project Risk Control"], "importance": "High", "phase": "Planning"}
+        },
+        {
+            "name": "Project Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Project Lifecycle", "Project Workflow"], "phases": ["Initiation", "Planning", "Execution", "Closure"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "is an integral part of",
+            "target": "Project Process"
+        }
+    ]
+}

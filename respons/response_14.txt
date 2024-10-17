@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management process", "risk assessment process"], "stage": "planning", "focus": "risk identification and mitigation"} 
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["initiative", "venture"], "status": "ongoing", "scope": "defined"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

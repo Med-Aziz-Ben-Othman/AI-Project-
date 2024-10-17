@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Analysis Method", 
+            "attributes": {"synonyms": ["Quantitative Analysis"], "purpose": "Assess risks using numerical values", "applications": ["project schedule", "cost estimation"]}
+        },
+        {
+            "name": "Project Schedule",
+            "type": "Project Management Artifact", 
+            "attributes": {"key1": "timeline", "key2": "schedule management"}
+        },
+        {
+            "name": "Cost Estimate",
+            "type": "Financial Metric", 
+            "attributes": {"key1": "cost estimation", "key2": "budgeting"}
+        },
+        {
+            "name": "Decision Tree",
+            "type": "Decision-Making Tool", 
+            "attributes": {"key1": "decision analysis", "key2": "risk assessment"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"key1": "unknown variables", "key2": "project risk"}
+        },
+        {
+            "name": "Total Project Model",
+            "type": "Project Overview", 
+            "attributes": {"key1": "comprehensive view", "key2": "risk integration"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "includes",
+            "target": "Project Schedule"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "includes",
+            "target": "Cost Estimate"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "uses",
+            "target": "Decision Tree"
+        },
+        {
+            "source": "Decision Tree",
+            "relationship": "addresses",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "applies to",
+            "target": "Total Project Model"
+        }
+    ]
+}

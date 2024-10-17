@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Low Priority Risk",
+            "type": "Risk", 
+            "attributes": {"priority": "low", "status": "potential", "synonyms": ["minor risk", "low impact risk"]}
+        },
+        {
+            "name": "Project",
+            "type": "Project", 
+            "attributes": {"status": "active", "type": "ongoing"}
+        },
+        {
+            "name": "Watch List",
+            "type": "Monitoring Tool", 
+            "attributes": {"purpose": "track risks", "status": "under review"}
+        },
+        {
+            "name": "Change Status",
+            "type": "Action", 
+            "attributes": {"type": "update", "description": "modification of risk status"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Low Priority Risk",
+            "relationship": "affects",
+            "target": "Project"
+        },
+        {
+            "source": "Low Priority Risk",
+            "relationship": "included in",
+            "target": "Watch List"
+        },
+        {
+            "source": "Watch List",
+            "relationship": "requires",
+            "target": "Change Status"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "A process to evaluate risks qualitatively", "stage": "Risk Management", "importance": "High"}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"category": "Variable", "priority": "Differentiated"}
+        },
+        {
+            "name": "Document Result",
+            "type": "Output", 
+            "attributes": {"type": "Report", "purpose": "To summarize analysis results"}
+        },
+        {
+            "name": "Risk Category",
+            "type": "Attribute", 
+            "attributes": {"definition": "Classification of risks", "examples": "Technical, Financial, Operational"}
+        },
+        {
+            "name": "Risk Priority",
+            "type": "Attribute", 
+            "attributes": {"definition": "Level of importance of a risk", "levels": "High, Medium, Low"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Document Result",
+            "relationship": "Outputs",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Identifies",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "Has",
+            "target": "Risk Category"
+        },
+        {
+            "source": "Risk",
+            "relationship": "Has",
+            "target": "Risk Priority"
+        }
+    ]
+}

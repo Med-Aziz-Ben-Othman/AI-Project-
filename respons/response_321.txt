@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Response",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk management response", "risk mitigation"], "importance": "high"}
+        },
+        {
+            "name": "Objective",
+            "type": "Goal",
+            "attributes": {"description": "important stakeholder's interests", "type": "strategic"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "important", "influence": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Response",
+            "relationship": "aims to protect",
+            "target": "Objective"
+        },
+        {
+            "source": "Objective",
+            "relationship": "is influenced by",
+            "target": "Stakeholder"
+        }
+    ]
+}

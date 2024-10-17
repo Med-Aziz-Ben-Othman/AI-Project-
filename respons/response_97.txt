@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["project risk management", "risk management process"], "purpose": "to manage risks in projects", "objective": "to develop an overall risk management strategy"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"synonyms": ["project management activity"], "attributes": ["decide", "execute"]}
+        },
+        {
+            "name": "Risk Management Strategy",
+            "type": "Strategy", 
+            "attributes": {"key1": "overall", "key2": "developed"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management",
+            "relationship": "involves",
+            "target": "Project"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "aims to develop",
+            "target": "Risk Management Strategy"
+        },
+        {
+            "source": "Project",
+            "relationship": "executes",
+            "target": "Risk Management"
+        }
+    ]
+}

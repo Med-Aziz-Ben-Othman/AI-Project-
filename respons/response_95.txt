@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management", "risk assessment"], "importance": "high", "phases": ["identification", "analysis", "response planning", "monitoring"]}
+        },
+        {
+            "name": "Practice Standard",
+            "type": "Document", 
+            "attributes": {"version": "latest", "relevance": "guidelines for project risk management"}
+        },
+        {
+            "name": "Project SK Management Process",
+            "type": "Process", 
+            "attributes": {"description": "Specific project management process", "focus": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Practice Standard",
+            "relationship": "Guides",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Involves",
+            "target": "Project SK Management Process"
+        }
+    ]
+}

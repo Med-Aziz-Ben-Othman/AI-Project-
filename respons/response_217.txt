@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification Technique",
+            "type": "Technique", 
+            "attributes": {"category": "Risk Management", "strengths": "Notable Risk Revelation", "weaknesses": "Single Technique Limitation"}
+        },
+        {
+            "name": "Notable Risk",
+            "type": "Risk", 
+            "attributes": {"synonym": "Significant Risk", "type": "Project Risk"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification Technique",
+            "relationship": "reveals",
+            "target": "Notable Risk"
+        }
+    ]
+}

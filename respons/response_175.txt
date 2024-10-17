@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Risk", 
+            "attributes": {"synonyms": ["hazard", "threat"], "status": "identified", "category": "potential"}
+        },
+        {
+            "name": "Response",
+            "type": "Risk Response Strategy", 
+            "attributes": {"synonyms": ["mitigation", "action plan"], "status": "may be identified", "timing": "time"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "has potential response",
+            "target": "Response"
+        }
+    ]
+}

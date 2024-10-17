@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "participant", "influence": "high", "synonyms": ["interest holder", "partner"]}
+        },
+        {
+            "name": "Risk Tolerance",
+            "type": "Concept", 
+            "attributes": {"definition": "the degree of variability in investment returns that an individual is willing to withstand", "type": "qualitative"}
+        },
+        {
+            "name": "Risk Evaluation",
+            "type": "Process", 
+            "attributes": {"method": "qualitative and quantitative", "objective": "assess risks"}
+        },
+        {
+            "name": "Disagreement",
+            "type": "Issue", 
+            "attributes": {"impact": "can lead to project delays", "resolution": "requires negotiation"}
+        },
+        {
+            "name": "Area of Concern",
+            "type": "Concept", 
+            "attributes": {"definition": "specific aspects of the project that may pose risks", "examples": ["scope", "resources", "timeline"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Stakeholder",
+            "relationship": "has",
+            "target": "Risk Tolerance"
+        },
+        {
+            "source": "Risk Tolerance",
+            "relationship": "influences",
+            "target": "Risk Evaluation"
+        },
+        {
+            "source": "Disagreement",
+            "relationship": "affects",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Risk Evaluation",
+            "relationship": "addresses",
+            "target": "Area of Concern"
+        },
+        {
+            "source": "Disagreement",
+            "relationship": "requires",
+            "target": "resolution"
+        }
+    ]
+}

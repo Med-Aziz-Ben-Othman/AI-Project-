@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Risk", 
+            "attributes": {"synonyms": ["danger", "hazard"], "uncertainty": "may occur", "predictability": "impossible to know in advance"}
+        },
+        {
+            "name": "Project",
+            "type": "Project", 
+            "attributes": {"status": "ongoing", "complexity": "variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "Affects",
+            "target": "Project"
+        }
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "nodes": [
+        {
+            "name": "figure",
+            "type": "Visual Representation", 
+            "attributes": {"description": "A graphical representation of project data", "related_to": "project management risks", "type": "chart"}
+        }
+    ],
+    "relationships": []
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Meeting Selection",
+            "type": "Technique", 
+            "attributes": {"description": "A method to choose suitable meetings", "importance": "High", "synonyms": ["meeting choice", "meeting determination"]}
+        },
+        {
+            "name": "Specific Project",
+            "type": "Project", 
+            "attributes": {"description": "A particular project with defined goals", "risk_level": "Variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Meeting Selection",
+            "relationship": "applies to",
+            "target": "Specific Project"
+        }
+    ]
+}

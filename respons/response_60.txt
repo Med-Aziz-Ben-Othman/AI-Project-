@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Historical Record",
+            "type": "Document",
+            "attributes": {"key1": "Project History", "key2": "Data Source", "synonyms": ["Past Records", "Previous Documentation"]}
+        },
+        {
+            "name": "Project Document",
+            "type": "Document",
+            "attributes": {"key1": "Project Files", "key2": "Documentation", "synonyms": ["Project Records", "Project Reports"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Event",
+            "attributes": {"key1": "Potential Issue", "key2": "Threat", "synonyms": ["Hazard", "Risk Factor"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Historical Record",
+            "relationship": "Contains",
+            "target": "Project Document"
+        },
+        {
+            "source": "Project Document",
+            "relationship": "Identifies",
+            "target": "Risk"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Risk Analysis Technique", 
+            "attributes": {"description": "A method used to evaluate the potential risks quantitatively.", "relatedChapter": "Chapter"}
+        },
+        {
+            "name": "Chapter",
+            "type": "Document Reference", 
+            "attributes": {"type": "Reference Material", "content": "Detailed explanation of quantitative risk analysis techniques."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Described In",
+            "target": "Chapter"
+        }
+    ]
+}

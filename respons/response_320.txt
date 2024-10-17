@@ -1,0 +1,66 @@
+{
+    "nodes": [
+        {
+            "name": "Overall Project Risk",
+            "type": "Risk", 
+            "attributes": {"definition": "The total potential risk associated with a project", "level": "Quantified"}
+        },
+        {
+            "name": "Quantitative Method",
+            "type": "Method", 
+            "attributes": {"definition": "A statistical approach to measure project risks", "synonyms": ["quantitative analysis", "statistical method"]}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Objective", 
+            "attributes": {"definition": "Goals that the project aims to achieve", "stakeholder": "Yes", "tolerance": "Acceptable"}
+        },
+        {
+            "name": "Stakeholder Objectives",
+            "type": "Objective", 
+            "attributes": {"definition": "Goals set by stakeholders", "tolerance": "Beyond acceptable"}
+        },
+        {
+            "name": "Quantified Risk",
+            "type": "Risk", 
+            "attributes": {"definition": "Risks that have been measured and expressed in numerical terms"}
+        },
+        {
+            "name": "Tolerance Level",
+            "type": "Metric", 
+            "attributes": {"definition": "The acceptable threshold of risk", "type": "Risk tolerance"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Overall Project Risk",
+            "relationship": "Measured by",
+            "target": "Quantitative Method"
+        },
+        {
+            "source": "Quantitative Method",
+            "relationship": "Helps distinguish",
+            "target": "Quantified Risk"
+        },
+        {
+            "source": "Quantified Risk",
+            "relationship": "Threatens",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Project Objectives",
+            "relationship": "Aligned with",
+            "target": "Stakeholder Objectives"
+        },
+        {
+            "source": "Project Objectives",
+            "relationship": "Within",
+            "target": "Tolerance Level"
+        },
+        {
+            "source": "Stakeholder Objectives",
+            "relationship": "Exceeds",
+            "target": "Tolerance Level"
+        }
+    ]
+}

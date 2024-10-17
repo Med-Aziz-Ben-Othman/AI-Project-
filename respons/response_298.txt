@@ -1,0 +1,71 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["hazard", "threat"], "importance": "high"}
+        },
+        {
+            "name": "Judge",
+            "type": "Role", 
+            "attributes": {"responsibility": "assess risks", "authority": "decision maker"}
+        },
+        {
+            "name": "Priority",
+            "type": "Attribute", 
+            "attributes": {"level": "high", "importance": "critical"}
+        },
+        {
+            "name": "Segregate",
+            "type": "Action", 
+            "attributes": {"purpose": "isolate risks", "method": "classification"}
+        },
+        {
+            "name": "Analysis",
+            "type": "Process", 
+            "attributes": {"type": "risk analysis", "tools": ["SWOT", "PESTLE"]}
+        },
+        {
+            "name": "Response Planning",
+            "type": "Process", 
+            "attributes": {"purpose": "develop strategies", "components": ["mitigation", "contingency"]}
+        },
+        {
+            "name": "Monitoring",
+            "type": "Process", 
+            "attributes": {"frequency": "ongoing", "methods": ["reviews", "audits"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "assessed by",
+            "target": "Judge"
+        },
+        {
+            "source": "Risk",
+            "relationship": "has",
+            "target": "Priority"
+        },
+        {
+            "source": "Risk",
+            "relationship": "undergoes",
+            "target": "Segregate"
+        },
+        {
+            "source": "Segregate",
+            "relationship": "involves",
+            "target": "Analysis"
+        },
+        {
+            "source": "Analysis",
+            "relationship": "informs",
+            "target": "Response Planning"
+        },
+        {
+            "source": "Response Planning",
+            "relationship": "requires",
+            "target": "Monitoring"
+        }
+    ]
+}

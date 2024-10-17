@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "name": "Single Strategy",
+            "type": "Risk Management Strategy", 
+            "attributes": {"synonyms": ["unified approach", "consolidated method"], "description": "A method used to address multiple risks in a cohesive manner."} 
+        },
+        {
+            "name": "Related Risks",
+            "type": "Risk Category", 
+            "attributes": {"synonyms": ["associated threats", "connected hazards"], "description": "Risks that are interconnected or have common factors."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Single Strategy",
+            "relationship": "Addresses",
+            "target": "Related Risks"
+        },
+        {
+            "source": "Related Risks",
+            "relationship": "Considered Whenever Possible",
+            "target": "Single Strategy"
+        }
+    ]
+}

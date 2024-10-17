@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {
+                "synonyms": ["risk management", "risk assessment"],
+                "type": "standard practice",
+                "focus": "quantitative analysis"
+            }
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Methodology",
+            "attributes": {
+                "synonyms": ["quantitative analysis", "quantitative assessment"],
+                "purpose": "analyze project risks quantitatively",
+                "tools": ["quantitative tools", "deterministic methods"]
+            }
+        },
+        {
+            "name": "Project Schedule",
+            "type": "Document",
+            "attributes": {
+                "synonyms": ["project timeline", "schedule plan"],
+                "components": ["tasks", "milestones"],
+                "importance": "critical for cost estimating"
+            }
+        },
+        {
+            "name": "Cost Estimating",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["cost estimation", "budget forecasting"],
+                "methods": ["deterministic methods", "standard methods"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "utilizes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "applies to",
+            "target": "Project Schedule"
+        },
+        {
+            "source": "Project Schedule",
+            "relationship": "supports",
+            "target": "Cost Estimating"
+        }
+    ]
+}

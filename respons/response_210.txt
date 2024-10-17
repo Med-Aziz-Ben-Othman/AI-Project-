@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Case Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["case risk"], "type": "identified", "status": "considered"}
+        },
+        {
+            "name": "Historical Situation",
+            "type": "Context",
+            "attributes": {"synonyms": ["past situation"], "relevance": "provides context for risk assessment"}
+        },
+        {
+            "name": "Similar Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["comparable risk"], "type": "potential", "status": "under consideration"}
+        },
+        {
+            "name": "Project",
+            "type": "Project",
+            "attributes": {"synonyms": ["initiative", "undertaking"], "status": "ongoing"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Case Risk",
+            "relationship": "involves",
+            "target": "Historical Situation"
+        },
+        {
+            "source": "Historical Situation",
+            "relationship": "suggests",
+            "target": "Similar Risk"
+        },
+        {
+            "source": "Similar Risk",
+            "relationship": "may arise in",
+            "target": "Project"
+        }
+    ]
+}

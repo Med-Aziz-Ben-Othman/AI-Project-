@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["risk mitigation", "risk control"], "importance": "high"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"purpose": "to outline risk management strategies", "components": ["risk identification", "risk assessment", "risk response", "risk monitoring"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management",
+            "relationship": "requires",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

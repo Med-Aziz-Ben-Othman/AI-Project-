@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"responsibility": "Ensure valid definition", "synonyms": ["PM", "Project Lead"]}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"status": "Available", "type": "Planning", "synonyms": ["Risk Plan", "Risk Strategy"]}
+        },
+        {
+            "name": "Risk Management Activity",
+            "type": "Task", 
+            "attributes": {"purpose": "Manage risks", "synonyms": ["Risk Assessment", "Risk Mitigation"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "Creates",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Includes",
+            "target": "Risk Management Activity"
+        }
+    ]
+}

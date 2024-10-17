@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document", 
+            "attributes": {"intensity": "varied", "effort": "variable", "frequency": "varied", "objective": "specified"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"characteristic": "dependent", "application": "varies"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"type": "various", "characteristics": "specified"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Plan",
+            "relationship": "indicates",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "applied to",
+            "target": "Project"
+        },
+        {
+            "source": "Project",
+            "relationship": "has",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Proprietary Preexisting Approach",
+            "type": "Methodology", 
+            "attributes": {"synonyms": ["exclusive method", "customized approach"], "status": "potentially applicable", "requirement": "tailoring needed"}
+        },
+        {
+            "name": "Tailoring",
+            "type": "Process", 
+            "attributes": {"description": "modifying the approach to fit specific project needs", "importance": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Proprietary Preexisting Approach",
+            "relationship": "Requires",
+            "target": "Tailoring"
+        }
+    ]
+}

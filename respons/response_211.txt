@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Current Assessment",
+            "type": "Assessment",
+            "attributes": {"synonyms": ["current evaluation", "present appraisal"], "importance": "high"}
+        },
+        {
+            "name": "Detailed Consideration",
+            "type": "Process",
+            "attributes": {"synonyms": ["thorough analysis", "in-depth review"], "importance": "medium"}
+        },
+        {
+            "name": "Current Project",
+            "type": "Project",
+            "attributes": {"status": "ongoing", "characteristics": ["scope", "timeline", "resources"]}
+        },
+        {
+            "name": "Framework Model",
+            "type": "Model",
+            "attributes": {"synonyms": ["structural model", "theoretical framework"], "application": "risk management"}
+        },
+        {
+            "name": "Area of Uncertainty",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["zone of risk", "uncertain domain"], "impact": "variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Current Assessment",
+            "relationship": "relies on",
+            "target": "Detailed Consideration"
+        },
+        {
+            "source": "Current Assessment",
+            "relationship": "applies to",
+            "target": "Current Project"
+        },
+        {
+            "source": "Framework Model",
+            "relationship": "designed to expose",
+            "target": "Area of Uncertainty"
+        },
+        {
+            "source": "Current Project",
+            "relationship": "analyzes",
+            "target": "Characteristic"
+        }
+    ]
+}

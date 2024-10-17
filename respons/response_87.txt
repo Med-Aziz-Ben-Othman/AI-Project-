@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"step outline": "form", "related to": "project management", "synonyms": ["risk management process", "project risk assessment"]}
+        },
+        {
+            "name": "Step Outline",
+            "type": "Component", 
+            "attributes": {"description": "structured approach", "purpose": "organize risk management steps", "synonyms": ["step-by-step guide", "framework outline"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "includes",
+            "target": "Step Outline"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"frequency": "regular interval", "importance": "vital", "lifecycle": "throughout life of project"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity", 
+            "attributes": {"lifecycle": "life of project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "applies to",
+            "target": "Project"
+        }
+    ]
+}

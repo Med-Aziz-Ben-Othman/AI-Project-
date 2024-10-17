@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Process", 
+            "attributes": {"description": "The process of identifying, assessing, and controlling risks", "synonyms": ["risk control", "risk mitigation"]}
+        },
+        {
+            "name": "Interest",
+            "type": "Concept", 
+            "attributes": {"description": "The stake or concern of stakeholders in project outcomes", "synonyms": ["stake", "concern"]}
+        },
+        {
+            "name": "Criterion",
+            "type": "Standard", 
+            "attributes": {"description": "A principle or standard by which something is judged or decided", "synonyms": ["benchmark", "yardstick"]}
+        },
+        {
+            "name": "Tool",
+            "type": "Resource", 
+            "attributes": {"description": "A software or methodology used for risk management", "synonyms": ["software", "application", "method"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Criterion",
+            "relationship": "Defines",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Interest",
+            "relationship": "Involves",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Tool",
+            "relationship": "Facilitates",
+            "target": "Risk Management"
+        }
+    ]
+}

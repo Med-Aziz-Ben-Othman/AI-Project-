@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Agreement",
+            "type": "Document/Contract", 
+            "attributes": {"key1": "formal understanding", "key2": "binding resolution", "synonyms": ["contract", "accord"], "importance": "high"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Role/Entity", 
+            "attributes": {"key1": "individual or group", "key2": "interest in project", "synonyms": ["stakeholder", "interested party"], "importance": "critical"}
+        },
+        {
+            "name": "Fundamental Criterion",
+            "type": "Criteria/Standard", 
+            "attributes": {"key1": "basic requirement", "key2": "essential factor", "synonyms": ["basic standard", "core principle"], "importance": "high"}
+        },
+        {
+            "name": "Common Theme",
+            "type": "Concept", 
+            "attributes": {"key1": "shared idea", "key2": "unifying element", "synonyms": ["main theme", "central concept"], "importance": "medium"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Agreement",
+            "relationship": "Involves",
+            "target": "Project Stakeholder"
+        },
+        {
+            "source": "Project Stakeholder",
+            "relationship": "Evaluates",
+            "target": "Fundamental Criterion"
+        },
+        {
+            "source": "Fundamental Criterion",
+            "relationship": "Defines",
+            "target": "Common Theme"
+        }
+    ]
+}

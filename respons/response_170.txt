@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Planning",
+            "type": "Process", 
+            "attributes": {"status": "complete", "stage": "first process", "type": "iterative"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"aim": "identify notable risks", "related_to": "project objective"}
+        },
+        {
+            "name": "Notable Risk",
+            "type": "Risk", 
+            "attributes": {"impact": "potentially significant", "related_to": "project objective"}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Goal", 
+            "attributes": {"description": "specific aim of the project"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Planning",
+            "relationship": "initiates",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "aims to identify",
+            "target": "Notable Risk"
+        },
+        {
+            "source": "Notable Risk",
+            "relationship": "affects",
+            "target": "Project Objective"
+        }
+    ]
+}

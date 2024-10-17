@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Customer",
+            "type": "Stakeholder", 
+            "attributes": {"role": "End User", "synonyms": ["client", "consumer"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Project Risk", 
+            "attributes": {"type": "Customer Risk", "description": "Potential issues impacting customer satisfaction or project outcomes"}
+        },
+        {
+            "name": "Decision Point",
+            "type": "Project Phase", 
+            "attributes": {"importance": "Critical", "synonyms": ["milestone", "checkpoint"]}
+        },
+        {
+            "name": "View",
+            "type": "Perspective", 
+            "attributes": {"context": "Project Assessment", "synonyms": ["opinion", "insight"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Customer",
+            "relationship": "experiences",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "influences",
+            "target": "Decision Point"
+        },
+        {
+            "source": "Decision Point",
+            "relationship": "requires",
+            "target": "View"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"definition": "A systematic process for identifying, analyzing, and responding to project risks", "synonyms": ["risk management", "risk assessment"], "importance": "critical for project success"}
+        },
+        {
+            "name": "Historical Review",
+            "type": "Technique", 
+            "attributes": {"definition": "An analysis of past projects to identify risks", "synonyms": ["historical analysis", "retrospective review"], "purpose": "to leverage past experiences for future projects"}
+        },
+        {
+            "name": "Similar Projects",
+            "type": "Entity", 
+            "attributes": {"definition": "Projects that share characteristics with the current project", "synonyms": ["comparable projects", "analogous projects"], "importance": "used for risk comparison and identification"}
+        },
+        {
+            "name": "Project Organization",
+            "type": "Entity", 
+            "attributes": {"definition": "The structure and management of a project team", "synonyms": ["project team", "project structure"], "role": "responsible for project execution and risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Historical Review",
+            "relationship": "Utilizes",
+            "target": "Similar Projects"
+        },
+        {
+            "source": "Similar Projects",
+            "relationship": "Informs",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Organization",
+            "relationship": "Conducts",
+            "target": "Project Risk Management"
+        }
+    ]
+}

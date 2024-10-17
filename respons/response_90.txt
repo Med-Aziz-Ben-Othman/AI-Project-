@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "A method to evaluate risks based on their characteristics", "synonyms": ["qualitative assessment", "risk evaluation"]}
+        },
+        {
+            "name": "Key Characteristic",
+            "type": "Attribute", 
+            "attributes": {"description": "Important features of individual risks", "synonyms": ["critical attribute", "essential quality"]}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk", 
+            "attributes": {"description": "A specific risk that can impact the project", "synonyms": ["single risk", "particular risk"]}
+        },
+        {
+            "name": "Prioritized Action",
+            "type": "Outcome", 
+            "attributes": {"description": "Actions taken based on the evaluation of risks", "synonyms": ["action plan", "risk response"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Evaluates",
+            "target": "Key Characteristic"
+        },
+        {
+            "source": "Key Characteristic",
+            "relationship": "Describes",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Enables",
+            "target": "Prioritized Action"
+        }
+    ]
+}

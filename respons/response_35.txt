@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management Process",
+            "type": "Process", 
+            "attributes": {"effectiveness": "increase", "use": "information"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"result": "improved outcomes"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management Process",
+            "relationship": "contributes to",
+            "target": "Project Risk Management"
+        }
+    ]
+}

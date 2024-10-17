@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"purpose": "Identify risks", "objective": "Manage risks", "synonyms": ["risk management", "risk assessment"]}
+        },
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"key1": "First step in risk management", "key2": "Essential for managing risks"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Includes",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "Enables",
+            "target": "Project Risk Management"
+        }
+    ]
+}

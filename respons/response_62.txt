@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "risk owner",
+            "type": "Role", 
+            "attributes": {"synonyms": ["risk manager", "risk responsible"], "responsibilities": ["managing risks", "overseeing risk assessment"]}
+        },
+        {
+            "name": "identified risk",
+            "type": "Risk", 
+            "attributes": {"status": "identified", "type": "project risk", "description": "potential negative impact on project objectives"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "risk owner",
+            "relationship": "designates",
+            "target": "identified risk"
+        }
+    ]
+}

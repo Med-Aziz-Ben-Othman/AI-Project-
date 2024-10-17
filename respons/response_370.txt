@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Process",
+            "attributes": {"description": "A systematic approach to evaluating risks numerically", "synonyms": ["Quantitative Analysis", "Numerical Risk Assessment"]}
+        },
+        {
+            "name": "Project Management",
+            "type": "Discipline",
+            "attributes": {"description": "The application of knowledge, skills, tools, and techniques to project activities", "synonyms": ["Project Oversight", "Project Coordination"]}
+        },
+        {
+            "name": "Responsible Person/Group",
+            "type": "Entity",
+            "attributes": {"role": "Individual or team accountable for project management", "synonyms": ["Project Leader", "Project Team", "Stakeholder"]}
+        },
+        {
+            "name": "Action Required",
+            "type": "Task",
+            "attributes": {"description": "Necessary steps to effectively utilize analysis results", "synonyms": ["Required Actions", "Necessary Steps"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Quantitative Risk Analysis",
+            "relationship": "Generates",
+            "target": "Result"
+        },
+        {
+            "source": "Responsible Person/Group",
+            "relationship": "Is Responsible For",
+            "target": "Project Management"
+        },
+        {
+            "source": "Result",
+            "relationship": "Informs",
+            "target": "Action Required"
+        },
+        {
+            "source": "Action Required",
+            "relationship": "Enhances",
+            "target": "Project Management"
+        }
+    ]
+}

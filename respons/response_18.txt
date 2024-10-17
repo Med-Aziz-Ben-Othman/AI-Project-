@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Contingency Fund",
+            "type": "Financial Resource", 
+            "attributes": {"key1": "fund", "key2": "allocation", "synonyms": ["reserve", "buffer"]}
+        },
+        {
+            "name": "Identified Risk",
+            "type": "Risk Factor", 
+            "attributes": {"key1": "risk", "key2": "identification", "synonyms": ["threat", "vulnerability"]}
+        },
+        {
+            "name": "Project",
+            "type": "Project Entity", 
+            "attributes": {"key1": "delivery", "key2": "execution", "synonyms": ["initiative", "undertaking"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Contingency Fund",
+            "relationship": "Mitigates",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Identified Risk",
+            "relationship": "Occurs In",
+            "target": "Project"
+        }
+    ]
+}

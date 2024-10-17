@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Plan",
+            "type": "Document/Plan", 
+            "attributes": {"status": "under development", "approval": "pending", "type": "risk management"}
+        },
+        {
+            "name": "Development",
+            "type": "Process", 
+            "attributes": {"phase": "initiation", "activity": "create", "goal": "identify risks"}
+        },
+        {
+            "name": "Approval",
+            "type": "Process", 
+            "attributes": {"status": "pending", "authority": "stakeholders", "criteria": "compliance with guidelines"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Development",
+            "relationship": "leads to",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Approval",
+            "relationship": "is required for",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

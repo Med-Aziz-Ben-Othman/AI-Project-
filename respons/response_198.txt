@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Project Management Risk", 
+            "attributes": {"description": "describe", "level": "level", "detail": "detail"}
+        },
+        {
+            "name": "Single Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibility": "clear responsibility", "accountability": "accountability"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "Assigned To",
+            "target": "Single Risk Owner"
+        }
+    ]
+}

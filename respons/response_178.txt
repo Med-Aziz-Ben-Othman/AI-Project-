@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Critical Success Factor",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Key Success Factor", "CSF"], "description": "Elements that are vital for a strategy to be successful."}
+        },
+        {
+            "name": "Risk Identification Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Risk Assessment Process", "Risk Analysis Process"], "description": "A systematic approach to recognizing potential risks that could affect project objectives."}
+        },
+        {
+            "name": "Value Maximization",
+            "type": "Objective", 
+            "attributes": {"synonyms": ["Value Optimization", "Value Enhancement"], "description": "The goal of increasing the overall worth derived from project activities."}
+        },
+        {
+            "name": "Effectiveness",
+            "type": "Metric", 
+            "attributes": {"synonyms": ["Efficiency", "Productivity"], "description": "The degree to which objectives are achieved and the extent to which targeted problems are solved."}
+        },
+        {
+            "name": "Likelihood Enhancement",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Probability Increase", "Likelihood Improvement"], "description": "Strategies aimed at increasing the chances of positive outcomes."}
+        },
+        {
+            "name": "Risk Practicability",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["Risk Feasibility", "Risk Viability"], "description": "The extent to which risks can be realistically managed within the project."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Critical Success Factor",
+            "relationship": "involves",
+            "target": "Risk Identification Process"
+        },
+        {
+            "source": "Risk Identification Process",
+            "relationship": "aims to maximize",
+            "target": "Value Maximization"
+        },
+        {
+            "source": "Value Maximization",
+            "relationship": "is dependent on",
+            "target": "Effectiveness"
+        },
+        {
+            "source": "Risk Identification Process",
+            "relationship": "enhances",
+            "target": "Likelihood Enhancement"
+        },
+        {
+            "source": "Likelihood Enhancement",
+            "relationship": "supports",
+            "target": "Risk Practicability"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Cost Treating Risk",
+            "type": "Risk Management Strategy",
+            "attributes": {"description": "Strategies to manage financial risks", "synonyms": ["cost management risk", "financial risk treatment"]}
+        },
+        {
+            "name": "Project Budget",
+            "type": "Financial Resource",
+            "attributes": {"amount": "variable", "currency": "USD", "description": "Total financial resources allocated for the project"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Plan Document",
+            "attributes": {"description": "Document outlining risk management strategies", "components": ["risk identification", "risk analysis", "risk response planning"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Cost Treating Risk",
+            "relationship": "Includes",
+            "target": "Project Budget"
+        },
+        {
+            "source": "Risk Management Plan",
+            "relationship": "Describes",
+            "target": "Project Budget"
+        },
+        {
+            "source": "Project Budget",
+            "relationship": "Evaluates",
+            "target": "Cost Treating Risk"
+        },
+        {
+            "source": "Project Budget",
+            "relationship": "Allocates",
+            "target": "Cost Treating Risk"
+        },
+        {
+            "source": "Project Budget",
+            "relationship": "Manages",
+            "target": "Cost Treating Risk"
+        }
+    ]
+}

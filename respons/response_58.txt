@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Emergent Nature Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["unforeseen risk", "dynamic risk"], "description": "Risks that arise unexpectedly during project execution."} 
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"key_steps": ["identification", "assessment", "response planning", "monitoring"], "iterative": true}
+        },
+        {
+            "name": "Risk Identification",
+            "type": "Process Step", 
+            "attributes": {"description": "The phase where potential risks are recognized.", "importance": "Critical for effective risk management."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Emergent Nature Risk",
+            "relationship": "Requires",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "Includes",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "Aims to",
+            "target": "Emergent Nature Risk"
+        }
+    ]
+}

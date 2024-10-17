@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management Role",
+            "type": "Role",
+            "attributes": {"synonyms": ["Project Manager", "PM"], "responsibility": "Oversee project activities", "control": "Define and manage project scope"}
+        },
+        {
+            "name": "Control Uncertainty",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["Risk Control", "Uncertainty Management"], "description": "Measures taken to mitigate risks arising from uncertainty", "importance": "Crucial for project success"}
+        },
+        {
+            "name": "Inherent Project",
+            "type": "Project",
+            "attributes": {"synonyms": ["Project Fundamentals", "Core Project Elements"], "characteristics": "All projects have inherent risks", "context": "Applies to all phases of project management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management Role",
+            "relationship": "Defines",
+            "target": "Control Uncertainty"
+        },
+        {
+            "source": "Control Uncertainty",
+            "relationship": "Applies to",
+            "target": "Inherent Project"
+        }
+    ]
+}

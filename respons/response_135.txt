@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Team",
+            "type": "Entity", 
+            "attributes": {"role": "Team responsible for project execution", "type": "Human Resource"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "Individual or group with interest in project", "type": "Human Resource", "synonyms": ["interested party", "investor"]}
+        },
+        {
+            "name": "Detail Information",
+            "type": "Entity", 
+            "attributes": {"description": "Specific data required for project management", "type": "Data"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Team",
+            "relationship": "Requires",
+            "target": "Detail Information"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "Defines",
+            "target": "Detail Information"
+        }
+    ]
+}

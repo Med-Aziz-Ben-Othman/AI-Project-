@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["management risk", "project management risk"], "type": "Operational"}
+        },
+        {
+            "name": "Management Specialist",
+            "type": "Role",
+            "attributes": {"key1": "Risk Specialist", "responsibility": "Identify and mitigate project risks"}
+        },
+        {
+            "name": "Leave Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["absence risk"], "type": "Human Resource"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "Includes",
+            "target": "Leave Risk"
+        },
+        {
+            "source": "Management Specialist",
+            "relationship": "Manages",
+            "target": "Project Risk"
+        }
+    ]
+}

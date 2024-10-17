@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["nature project risk"], "description": "Potential events that may negatively affect project objectives."}
+        },
+        {
+            "name": "Probability of Occurrence",
+            "type": "Assessment Metric", 
+            "attributes": {"description": "The likelihood that a specific risk event will happen.", "scale": "0-1"}
+        },
+        {
+            "name": "Impact",
+            "type": "Assessment Metric", 
+            "attributes": {"description": "The potential effect of the risk on project objectives.", "scale": "1-10"}
+        },
+        {
+            "name": "Individual Objective",
+            "type": "Project Objective", 
+            "attributes": {"description": "Specific goals that a project aims to achieve."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "assessed by",
+            "target": "Probability of Occurrence"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "assessed by",
+            "target": "Impact"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "affects",
+            "target": "Individual Objective"
+        }
+    ]
+}

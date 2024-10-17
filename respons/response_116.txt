@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Research Project",
+            "type": "Project", 
+            "attributes": {"synonyms": ["study project", "investigation project"], "type": "academic", "scope": "narrow"}
+        },
+        {
+            "name": "Unforeseen Change",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["unexpected change", "unpredicted change"], "impact": "high", "frequency": "low"}
+        },
+        {
+            "name": "Predictable Environment",
+            "type": "Environment", 
+            "attributes": {"synonyms": ["stable environment", "controlled setting"], "characteristics": ["low volatility", "high predictability"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Research Project",
+            "relationship": "requires attention for",
+            "target": "Unforeseen Change"
+        },
+        {
+            "source": "Unforeseen Change",
+            "relationship": "occurs in",
+            "target": "Predictable Environment"
+        }
+    ]
+}

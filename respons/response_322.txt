@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Analysis Process",
+            "type": "Process", 
+            "attributes": {"description": "A systematic approach to identifying and evaluating risks", "synonyms": ["risk evaluation", "risk assessment"]}
+        },
+        {
+            "name": "Quantitative Risk Analysis",
+            "type": "Method", 
+            "attributes": {"description": "A method that quantifies risks using numerical values", "synonyms": ["quantitative assessment"]}
+        },
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Method", 
+            "attributes": {"description": "A method that evaluates risks based on subjective judgment", "synonyms": ["qualitative assessment"]}
+        },
+        {
+            "name": "High-level Comparison",
+            "type": "Analysis", 
+            "attributes": {"description": "An overview assessment comparing different elements", "synonyms": ["summary comparison"]}
+        },
+        {
+            "name": "Present Figure",
+            "type": "Visual Element", 
+            "attributes": {"description": "A graphical representation of data or information", "synonyms": ["illustration", "chart"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Analysis Process",
+            "relationship": "includes",
+            "target": "Quantitative Risk Analysis"
+        },
+        {
+            "source": "Risk Analysis Process",
+            "relationship": "includes",
+            "target": "Qualitative Risk Analysis"
+        },
+        {
+            "source": "High-level Comparison",
+            "relationship": "applies to",
+            "target": "Risk Analysis Process"
+        },
+        {
+            "source": "Present Figure",
+            "relationship": "depicts",
+            "target": "High-level Comparison"
+        }
+    ]
+}

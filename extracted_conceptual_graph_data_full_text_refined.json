@@ -6,7 +6,12 @@
             "attributes": {
                 "description": "Integral part of project management focused on identifying, assessing, and responding to project risks.",
                 "importance": "Critical success factor for project success.",
-                "phases": ["risk identification", "risk analysis", "risk response planning", "monitoring and control"]
+                "phases": [
+                    "risk identification",
+                    "risk analysis",
+                    "risk response planning",
+                    "monitoring and control"
+                ]
             }
         },
         {
@@ -15,7 +20,11 @@
             "attributes": {
                 "responsibility": "Overall management of project risks and ensuring successful project delivery.",
                 "accountability": "Day-to-day management of project including risk activities.",
-                "tasks": ["Develop risk management plan", "Facilitate communication", "Monitor risk status"]
+                "tasks": [
+                    "Develop risk management plan",
+                    "Facilitate communication",
+                    "Monitor risk status"
+                ]
             }
         },
         {
@@ -39,14 +48,22 @@
             "type": "Document",
             "attributes": {
                 "purpose": "Outline how project risks will be managed.",
-                "content": ["Risk identification techniques", "Response strategies", "Monitoring methods"]
+                "content": [
+                    "Risk identification techniques",
+                    "Response strategies",
+                    "Monitoring methods"
+                ]
             }
         },
         {
             "name": "Risk Identification Techniques",
             "type": "Method",
             "attributes": {
-                "types": ["Brainstorming", "Historical review", "Checklists"],
+                "types": [
+                    "Brainstorming",
+                    "Historical review",
+                    "Checklists"
+                ],
                 "goal": "Identify and categorize potential risks."
             }
         },
@@ -55,7 +72,10 @@
             "type": "Process",
             "attributes": {
                 "purpose": "Assess and prioritize risks based on their characteristics.",
-                "outputs": ["Risk priority list", "High-priority risks"]
+                "outputs": [
+                    "Risk priority list",
+                    "High-priority risks"
+                ]
             }
         },
         {
@@ -63,7 +83,10 @@
             "type": "Process",
             "attributes": {
                 "purpose": "Numerically assess overall project risk and estimate the impact on objectives.",
-                "methods": ["Monte Carlo simulation", "Decision tree analysis"]
+                "methods": [
+                    "Monte Carlo simulation",
+                    "Decision tree analysis"
+                ]
             }
         },
         {

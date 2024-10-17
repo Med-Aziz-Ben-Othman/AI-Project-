@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Secondary Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonym": "indirect risk", "definition": "A risk that arises as a consequence of a primary risk."} 
+        },
+        {
+            "name": "Planned Way",
+            "type": "Risk Management Strategy", 
+            "attributes": {"description": "A structured approach to managing risks that have been identified.", "synonyms": ["strategy", "methodology"]}
+        },
+        {
+            "name": "Identified Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonym": "recognized risk", "definition": "A risk that has been detected and acknowledged during the risk management process."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "Leads to",
+            "target": "Secondary Risk"
+        },
+        {
+            "source": "Identified Risk",
+            "relationship": "Managed by",
+            "target": "Planned Way"
+        }
+    ]
+}

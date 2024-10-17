@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Organization Preference",
+            "type": "Preference",
+            "attributes": {"synonyms": ["organizational choice", "institutional preference"], "importance": "high"}
+        },
+        {
+            "name": "Objective",
+            "type": "Goal",
+            "attributes": {"synonyms": ["aim", "target"], "type": "strategic"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Organization Preference",
+            "relationship": "influences",
+            "target": "Objective"
+        }
+    ]
+}

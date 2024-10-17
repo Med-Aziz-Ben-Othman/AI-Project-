@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Responsibility",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["accountability", "obligation"], "importance": "high"}
+        },
+        {
+            "name": "Risk Owner",
+            "type": "Role", 
+            "attributes": {"responsibilities": ["identify risks", "monitor risks", "report risks"], "authority": "high"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"phases": ["risk identification", "risk assessment", "risk mitigation"], "objective": "minimize risks"}
+        },
+        {
+            "name": "Subsequent Project Risk",
+            "type": "Risk", 
+            "attributes": {"nature": "potential", "impact": "variable"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Owner",
+            "relationship": "manages",
+            "target": "Responsibility"
+        },
+        {
+            "source": "Responsibility",
+            "relationship": "influences",
+            "target": "Subsequent Project Risk"
+        },
+        {
+            "source": "Subsequent Project Risk",
+            "relationship": "affects",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "Influencer", "perspective": "Varied", "synonyms": ["stakeholder", "interested party"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Entity",
+            "attributes": {"type": "Project Risk", "perspective": "Different", "synonyms": ["threat", "hazard", "uncertainty"]}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"status": "Ongoing", "scope": "Defined", "synonyms": ["initiative", "task"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Stakeholder",
+            "relationship": "Identifies",
+            "target": "Risk"
+        },
+        {
+            "source": "Risk",
+            "relationship": "Affects",
+            "target": "Project"
+        }
+    ]
+}

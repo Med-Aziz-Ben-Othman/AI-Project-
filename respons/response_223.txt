@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Metalanguage",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["risk terminology", "risk language"], "type": "framework"}
+        },
+        {
+            "name": "Risk Cause",
+            "type": "Concept", 
+            "attributes": {"description": "origin of risk", "type": "element"}
+        },
+        {
+            "name": "Risk Effect",
+            "type": "Concept", 
+            "attributes": {"description": "outcome of risk", "type": "element"}
+        },
+        {
+            "name": "Three-Part Statement",
+            "type": "Methodology", 
+            "attributes": {"description": "structure to describe risk", "components": ["result", "cause", "effect"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Metalanguage",
+            "relationship": "offers",
+            "target": "Three-Part Statement"
+        },
+        {
+            "source": "Risk Cause",
+            "relationship": "leads to",
+            "target": "Risk Effect"
+        },
+        {
+            "source": "Three-Part Statement",
+            "relationship": "describes",
+            "target": "Risk Cause"
+        },
+        {
+            "source": "Three-Part Statement",
+            "relationship": "describes",
+            "target": "Risk Effect"
+        }
+    ]
+}

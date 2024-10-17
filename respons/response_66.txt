@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Data",
+            "type": "Data Type",
+            "attributes": {"synonyms": ["non-numerical data", "descriptive data"], "techniques": ["interviews", "surveys", "observations"]}
+        },
+        {
+            "name": "Quantitative Data",
+            "type": "Data Type",
+            "attributes": {"synonyms": ["numerical data", "statistical data"], "techniques": ["statistical analysis", "surveys", "experiments"]}
+        },
+        {
+            "name": "Integrated Approach",
+            "type": "Methodology",
+            "attributes": {"description": "Combines qualitative and quantitative techniques", "benefits": ["comprehensive analysis", "enhanced decision-making"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Data",
+            "relationship": "Requires",
+            "target": "Integrated Approach"
+        },
+        {
+            "source": "Quantitative Data",
+            "relationship": "Requires",
+            "target": "Integrated Approach"
+        },
+        {
+            "source": "Integrated Approach",
+            "relationship": "Adopts",
+            "target": "Qualitative Data"
+        },
+        {
+            "source": "Integrated Approach",
+            "relationship": "Adopts",
+            "target": "Quantitative Data"
+        }
+    ]
+}

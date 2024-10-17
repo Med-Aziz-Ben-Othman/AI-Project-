@@ -1,0 +1,81 @@
+{
+    "nodes": [
+        {
+            "name": "Organizational Process Asset",
+            "type": "Asset", 
+            "attributes": {"description": "Resources and references used in project management", "synonyms": ["process assets", "organizational assets"]}
+        },
+        {
+            "name": "Risk Management Activity",
+            "type": "Activity", 
+            "attributes": {"description": "Actions taken to identify, assess, and manage risks", "synonyms": ["risk management tasks", "risk activities"]}
+        },
+        {
+            "name": "Risk Category",
+            "type": "Category", 
+            "attributes": {"description": "Classification of risks", "synonyms": ["risk classification", "risk type"]}
+        },
+        {
+            "name": "Project Management Methodology",
+            "type": "Methodology", 
+            "attributes": {"description": "Framework for managing projects", "synonyms": ["project methodology", "management framework"]}
+        },
+        {
+            "name": "Risk Management Procedure",
+            "type": "Procedure", 
+            "attributes": {"description": "Standard process for managing risks", "synonyms": ["risk procedure", "risk management process"]}
+        },
+        {
+            "name": "Risk Information",
+            "type": "Information", 
+            "attributes": {"description": "Data related to potential risks", "synonyms": ["risk data", "risk details"]}
+        },
+        {
+            "name": "Decision Making",
+            "type": "Process", 
+            "attributes": {"description": "Process of making choices", "synonyms": ["decision process", "decision analysis"]}
+        },
+        {
+            "name": "Role Responsibility Authority Level",
+            "type": "Role", 
+            "attributes": {"description": "Defined level of authority and responsibility in a project", "synonyms": ["role authority", "responsibility level"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Organizational Process Asset",
+            "relationship": "contributes to",
+            "target": "Risk Management Activity"
+        },
+        {
+            "source": "Risk Management Activity",
+            "relationship": "standardizes",
+            "target": "Risk Category"
+        },
+        {
+            "source": "Risk Management Activity",
+            "relationship": "incorporates",
+            "target": "Project Management Methodology"
+        },
+        {
+            "source": "Project Management Methodology",
+            "relationship": "includes",
+            "target": "Risk Management Procedure"
+        },
+        {
+            "source": "Risk Management Procedure",
+            "relationship": "provides",
+            "target": "Risk Information"
+        },
+        {
+            "source": "Risk Information",
+            "relationship": "supports",
+            "target": "Decision Making"
+        },
+        {
+            "source": "Decision Making",
+            "relationship": "requires",
+            "target": "Role Responsibility Authority Level"
+        }
+    ]
+}

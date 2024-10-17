@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Chapter",
+            "type": "Document Section", 
+            "attributes": {"scope": "define scope", "objective": "project risk management process"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process", 
+            "attributes": {"integration": "integrate wider project management"}
+        },
+        {
+            "name": "Project Management",
+            "type": "Discipline", 
+            "attributes": {"focus": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Chapter",
+            "relationship": "defines",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "integrates",
+            "target": "Project Management"
+        }
+    ]
+}

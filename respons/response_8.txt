@@ -1,0 +1,26 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role", 
+            "attributes": {"responsibility": "oversee project risk management", "synonyms": ["PM", "project leader"], "related_processes": ["project planning", "stakeholder management"]}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process", 
+            "attributes": {"description": "identification, assessment, and prioritization of risks", "synonyms": ["risk management process", "risk assessment"], "phases": ["risk identification", "risk analysis", "risk response planning"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "has responsibility for",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "is a part of",
+            "target": "Project Manager"
+        }
+    ]
+}

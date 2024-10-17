@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice Standard", 
+            "attributes": {"synonyms": ["risk management practice", "standard for managing risks"], "level": "standard"}
+        },
+        {
+            "name": "Project Team",
+            "type": "Entity", 
+            "attributes": {"role": "team members", "level": "internal"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Entity", 
+            "attributes": {"role": "external participants", "level": "external"}
+        },
+        {
+            "name": "Communication",
+            "type": "Process", 
+            "attributes": {"type": "risk-related communication", "level": "two-level"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "Involves",
+            "target": "Communication"
+        },
+        {
+            "source": "Project Team",
+            "relationship": "Interacts with",
+            "target": "Project Stakeholder"
+        },
+        {
+            "source": "Communication",
+            "relationship": "Occurs at",
+            "target": "Project Team"
+        },
+        {
+            "source": "Communication",
+            "relationship": "Occurs at",
+            "target": "Project Stakeholder"
+        }
+    ]
+}

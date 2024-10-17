@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Early Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["Proactive Risk Identification", "Preemptive Risk Assessment"], "importance": "High", "description": "The process of identifying potential risks at the early stages of a project."}
+        },
+        {
+            "name": "Key Project Decision",
+            "type": "Decision", 
+            "attributes": {"synonyms": ["Critical Project Choice", "Major Project Decision"], "importance": "Critical", "description": "Decisions made regarding the direction and execution of a project."}
+        },
+        {
+            "name": "Project Strategy",
+            "type": "Strategy", 
+            "attributes": {"synonyms": ["Project Plan", "Project Approach"], "importance": "High", "description": "The overall plan outlining how project objectives will be achieved."}
+        },
+        {
+            "name": "Inherent Project Risk",
+            "type": "Risk", 
+            "attributes": {"synonyms": ["Intrinsic Project Risk", "Fundamental Risk"], "importance": "Variable", "description": "Risks that are naturally part of the project due to its nature."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Early Risk Identification",
+            "relationship": "Enables",
+            "target": "Key Project Decision"
+        },
+        {
+            "source": "Inherent Project Risk",
+            "relationship": "May Result In",
+            "target": "Change Project Strategy"
+        },
+        {
+            "source": "Key Project Decision",
+            "relationship": "Takes Into Account",
+            "target": "Inherent Project Risk"
+        },
+        {
+            "source": "Key Project Decision",
+            "relationship": "Influences",
+            "target": "Project Strategy"
+        }
+    ]
+}

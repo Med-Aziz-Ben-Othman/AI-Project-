@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process", 
+            "attributes": {"description": "A structured approach to managing risks throughout the project lifecycle.", "status": "Active", "effectiveness": "Requires review and change"}
+        },
+        {
+            "name": "Risk Exposure",
+            "type": "Risk Factor", 
+            "attributes": {"description": "The potential for loss or damage related to project risks.", "level": "Variable"}
+        },
+        {
+            "name": "Agreed-upon Action",
+            "type": "Action", 
+            "attributes": {"description": "Actions that have been formally accepted to mitigate risks.", "type": "Preventive"}
+        },
+        {
+            "name": "Additional Risk Management Action",
+            "type": "Action", 
+            "attributes": {"description": "Further steps required to manage newly identified risks.", "urgency": "High"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Management Process",
+            "relationship": "Includes",
+            "target": "Agreed-upon Action"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "Identifies",
+            "target": "Risk Exposure"
+        },
+        {
+            "source": "Risk Exposure",
+            "relationship": "Requires",
+            "target": "Additional Risk Management Action"
+        },
+        {
+            "source": "Agreed-upon Action",
+            "relationship": "Affects",
+            "target": "Risk Management Process"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "Project Team",
+            "type": "Entity",
+            "attributes": {"role": "team responsible for project execution", "synonyms": ["project group", "project members"]}
+        },
+        {
+            "name": "Contingency Reserve",
+            "type": "Financial Resource",
+            "attributes": {"purpose": "to manage project risks", "synonyms": ["risk reserve", "buffer fund"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Team",
+            "relationship": "may establish",
+            "target": "Contingency Reserve"
+        }
+    ]
+}

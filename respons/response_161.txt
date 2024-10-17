@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Practice",
+            "attributes": {"synonyms": ["risk management", "project risk control"], "best_practices": ["standard practices", "templates"], "purpose": "to manage risks in projects"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"key_elements": ["risk identification", "risk analysis", "risk response planning"], "status": "existing"}
+        },
+        {
+            "name": "Risk Status Report",
+            "type": "Document",
+            "attributes": {"key_elements": ["current risk status", "mitigation actions"], "status": "work product"}
+        },
+        {
+            "name": "Risk Breakdown Structure",
+            "type": "Tool",
+            "attributes": {"description": "hierarchical representation of risks", "purpose": "to categorize project risks"}
+        },
+        {
+            "name": "Risk Register",
+            "type": "Document",
+            "attributes": {"key_elements": ["identified risks", "risk owners", "risk responses"], "status": "existing"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "includes",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "produces",
+            "target": "Risk Status Report"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "utilizes",
+            "target": "Risk Breakdown Structure"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "maintains",
+            "target": "Risk Register"
+        }
+    ]
+}

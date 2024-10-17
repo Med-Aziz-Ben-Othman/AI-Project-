@@ -1,0 +1,76 @@
+{
+    "nodes": [
+        {
+            "name": "Initial Risk",
+            "type": "Risk",
+            "attributes": {"definition": "a potential event or condition that could negatively impact the project", "synonyms": ["starting risk", "preliminary risk"]}
+        },
+        {
+            "name": "Responsibility",
+            "type": "Role",
+            "attributes": {"definition": "the obligation to manage and mitigate risks", "synonyms": ["accountability", "duty"]}
+        },
+        {
+            "name": "Methodology",
+            "type": "Process",
+            "attributes": {"definition": "a systematic approach to risk management", "synonyms": ["framework", "strategy"]}
+        },
+        {
+            "name": "Template",
+            "type": "Document",
+            "attributes": {"definition": "a predefined format to document risks", "synonyms": ["form", "prototype"]}
+        },
+        {
+            "name": "Time Schedule",
+            "type": "Project Plan Element",
+            "attributes": {"definition": "a plan that outlines the timing of project activities", "synonyms": ["timeline", "schedule"]}
+        },
+        {
+            "name": "Cost Budget",
+            "type": "Financial Element",
+            "attributes": {"definition": "an estimate of the financial resources needed for the project", "synonyms": ["financial plan", "cost estimate"]}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"definition": "the systematic approach to identifying, analyzing, and responding to project risks", "synonyms": ["risk management framework", "risk handling process"]}
+        },
+        {
+            "name": "Accepted Risk",
+            "type": "Risk",
+            "attributes": {"definition": "a risk that has been acknowledged and accepted without further action", "synonyms": ["tolerated risk", "acknowledged risk"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Initial Risk",
+            "relationship": "is managed by",
+            "target": "Responsibility"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "uses",
+            "target": "Methodology"
+        },
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "includes",
+            "target": "Template"
+        },
+        {
+            "source": "Time Schedule",
+            "relationship": "is influenced by",
+            "target": "Initial Risk"
+        },
+        {
+            "source": "Cost Budget",
+            "relationship": "is affected by",
+            "target": "Initial Risk"
+        },
+        {
+            "source": "Accepted Risk",
+            "relationship": "is a result of",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}

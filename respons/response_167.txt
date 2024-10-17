@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Management Process",
+            "type": "Process",
+            "attributes": {"key area": "focus", "depend upon": "size and complexity", "element": "present"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"size": "variable", "complexity": "variable"}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"status": "present", "related to": "Risk Management Process"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project",
+            "relationship": "influences",
+            "target": "Risk Management Process"
+        },
+        {
+            "source": "Risk Management Process",
+            "relationship": "is detailed in",
+            "target": "Risk Management Plan"
+        }
+    ]
+}

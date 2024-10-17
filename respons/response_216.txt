@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Technique",
+            "type": "Methodology",
+            "attributes": {"synonyms": ["method", "approach"], "type": "risk management technique"}
+        },
+        {
+            "name": "Ability",
+            "type": "Skill",
+            "attributes": {"synonyms": ["capability", "competence"], "type": "participant skill"}
+        },
+        {
+            "name": "Participant",
+            "type": "Role",
+            "attributes": {"synonyms": ["stakeholder", "team member"], "type": "project participant"}
+        },
+        {
+            "name": "Success",
+            "type": "Outcome",
+            "attributes": {"synonyms": ["achievement", "accomplishment"], "type": "project success"}
+        },
+        {
+            "name": "Facilitator",
+            "type": "Role",
+            "attributes": {"synonyms": ["moderator", "guide"], "type": "skilled facilitator"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Technique",
+            "relationship": "depends on",
+            "target": "Ability"
+        },
+        {
+            "source": "Ability",
+            "relationship": "enhances",
+            "target": "Success"
+        },
+        {
+            "source": "Participant",
+            "relationship": "uses",
+            "target": "Technique"
+        },
+        {
+            "source": "Facilitator",
+            "relationship": "supports",
+            "target": "Participant"
+        }
+    ]
+}

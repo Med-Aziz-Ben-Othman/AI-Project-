@@ -1,0 +1,21 @@
+{
+    "nodes": [
+        {
+            "name": "processrelated",
+            "type": "Criterion",
+            "attributes": {"synonyms": ["process-related", "process-based"], "importance": "high", "type": "qualitative"}
+        },
+        {
+            "name": "criterion",
+            "type": "Assessment Metric",
+            "attributes": {"synonyms": ["standard", "benchmark"], "importance": "medium", "type": "quantitative"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "processrelated",
+            "relationship": "is a type of",
+            "target": "criterion"
+        }
+    ]
+}

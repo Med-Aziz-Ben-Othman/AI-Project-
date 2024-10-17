@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Response Chapter",
+            "type": "Document Section", 
+            "attributes": {"description": "Chapter that outlines risk response strategies", "purpose": "Determine appropriate response strategies for risks"}
+        },
+        {
+            "name": "Response Strategy",
+            "type": "Strategy", 
+            "attributes": {"definition": "Actions taken to address individual risks", "types": ["avoidance", "mitigation", "transfer", "acceptance"]}
+        },
+        {
+            "name": "Individual Risk",
+            "type": "Risk", 
+            "attributes": {"definition": "Specific risk affecting the project", "examples": ["budget overrun", "schedule delay"]}
+        },
+        {
+            "name": "Overall Project Risk",
+            "type": "Risk Aggregate", 
+            "attributes": {"definition": "Cumulative risk associated with the entire project", "components": ["individual risks", "external factors"]}
+        },
+        {
+            "name": "Project Management Plan",
+            "type": "Plan", 
+            "attributes": {"description": "Comprehensive document guiding project execution", "elements": ["scope", "schedule", "resources", "risks"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Response Chapter",
+            "relationship": "determines",
+            "target": "Response Strategy"
+        },
+        {
+            "source": "Response Strategy",
+            "relationship": "addresses",
+            "target": "Individual Risk"
+        },
+        {
+            "source": "Individual Risk",
+            "relationship": "contributes to",
+            "target": "Overall Project Risk"
+        },
+        {
+            "source": "Overall Project Risk",
+            "relationship": "integrates with",
+            "target": "Project Management Plan"
+        }
+    ]
+}

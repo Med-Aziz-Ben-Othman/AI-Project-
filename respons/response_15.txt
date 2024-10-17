@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Open Honest Communication",
+            "type": "Communication Practice", 
+            "attributes": {"synonyms": ["transparent communication", "clear communication"], "importance": "high", "impact on risk": "reduces"}
+        },
+        {
+            "name": "Project Team",
+            "type": "Team", 
+            "attributes": {"role": "execution", "size": "variable", "dynamics": "collaborative"}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity", 
+            "attributes": {"type": "individual or group", "influence": "high", "interest": "varied"}
+        },
+        {
+            "name": "Risk",
+            "type": "Risk Factor", 
+            "attributes": {"nature": "communication risk", "potential impact": "project success"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Open Honest Communication",
+            "relationship": "mitigates",
+            "target": "Risk"
+        },
+        {
+            "source": "Project Team",
+            "relationship": "engages in",
+            "target": "Open Honest Communication"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "affects",
+            "target": "Risk"
+        },
+        {
+            "source": "Project Team",
+            "relationship": "collaborates with",
+            "target": "Stakeholder"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Response Strategy",
+            "type": "Strategy", 
+            "attributes": {"synonyms": ["action plan", "tactical approach"], "importance": "high", "status": "proposed"}
+        },
+        {
+            "name": "Action Document",
+            "type": "Document", 
+            "attributes": {"format": "written", "purpose": "guidance", "status": "draft"}
+        },
+        {
+            "name": "Key Project Stakeholder",
+            "type": "Stakeholder", 
+            "attributes": {"role": "influencer", "interest": "high", "involvement": "critical"}
+        },
+        {
+            "name": "Project Plan",
+            "type": "Plan", 
+            "attributes": {"components": ["scope", "schedule", "resources"], "status": "active"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Response Strategy",
+            "relationship": "informs",
+            "target": "Action Document"
+        },
+        {
+            "source": "Action Document",
+            "relationship": "communicated to",
+            "target": "Key Project Stakeholder"
+        },
+        {
+            "source": "Key Project Stakeholder",
+            "relationship": "incorporates",
+            "target": "Project Plan"
+        }
+    ]
+}

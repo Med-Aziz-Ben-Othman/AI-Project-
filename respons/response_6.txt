@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Responsibility",
+            "type": "Project Management Concept", 
+            "attributes": {"synonyms": ["accountability", "duty"], "importance": "high", "context": "risk management"}
+        },
+        {
+            "name": "Activity",
+            "type": "Project Task", 
+            "attributes": {"synonyms": ["task", "operation"], "type": "specific", "context": "risk process"}
+        },
+        {
+            "name": "Risk Process",
+            "type": "Process", 
+            "attributes": {"synonyms": ["risk management process", "risk assessment process"], "stages": ["identification", "analysis", "response"]}
+        },
+        {
+            "name": "Action",
+            "type": "Outcome", 
+            "attributes": {"synonyms": ["response", "measure"], "result": "required", "context": "risk management"}
+        },
+        {
+            "name": "Response",
+            "type": "Risk Response", 
+            "attributes": {"synonyms": ["mitigation", "strategy"], "type": "agreed-upon", "context": "risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Responsibility",
+            "relationship": "allocates",
+            "target": "Activity"
+        },
+        {
+            "source": "Activity",
+            "relationship": "occurs within",
+            "target": "Risk Process"
+        },
+        {
+            "source": "Risk Process",
+            "relationship": "results in",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "requires",
+            "target": "Response"
+        }
+    ]
+}

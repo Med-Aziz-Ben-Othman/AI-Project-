@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["hazard", "threat"], "importance": "high", "definition": "potential for loss or damage"}
+        },
+        {
+            "name": "Risk Assessment",
+            "type": "Process", 
+            "attributes": {"definition": "systematic process to evaluate risks", "importance": "critical"}
+        },
+        {
+            "name": "Agreed-upon Definition",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["consensus definition", "standard definition"], "importance": "essential"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "is assessed through",
+            "target": "Risk Assessment"
+        },
+        {
+            "source": "Risk",
+            "relationship": "relies on",
+            "target": "Agreed-upon Definition"
+        },
+        {
+            "source": "Risk Assessment",
+            "relationship": "is based on",
+            "target": "Agreed-upon Definition"
+        }
+    ]
+}

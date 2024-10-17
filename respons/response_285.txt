@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Relationship Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["relational risk", "interpersonal risk"], "description": "Risk arising from the interactions and relationships between stakeholders."}
+        },
+        {
+            "name": "Project Risk",
+            "type": "Risk Type", 
+            "attributes": {"synonyms": ["project-related risk", "initiative risk"], "description": "Potential events or conditions that may negatively impact project objectives."}
+        },
+        {
+            "name": "Possibility Magnitude",
+            "type": "Risk Attribute", 
+            "attributes": {"description": "The extent or level of likelihood that a risk will occur."}
+        },
+        {
+            "name": "Independent Event",
+            "type": "Risk Factor", 
+            "attributes": {"description": "Events that do not influence each other and can be considered separately in risk assessment."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Relationship Risk",
+            "relationship": "may provide better understanding of",
+            "target": "Possibility Magnitude"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "is influenced by",
+            "target": "Relationship Risk"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "is considered as",
+            "target": "Independent Event"
+        }
+    ]
+}

@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "A process to identify and evaluate risks qualitatively", "importance": "High", "methodology": "Qualitative assessment"}
+        },
+        {
+            "name": "Critical Success Factor",
+            "type": "Entity", 
+            "attributes": {"definition": "Elements that are vital for the success of the project", "examples": "Stakeholder engagement, clear objectives"}
+        },
+        {
+            "name": "Factors Leading to Success",
+            "type": "Entity", 
+            "attributes": {"description": "Various elements that contribute to the successful execution of qualitative risk analysis", "examples": "Proper training, experienced team"}
+        },
+        {
+            "name": "Summary Figure",
+            "type": "Document", 
+            "attributes": {"description": "A visual representation summarizing the factors", "format": "Figure"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Is Influenced By",
+            "target": "Critical Success Factor"
+        },
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Is Affected By",
+            "target": "Factors Leading to Success"
+        },
+        {
+            "source": "Factors Leading to Success",
+            "relationship": "Summarized In",
+            "target": "Summary Figure"
+        }
+    ]
+}

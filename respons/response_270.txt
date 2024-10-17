@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis Tool",
+            "type": "Tool", 
+            "attributes": {"purpose": "Evaluate risks qualitatively", "output": "List of risks", "synonyms": ["Qualitative Risk Assessment", "Risk Evaluation Tool"]}
+        },
+        {
+            "name": "Risk Priority Order",
+            "type": "Concept", 
+            "attributes": {"definition": "Ranking of risks based on severity", "levels": ["High", "Moderate", "Low"], "synonyms": ["Risk Ranking", "Risk Priority"]}
+        },
+        {
+            "name": "Priority Group",
+            "type": "Concept", 
+            "attributes": {"definition": "Grouping of risks based on priority", "types": ["High", "Moderate", "Low"], "synonyms": ["Risk Category", "Priority Level"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis Tool",
+            "relationship": "Produces",
+            "target": "Risk Priority Order"
+        },
+        {
+            "source": "Risk Priority Order",
+            "relationship": "Categorizes",
+            "target": "Priority Group"
+        }
+    ]
+}

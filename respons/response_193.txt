@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {"description": "Complete risk statement", "status": "understood"}
+        },
+        {
+            "name": "Risk Assessment",
+            "type": "Process",
+            "attributes": {"purpose": "Evaluate identified risks", "responsible": "Project Manager"}
+        },
+        {
+            "name": "Risk Response Planning",
+            "type": "Process",
+            "attributes": {"purpose": "Develop strategies for managing risks", "responsible": "Project Team"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "Informs",
+            "target": "Risk Assessment"
+        },
+        {
+            "source": "Risk Assessment",
+            "relationship": "Leads to",
+            "target": "Risk Response Planning"
+        }
+    ]
+}

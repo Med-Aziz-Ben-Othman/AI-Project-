@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Description",
+            "type": "Risk Management Concept", 
+            "attributes": {"synonyms": ["risk detail", "risk explanation"], "type": "qualitative"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor", 
+            "attributes": {"synonyms": ["ambiguity", "indeterminacy"], "type": "condition"}
+        },
+        {
+            "name": "Cause",
+            "type": "Risk Element", 
+            "attributes": {"synonyms": ["origin", "source"], "type": "factor"}
+        },
+        {
+            "name": "Effect",
+            "type": "Risk Outcome", 
+            "attributes": {"synonyms": ["impact", "consequence"], "type": "result"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Description",
+            "relationship": "requires",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "leads to",
+            "target": "Cause"
+        },
+        {
+            "source": "Cause",
+            "relationship": "results in",
+            "target": "Effect"
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["project governance", "project oversight"], "related_fields": ["risk management", "resource management"]}
+        },
+        {
+            "name": "Risk Management",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["risk assessment", "risk mitigation"], "importance": "critical"}
+        },
+        {
+            "name": "Organization",
+            "type": "Entity", 
+            "attributes": {"type": "Business", "role": "stakeholder"}
+        },
+        {
+            "name": "Effective Governance",
+            "type": "Concept", 
+            "attributes": {"synonyms": ["efficient administration", "strong leadership"], "impact": "high"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "includes",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Risk Management",
+            "relationship": "contributes to",
+            "target": "Organization"
+        },
+        {
+            "source": "Organization",
+            "relationship": "enhanced by",
+            "target": "Effective Governance"
+        },
+        {
+            "source": "Effective Governance",
+            "relationship": "supports",
+            "target": "Project Management"
+        }
+    ]
+}

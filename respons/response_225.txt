@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification",
+            "type": "Process", 
+            "attributes": {"synonyms": ["identify risk", "risk identification"], "description": "The process of recognizing and defining risks that could affect the project."}
+        },
+        {
+            "name": "Risk Document",
+            "type": "Document", 
+            "attributes": {"synonyms": ["risk effect document", "risk record"], "description": "A formal document that outlines identified risks and their potential effects."}
+        },
+        {
+            "name": "Relevant Information",
+            "type": "Information", 
+            "attributes": {"description": "Data that is pertinent to the identified risks and their management."}
+        },
+        {
+            "name": "Risk Effect",
+            "type": "Outcome", 
+            "attributes": {"description": "The impact or consequence of a risk occurring."}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification",
+            "relationship": "produces",
+            "target": "Risk Document"
+        },
+        {
+            "source": "Risk Document",
+            "relationship": "contains",
+            "target": "Relevant Information"
+        },
+        {
+            "source": "Risk Document",
+            "relationship": "describes",
+            "target": "Risk Effect"
+        }
+    ]
+}

@@ -1,0 +1,51 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis",
+            "type": "Process", 
+            "attributes": {"description": "A process for analyzing risks qualitatively", "synonyms": ["Qualitative Analysis", "Risk Assessment"]}
+        },
+        {
+            "name": "Risk Breakdown Structure",
+            "type": "Framework", 
+            "attributes": {"description": "A hierarchical representation of risks", "synonyms": ["RBS", "Risk Hierarchy"]}
+        },
+        {
+            "name": "Identified Risks",
+            "type": "Entity", 
+            "attributes": {"description": "Risks that have been identified", "synonyms": ["Risks", "Potential Issues"]}
+        },
+        {
+            "name": "Risk Prioritization",
+            "type": "Process", 
+            "attributes": {"description": "The process of arranging risks based on their priority", "synonyms": ["Risk Ranking", "Risk Assessment Priority"]}
+        },
+        {
+            "name": "Specific Sources of Risk",
+            "type": "Entity", 
+            "attributes": {"description": "Particular origins or causes of risks", "synonyms": ["Risk Sources", "Risk Causes"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis",
+            "relationship": "Uses",
+            "target": "Risk Breakdown Structure"
+        },
+        {
+            "source": "Risk Breakdown Structure",
+            "relationship": "Helps Identify",
+            "target": "Identified Risks"
+        },
+        {
+            "source": "Identified Risks",
+            "relationship": "Lead to",
+            "target": "Risk Prioritization"
+        },
+        {
+            "source": "Risk Prioritization",
+            "relationship": "Considers",
+            "target": "Specific Sources of Risk"
+        }
+    ]
+}

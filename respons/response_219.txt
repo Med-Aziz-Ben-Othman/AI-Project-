@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Identification Checklist",
+            "type": "Tool", 
+            "attributes": {"synonyms": ["checklist", "risk assessment tool"], "purpose": "to identify potential risks"}
+        },
+        {
+            "name": "Historical Review",
+            "type": "Method", 
+            "attributes": {"synonyms": ["historical analysis"], "purpose": "to analyze past project data for risk identification"}
+        },
+        {
+            "name": "Assumption Analysis",
+            "type": "Method", 
+            "attributes": {"synonyms": ["assumption assessment"], "purpose": "to evaluate assumptions that may lead to risks"}
+        },
+        {
+            "name": "Current Assessment",
+            "type": "Method", 
+            "attributes": {"synonyms": ["present evaluation"], "purpose": "to assess current project status for risks"}
+        },
+        {
+            "name": "Brainstorming",
+            "type": "Technique", 
+            "attributes": {"synonyms": ["creative thinking"], "purpose": "to generate ideas for risk identification"}
+        },
+        {
+            "name": "Creativity",
+            "type": "Skill", 
+            "attributes": {"synonyms": ["innovative thinking"], "purpose": "to enhance idea generation for risk management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Identification Checklist",
+            "relationship": "Utilizes",
+            "target": "Historical Review"
+        },
+        {
+            "source": "Risk Identification Checklist",
+            "relationship": "Utilizes",
+            "target": "Assumption Analysis"
+        },
+        {
+            "source": "Risk Identification Checklist",
+            "relationship": "Utilizes",
+            "target": "Current Assessment"
+        },
+        {
+            "source": "Risk Identification Checklist",
+            "relationship": "Utilizes",
+            "target": "Brainstorming"
+        },
+        {
+            "source": "Brainstorming",
+            "relationship": "Requires",
+            "target": "Creativity"
+        }
+    ]
+}

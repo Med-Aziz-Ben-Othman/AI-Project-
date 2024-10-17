@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Step",
+            "type": "Process Stage", 
+            "attributes": {"description": "A defined phase in project management", "synonyms": ["phase", "stage"]}
+        },
+        {
+            "name": "Detail",
+            "type": "Information", 
+            "attributes": {"description": "Specific information or instructions", "synonyms": ["specification", "clarification"]}
+        },
+        {
+            "name": "Chapter",
+            "type": "Document Section", 
+            "attributes": {"description": "A distinct section in a document", "synonyms": ["section", "part"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Step",
+            "relationship": "Describes",
+            "target": "Detail"
+        },
+        {
+            "source": "Detail",
+            "relationship": "Is Found In",
+            "target": "Chapter"
+        }
+    ]
+}

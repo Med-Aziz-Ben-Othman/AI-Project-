@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Data",
+            "type": "Data Type", 
+            "attributes": {"quality": "high", "source": "historic database"}
+        },
+        {
+            "name": "Expert Judgment",
+            "type": "Method", 
+            "attributes": {"type": "qualitative", "application": "risk assessment"}
+        },
+        {
+            "name": "Interview",
+            "type": "Data Collection Method", 
+            "attributes": {"purpose": "gather risk data"}
+        },
+        {
+            "name": "Workshop",
+            "type": "Data Collection Method", 
+            "attributes": {"purpose": "gather risk data"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Data",
+            "relationship": "is collected through",
+            "target": "Interview"
+        },
+        {
+            "source": "Risk Data",
+            "relationship": "is collected through",
+            "target": "Workshop"
+        },
+        {
+            "source": "Risk Data",
+            "relationship": "is assessed using",
+            "target": "Expert Judgment"
+        }
+    ]
+}

@@ -1,0 +1,56 @@
+{
+    "nodes": [
+        {
+            "name": "Qualitative Risk Analysis Tool",
+            "type": "Tool",
+            "attributes": {"function": "Analyze risks qualitatively", "usage": "Allows organizations to assess risk levels", "stakeholders": "Project stakeholders"}
+        },
+        {
+            "name": "Organization",
+            "type": "Entity",
+            "attributes": {"type": "Business", "role": "Project Management"}
+        },
+        {
+            "name": "Project Stakeholder",
+            "type": "Person",
+            "attributes": {"role": "Involved in project decisions", "interest": "Risk management"}
+        },
+        {
+            "name": "Risk Characteristic",
+            "type": "Concept",
+            "attributes": {"type": "Risk Factor", "importance": "Determines risk level"}
+        },
+        {
+            "name": "Particular Risk",
+            "type": "Risk",
+            "attributes": {"interest": "Specific risk to manage"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Qualitative Risk Analysis Tool",
+            "relationship": "Enables",
+            "target": "Organization"
+        },
+        {
+            "source": "Organization",
+            "relationship": "Includes",
+            "target": "Project Stakeholder"
+        },
+        {
+            "source": "Project Stakeholder",
+            "relationship": "Specifies",
+            "target": "Risk Characteristic"
+        },
+        {
+            "source": "Risk Characteristic",
+            "relationship": "Influences",
+            "target": "Particular Risk"
+        },
+        {
+            "source": "Particular Risk",
+            "relationship": "Subject of",
+            "target": "Risk Management"
+        }
+    ]
+}

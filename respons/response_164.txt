@@ -1,0 +1,46 @@
+{
+    "nodes": [
+        {
+            "name": "Project Plan",
+            "type": "Document",
+            "attributes": {"description": "A detailed proposal for achieving project goals", "synonyms": ["project strategy", "project outline"]}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "individual or group affected by the project", "involvement": "active", "responsibility": "participation in decision-making"}
+        },
+        {
+            "name": "Risk-related Activity",
+            "type": "Activity",
+            "attributes": {"description": "Tasks associated with identifying and managing risks", "importance": "critical"}
+        },
+        {
+            "name": "Common View",
+            "type": "Concept",
+            "attributes": {"definition": "Shared understanding among stakeholders", "relevance": "enhances collaboration"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Plan",
+            "relationship": "includes",
+            "target": "Risk-related Activity"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "contributes to",
+            "target": "Common View"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "has responsibility for",
+            "target": "Risk-related Activity"
+        },
+        {
+            "source": "Common View",
+            "relationship": "is based on",
+            "target": "Stakeholder"
+        }
+    ]
+}
