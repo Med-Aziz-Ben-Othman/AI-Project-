@@ -69,9 +69,9 @@ def extract_nodes_relationships(data_list):
 # Main function to load, merge, and save the data
 def main():
     # Define the paths to your input JSON files
-    first_file = "/content/extracted_conceptual_graph_data_full_text_refined.json"
-    second_file = "/content/extracted_conceptual_graph_data_refined.json"
-    output_file = "/content/merged_data.json"
+    first_file = "extracted_conceptual_graph_data_full_text_refined.json"
+    second_file = "extracted_conceptual_graph_data_refined.json"
+    output_file = "merged_data.json"
     
     # Check if the files exist
     if not os.path.exists(first_file):

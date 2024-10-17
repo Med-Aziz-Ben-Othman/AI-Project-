@@ -5,8 +5,10 @@ from tqdm import tqdm  # Import tqdm for progress visualization
 import spacy
 import json
 
+# Load the Spacy model for NLP (if required for further processing)
 nlp = spacy.load('en_core_web_lg')
 
+# Add the path to LlmDataExtractor (adjust path if necessary)
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), 'Risk_Managment_Project', 'Llms')))
 from data_extractor import LlmDataExtractor  # Import the LlmDataExtractor class
 
@@ -23,11 +25,6 @@ def extract_conceptual_graph_data(df):
     extractor = LlmDataExtractor()
     structured_data = []
 
-    # Ensure 'respons' folder exists
-    output_folder = 'respons'
-    if not os.path.exists(output_folder):
-        os.makedirs(output_folder)
-    
     # Loop through each sentence in the DataFrame with tqdm progress bar
     for idx, sentence in tqdm(enumerate(df['sentence']), desc="Processing sentences", total=len(df)):
         prompt = f"Analyze the following sentence and extract nodes, relationships, and attributes related to project management risks:\n\n{sentence}"
@@ -36,18 +33,13 @@ def extract_conceptual_graph_data(df):
         response = extractor.generate_response(prompt)
         print(f"Response for sentence {idx}: '{sentence}'\n{response}\n")
         
-        # Save the LLM response to a file in the 'respons' folder
-        if response:
-            response_file = os.path.join(output_folder, f'response_{idx}.txt')
-            with open(response_file, 'w', encoding='utf-8') as file:
-                file.write(response)
-            
-            # Process the response into structured data
-            nodes = []
-            relationships = []
-            attributes = {}
+        # Process the response into structured data
+        nodes = []
+        relationships = []
+        attributes = {}
 
-            # Split response into lines and parse nodes, relationships, and attributes
+        # Split response into lines and parse nodes, relationships, and attributes
+        if response:
             lines = response.splitlines()
             current_section = None  # Track which section we're in (Nodes, Relationships, or Attributes)
 
@@ -88,15 +80,15 @@ def extract_conceptual_graph_data(df):
 def main():
     # Load your DataFrame (assuming it's stored in a CSV for this example)
     df_pmi = pd.read_csv('Risk_Managment_Project/data/df_pmi_sent.csv')  # Adjust path as necessary
-    docPMI = nlp(". ".join(df_pmi.sentence))
     
     # Extract conceptual graph data
     conceptual_graph_data = extract_conceptual_graph_data(df_pmi)
     
-    # Optionally, save the structured output to a JSON file
+    # Save the structured output to a single JSON file
     output_file = "extracted_conceptual_graph_data.json"
     with open(output_file, "w", encoding="utf-8") as file:
         json.dump(conceptual_graph_data, file, indent=4)
+    
     print(f"\nData has been written to {output_file}")
 
 if __name__ == "__main__":
