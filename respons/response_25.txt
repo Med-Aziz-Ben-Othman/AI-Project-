@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Uncertainty",
+            "type": "Risk Factor",
+            "attributes": {"synonyms": ["ambiguity", "unpredictability"]}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"characteristics": ["unique", "temporary undertaking"], "synonyms": ["assignment", "task"]}
+        },
+        {
+            "name": "Assumption",
+            "type": "Constraint",
+            "attributes": {"synonyms": ["presumption", "supposition"]}
+        },
+        {
+            "name": "Constraint",
+            "type": "Limitation",
+            "attributes": {"synonyms": ["restriction", "limitation"]}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"characteristics": ["multiple", "different requirement"], "synonyms": ["interested party", "participant"]}
+        },
+        {
+            "name": "Project Result",
+            "type": "Outcome",
+            "attributes": {"synonyms": ["deliverable", "end product"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project",
+            "relationship": "has characteristic",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Project",
+            "relationship": "based on",
+            "target": "Assumption"
+        },
+        {
+            "source": "Project",
+            "relationship": "subject to",
+            "target": "Constraint"
+        },
+        {
+            "source": "Project",
+            "relationship": "involves",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Project",
+            "relationship": "aims to deliver",
+            "target": "Project Result"
+        }
+    ]
+}

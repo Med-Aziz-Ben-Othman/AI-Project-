@@ -1,0 +1,33 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {"responsibility": "overall responsibility"}
+        },
+        {
+            "name": "Successful Project",
+            "type": "Outcome",
+            "attributes": {"synonyms": "completed project, finished project"}
+        },
+        {
+            "name": "Defined Objective",
+            "type": "Goal",
+            "attributes": {"synonyms": "target, aim"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "Responsible For",
+            "target": "Successful Project"
+        },
+        {
+            "source": "Successful Project",
+            "relationship": "Achieves",
+            "target": "Defined Objective"
+        }
+    ]
+}
+```

@@ -1,0 +1,53 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Role",
+            "type": "Project Role",
+            "attributes": {"synonyms": ["specific role"]}
+        },
+        {
+            "name": "Project Team Member",
+            "type": "Stakeholder",
+            "attributes": {"synonyms": ["team member"]}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Stakeholder",
+            "attributes": {"synonyms": []}
+        },
+        {
+            "name": "Project Objective",
+            "type": "Project Element",
+            "attributes": {"synonyms": []}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Role",
+            "relationship": "Depend on",
+            "target": "Project Team Member"
+        },
+        {
+            "source": "Role",
+            "relationship": "Depend on",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Project Team Member",
+            "relationship": "Placed within",
+            "target": "Project Relation"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "Placed within",
+            "target": "Project Relation"
+        },
+        {
+            "source": "Project Relation",
+            "relationship": "Align with",
+            "target": "Project Objective"
+        }
+    ]
+}
+```

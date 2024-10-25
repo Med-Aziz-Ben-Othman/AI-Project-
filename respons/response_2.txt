@@ -1,0 +1,29 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["Risk Management in Projects"],
+                "description": "The process of identifying, assessing, and controlling threats to a project."
+            }
+        },
+        {
+            "name": "Project Process",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["Project Lifecycle", "Project Workflow"],
+                "description": "A series of phases that a project goes through from initiation to closure."
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management",
+            "relationship": "is an integral part of",
+            "target": "Project Process"
+        }
+    ]
+}
+```

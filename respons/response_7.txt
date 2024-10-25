@@ -1,0 +1,42 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Responsibility",
+            "type": "Concept",
+            "attributes": {
+                "definition": "The duty to deal with or manage something.",
+                "synonyms": ["obligation", "duty"]
+            }
+        },
+        {
+            "name": "Risk-related Lesson",
+            "type": "Concept",
+            "attributes": {
+                "definition": "Knowledge or understanding gained from past risk experiences.",
+                "synonyms": ["lesson learned", "insight"]
+            }
+        },
+        {
+            "name": "Future Use",
+            "type": "Concept",
+            "attributes": {
+                "definition": "Application or implementation in upcoming projects or situations.",
+                "synonyms": ["future application", "future implementation"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Responsibility",
+            "relationship": "Allocate to",
+            "target": "Risk-related Lesson"
+        },
+        {
+            "source": "Risk-related Lesson",
+            "relationship": "Capture for",
+            "target": "Future Use"
+        }
+    ]
+}
+```

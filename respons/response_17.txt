@@ -1,0 +1,39 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Risk Response",
+            "type": "Action",
+            "attributes": {
+                "synonyms": ["risk mitigation", "risk treatment"]
+            }
+        },
+        {
+            "name": "Action",
+            "type": "Task",
+            "attributes": {
+                "synonyms": ["measure", "step"]
+            }
+        },
+        {
+            "name": "Implementation",
+            "type": "Phase",
+            "attributes": {
+                "synonyms": ["execution", "deployment"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Response",
+            "relationship": "Approval Required Before",
+            "target": "Implementation"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "Associated With",
+            "target": "Action"
+        }
+    ]
+}
+```

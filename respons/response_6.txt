@@ -1,0 +1,58 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Responsibility",
+            "type": "Concept",
+            "attributes": {"synonyms": ["duty", "obligation"]}
+        },
+        {
+            "name": "Specific Activity",
+            "type": "Activity",
+            "attributes": {"synonyms": ["task", "action"]}
+        },
+        {
+            "name": "Risk Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["hazard management"]}
+        },
+        {
+            "name": "Action",
+            "type": "Outcome",
+            "attributes": {"synonyms": ["act", "step"]}
+        },
+        {
+            "name": "Response",
+            "type": "Outcome",
+            "attributes": {"synonyms": ["reply", "reaction"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Responsibility",
+            "relationship": "is allocated to",
+            "target": "Specific Activity"
+        },
+        {
+            "source": "Specific Activity",
+            "relationship": "is part of",
+            "target": "Risk Process"
+        },
+        {
+            "source": "Risk Process",
+            "relationship": "results in",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "requires implementation of",
+            "target": "Response"
+        },
+        {
+            "source": "Response",
+            "relationship": "is agreed upon as",
+            "target": "Action"
+        }
+    ]
+}
+```

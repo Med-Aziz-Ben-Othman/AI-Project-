@@ -1,0 +1,53 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Practice Standard",
+            "type": "Document",
+            "attributes": {"synonyms": ["Guideline", "Protocol"]}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Management in Projects", "Project Risk Handling"]}
+        },
+        {
+            "name": "Chapter Introduction",
+            "type": "Section",
+            "attributes": {"synonyms": ["Introductory Chapter", "Beginning Section"]}
+        },
+        {
+            "name": "Project Management",
+            "type": "Discipline",
+            "attributes": {"synonyms": ["Project Leadership", "Project Coordination"]}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Concept",
+            "attributes": {"synonyms": ["Ambiguity", "Unpredictability"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Practice Standard",
+            "relationship": "Defines",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Chapter Introduction",
+            "relationship": "Part of",
+            "target": "Practice Standard"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Component of",
+            "target": "Project Management"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "Associated with",
+            "target": "Project Risk Management"
+        }
+    ]
+}
+```

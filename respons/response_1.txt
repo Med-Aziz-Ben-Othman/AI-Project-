@@ -1,0 +1,33 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Management",
+            "type": "Concept",
+            "attributes": {"synonyms": "administration, control"}
+        },
+        {
+            "name": "Project Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": "project uncertainty, project hazard"}
+        },
+        {
+            "name": "Risk Specialist",
+            "type": "Role",
+            "attributes": {"synonyms": "risk manager, risk analyst"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Management",
+            "relationship": "manages",
+            "target": "Project Risk"
+        },
+        {
+            "source": "Project Risk",
+            "relationship": "managed by",
+            "target": "Risk Specialist"
+        }
+    ]
+}
+```

@@ -1,0 +1,101 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk management", "project risk"], "importance": "critical success factor"}
+        },
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {"responsibility": ["deliver project", "manage risks", "promote risk management"]}
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {"role": "interest in project objectives", "influence": "risk threshold definition"}
+        },
+        {
+            "name": "Risk Identification",
+            "type": "Process",
+            "attributes": {"techniques": ["checklists", "brainstorming"], "importance": "identify notable risks"}
+        },
+        {
+            "name": "Risk Analysis",
+            "type": "Process",
+            "attributes": {"types": ["qualitative", "quantitative"], "purpose": "assess risk impact"}
+        },
+        {
+            "name": "Risk Response Planning",
+            "type": "Process",
+            "attributes": {"strategies": ["avoid", "transfer", "mitigate"], "goal": "increase project success"}
+        },
+        {
+            "name": "Risk Monitoring and Control",
+            "type": "Process",
+            "attributes": {"frequency": "regular intervals", "purpose": "evaluate risk status"}
+        },
+        {
+            "name": "Risk Owner",
+            "type": "Role",
+            "attributes": {"responsibility": "manage identified risk", "role": "designated for each risk"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Concept",
+            "attributes": {"nature": "inevitable", "effect": "project objectives"}
+        },
+        {
+            "name": "Contingency Fund",
+            "type": "Resource",
+            "attributes": {"purpose": "deal with identified risks", "use": "project cost management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "has responsibility for",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Stakeholder",
+            "relationship": "influences",
+            "target": "Risk Threshold"
+        },
+        {
+            "source": "Risk Identification",
+            "relationship": "is part of",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "follows",
+            "target": "Risk Identification"
+        },
+        {
+            "source": "Risk Response Planning",
+            "relationship": "follows",
+            "target": "Risk Analysis"
+        },
+        {
+            "source": "Risk Monitoring and Control",
+            "relationship": "is part of",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Risk Owner",
+            "relationship": "assigned to",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Risk Analysis",
+            "relationship": "assesses",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Contingency Fund",
+            "relationship": "is used in",
+            "target": "Risk Response Planning"
+        }
+    ]
+}

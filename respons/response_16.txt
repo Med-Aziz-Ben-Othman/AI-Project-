@@ -1,0 +1,33 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Participation",
+            "type": "Activity",
+            "attributes": {"synonyms": ["Involvement", "Engagement"], "category": "Process"}
+        },
+        {
+            "name": "Aspect",
+            "type": "Component",
+            "attributes": {"synonyms": ["Element", "Facet"], "category": "Process"}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Management"], "category": "Project Management"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Participation",
+            "relationship": "is a part of",
+            "target": "Project Risk Management Process"
+        },
+        {
+            "source": "Aspect",
+            "relationship": "is a component of",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}
+```

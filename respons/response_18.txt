@@ -1,0 +1,33 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Contingency Fund",
+            "type": "Resource",
+            "attributes": {"synonyms": ["Contingency Reserve"]}
+        },
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["Recognized Risk", "Known Risk"]}
+        },
+        {
+            "name": "Project",
+            "type": "Process",
+            "attributes": {"synonyms": ["Undertaking", "Initiative"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Contingency Fund",
+            "relationship": "is applied to",
+            "target": "Identified Risk"
+        },
+        {
+            "source": "Identified Risk",
+            "relationship": "occurs in",
+            "target": "Project"
+        }
+    ]
+}
+```

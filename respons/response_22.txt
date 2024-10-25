@@ -1,0 +1,33 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Monitoring",
+            "type": "Process",
+            "attributes": {"synonyms": ["oversight", "supervision"]}
+        },
+        {
+            "name": "Efficiency",
+            "type": "Attribute",
+            "attributes": {"synonyms": ["effectiveness", "performance"]}
+        },
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {"synonyms": ["risk assessment", "risk control"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Monitoring",
+            "relationship": "evaluates",
+            "target": "Efficiency"
+        },
+        {
+            "source": "Efficiency",
+            "relationship": "applies to",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}
+```

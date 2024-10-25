@@ -1,0 +1,33 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Mitigation", "Risk Handling"]}
+        },
+        {
+            "name": "Subcontractor",
+            "type": "Entity",
+            "attributes": {"role": "Performer"}
+        },
+        {
+            "name": "Supplier",
+            "type": "Entity",
+            "attributes": {"role": "Provider"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Subcontractor",
+            "relationship": "Performs",
+            "target": "Risk Management"
+        },
+        {
+            "source": "Supplier",
+            "relationship": "Supports",
+            "target": "Subcontractor"
+        }
+    ]
+}
+```

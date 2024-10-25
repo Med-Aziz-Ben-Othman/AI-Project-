@@ -1,0 +1,63 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Role",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["position", "job", "function"]
+            }
+        },
+        {
+            "name": "Responsibility",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["duty", "obligation", "task"]
+            }
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["risk handling", "risk control"]
+            }
+        },
+        {
+            "name": "Individual",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["person", "member"]
+            }
+        },
+        {
+            "name": "Result",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["outcome", "effect"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Role",
+            "relationship": "is assigned",
+            "target": "Responsibility"
+        },
+        {
+            "source": "Responsibility",
+            "relationship": "is part of",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Responsibility",
+            "relationship": "is communicated to",
+            "target": "Individual"
+        },
+        {
+            "source": "Individual",
+            "relationship": "is held accountable for",
+            "target": "Result"
+        }
+    ]
+}
+```

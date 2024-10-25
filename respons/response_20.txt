@@ -1,0 +1,61 @@
+{
+    "nodes": [
+        {
+            "name": "Risk Status",
+            "type": "Risk Attribute",
+            "attributes": {"synonyms": ["risk condition", "risk state"]}
+        },
+        {
+            "name": "Key Stakeholder",
+            "type": "Project Role",
+            "attributes": {"synonyms": ["main stakeholder", "important party"]}
+        },
+        {
+            "name": "Recommendation",
+            "type": "Action",
+            "attributes": {"synonyms": ["suggestion", "advice"]}
+        },
+        {
+            "name": "Strategic Decision",
+            "type": "Decision",
+            "attributes": {"synonyms": ["strategic choice", "strategic resolution"]}
+        },
+        {
+            "name": "Action",
+            "type": "Process",
+            "attributes": {"synonyms": ["operation", "step"]}
+        },
+        {
+            "name": "Maintain Acceptable Risk Exposure",
+            "type": "Risk Management Goal",
+            "attributes": {"synonyms": ["sustain tolerable risk level", "keep acceptable risk"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk Status",
+            "relationship": "Reported To",
+            "target": "Key Stakeholder"
+        },
+        {
+            "source": "Key Stakeholder",
+            "relationship": "Gives",
+            "target": "Recommendation"
+        },
+        {
+            "source": "Recommendation",
+            "relationship": "Supports",
+            "target": "Strategic Decision"
+        },
+        {
+            "source": "Strategic Decision",
+            "relationship": "Involves",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "Aims To",
+            "target": "Maintain Acceptable Risk Exposure"
+        }
+    ]
+}

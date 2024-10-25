@@ -1,0 +1,34 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {
+                "responsibility": "Project Risk Management",
+                "synonyms": ["PM", "Manager"],
+                "particular responsibility": "Project Risk Management Process"
+            }
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["Risk Management", "PRM"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "has responsibility in",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "has particular responsibility in",
+            "target": "Project Risk Management Process"
+        }
+    ]
+}
+```

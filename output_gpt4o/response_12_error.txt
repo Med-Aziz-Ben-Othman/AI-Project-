@@ -1,0 +1,67 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {
+                "synonyms": ["threat", "hazard"],
+                "description": "Potential negative impact on project"
+            }
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["initiative", "plan"],
+                "description": "A temporary endeavor undertaken to create a unique product, service, or result."
+            }
+        },
+        {
+            "name": "Stakeholder",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["interested party", "participant"],
+                "description": "Individuals or organizations affected by or having an interest in the project."
+            }
+        },
+        {
+            "name": "Acceptable Level",
+            "type": "Attribute",
+            "attributes": {
+                "description": "Threshold of risk that is considered tolerable in the context of the project."
+            }
+        },
+        {
+            "name": "Consultation",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["discussion", "deliberation"],
+                "description": "The process of seeking advice or information from stakeholders."
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Risk",
+            "relationship": "Associated With",
+            "target": "Project"
+        },
+        {
+            "source": "Acceptable Level",
+            "relationship": "Threshold For",
+            "target": "Risk"
+        },
+        {
+            "source": "Consultation",
+            "relationship": "Involves",
+            "target": "Stakeholder"
+        },
+        {
+            "source": "Consultation",
+            "relationship": "Determines",
+            "target": "Acceptable Level"
+        }
+    ]
+}
+```

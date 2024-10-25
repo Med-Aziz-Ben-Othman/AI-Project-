@@ -1,0 +1,38 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Develop",
+            "type": "Action",
+            "attributes": {"synonyms": ["create", "formulate"]}
+        },
+        {
+            "name": "Approve",
+            "type": "Action",
+            "attributes": {"synonyms": ["authorize", "validate"]}
+        },
+        {
+            "name": "Risk Management Plan",
+            "type": "Document",
+            "attributes": {"purpose": "manage risks", "synonyms": ["risk plan", "RMP"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Develop",
+            "relationship": "Precedes",
+            "target": "Approve"
+        },
+        {
+            "source": "Approve",
+            "relationship": "Targets",
+            "target": "Risk Management Plan"
+        },
+        {
+            "source": "Develop",
+            "relationship": "Targets",
+            "target": "Risk Management Plan"
+        }
+    ]
+}
+```

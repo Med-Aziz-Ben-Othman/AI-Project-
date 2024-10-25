@@ -1,0 +1,74 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Identified Risk",
+            "type": "Risk",
+            "attributes": {
+                "synonyms": ["Recognized Risk", "Detected Risk"]
+            }
+        },
+        {
+            "name": "Senior Management",
+            "type": "Role",
+            "attributes": {
+                "responsibility": "Decision-making",
+                "synonyms": ["Executive Management"]
+            }
+        },
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {
+                "responsibility": "Project Oversight",
+                "synonyms": ["PM"]
+            }
+        },
+        {
+            "name": "Management Reserve Fund",
+            "type": "Resource",
+            "attributes": {
+                "purpose": "Contingency Funding",
+                "synonyms": ["Reserve Fund"]
+            }
+        },
+        {
+            "name": "Outside Authority",
+            "type": "External Factor",
+            "attributes": {
+                "influence": "Beyond Control",
+                "synonyms": ["External Entity"]
+            }
+        },
+        {
+            "name": "Action",
+            "type": "Task",
+            "attributes": {
+                "requirement": "Input from Outside"
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Identified Risk",
+            "relationship": "Escalate To",
+            "target": "Senior Management"
+        },
+        {
+            "source": "Project Manager",
+            "relationship": "Requires",
+            "target": "Action"
+        },
+        {
+            "source": "Action",
+            "relationship": "Depends On",
+            "target": "Outside Authority"
+        },
+        {
+            "source": "Senior Management",
+            "relationship": "May Release",
+            "target": "Management Reserve Fund"
+        }
+    ]
+}
+```

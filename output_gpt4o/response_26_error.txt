@@ -1,0 +1,138 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["PM"],
+                "purpose": "Control uncertain environment",
+                "techniques": ["Estimate", "Plan", "Cost Control", "Task Allocation", "Earned Value Analysis", "Monitor", "Review Meeting"]
+            }
+        },
+        {
+            "name": "Uncertain Environment",
+            "type": "Condition",
+            "attributes": {
+                "synonyms": ["Unpredictable Environment"],
+                "nature": "Uncertain"
+            }
+        },
+        {
+            "name": "Structure",
+            "type": "Methodology",
+            "attributes": {
+                "synonyms": ["Framework"]
+            }
+        },
+        {
+            "name": "Disciplined Technique",
+            "type": "Approach",
+            "attributes": {
+                "synonyms": ["Methodical Approach"]
+            }
+        },
+        {
+            "name": "Estimate",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["Forecast"]
+            }
+        },
+        {
+            "name": "Plan",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["Schedule"]
+            }
+        },
+        {
+            "name": "Cost Control",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["Budget Management"]
+            }
+        },
+        {
+            "name": "Task Allocation",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["Resource Assignment"]
+            }
+        },
+        {
+            "name": "Earned Value Analysis",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["EVA"]
+            }
+        },
+        {
+            "name": "Monitor",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["Track"]
+            }
+        },
+        {
+            "name": "Review Meeting",
+            "type": "Technique",
+            "attributes": {
+                "synonyms": ["Evaluation Session"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "Controls",
+            "target": "Uncertain Environment"
+        },
+        {
+            "source": "Project Management",
+            "relationship": "Uses",
+            "target": "Structure"
+        },
+        {
+            "source": "Project Management",
+            "relationship": "Employs",
+            "target": "Disciplined Technique"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Estimate"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Plan"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Cost Control"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Task Allocation"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Earned Value Analysis"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Monitor"
+        },
+        {
+            "source": "Disciplined Technique",
+            "relationship": "Includes",
+            "target": "Review Meeting"
+        }
+    ]
+}
+```

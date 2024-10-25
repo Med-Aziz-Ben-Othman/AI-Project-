@@ -1,0 +1,42 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {
+                "responsibility": "Accountable for day-to-day management",
+                "synonyms": ["PM", "Manager"]
+            }
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {
+                "components": ["day-to-day management", "risk management"],
+                "synonyms": ["Assignment", "Task"]
+            }
+        },
+        {
+            "name": "Risk Management",
+            "type": "Process",
+            "attributes": {
+                "purpose": "Effective management of risks",
+                "synonyms": ["Risk Mitigation", "Risk Assessment"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "Manages",
+            "target": "Project"
+        },
+        {
+            "source": "Project",
+            "relationship": "Includes",
+            "target": "Risk Management"
+        }
+    ]
+}
+```

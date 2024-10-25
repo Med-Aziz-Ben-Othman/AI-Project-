@@ -1,0 +1,28 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Risk Management Process",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["Risk Management Process", "Risk Process"],
+                "related_concepts": ["Risk Identification", "Risk Assessment", "Risk Mitigation"]
+            }
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {
+                "synonyms": ["Program", "Initiative"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk Management Process",
+            "relationship": "is part of",
+            "target": "Project"
+        }
+    ]
+}
+```

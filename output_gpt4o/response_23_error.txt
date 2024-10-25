@@ -1,0 +1,63 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Audit",
+            "type": "Process",
+            "attributes": {
+                "synonyms": ["Examination", "Inspection"]
+            }
+        },
+        {
+            "name": "Risk Response",
+            "type": "Action",
+            "attributes": {
+                "synonyms": ["Mitigation Action", "Risk Handling"]
+            }
+        },
+        {
+            "name": "Effectiveness",
+            "type": "Metric",
+            "attributes": {
+                "synonyms": ["Efficiency", "Performance"]
+            }
+        },
+        {
+            "name": "Document",
+            "type": "Artifact",
+            "attributes": {
+                "synonyms": ["Record", "Report"]
+            }
+        },
+        {
+            "name": "Lesson Learn",
+            "type": "Knowledge",
+            "attributes": {
+                "synonyms": ["Experience", "Insight"]
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Audit",
+            "relationship": "Evaluates",
+            "target": "Risk Response"
+        },
+        {
+            "source": "Risk Response",
+            "relationship": "Measured by",
+            "target": "Effectiveness"
+        },
+        {
+            "source": "Audit",
+            "relationship": "Results in",
+            "target": "Document"
+        },
+        {
+            "source": "Document",
+            "relationship": "Contains",
+            "target": "Lesson Learn"
+        }
+    ]
+}
+```

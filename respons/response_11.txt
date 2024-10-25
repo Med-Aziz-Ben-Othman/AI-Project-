@@ -1,0 +1,31 @@
+{
+    "nodes": [
+        {
+            "name": "Project Manager",
+            "type": "Role",
+            "attributes": {"synonyms": ["PM", "Project Lead"]}
+        },
+        {
+            "name": "Senior Management",
+            "type": "Role",
+            "attributes": {"synonyms": ["Top Management", "Executives"]}
+        },
+        {
+            "name": "Project Risk Management Activity",
+            "type": "Activity",
+            "attributes": {"synonyms": ["Risk Management Process", "Risk Assessment"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Manager",
+            "relationship": "Encourage Support",
+            "target": "Senior Management"
+        },
+        {
+            "source": "Senior Management",
+            "relationship": "Support",
+            "target": "Project Risk Management Activity"
+        }
+    ]
+}

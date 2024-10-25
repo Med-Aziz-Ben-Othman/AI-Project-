@@ -1,0 +1,36 @@
+{
+    "nodes": [
+        {
+            "name": "Project Risk",
+            "type": "Risk",
+            "attributes": {"synonyms": ["Risk"], "related_to": "Project Objectives"}
+        },
+        {
+            "name": "Project Objectives",
+            "type": "Objective",
+            "attributes": {"synonyms": ["Goals", "Targets"]}
+        },
+        {
+            "name": "Interest",
+            "type": "Stakeholder",
+            "attributes": {"synonyms": ["Stakeholder", "Interested Party"], "role": "Achieve Objective"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": ["Risk Management"]}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Risk",
+            "relationship": "Affects",
+            "target": "Project Objectives"
+        },
+        {
+            "source": "Interest",
+            "relationship": "Plays Role In",
+            "target": "Project Risk Management"
+        }
+    ]
+}

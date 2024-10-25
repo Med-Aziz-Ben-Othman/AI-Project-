@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {
+            "name": "Communication",
+            "type": "Process",
+            "attributes": {"synonyms": ["Facilitate", "Open", "Honest"]}
+        },
+        {
+            "name": "Risk",
+            "type": "Concept",
+            "attributes": {"synonyms": []}
+        },
+        {
+            "name": "Project Team",
+            "type": "Entity",
+            "attributes": {"synonyms": []}
+        },
+        {
+            "name": "Management Stakeholder",
+            "type": "Entity",
+            "attributes": {"synonyms": []}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Communication",
+            "relationship": "Mitigates",
+            "target": "Risk"
+        },
+        {
+            "source": "Communication",
+            "relationship": "Involves",
+            "target": "Project Team"
+        },
+        {
+            "source": "Communication",
+            "relationship": "Involves",
+            "target": "Management Stakeholder"
+        }
+    ]
+}

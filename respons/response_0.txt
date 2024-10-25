@@ -1,0 +1,43 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Practice Standard",
+            "type": "Standard",
+            "attributes": {"synonyms": "Guideline, Protocol"}
+        },
+        {
+            "name": "Project Risk Management",
+            "type": "Process",
+            "attributes": {"synonyms": "Risk Management", "key_concepts": "Principle Concepts, Responsibility"}
+        },
+        {
+            "name": "Responsibility",
+            "type": "Concept",
+            "attributes": {"synonyms": "Duty, Obligation"}
+        },
+        {
+            "name": "Everyone",
+            "type": "Stakeholder",
+            "attributes": {"synonyms": "All individuals, All team members"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Practice Standard",
+            "relationship": "Includes",
+            "target": "Project Risk Management"
+        },
+        {
+            "source": "Project Risk Management",
+            "relationship": "Has Concept",
+            "target": "Responsibility"
+        },
+        {
+            "source": "Responsibility",
+            "relationship": "Assigned To",
+            "target": "Everyone"
+        }
+    ]
+}
+```

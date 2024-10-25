@@ -1,0 +1,53 @@
+```json
+{
+    "nodes": [
+        {
+            "name": "Project Management",
+            "type": "Process",
+            "attributes": {"synonyms": "Project Administration, PM"}
+        },
+        {
+            "name": "Role",
+            "type": "Function",
+            "attributes": {"synonyms": "Position, Duty"}
+        },
+        {
+            "name": "Control",
+            "type": "Action",
+            "attributes": {"synonyms": "Manage, Direct"}
+        },
+        {
+            "name": "Uncertainty",
+            "type": "Condition",
+            "attributes": {"synonyms": "Indeterminacy, Unpredictability"}
+        },
+        {
+            "name": "Project",
+            "type": "Entity",
+            "attributes": {"synonyms": "Undertaking, Plan"}
+        }
+    ],
+    "relationships": [
+        {
+            "source": "Project Management",
+            "relationship": "Involves",
+            "target": "Role"
+        },
+        {
+            "source": "Role",
+            "relationship": "Includes",
+            "target": "Control"
+        },
+        {
+            "source": "Control",
+            "relationship": "Addresses",
+            "target": "Uncertainty"
+        },
+        {
+            "source": "Uncertainty",
+            "relationship": "Is Inherent In",
+            "target": "Project"
+        }
+    ]
+}
+```
